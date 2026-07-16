@@ -714,7 +714,7 @@ def compare_remediation(
         reverse=True,
     )
     selected = ranked[0]
-    queries, _judgments, benchmark_manifest = _load_benchmark(benchmark_dir)
+    _, _judgments, benchmark_manifest = _load_benchmark(benchmark_dir)
     comparison_id = stable_id(
         "REMCOMP",
         [
