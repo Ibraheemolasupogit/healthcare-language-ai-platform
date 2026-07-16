@@ -28,13 +28,13 @@
   "production_ready": false,
   "rag_evaluation_id": "RAGEVAL-d8d3b3b6892133372f91d017",
   "rag_run_id": "RAG-515e2c68be10e720b613e874",
-  "release_id": "PORTREL-e36419f0a97534b617adb3cc",
+  "release_id": "PORTREL-f4e8a8385f1ca6cf5301bcf6",
   "release_readiness_status": "ready_for_portfolio_release",
   "release_scope": "Local source-code portfolio publication and demonstration",
   "release_version": "1.0.0",
   "repository_name": "healthcare-language-ai-platform",
   "retrieval_approval_id": "RETAPP-5c6d5b0f63deeff03a1ea155",
-  "source_tree_checksum": "d61ba82b24499a1b91dc3a79215a286170bd293fbeca2aeffde572b510bff324",
+  "source_tree_checksum": "0dc3897759a12886a9b81f566685ec3847470424702725fe5e962d8111d8bc23",
   "synthetic_data_only": true,
   "test_count": 161
 }
