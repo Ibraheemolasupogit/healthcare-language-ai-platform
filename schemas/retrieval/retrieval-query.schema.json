@@ -1,0 +1,86 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "difficulty": {
+      "title": "Difficulty",
+      "type": "string"
+    },
+    "generation_method": {
+      "title": "Generation Method",
+      "type": "string"
+    },
+    "leakage_risk": {
+      "title": "Leakage Risk",
+      "type": "string"
+    },
+    "metadata_filters": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Metadata Filters",
+      "type": "object"
+    },
+    "query_category": {
+      "title": "Query Category",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "query_text": {
+      "title": "Query Text",
+      "type": "string"
+    },
+    "query_version": {
+      "title": "Query Version",
+      "type": "string"
+    },
+    "relevant_document_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Relevant Document Ids",
+      "type": "array"
+    },
+    "relevant_section_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Relevant Section Ids",
+      "type": "array"
+    },
+    "relevant_sentence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Relevant Sentence Ids",
+      "type": "array"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "target_unit_type": {
+      "title": "Target Unit Type",
+      "type": "string"
+    }
+  },
+  "required": [
+    "query_id",
+    "query_text",
+    "query_category",
+    "target_unit_type",
+    "relevant_document_ids",
+    "relevant_section_ids",
+    "relevant_sentence_ids",
+    "metadata_filters",
+    "difficulty",
+    "generation_method",
+    "leakage_risk",
+    "query_version",
+    "synthetic_data_only"
+  ],
+  "title": "RetrievalQuery",
+  "type": "object"
+}

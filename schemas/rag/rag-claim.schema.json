@@ -1,0 +1,51 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "claim_id": {
+      "title": "Claim Id",
+      "type": "string"
+    },
+    "claim_text": {
+      "title": "Claim Text",
+      "type": "string"
+    },
+    "claim_type": {
+      "title": "Claim Type",
+      "type": "string"
+    },
+    "safety_status": {
+      "default": "passed",
+      "title": "Safety Status",
+      "type": "string"
+    },
+    "sentence_index": {
+      "title": "Sentence Index",
+      "type": "integer"
+    },
+    "support_status": {
+      "title": "Support Status",
+      "type": "string"
+    },
+    "supporting_citation_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Supporting Citation Ids",
+      "type": "array"
+    },
+    "unsupported_reason": {
+      "default": "",
+      "title": "Unsupported Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "claim_id",
+    "claim_text",
+    "claim_type",
+    "sentence_index",
+    "support_status"
+  ],
+  "title": "RagClaim",
+  "type": "object"
+}

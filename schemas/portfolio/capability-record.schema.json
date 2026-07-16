@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "capability": {
+      "title": "Capability",
+      "type": "string"
+    },
+    "capability_id": {
+      "title": "Capability Id",
+      "type": "string"
+    },
+    "demonstration_path": {
+      "title": "Demonstration Path",
+      "type": "string"
+    },
+    "implemented_evidence": {
+      "title": "Implemented Evidence",
+      "type": "string"
+    },
+    "known_limitation": {
+      "title": "Known Limitation",
+      "type": "string"
+    },
+    "milestone": {
+      "title": "Milestone",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "technology": {
+      "title": "Technology",
+      "type": "string"
+    }
+  },
+  "required": [
+    "capability_id",
+    "capability",
+    "status",
+    "implemented_evidence",
+    "technology",
+    "milestone",
+    "demonstration_path",
+    "known_limitation"
+  ],
+  "title": "CapabilityRecord",
+  "type": "object"
+}

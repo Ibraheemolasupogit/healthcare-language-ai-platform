@@ -1,0 +1,98 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annotation_label_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Annotation Label Counts",
+      "type": "object"
+    },
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "dataset_name": {
+      "title": "Dataset Name",
+      "type": "string"
+    },
+    "dataset_version": {
+      "title": "Dataset Version",
+      "type": "string"
+    },
+    "document_type_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Document Type Counts",
+      "type": "object"
+    },
+    "file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "File Checksums",
+      "type": "object"
+    },
+    "files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Files",
+      "type": "array"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "record_count": {
+      "minimum": 0,
+      "title": "Record Count",
+      "type": "integer"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "schema_version": {
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "seed": {
+      "title": "Seed",
+      "type": "integer"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "template_version": {
+      "title": "Template Version",
+      "type": "string"
+    },
+    "vocabulary_version": {
+      "title": "Vocabulary Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "dataset_name",
+    "dataset_version",
+    "generator_version",
+    "template_version",
+    "vocabulary_version",
+    "seed",
+    "reference_timestamp",
+    "record_count",
+    "document_type_counts",
+    "annotation_label_counts",
+    "files",
+    "file_checksums",
+    "schema_version",
+    "synthetic_data_only",
+    "clinical_use_prohibited"
+  ],
+  "title": "DatasetManifest",
+  "type": "object"
+}

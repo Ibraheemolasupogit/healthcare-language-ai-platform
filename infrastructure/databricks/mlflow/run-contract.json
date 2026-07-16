@@ -1,0 +1,12 @@
+{
+  "connection_attempted": false,
+  "execution_permitted": false,
+  "parameters": [
+    "matching_policy",
+    "text_representation",
+    "entity_rule_version",
+    "classification_rule_version",
+    "vocabulary_version"
+  ],
+  "run_name_pattern": "baseline-<evaluation_run_id>"
+}

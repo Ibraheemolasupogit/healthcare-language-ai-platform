@@ -1,0 +1,253 @@
+{
+  "output_checksum_status": "passed",
+  "records": [
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Synthetic data engineering",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-001",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Data quality",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-002",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Data contracts",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-003",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Clinical NLP",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-004",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Rule-based extraction",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-005",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Document classification",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-006",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Retrieval engineering",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-007",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Retrieval evaluation",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-008",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "RAG orchestration",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-009",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Citation validation",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-010",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Groundedness",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-011",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Safety and refusal",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-012",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "API engineering",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-013",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Dashboard engineering",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-014",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Observability",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-015",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Testing",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-016",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "CI/CD",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-017",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Security assurance",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-018",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Supply-chain assurance",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-019",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Backup and recovery",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-020",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Architecture",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-021",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    },
+    {
+      "assurance_reference": "reports/assurance/portfolio-assurance-decision.json",
+      "capability": "Documentation",
+      "documentation_reference": "docs/REVIEWER_GUIDE.md",
+      "fixture_reference": "tests/fixtures",
+      "interface_reference": "python -m healthcare_language_ai",
+      "requirement_id": "REQ-022",
+      "source_module": "src/healthcare_language_ai",
+      "status": "passed",
+      "test_reference": "tests"
+    }
+  ],
+  "requirements_covered": 22,
+  "requirements_missing": 0,
+  "traceability_record_count": 22,
+  "traceability_run_id": "TRACE-24aed5797965cc536372b271",
+  "traceability_version": "1.0.0",
+  "validation_status": "passed"
+}

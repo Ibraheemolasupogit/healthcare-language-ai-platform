@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "ExtractionRunStatus": {
+      "enum": [
+        "completed",
+        "completed_with_warnings",
+        "failed"
+      ],
+      "title": "ExtractionRunStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "candidate_count": {
+      "title": "Candidate Count",
+      "type": "integer"
+    },
+    "classification_rule_version": {
+      "title": "Classification Rule Version",
+      "type": "string"
+    },
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "document_classification_count": {
+      "title": "Document Classification Count",
+      "type": "integer"
+    },
+    "document_type_prediction_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Document Type Prediction Counts",
+      "type": "object"
+    },
+    "duplicate_prediction_count": {
+      "title": "Duplicate Prediction Count",
+      "type": "integer"
+    },
+    "entity_prediction_count": {
+      "title": "Entity Prediction Count",
+      "type": "integer"
+    },
+    "entity_rule_version": {
+      "title": "Entity Rule Version",
+      "type": "string"
+    },
+    "extraction_contract_version": {
+      "title": "Extraction Contract Version",
+      "type": "string"
+    },
+    "extraction_run_id": {
+      "title": "Extraction Run Id",
+      "type": "string"
+    },
+    "manifest_schema_version": {
+      "title": "Manifest Schema Version",
+      "type": "string"
+    },
+    "output_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output File Checksums",
+      "type": "object"
+    },
+    "output_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Files",
+      "type": "array"
+    },
+    "overlap_resolution_version": {
+      "title": "Overlap Resolution Version",
+      "type": "string"
+    },
+    "prediction_label_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Prediction Label Counts",
+      "type": "object"
+    },
+    "prediction_scope_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Prediction Scope Counts",
+      "type": "object"
+    },
+    "reconciliation_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "run_status": {
+      "$ref": "#/$defs/ExtractionRunStatus"
+    },
+    "section_classification_count": {
+      "title": "Section Classification Count",
+      "type": "integer"
+    },
+    "source_annotation_count": {
+      "title": "Source Annotation Count",
+      "type": "integer"
+    },
+    "source_document_count": {
+      "title": "Source Document Count",
+      "type": "integer"
+    },
+    "source_preprocessing_manifest_checksum": {
+      "title": "Source Preprocessing Manifest Checksum",
+      "type": "string"
+    },
+    "source_preprocessing_run_id": {
+      "title": "Source Preprocessing Run Id",
+      "type": "string"
+    },
+    "source_section_count": {
+      "title": "Source Section Count",
+      "type": "integer"
+    },
+    "source_sentence_count": {
+      "title": "Source Sentence Count",
+      "type": "integer"
+    },
+    "suppressed_overlap_count": {
+      "title": "Suppressed Overlap Count",
+      "type": "integer"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "text_representation": {
+      "const": "normalised_text",
+      "title": "Text Representation",
+      "type": "string"
+    },
+    "vocabulary_version": {
+      "title": "Vocabulary Version",
+      "type": "string"
+    },
+    "writer_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Writer Versions",
+      "type": "object"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "extraction_contract_version",
+    "extraction_run_id",
+    "run_status",
+    "source_preprocessing_run_id",
+    "source_preprocessing_manifest_checksum",
+    "source_document_count",
+    "source_section_count",
+    "source_sentence_count",
+    "source_annotation_count",
+    "entity_prediction_count",
+    "document_classification_count",
+    "section_classification_count",
+    "candidate_count",
+    "suppressed_overlap_count",
+    "duplicate_prediction_count",
+    "prediction_scope_counts",
+    "prediction_label_counts",
+    "document_type_prediction_counts",
+    "entity_rule_version",
+    "classification_rule_version",
+    "overlap_resolution_version",
+    "vocabulary_version",
+    "text_representation",
+    "reference_timestamp",
+    "writer_versions",
+    "output_files",
+    "output_file_checksums",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "reconciliation_status"
+  ],
+  "title": "ExtractionManifest",
+  "type": "object"
+}

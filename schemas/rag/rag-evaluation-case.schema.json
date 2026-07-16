@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "actual_answer_status": {
+      "title": "Actual Answer Status",
+      "type": "string"
+    },
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "correct_status": {
+      "title": "Correct Status",
+      "type": "boolean"
+    },
+    "expected_answer_status": {
+      "title": "Expected Answer Status",
+      "type": "string"
+    },
+    "query_category": {
+      "title": "Query Category",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "split": {
+      "title": "Split",
+      "type": "string"
+    }
+  },
+  "required": [
+    "query_id",
+    "answer_id",
+    "expected_answer_status",
+    "actual_answer_status",
+    "correct_status",
+    "split",
+    "query_category"
+  ],
+  "title": "RagEvaluationCase",
+  "type": "object"
+}

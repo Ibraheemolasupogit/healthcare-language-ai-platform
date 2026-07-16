@@ -1,0 +1,131 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "actual_rank": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Actual Rank"
+    },
+    "expected_rank": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expected Rank"
+    },
+    "expected_unit_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expected Unit Id"
+    },
+    "failure_id": {
+      "title": "Failure Id",
+      "type": "string"
+    },
+    "failure_type": {
+      "title": "Failure Type",
+      "type": "string"
+    },
+    "likely_reason": {
+      "title": "Likely Reason",
+      "type": "string"
+    },
+    "matched_terms": {
+      "title": "Matched Terms",
+      "type": "string"
+    },
+    "query_category": {
+      "title": "Query Category",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "relevant_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Relevant Score"
+    },
+    "retrieval_evaluation_run_id": {
+      "title": "Retrieval Evaluation Run Id",
+      "type": "string"
+    },
+    "returned_unit_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Returned Unit Id"
+    },
+    "sanitised_query": {
+      "title": "Sanitised Query",
+      "type": "string"
+    },
+    "sanitised_result_snippet": {
+      "title": "Sanitised Result Snippet",
+      "type": "string"
+    },
+    "strategy": {
+      "title": "Strategy",
+      "type": "string"
+    },
+    "top_result_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Top Result Score"
+    }
+  },
+  "required": [
+    "failure_id",
+    "query_id",
+    "query_category",
+    "strategy",
+    "failure_type",
+    "matched_terms",
+    "sanitised_query",
+    "sanitised_result_snippet",
+    "likely_reason",
+    "retrieval_evaluation_run_id"
+  ],
+  "title": "RetrievalFailureRecord",
+  "type": "object"
+}

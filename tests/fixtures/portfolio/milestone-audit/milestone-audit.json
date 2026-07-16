@@ -1,0 +1,288 @@
+{
+  "milestone_audit_id": "MILEAUD-b11a81ab6b206c31f8d50d5d",
+  "milestone_audit_version": "1.0.0",
+  "milestones": [
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "config/application.yaml"
+      ],
+      "implemented_capabilities": [
+        "Packaging",
+        "config",
+        "logging"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M1",
+      "objective": "Foundation and synthetic-only controls",
+      "primary_commands": [
+        "validate-environment"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/config.py"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/synthetic"
+      ],
+      "implemented_capabilities": [
+        "Synthetic documents",
+        "annotations"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M2",
+      "objective": "Synthetic clinical document generation",
+      "primary_commands": [
+        "synthetic-validate"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/synthetic"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/ingestion"
+      ],
+      "implemented_capabilities": [
+        "Canonical exports",
+        "Snowflake plan"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M3",
+      "objective": "Local ingestion and Snowflake target-state contracts",
+      "primary_commands": [
+        "ingest-validate",
+        "snowflake-plan"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/ingestion"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/preprocessing"
+      ],
+      "implemented_capabilities": [
+        "Sections",
+        "sentences",
+        "Databricks plan"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M4",
+      "objective": "Clinical text preprocessing and Databricks contracts",
+      "primary_commands": [
+        "preprocess-validate",
+        "databricks-plan"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/preprocessing"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/extraction",
+        "tests/fixtures/evaluation"
+      ],
+      "implemented_capabilities": [
+        "Entities",
+        "classification",
+        "metrics"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M5",
+      "objective": "Rule-based extraction and evaluation",
+      "primary_commands": [
+        "extract-validate",
+        "evaluate-validate"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/extraction"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/retrieval"
+      ],
+      "implemented_capabilities": [
+        "Index",
+        "BM25",
+        "hybrid retrieval"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M6",
+      "objective": "Retrieval and retrieval evaluation",
+      "primary_commands": [
+        "index-validate",
+        "retrieve-validate"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/retrieval"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/retrieval-quality"
+      ],
+      "implemented_capabilities": [
+        "Holdout",
+        "quality gates"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M7",
+      "objective": "Retrieval quality and holdout benchmarking",
+      "primary_commands": [
+        "holdout-validate"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/retrieval_quality"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/retrieval-remediation"
+      ],
+      "implemented_capabilities": [
+        "Remediation",
+        "approval"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M8",
+      "objective": "Retrieval remediation and approval",
+      "primary_commands": [
+        "retrieval-remediation-approval"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/retrieval_remediation"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/rag"
+      ],
+      "implemented_capabilities": [
+        "RAG",
+        "citations",
+        "refusals"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M9",
+      "objective": "Guarded synthetic RAG",
+      "primary_commands": [
+        "rag-approval"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/rag"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/api",
+        "tests/fixtures/demo"
+      ],
+      "implemented_capabilities": [
+        "API",
+        "dashboard",
+        "demo"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M10",
+      "objective": "FastAPI, Streamlit and observability",
+      "primary_commands": [
+        "api-validate",
+        "dashboard-validate"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/api",
+        "dashboard"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    },
+    {
+      "completion_status": "passed",
+      "fixture_evidence": [
+        "tests/fixtures/assurance"
+      ],
+      "implemented_capabilities": [
+        "Contracts",
+        "security",
+        "backup"
+      ],
+      "known_limitations": [
+        "local synthetic portfolio evidence only"
+      ],
+      "milestone": "M11",
+      "objective": "Platform hardening and assurance",
+      "primary_commands": [
+        "portfolio-assurance"
+      ],
+      "primary_modules": [
+        "src/healthcare_language_ai/assurance"
+      ],
+      "validation_evidence": [
+        "make validate"
+      ]
+    }
+  ],
+  "milestones_audited": 11,
+  "milestones_complete": 11,
+  "overall_status": "passed"
+}

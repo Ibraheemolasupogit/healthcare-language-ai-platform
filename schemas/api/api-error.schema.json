@@ -1,0 +1,36 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "details": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Details",
+      "type": "object"
+    },
+    "error_code": {
+      "title": "Error Code",
+      "type": "string"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "request_id": {
+      "title": "Request Id",
+      "type": "string"
+    },
+    "status": {
+      "title": "Status",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "error_code",
+    "message",
+    "request_id",
+    "status"
+  ],
+  "title": "ApiError",
+  "type": "object"
+}

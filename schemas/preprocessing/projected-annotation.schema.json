@@ -1,0 +1,108 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annotation_id": {
+      "title": "Annotation Id",
+      "type": "string"
+    },
+    "annotation_type": {
+      "title": "Annotation Type",
+      "type": "string"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "projection_id": {
+      "title": "Projection Id",
+      "type": "string"
+    },
+    "projection_rule": {
+      "title": "Projection Rule",
+      "type": "string"
+    },
+    "projection_status": {
+      "enum": [
+        "projected",
+        "unchanged",
+        "unresolved",
+        "not_applicable"
+      ],
+      "title": "Projection Status",
+      "type": "string"
+    },
+    "source_end": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source End"
+    },
+    "source_start": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Start"
+    },
+    "target_end": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target End"
+    },
+    "target_start": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Start"
+    },
+    "value": {
+      "title": "Value",
+      "type": "string"
+    }
+  },
+  "required": [
+    "projection_id",
+    "annotation_id",
+    "document_id",
+    "annotation_type",
+    "label",
+    "value",
+    "projection_status",
+    "projection_rule",
+    "preprocessing_run_id"
+  ],
+  "title": "ProjectedAnnotation",
+  "type": "object"
+}

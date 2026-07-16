@@ -1,0 +1,2308 @@
+{
+  "healthcare_language_ai.application.contracts.AnswerResponse": {
+    "$defs": {
+      "CitationSummary": {
+        "additionalProperties": false,
+        "properties": {
+          "citation_id": {
+            "title": "Citation Id",
+            "type": "string"
+          },
+          "citation_label": {
+            "title": "Citation Label",
+            "type": "string"
+          },
+          "citation_status": {
+            "title": "Citation Status",
+            "type": "string"
+          },
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Claim Ids",
+            "type": "array"
+          },
+          "document_id": {
+            "title": "Document Id",
+            "type": "string"
+          },
+          "evidence_id": {
+            "title": "Evidence Id",
+            "type": "string"
+          },
+          "quoted_span": {
+            "title": "Quoted Span",
+            "type": "string"
+          },
+          "section_id": {
+            "default": "",
+            "title": "Section Id",
+            "type": "string"
+          },
+          "sentence_id": {
+            "default": "",
+            "title": "Sentence Id",
+            "type": "string"
+          },
+          "source_text_checksum": {
+            "title": "Source Text Checksum",
+            "type": "string"
+          }
+        },
+        "required": [
+          "citation_id",
+          "citation_label",
+          "evidence_id",
+          "document_id",
+          "citation_status",
+          "quoted_span",
+          "source_text_checksum"
+        ],
+        "title": "CitationSummary",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "answer_id": {
+        "title": "Answer Id",
+        "type": "string"
+      },
+      "answer_status": {
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "answer_text": {
+        "title": "Answer Text",
+        "type": "string"
+      },
+      "citations": {
+        "items": {
+          "$ref": "#/$defs/CitationSummary"
+        },
+        "title": "Citations",
+        "type": "array"
+      },
+      "clinical_use_prohibited": {
+        "default": true,
+        "title": "Clinical Use Prohibited",
+        "type": "boolean"
+      },
+      "disclaimer": {
+        "default": "Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated.",
+        "title": "Disclaimer",
+        "type": "string"
+      },
+      "generator_provider": {
+        "title": "Generator Provider",
+        "type": "string"
+      },
+      "generator_version": {
+        "title": "Generator Version",
+        "type": "string"
+      },
+      "prompt_id": {
+        "title": "Prompt Id",
+        "type": "string"
+      },
+      "prompt_version": {
+        "title": "Prompt Version",
+        "type": "string"
+      },
+      "query_id": {
+        "title": "Query Id",
+        "type": "string"
+      },
+      "rag_run_id": {
+        "title": "Rag Run Id",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_confidence": {
+        "title": "Retrieval Confidence",
+        "type": "number"
+      },
+      "retrieval_status": {
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "synthetic_data_only": {
+        "default": true,
+        "title": "Synthetic Data Only",
+        "type": "boolean"
+      },
+      "trace_id": {
+        "title": "Trace Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_id",
+      "query_id",
+      "answer_id",
+      "answer_status",
+      "answer_text",
+      "citations",
+      "retrieval_status",
+      "retrieval_confidence",
+      "trace_id",
+      "rag_run_id",
+      "prompt_id",
+      "prompt_version",
+      "generator_provider",
+      "generator_version"
+    ],
+    "title": "AnswerResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.ApiError": {
+    "additionalProperties": false,
+    "properties": {
+      "details": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "Details",
+        "type": "object"
+      },
+      "error_code": {
+        "title": "Error Code",
+        "type": "string"
+      },
+      "message": {
+        "title": "Message",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "status": {
+        "title": "Status",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "error_code",
+      "message",
+      "request_id",
+      "status"
+    ],
+    "title": "ApiError",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.ApplicationBaseModel": {
+    "additionalProperties": false,
+    "properties": {},
+    "title": "ApplicationBaseModel",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.ApprovalResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "approval_id": {
+        "title": "Approval Id",
+        "type": "string"
+      },
+      "approval_status": {
+        "title": "Approval Status",
+        "type": "string"
+      },
+      "approval_type": {
+        "enum": [
+          "retrieval",
+          "rag"
+        ],
+        "title": "Approval Type",
+        "type": "string"
+      },
+      "approved_for_local_synthetic_demo": {
+        "title": "Approved For Local Synthetic Demo",
+        "type": "boolean"
+      },
+      "configuration": {
+        "title": "Configuration",
+        "type": "string"
+      },
+      "failed_required_gates": {
+        "title": "Failed Required Gates",
+        "type": "integer"
+      },
+      "known_failures": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Known Failures",
+        "type": "array"
+      },
+      "passed_required_gates": {
+        "title": "Passed Required Gates",
+        "type": "integer"
+      },
+      "required_gate_count": {
+        "title": "Required Gate Count",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "approval_type",
+      "approval_id",
+      "approval_status",
+      "approved_for_local_synthetic_demo",
+      "required_gate_count",
+      "passed_required_gates",
+      "failed_required_gates",
+      "configuration"
+    ],
+    "title": "ApprovalResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.CitationResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "bounded_text": {
+        "title": "Bounded Text",
+        "type": "string"
+      },
+      "citation_id": {
+        "title": "Citation Id",
+        "type": "string"
+      },
+      "citation_label": {
+        "title": "Citation Label",
+        "type": "string"
+      },
+      "citation_status": {
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "claim_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Claim Ids",
+        "type": "array"
+      },
+      "document_id": {
+        "title": "Document Id",
+        "type": "string"
+      },
+      "evidence_id": {
+        "title": "Evidence Id",
+        "type": "string"
+      },
+      "quoted_span": {
+        "title": "Quoted Span",
+        "type": "string"
+      },
+      "section_id": {
+        "default": "",
+        "title": "Section Id",
+        "type": "string"
+      },
+      "sentence_id": {
+        "default": "",
+        "title": "Sentence Id",
+        "type": "string"
+      },
+      "source_text_checksum": {
+        "title": "Source Text Checksum",
+        "type": "string"
+      }
+    },
+    "required": [
+      "citation_id",
+      "citation_label",
+      "evidence_id",
+      "document_id",
+      "citation_status",
+      "quoted_span",
+      "source_text_checksum",
+      "bounded_text"
+    ],
+    "title": "CitationResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.CitationSummary": {
+    "additionalProperties": false,
+    "properties": {
+      "citation_id": {
+        "title": "Citation Id",
+        "type": "string"
+      },
+      "citation_label": {
+        "title": "Citation Label",
+        "type": "string"
+      },
+      "citation_status": {
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "claim_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Claim Ids",
+        "type": "array"
+      },
+      "document_id": {
+        "title": "Document Id",
+        "type": "string"
+      },
+      "evidence_id": {
+        "title": "Evidence Id",
+        "type": "string"
+      },
+      "quoted_span": {
+        "title": "Quoted Span",
+        "type": "string"
+      },
+      "section_id": {
+        "default": "",
+        "title": "Section Id",
+        "type": "string"
+      },
+      "sentence_id": {
+        "default": "",
+        "title": "Sentence Id",
+        "type": "string"
+      },
+      "source_text_checksum": {
+        "title": "Source Text Checksum",
+        "type": "string"
+      }
+    },
+    "required": [
+      "citation_id",
+      "citation_label",
+      "evidence_id",
+      "document_id",
+      "citation_status",
+      "quoted_span",
+      "source_text_checksum"
+    ],
+    "title": "CitationSummary",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.EvidenceResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "bounded_snippet": {
+        "title": "Bounded Snippet",
+        "type": "string"
+      },
+      "document_id": {
+        "title": "Document Id",
+        "type": "string"
+      },
+      "evidence_id": {
+        "title": "Evidence Id",
+        "type": "string"
+      },
+      "rank": {
+        "title": "Rank",
+        "type": "integer"
+      },
+      "retrieval_confidence": {
+        "title": "Retrieval Confidence",
+        "type": "number"
+      },
+      "retrieval_score": {
+        "title": "Retrieval Score",
+        "type": "number"
+      },
+      "retrieval_unit_id": {
+        "title": "Retrieval Unit Id",
+        "type": "string"
+      },
+      "section_id": {
+        "default": "",
+        "title": "Section Id",
+        "type": "string"
+      },
+      "sentence_id": {
+        "default": "",
+        "title": "Sentence Id",
+        "type": "string"
+      },
+      "source_extraction_run_id": {
+        "title": "Source Extraction Run Id",
+        "type": "string"
+      },
+      "source_index_id": {
+        "title": "Source Index Id",
+        "type": "string"
+      },
+      "source_preprocessing_run_id": {
+        "title": "Source Preprocessing Run Id",
+        "type": "string"
+      },
+      "text_checksum": {
+        "title": "Text Checksum",
+        "type": "string"
+      },
+      "unit_type": {
+        "title": "Unit Type",
+        "type": "string"
+      }
+    },
+    "required": [
+      "evidence_id",
+      "retrieval_unit_id",
+      "document_id",
+      "unit_type",
+      "rank",
+      "retrieval_score",
+      "retrieval_confidence",
+      "bounded_snippet",
+      "text_checksum",
+      "source_preprocessing_run_id",
+      "source_extraction_run_id",
+      "source_index_id"
+    ],
+    "title": "EvidenceResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.HealthResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "application": {
+        "title": "Application",
+        "type": "string"
+      },
+      "status": {
+        "const": "ok",
+        "title": "Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      },
+      "version": {
+        "title": "Version",
+        "type": "string"
+      }
+    },
+    "required": [
+      "status",
+      "application",
+      "version"
+    ],
+    "title": "HealthResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.MetricSummaryResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "citation_failure_count": {
+        "title": "Citation Failure Count",
+        "type": "integer"
+      },
+      "error_count": {
+        "title": "Error Count",
+        "type": "integer"
+      },
+      "event_count": {
+        "title": "Event Count",
+        "type": "integer"
+      },
+      "grounded_answer_count": {
+        "title": "Grounded Answer Count",
+        "type": "integer"
+      },
+      "groundedness_failure_count": {
+        "title": "Groundedness Failure Count",
+        "type": "integer"
+      },
+      "p50_duration_ms": {
+        "title": "P50 Duration Ms",
+        "type": "number"
+      },
+      "p95_duration_ms": {
+        "title": "P95 Duration Ms",
+        "type": "number"
+      },
+      "refusal_count": {
+        "title": "Refusal Count",
+        "type": "integer"
+      },
+      "request_count": {
+        "title": "Request Count",
+        "type": "integer"
+      },
+      "retrieval_abstention_count": {
+        "title": "Retrieval Abstention Count",
+        "type": "integer"
+      },
+      "safety_failure_count": {
+        "title": "Safety Failure Count",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "event_count",
+      "request_count",
+      "grounded_answer_count",
+      "refusal_count",
+      "retrieval_abstention_count",
+      "citation_failure_count",
+      "groundedness_failure_count",
+      "safety_failure_count",
+      "error_count",
+      "p50_duration_ms",
+      "p95_duration_ms"
+    ],
+    "title": "MetricSummaryResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.QualityGateResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "failed_required_gates": {
+        "title": "Failed Required Gates",
+        "type": "integer"
+      },
+      "gate_set": {
+        "enum": [
+          "retrieval",
+          "rag"
+        ],
+        "title": "Gate Set",
+        "type": "string"
+      },
+      "gates": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Gates",
+        "type": "array"
+      },
+      "passed_required_gates": {
+        "title": "Passed Required Gates",
+        "type": "integer"
+      },
+      "required_gate_count": {
+        "title": "Required Gate Count",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "gate_set",
+      "required_gate_count",
+      "passed_required_gates",
+      "failed_required_gates",
+      "gates"
+    ],
+    "title": "QualityGateResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.QueryRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "include_trace": {
+        "default": false,
+        "title": "Include Trace",
+        "type": "boolean"
+      },
+      "metadata_filters": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "title": "Metadata Filters",
+        "type": "object"
+      },
+      "portfolio_demo_mode": {
+        "default": true,
+        "title": "Portfolio Demo Mode",
+        "type": "boolean"
+      },
+      "query_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Query Id"
+      },
+      "query_text": {
+        "minLength": 1,
+        "title": "Query Text",
+        "type": "string"
+      }
+    },
+    "required": [
+      "query_text"
+    ],
+    "title": "QueryRequest",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.QueryResponse": {
+    "$defs": {
+      "CitationSummary": {
+        "additionalProperties": false,
+        "properties": {
+          "citation_id": {
+            "title": "Citation Id",
+            "type": "string"
+          },
+          "citation_label": {
+            "title": "Citation Label",
+            "type": "string"
+          },
+          "citation_status": {
+            "title": "Citation Status",
+            "type": "string"
+          },
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Claim Ids",
+            "type": "array"
+          },
+          "document_id": {
+            "title": "Document Id",
+            "type": "string"
+          },
+          "evidence_id": {
+            "title": "Evidence Id",
+            "type": "string"
+          },
+          "quoted_span": {
+            "title": "Quoted Span",
+            "type": "string"
+          },
+          "section_id": {
+            "default": "",
+            "title": "Section Id",
+            "type": "string"
+          },
+          "sentence_id": {
+            "default": "",
+            "title": "Sentence Id",
+            "type": "string"
+          },
+          "source_text_checksum": {
+            "title": "Source Text Checksum",
+            "type": "string"
+          }
+        },
+        "required": [
+          "citation_id",
+          "citation_label",
+          "evidence_id",
+          "document_id",
+          "citation_status",
+          "quoted_span",
+          "source_text_checksum"
+        ],
+        "title": "CitationSummary",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "answer_id": {
+        "title": "Answer Id",
+        "type": "string"
+      },
+      "answer_status": {
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "answer_text": {
+        "title": "Answer Text",
+        "type": "string"
+      },
+      "citations": {
+        "items": {
+          "$ref": "#/$defs/CitationSummary"
+        },
+        "title": "Citations",
+        "type": "array"
+      },
+      "clinical_use_prohibited": {
+        "default": true,
+        "title": "Clinical Use Prohibited",
+        "type": "boolean"
+      },
+      "disclaimer": {
+        "default": "Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated.",
+        "title": "Disclaimer",
+        "type": "string"
+      },
+      "query_id": {
+        "title": "Query Id",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_confidence": {
+        "title": "Retrieval Confidence",
+        "type": "number"
+      },
+      "retrieval_status": {
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "synthetic_data_only": {
+        "default": true,
+        "title": "Synthetic Data Only",
+        "type": "boolean"
+      },
+      "trace_id": {
+        "title": "Trace Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_id",
+      "query_id",
+      "answer_id",
+      "answer_status",
+      "answer_text",
+      "citations",
+      "retrieval_status",
+      "retrieval_confidence",
+      "trace_id"
+    ],
+    "title": "QueryResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.ReadinessCheck": {
+    "additionalProperties": false,
+    "properties": {
+      "detail": {
+        "default": "",
+        "title": "Detail",
+        "type": "string"
+      },
+      "name": {
+        "title": "Name",
+        "type": "string"
+      },
+      "required": {
+        "default": true,
+        "title": "Required",
+        "type": "boolean"
+      },
+      "status": {
+        "enum": [
+          "passed",
+          "failed"
+        ],
+        "title": "Status",
+        "type": "string"
+      }
+    },
+    "required": [
+      "name",
+      "status"
+    ],
+    "title": "ReadinessCheck",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.ReadinessResponse": {
+    "$defs": {
+      "ReadinessCheck": {
+        "additionalProperties": false,
+        "properties": {
+          "detail": {
+            "default": "",
+            "title": "Detail",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "required": {
+            "default": true,
+            "title": "Required",
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "passed",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "status"
+        ],
+        "title": "ReadinessCheck",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "checks": {
+        "items": {
+          "$ref": "#/$defs/ReadinessCheck"
+        },
+        "title": "Checks",
+        "type": "array"
+      },
+      "readiness_version": {
+        "title": "Readiness Version",
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "ready",
+          "not_ready"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "synthetic_data_only": {
+        "title": "Synthetic Data Only",
+        "type": "boolean"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "status",
+      "readiness_version",
+      "checks",
+      "synthetic_data_only"
+    ],
+    "title": "ReadinessResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.SystemStatusResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "api_contract_version": {
+        "title": "Api Contract Version",
+        "type": "string"
+      },
+      "api_version": {
+        "title": "Api Version",
+        "type": "string"
+      },
+      "application": {
+        "title": "Application",
+        "type": "string"
+      },
+      "application_service_version": {
+        "title": "Application Service Version",
+        "type": "string"
+      },
+      "approved_retrieval_configuration": {
+        "title": "Approved Retrieval Configuration",
+        "type": "string"
+      },
+      "clinical_use_prohibited": {
+        "title": "Clinical Use Prohibited",
+        "type": "boolean"
+      },
+      "generator_mode": {
+        "title": "Generator Mode",
+        "type": "string"
+      },
+      "operational_events_enabled": {
+        "title": "Operational Events Enabled",
+        "type": "boolean"
+      },
+      "rag_approval_status": {
+        "title": "Rag Approval Status",
+        "type": "string"
+      },
+      "retrieval_approval_status": {
+        "title": "Retrieval Approval Status",
+        "type": "string"
+      },
+      "streamlit_demo_version": {
+        "title": "Streamlit Demo Version",
+        "type": "string"
+      },
+      "synthetic_data_only": {
+        "title": "Synthetic Data Only",
+        "type": "boolean"
+      },
+      "version": {
+        "title": "Version",
+        "type": "string"
+      }
+    },
+    "required": [
+      "application",
+      "version",
+      "application_service_version",
+      "api_contract_version",
+      "api_version",
+      "streamlit_demo_version",
+      "synthetic_data_only",
+      "clinical_use_prohibited",
+      "retrieval_approval_status",
+      "rag_approval_status",
+      "approved_retrieval_configuration",
+      "generator_mode",
+      "operational_events_enabled"
+    ],
+    "title": "SystemStatusResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.application.contracts.TraceResponse": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_id": {
+        "title": "Answer Id",
+        "type": "string"
+      },
+      "answer_status": {
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "citation_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Citation Ids",
+        "type": "array"
+      },
+      "citation_validation_status": {
+        "title": "Citation Validation Status",
+        "type": "string"
+      },
+      "claim_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Claim Ids",
+        "type": "array"
+      },
+      "clinical_use_prohibited": {
+        "default": true,
+        "title": "Clinical Use Prohibited",
+        "type": "boolean"
+      },
+      "excluded_retrieval_unit_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Excluded Retrieval Unit Ids",
+        "type": "array"
+      },
+      "generator_provider": {
+        "title": "Generator Provider",
+        "type": "string"
+      },
+      "generator_version": {
+        "title": "Generator Version",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "prompt_id": {
+        "title": "Prompt Id",
+        "type": "string"
+      },
+      "prompt_version": {
+        "title": "Prompt Version",
+        "type": "string"
+      },
+      "query_category": {
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_id": {
+        "title": "Query Id",
+        "type": "string"
+      },
+      "retrieval_approval_id": {
+        "title": "Retrieval Approval Id",
+        "type": "string"
+      },
+      "retrieval_confidence": {
+        "title": "Retrieval Confidence",
+        "type": "number"
+      },
+      "retrieval_configuration_id": {
+        "title": "Retrieval Configuration Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "selected_evidence_ids": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Selected Evidence Ids",
+        "type": "array"
+      },
+      "synthetic_data_only": {
+        "default": true,
+        "title": "Synthetic Data Only",
+        "type": "boolean"
+      },
+      "trace_id": {
+        "title": "Trace Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "trace_id",
+      "answer_id",
+      "query_id",
+      "query_category",
+      "answer_status",
+      "retrieval_status",
+      "retrieval_configuration_id",
+      "retrieval_approval_id",
+      "retrieval_confidence",
+      "selected_evidence_ids",
+      "excluded_retrieval_unit_ids",
+      "prompt_id",
+      "prompt_version",
+      "generator_provider",
+      "generator_version",
+      "claim_ids",
+      "citation_ids",
+      "citation_validation_status",
+      "groundedness_status",
+      "safety_status"
+    ],
+    "title": "TraceResponse",
+    "type": "object"
+  },
+  "healthcare_language_ai.demonstration.contracts.DemoBaseModel": {
+    "additionalProperties": false,
+    "properties": {},
+    "title": "DemoBaseModel",
+    "type": "object"
+  },
+  "healthcare_language_ai.demonstration.contracts.DemoResult": {
+    "additionalProperties": false,
+    "properties": {
+      "actual_status": {
+        "title": "Actual Status",
+        "type": "string"
+      },
+      "answer_id": {
+        "title": "Answer Id",
+        "type": "string"
+      },
+      "answer_status": {
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "citation_count": {
+        "title": "Citation Count",
+        "type": "integer"
+      },
+      "expected_status": {
+        "title": "Expected Status",
+        "type": "string"
+      },
+      "groundedness_outcome": {
+        "title": "Groundedness Outcome",
+        "type": "string"
+      },
+      "passed": {
+        "title": "Passed",
+        "type": "boolean"
+      },
+      "query_id": {
+        "title": "Query Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_outcome": {
+        "title": "Safety Outcome",
+        "type": "string"
+      },
+      "scenario_id": {
+        "title": "Scenario Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "scenario_id",
+      "query_id",
+      "expected_status",
+      "actual_status",
+      "retrieval_status",
+      "answer_status",
+      "citation_count",
+      "groundedness_outcome",
+      "safety_outcome",
+      "passed",
+      "answer_id"
+    ],
+    "title": "DemoResult",
+    "type": "object"
+  },
+  "healthcare_language_ai.demonstration.contracts.DemoScenario": {
+    "additionalProperties": false,
+    "properties": {
+      "expected_answer_status": {
+        "title": "Expected Answer Status",
+        "type": "string"
+      },
+      "name": {
+        "title": "Name",
+        "type": "string"
+      },
+      "query_id": {
+        "title": "Query Id",
+        "type": "string"
+      },
+      "query_text": {
+        "title": "Query Text",
+        "type": "string"
+      },
+      "scenario_id": {
+        "title": "Scenario Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "scenario_id",
+      "name",
+      "query_id",
+      "query_text",
+      "expected_answer_status"
+    ],
+    "title": "DemoScenario",
+    "type": "object"
+  },
+  "healthcare_language_ai.demonstration.contracts.DemoSession": {
+    "$defs": {
+      "DemoResult": {
+        "additionalProperties": false,
+        "properties": {
+          "actual_status": {
+            "title": "Actual Status",
+            "type": "string"
+          },
+          "answer_id": {
+            "title": "Answer Id",
+            "type": "string"
+          },
+          "answer_status": {
+            "title": "Answer Status",
+            "type": "string"
+          },
+          "citation_count": {
+            "title": "Citation Count",
+            "type": "integer"
+          },
+          "expected_status": {
+            "title": "Expected Status",
+            "type": "string"
+          },
+          "groundedness_outcome": {
+            "title": "Groundedness Outcome",
+            "type": "string"
+          },
+          "passed": {
+            "title": "Passed",
+            "type": "boolean"
+          },
+          "query_id": {
+            "title": "Query Id",
+            "type": "string"
+          },
+          "retrieval_status": {
+            "title": "Retrieval Status",
+            "type": "string"
+          },
+          "safety_outcome": {
+            "title": "Safety Outcome",
+            "type": "string"
+          },
+          "scenario_id": {
+            "title": "Scenario Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "scenario_id",
+          "query_id",
+          "expected_status",
+          "actual_status",
+          "retrieval_status",
+          "answer_status",
+          "citation_count",
+          "groundedness_outcome",
+          "safety_outcome",
+          "passed",
+          "answer_id"
+        ],
+        "title": "DemoResult",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "demo_session_id": {
+        "title": "Demo Session Id",
+        "type": "string"
+      },
+      "demo_session_version": {
+        "default": "1.0.0",
+        "title": "Demo Session Version",
+        "type": "string"
+      },
+      "failed_scenarios": {
+        "title": "Failed Scenarios",
+        "type": "integer"
+      },
+      "passed_scenarios": {
+        "title": "Passed Scenarios",
+        "type": "integer"
+      },
+      "results": {
+        "items": {
+          "$ref": "#/$defs/DemoResult"
+        },
+        "title": "Results",
+        "type": "array"
+      },
+      "scenario_count": {
+        "title": "Scenario Count",
+        "type": "integer"
+      },
+      "scenario_set": {
+        "title": "Scenario Set",
+        "type": "string"
+      }
+    },
+    "required": [
+      "demo_session_id",
+      "scenario_set",
+      "scenario_count",
+      "passed_scenarios",
+      "failed_scenarios"
+    ],
+    "title": "DemoSession",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.CitationValidationEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "enum": [
+          "citation_validation_passed",
+          "citation_validation_failed"
+        ],
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "CitationValidationEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.ErrorEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "const": "application_error",
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "ErrorEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.GroundednessEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "enum": [
+          "groundedness_validation_passed",
+          "groundedness_validation_failed"
+        ],
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "GroundednessEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.MetricSnapshot": {
+    "additionalProperties": false,
+    "properties": {
+      "citation_failure_count": {
+        "title": "Citation Failure Count",
+        "type": "integer"
+      },
+      "error_count": {
+        "title": "Error Count",
+        "type": "integer"
+      },
+      "event_count": {
+        "title": "Event Count",
+        "type": "integer"
+      },
+      "grounded_answer_count": {
+        "title": "Grounded Answer Count",
+        "type": "integer"
+      },
+      "groundedness_failure_count": {
+        "title": "Groundedness Failure Count",
+        "type": "integer"
+      },
+      "p50_duration_ms": {
+        "title": "P50 Duration Ms",
+        "type": "number"
+      },
+      "p95_duration_ms": {
+        "title": "P95 Duration Ms",
+        "type": "number"
+      },
+      "refusal_count": {
+        "title": "Refusal Count",
+        "type": "integer"
+      },
+      "request_count": {
+        "title": "Request Count",
+        "type": "integer"
+      },
+      "retrieval_abstention_count": {
+        "title": "Retrieval Abstention Count",
+        "type": "integer"
+      },
+      "safety_failure_count": {
+        "title": "Safety Failure Count",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "event_count",
+      "request_count",
+      "grounded_answer_count",
+      "refusal_count",
+      "retrieval_abstention_count",
+      "citation_failure_count",
+      "groundedness_failure_count",
+      "safety_failure_count",
+      "error_count",
+      "p50_duration_ms",
+      "p95_duration_ms"
+    ],
+    "title": "MetricSnapshot",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.ObservabilityBaseModel": {
+    "additionalProperties": false,
+    "properties": {},
+    "title": "ObservabilityBaseModel",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.OperationalEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "OperationalEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.OperationalSummary": {
+    "additionalProperties": false,
+    "properties": {
+      "canonical_grounded_answers": {
+        "title": "Canonical Grounded Answers",
+        "type": "integer"
+      },
+      "canonical_refusals": {
+        "title": "Canonical Refusals",
+        "type": "integer"
+      },
+      "citation_failure_count": {
+        "title": "Citation Failure Count",
+        "type": "integer"
+      },
+      "error_count": {
+        "title": "Error Count",
+        "type": "integer"
+      },
+      "event_count": {
+        "title": "Event Count",
+        "type": "integer"
+      },
+      "grounded_answer_count": {
+        "title": "Grounded Answer Count",
+        "type": "integer"
+      },
+      "groundedness_failure_count": {
+        "title": "Groundedness Failure Count",
+        "type": "integer"
+      },
+      "p50_duration_ms": {
+        "title": "P50 Duration Ms",
+        "type": "number"
+      },
+      "p95_duration_ms": {
+        "title": "P95 Duration Ms",
+        "type": "number"
+      },
+      "refusal_count": {
+        "title": "Refusal Count",
+        "type": "integer"
+      },
+      "request_count": {
+        "title": "Request Count",
+        "type": "integer"
+      },
+      "retrieval_abstention_count": {
+        "title": "Retrieval Abstention Count",
+        "type": "integer"
+      },
+      "safety_failure_count": {
+        "title": "Safety Failure Count",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "event_count",
+      "request_count",
+      "grounded_answer_count",
+      "refusal_count",
+      "retrieval_abstention_count",
+      "citation_failure_count",
+      "groundedness_failure_count",
+      "safety_failure_count",
+      "error_count",
+      "p50_duration_ms",
+      "p95_duration_ms",
+      "canonical_grounded_answers",
+      "canonical_refusals"
+    ],
+    "title": "OperationalSummary",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.QueryEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "enum": [
+          "answer_generated",
+          "answer_promoted",
+          "answer_rejected"
+        ],
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "QueryEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.RagAnswerEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "const": "answer_generated",
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "RagAnswerEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.ReadinessSnapshot": {
+    "additionalProperties": false,
+    "properties": {
+      "failed_checks": {
+        "title": "Failed Checks",
+        "type": "integer"
+      },
+      "passed_checks": {
+        "title": "Passed Checks",
+        "type": "integer"
+      },
+      "status": {
+        "title": "Status",
+        "type": "string"
+      }
+    },
+    "required": [
+      "status",
+      "passed_checks",
+      "failed_checks"
+    ],
+    "title": "ReadinessSnapshot",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.RequestEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "enum": [
+          "query_accepted",
+          "query_refused_before_retrieval"
+        ],
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "RequestEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.RetrievalEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "const": "retrieval_abstained",
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "RetrievalEvent",
+    "type": "object"
+  },
+  "healthcare_language_ai.observability.contracts.SafetyEvent": {
+    "additionalProperties": false,
+    "properties": {
+      "answer_status": {
+        "default": "",
+        "title": "Answer Status",
+        "type": "string"
+      },
+      "application_version": {
+        "default": "0.1.0",
+        "title": "Application Version",
+        "type": "string"
+      },
+      "citation_status": {
+        "default": "",
+        "title": "Citation Status",
+        "type": "string"
+      },
+      "duration_ms": {
+        "default": 0.0,
+        "title": "Duration Ms",
+        "type": "number"
+      },
+      "environment": {
+        "default": "local",
+        "title": "Environment",
+        "type": "string"
+      },
+      "error_code": {
+        "default": "",
+        "title": "Error Code",
+        "type": "string"
+      },
+      "event_id": {
+        "title": "Event Id",
+        "type": "string"
+      },
+      "event_type": {
+        "enum": [
+          "safety_validation_passed",
+          "safety_validation_failed"
+        ],
+        "title": "Event Type",
+        "type": "string"
+      },
+      "groundedness_status": {
+        "default": "",
+        "title": "Groundedness Status",
+        "type": "string"
+      },
+      "operational_event_version": {
+        "default": "1.0.0",
+        "title": "Operational Event Version",
+        "type": "string"
+      },
+      "query_category": {
+        "default": "",
+        "title": "Query Category",
+        "type": "string"
+      },
+      "query_checksum": {
+        "default": "",
+        "title": "Query Checksum",
+        "type": "string"
+      },
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "retrieval_status": {
+        "default": "",
+        "title": "Retrieval Status",
+        "type": "string"
+      },
+      "safety_status": {
+        "default": "",
+        "title": "Safety Status",
+        "type": "string"
+      },
+      "timestamp": {
+        "format": "date-time",
+        "title": "Timestamp",
+        "type": "string"
+      }
+    },
+    "required": [
+      "event_id",
+      "event_type",
+      "request_id"
+    ],
+    "title": "SafetyEvent",
+    "type": "object"
+  }
+}

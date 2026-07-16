@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "average_relevant_rank": {
+      "title": "Average Relevant Rank",
+      "type": "number"
+    },
+    "hit_rate_at_k": {
+      "title": "Hit Rate At K",
+      "type": "number"
+    },
+    "k": {
+      "title": "K",
+      "type": "integer"
+    },
+    "map_score": {
+      "title": "Map Score",
+      "type": "number"
+    },
+    "metric_scope": {
+      "title": "Metric Scope",
+      "type": "string"
+    },
+    "mrr": {
+      "title": "Mrr",
+      "type": "number"
+    },
+    "ndcg_at_k": {
+      "title": "Ndcg At K",
+      "type": "number"
+    },
+    "precision_at_k": {
+      "title": "Precision At K",
+      "type": "number"
+    },
+    "query_count": {
+      "title": "Query Count",
+      "type": "integer"
+    },
+    "recall_at_k": {
+      "title": "Recall At K",
+      "type": "number"
+    },
+    "retrieval_evaluation_run_id": {
+      "title": "Retrieval Evaluation Run Id",
+      "type": "string"
+    },
+    "scope_value": {
+      "title": "Scope Value",
+      "type": "string"
+    },
+    "zero_hit_query_count": {
+      "title": "Zero Hit Query Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "metric_scope",
+    "scope_value",
+    "k",
+    "query_count",
+    "precision_at_k",
+    "recall_at_k",
+    "hit_rate_at_k",
+    "mrr",
+    "map_score",
+    "ndcg_at_k",
+    "zero_hit_query_count",
+    "average_relevant_rank",
+    "retrieval_evaluation_run_id"
+  ],
+  "title": "RetrievalMetric",
+  "type": "object"
+}

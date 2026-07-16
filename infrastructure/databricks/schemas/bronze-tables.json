@@ -1,0 +1,4 @@
+{
+  "layer": "bronze",
+  "tables": ["bronze_clinical_documents", "bronze_document_annotations"]
+}

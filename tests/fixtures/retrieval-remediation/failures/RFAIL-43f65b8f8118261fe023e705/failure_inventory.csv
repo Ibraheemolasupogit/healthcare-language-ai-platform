@@ -1,0 +1,96 @@
+query_id,split,query_category,successful_at_5,failure_type,top_ranked_unit_id,relevant_unit_ids,root_cause,recommended_remediation
+RQ-2a2398ec9e8b59507a,development,direct,False,lexical_gap,RQUNIT-df59a61046435ca58f46,RQUNIT-dec524c6128e6c96c795,lexical_gap observed for direct query,character and lexical ensemble
+RQ-8520c9226f147c6ade,development,direct,True,successful,RQUNIT-18c5199032b9d40b22ae,RQUNIT-45da5d8a84652224d20f,relevant unit retrieved within top five,character and lexical ensemble
+RQ-c02a338fa45d9f60d0,validation,direct,False,lexical_gap,RQUNIT-18c5199032b9d40b22ae,RQUNIT-57cf8075b72fd48e3b91,lexical_gap observed for direct query,character and lexical ensemble
+RQ-e41bf661880c427468,validation,direct,True,successful,RQUNIT-3da6bc26a84b5fa9d483,RQUNIT-3da6bc26a84b5fa9d483,relevant unit retrieved within top five,character and lexical ensemble
+RQ-84ae1e947e5e834d33,holdout,direct,True,successful,RQUNIT-6f4beb7ab462232ef43a,RQUNIT-6f4beb7ab462232ef43a,relevant unit retrieved within top five,character and lexical ensemble
+RQ-05a8ee20ca1a0d75e8,development,direct,True,successful,RQUNIT-0b7520f4d1741773f3a7,RQUNIT-0b7520f4d1741773f3a7,relevant unit retrieved within top five,character and lexical ensemble
+RQ-b7d35812b52a1dcff0,development,direct,False,lexical_gap,RQUNIT-9873ea5c6f8b885a9fa6,RQUNIT-6fa99b91a18ee59b6706,lexical_gap observed for direct query,character and lexical ensemble
+RQ-fb0fcb6dcef2895846,validation,direct,False,lexical_gap,RQUNIT-18c5199032b9d40b22ae,RQUNIT-dcc1d6e984ebf1524ee7,lexical_gap observed for direct query,character and lexical ensemble
+RQ-c9d6d97d6f95acb651,validation,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-07a0e209965f13aa60cd,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-45cf783578fe3662ec,holdout,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-f3b98132d7190568b8dd,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-b811ee77783c8cb981,development,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-e9e21f39cf547e2c8e78,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-cb6b0d05e849a5986e,development,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-7c5d97756bc70b32e6f8,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-989f2e6ea73b4377f5,validation,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-da153711e89b98e1b06d,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-e39c1767150f505bb0,validation,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-a35f545da755056c384a,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-692b3c1b38d44b12f1,holdout,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-f1c2951868a50c5ffc18,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-037bb4a1da3d40f242,development,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-42d7a93058b628ae4b7e,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-cf2c913980e5eda924,development,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-cfac856d3644d29ac4d5,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-8b5fb3fea6cb2a4a0a,validation,paraphrased,False,synonym_gap,RQUNIT-4797e61eb5ca496f6918,RQUNIT-ab556686cd8bafc8e1ff,synonym_gap observed for paraphrased query,synonym graph and character hybrid retrieval
+RQ-75ce678c559c66ecc1,validation,compositional,False,lexical_gap,RQUNIT-caa78b584440fd6a49e5,RQUNIT-35681a38435c664795b2,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-ea7839c08197d5fce7,holdout,compositional,False,lexical_gap,RQUNIT-28546cdda31f152ff1e5,RQUNIT-3b284db87f57736c1a97,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-c0a3978946c82bac22,development,compositional,False,lexical_gap,RQUNIT-0bf970b0296a37d626da,RQUNIT-0ab240eacfb7e9b6e95e,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-f24366f21dc8990648,development,compositional,False,lexical_gap,RQUNIT-7ae95fd21511663a1682,RQUNIT-bed77ccd7dd418a01f3e,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-0762b5c252bea6663e,validation,compositional,False,lexical_gap,RQUNIT-6deb10abde4032f90227,RQUNIT-dec524c6128e6c96c795,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-53ffa893d0dac87305,validation,compositional,False,lexical_gap,RQUNIT-ab556686cd8bafc8e1ff,RQUNIT-45da5d8a84652224d20f,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-0014cfec1abb3ba225,holdout,compositional,False,lexical_gap,RQUNIT-0b7520f4d1741773f3a7,RQUNIT-57cf8075b72fd48e3b91,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-f68d93bafa1250528f,development,compositional,False,lexical_gap,RQUNIT-10373c593d11be71e4df,RQUNIT-3da6bc26a84b5fa9d483,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-f28db01a111f432fcc,development,compositional,False,lexical_gap,RQUNIT-dec524c6128e6c96c795,RQUNIT-6f4beb7ab462232ef43a,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-3ef45521b11b39808e,validation,compositional,False,lexical_gap,RQUNIT-6586864e706cea15965a,RQUNIT-0b7520f4d1741773f3a7,lexical_gap observed for compositional query,character and lexical ensemble
+RQ-2142d4b4a754c878b9,validation,distractor,False,lexical_gap,RQUNIT-c85e0c105b0023c070df,RQUNIT-6fa99b91a18ee59b6706,lexical_gap observed for distractor query,character and lexical ensemble
+RQ-9c5f200d9c53f7afb2,holdout,distractor,False,lexical_gap,RQUNIT-c85e0c105b0023c070df,RQUNIT-dcc1d6e984ebf1524ee7,lexical_gap observed for distractor query,character and lexical ensemble
+RQ-997738a310048ba098,development,distractor,False,lexical_gap,RQUNIT-c85e0c105b0023c070df,RQUNIT-07a0e209965f13aa60cd,lexical_gap observed for distractor query,character and lexical ensemble
+RQ-b1604e5fb64af87f35,development,distractor,False,lexical_gap,RQUNIT-c85e0c105b0023c070df,RQUNIT-f3b98132d7190568b8dd,lexical_gap observed for distractor query,character and lexical ensemble
+RQ-1ddf46b184deac37cc,validation,distractor,False,lexical_gap,RQUNIT-c85e0c105b0023c070df,RQUNIT-e9e21f39cf547e2c8e78,lexical_gap observed for distractor query,character and lexical ensemble
+RQ-68afee6194868ae103,validation,negation_sensitive,True,successful,RQUNIT-7c5d97756bc70b32e6f8,RQUNIT-7c5d97756bc70b32e6f8,relevant unit retrieved within top five,character and lexical ensemble
+RQ-1e3e980f3eff6b0f02,holdout,negation_sensitive,True,successful,RQUNIT-da153711e89b98e1b06d,RQUNIT-da153711e89b98e1b06d,relevant unit retrieved within top five,character and lexical ensemble
+RQ-39cfa5bec6b14cd75d,development,negation_sensitive,True,successful,RQUNIT-a35f545da755056c384a,RQUNIT-a35f545da755056c384a,relevant unit retrieved within top five,character and lexical ensemble
+RQ-797b213a14d5f0f669,development,negation_sensitive,True,successful,RQUNIT-f1c2951868a50c5ffc18,RQUNIT-f1c2951868a50c5ffc18,relevant unit retrieved within top five,character and lexical ensemble
+RQ-5f3f4f4f4ffa28093b,validation,negation_sensitive,True,successful,RQUNIT-42d7a93058b628ae4b7e,RQUNIT-42d7a93058b628ae4b7e,relevant unit retrieved within top five,character and lexical ensemble
+RQ-121b59983d2dca3898,validation,negation_sensitive,True,successful,RQUNIT-cfac856d3644d29ac4d5,RQUNIT-cfac856d3644d29ac4d5,relevant unit retrieved within top five,character and lexical ensemble
+RQ-bba0188a8ec0935b2e,holdout,negation_sensitive,True,successful,RQUNIT-ab556686cd8bafc8e1ff,RQUNIT-ab556686cd8bafc8e1ff,relevant unit retrieved within top five,character and lexical ensemble
+RQ-1589a86f50a6148236,development,negation_sensitive,True,successful,RQUNIT-35681a38435c664795b2,RQUNIT-35681a38435c664795b2,relevant unit retrieved within top five,character and lexical ensemble
+RQ-13a2f2f3705ca3b316,development,numeric_detail,False,numeric_conflict,RQUNIT-0ab240eacfb7e9b6e95e,RQUNIT-3b284db87f57736c1a97,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-77a48ce7be4bd4e1d1,validation,numeric_detail,False,numeric_conflict,RQUNIT-4c48ddb143ba9b1c0723,RQUNIT-0ab240eacfb7e9b6e95e,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-2bf968e1dd5fa9a353,validation,numeric_detail,False,numeric_conflict,RQUNIT-5a4001f39901aeaa41b0,RQUNIT-bed77ccd7dd418a01f3e,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-31534d586135ec9d1a,holdout,numeric_detail,False,numeric_conflict,RQUNIT-6deb10abde4032f90227,RQUNIT-dec524c6128e6c96c795,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-f037031ed3ff824285,development,numeric_detail,False,numeric_conflict,RQUNIT-0ab240eacfb7e9b6e95e,RQUNIT-45da5d8a84652224d20f,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-de58166ac33f3c2176,development,numeric_detail,False,numeric_conflict,RQUNIT-4c48ddb143ba9b1c0723,RQUNIT-57cf8075b72fd48e3b91,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-cdd03e8e472bf0203a,validation,numeric_detail,False,numeric_conflict,RQUNIT-5a4001f39901aeaa41b0,RQUNIT-3da6bc26a84b5fa9d483,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-2316271bba04e5d730,validation,numeric_detail,False,numeric_conflict,RQUNIT-6d6c23cc787de9b743ea,RQUNIT-6f4beb7ab462232ef43a,numeric_conflict observed for numeric_detail query,numeric compatibility scoring
+RQ-e76ba81e666b7c1a57,holdout,metadata_filtered,False,lexical_gap,RQUNIT-b63bd137e9b7fe3665a1,RQUNIT-0b7520f4d1741773f3a7,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-324ca6e3b072a865b8,development,metadata_filtered,False,lexical_gap,RQUNIT-1577195403a796fbb95d,RQUNIT-6fa99b91a18ee59b6706,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-5e0c4a9b35434ad97e,development,metadata_filtered,False,lexical_gap,RQUNIT-6586864e706cea15965a,RQUNIT-dcc1d6e984ebf1524ee7,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-4afc75a11de2a1be65,validation,metadata_filtered,False,lexical_gap,RQUNIT-b63bd137e9b7fe3665a1,RQUNIT-07a0e209965f13aa60cd,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-0bbd084feff98b8bc8,validation,metadata_filtered,False,lexical_gap,RQUNIT-ab556686cd8bafc8e1ff,RQUNIT-f3b98132d7190568b8dd,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-5ac3d266bde3ae8731,holdout,metadata_filtered,False,lexical_gap,RQUNIT-0bf970b0296a37d626da,RQUNIT-e9e21f39cf547e2c8e78,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-17c634ad57f7473d3a,development,metadata_filtered,True,successful,RQUNIT-1577195403a796fbb95d,RQUNIT-7c5d97756bc70b32e6f8,relevant unit retrieved within top five,character and lexical ensemble
+RQ-d353f2ad27a2a0310b,development,metadata_filtered,False,lexical_gap,RQUNIT-ab556686cd8bafc8e1ff,RQUNIT-da153711e89b98e1b06d,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-7046375094ed1e8b52,validation,metadata_filtered,False,lexical_gap,RQUNIT-0bf970b0296a37d626da,RQUNIT-a35f545da755056c384a,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-90c64b51da9177b861,validation,metadata_filtered,False,lexical_gap,RQUNIT-1577195403a796fbb95d,RQUNIT-f1c2951868a50c5ffc18,lexical_gap observed for metadata_filtered query,character and lexical ensemble
+RQ-b7c442b226337cd5f8,holdout,cross_granularity,True,successful,RQUNIT-42d7a93058b628ae4b7e,RQUNIT-42d7a93058b628ae4b7e,relevant unit retrieved within top five,character and lexical ensemble
+RQ-b0d2d4b460c26e7d10,development,cross_granularity,True,successful,RQUNIT-cfac856d3644d29ac4d5,RQUNIT-cfac856d3644d29ac4d5,relevant unit retrieved within top five,character and lexical ensemble
+RQ-a7d9fe78fea6a5dd85,development,cross_granularity,True,successful,RQUNIT-ab556686cd8bafc8e1ff,RQUNIT-ab556686cd8bafc8e1ff,relevant unit retrieved within top five,character and lexical ensemble
+RQ-c22c56beb0e6702289,validation,cross_granularity,True,successful,RQUNIT-35681a38435c664795b2,RQUNIT-35681a38435c664795b2,relevant unit retrieved within top five,character and lexical ensemble
+RQ-14a52b9678e6f158f6,validation,cross_granularity,True,successful,RQUNIT-3b284db87f57736c1a97,RQUNIT-3b284db87f57736c1a97,relevant unit retrieved within top five,character and lexical ensemble
+RQ-d13fe81935b1334704,holdout,cross_granularity,True,successful,RQUNIT-0ab240eacfb7e9b6e95e,RQUNIT-0ab240eacfb7e9b6e95e,relevant unit retrieved within top five,character and lexical ensemble
+RQ-a19c2bf29deaaf2e2c,development,cross_granularity,True,successful,RQUNIT-bed77ccd7dd418a01f3e,RQUNIT-bed77ccd7dd418a01f3e,relevant unit retrieved within top five,character and lexical ensemble
+RQ-ad71f84be79d622ce3,development,cross_granularity,True,successful,RQUNIT-dec524c6128e6c96c795,RQUNIT-dec524c6128e6c96c795,relevant unit retrieved within top five,character and lexical ensemble
+RQ-8eaea1cbd9f95db172,validation,cross_granularity,True,successful,RQUNIT-45da5d8a84652224d20f,RQUNIT-45da5d8a84652224d20f,relevant unit retrieved within top five,character and lexical ensemble
+RQ-e9d4512caf08d46bea,validation,cross_granularity,True,successful,RQUNIT-57cf8075b72fd48e3b91,RQUNIT-57cf8075b72fd48e3b91,relevant unit retrieved within top five,character and lexical ensemble
+RQ-bdddef061c01afb0d9,holdout,abbreviation,False,abbreviation_gap,RQUNIT-5df9b2bd8c1b3425cf6c,RQUNIT-3da6bc26a84b5fa9d483,abbreviation_gap observed for abbreviation query,abbreviation expansion and entity features
+RQ-d4cf6f47e33d13a558,development,abbreviation,False,abbreviation_gap,RQUNIT-8f6db0e24fc5528b68cf,RQUNIT-6f4beb7ab462232ef43a,abbreviation_gap observed for abbreviation query,abbreviation expansion and entity features
+RQ-4e9c55c7d8285b25ed,development,abbreviation,True,successful,RQUNIT-0b7520f4d1741773f3a7,RQUNIT-0b7520f4d1741773f3a7,relevant unit retrieved within top five,character and lexical ensemble
+RQ-735133376a86137513,validation,abbreviation,False,abbreviation_gap,RQUNIT-1577195403a796fbb95d,RQUNIT-6fa99b91a18ee59b6706,abbreviation_gap observed for abbreviation query,abbreviation expansion and entity features
+RQ-6bd66caf962f38e221,validation,abbreviation,False,abbreviation_gap,RQUNIT-5df9b2bd8c1b3425cf6c,RQUNIT-dcc1d6e984ebf1524ee7,abbreviation_gap observed for abbreviation query,abbreviation expansion and entity features
+RQ-fbc65729ae55c683b7,holdout,abbreviation,True,successful,RQUNIT-8f6db0e24fc5528b68cf,RQUNIT-07a0e209965f13aa60cd,relevant unit retrieved within top five,character and lexical ensemble
+RQ-e9265dcfa82abbd062,development,abbreviation,False,abbreviation_gap,RQUNIT-07a0e209965f13aa60cd,RQUNIT-f3b98132d7190568b8dd,abbreviation_gap observed for abbreviation query,abbreviation expansion and entity features
+RQ-35a856e8a850a97bb7,development,abbreviation,False,abbreviation_gap,RQUNIT-1577195403a796fbb95d,RQUNIT-e9e21f39cf547e2c8e78,abbreviation_gap observed for abbreviation query,abbreviation expansion and entity features
+RQ-2990d2e372ce9e0d6f,validation,section_alias,True,successful,RQUNIT-7c5d97756bc70b32e6f8,RQUNIT-7c5d97756bc70b32e6f8,relevant unit retrieved within top five,character and lexical ensemble
+RQ-a50f836431b4004573,validation,section_alias,True,successful,RQUNIT-0681d03e6b3a34eedbde,RQUNIT-da153711e89b98e1b06d,relevant unit retrieved within top five,character and lexical ensemble
+RQ-0c4a13ed52ed44cedf,holdout,section_alias,True,successful,RQUNIT-0681d03e6b3a34eedbde,RQUNIT-a35f545da755056c384a,relevant unit retrieved within top five,character and lexical ensemble
+RQ-501f9c6f7dfecfa10a,development,section_alias,True,successful,RQUNIT-0681d03e6b3a34eedbde,RQUNIT-f1c2951868a50c5ffc18,relevant unit retrieved within top five,character and lexical ensemble
+RQ-4590c8ab01a2580053,development,section_alias,True,successful,RQUNIT-0681d03e6b3a34eedbde,RQUNIT-42d7a93058b628ae4b7e,relevant unit retrieved within top five,character and lexical ensemble
+RQ-a387032ac3e724a281,validation,section_alias,False,phrase_gap,RQUNIT-0681d03e6b3a34eedbde,RQUNIT-cfac856d3644d29ac4d5,phrase_gap observed for section_alias query,phrase and proximity scoring
+RQ-f8c9951361910ee3fa,validation,section_alias,True,successful,RQUNIT-ab556686cd8bafc8e1ff,RQUNIT-ab556686cd8bafc8e1ff,relevant unit retrieved within top five,character and lexical ensemble
+RQ-94c772db85324101dd,holdout,section_alias,True,successful,RQUNIT-0681d03e6b3a34eedbde,RQUNIT-35681a38435c664795b2,relevant unit retrieved within top five,character and lexical ensemble
+RQ-329007b516d957ba25,development,multi_relevant,True,successful,RQUNIT-18c5199032b9d40b22ae,RQUNIT-3b284db87f57736c1a97|RQUNIT-18c5199032b9d40b22ae,relevant unit retrieved within top five,character and lexical ensemble
+RQ-2174ea2fad0ff69c94,development,multi_relevant,False,granularity_conflict,RQUNIT-18c5199032b9d40b22ae,RQUNIT-0ab240eacfb7e9b6e95e|RQUNIT-6ab7f37b4fea35e4d1d9,granularity_conflict observed for multi_relevant query,field-aware retrieval and diversification
+RQ-0079af789044c922b2,validation,multi_relevant,False,granularity_conflict,RQUNIT-18c5199032b9d40b22ae,RQUNIT-bed77ccd7dd418a01f3e|RQUNIT-f17fb3df2dd9df8b53f5,granularity_conflict observed for multi_relevant query,field-aware retrieval and diversification
+RQ-8196b1cd1755a44c1b,validation,multi_relevant,False,granularity_conflict,RQUNIT-18c5199032b9d40b22ae,RQUNIT-dec524c6128e6c96c795|RQUNIT-14880acd1a6e4bf8e7df,granularity_conflict observed for multi_relevant query,field-aware retrieval and diversification
+RQ-28bf5e40c8151927b7,holdout,multi_relevant,True,successful,RQUNIT-18c5199032b9d40b22ae,RQUNIT-45da5d8a84652224d20f|RQUNIT-28546cdda31f152ff1e5,relevant unit retrieved within top five,character and lexical ensemble
+RQ-16388704f6f75b4191,development,unanswerable,False,judgment_ambiguity,RQUNIT-18c5199032b9d40b22ae,,judgment_ambiguity observed for unanswerable query,adjudication and abstention
+RQ-9add9e4df22c88dc41,development,unanswerable,False,judgment_ambiguity,RQUNIT-18c5199032b9d40b22ae,,judgment_ambiguity observed for unanswerable query,adjudication and abstention
+RQ-92534165ec0f112ec1,validation,unanswerable,False,judgment_ambiguity,RQUNIT-18c5199032b9d40b22ae,,judgment_ambiguity observed for unanswerable query,adjudication and abstention
+RQ-8a614202e93c751bca,validation,unanswerable,False,judgment_ambiguity,RQUNIT-18c5199032b9d40b22ae,,judgment_ambiguity observed for unanswerable query,adjudication and abstention
+RQ-768c41abdbd0e5f167,holdout,unanswerable,False,judgment_ambiguity,RQUNIT-18c5199032b9d40b22ae,,judgment_ambiguity observed for unanswerable query,adjudication and abstention

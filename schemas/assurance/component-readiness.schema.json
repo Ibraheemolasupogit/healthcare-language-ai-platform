@@ -1,0 +1,39 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "checked_at": {
+      "format": "date-time",
+      "title": "Checked At",
+      "type": "string"
+    },
+    "component": {
+      "title": "Component",
+      "type": "string"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "required": {
+      "title": "Required",
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "healthy",
+        "degraded",
+        "unavailable"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "component",
+    "status",
+    "required",
+    "message"
+  ],
+  "title": "ComponentReadiness",
+  "type": "object"
+}

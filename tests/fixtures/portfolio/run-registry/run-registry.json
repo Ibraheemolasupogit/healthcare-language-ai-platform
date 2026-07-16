@@ -1,0 +1,31 @@
+{
+  "backup_id": "BACKUP-b487bf0c20ada4ec0058d954",
+  "compatibility_run_id": "COMPAT-4f53cda18c2baa0c0354bb5f",
+  "contract_baseline_id": "CONTRACTBASE-339a223ac598786d39f7edd0",
+  "demo_session_id": "DEMO-7d8d73b2b21ec496c6e47175",
+  "entity_evaluation_run_id": "EVAL-a56c0ad131cdbb85a69e1605",
+  "extraction_run_id": "EXT-723871c87dfd1f3a3bb89b8d",
+  "holdout_dataset_id": "HOLDOUT-7729de5afd92570331f2951d",
+  "ingestion_run_id": "ING-92a15c8f10047400ee895203",
+  "portfolio_assurance_id": "ASSURE-617420383a5972b404b7d450",
+  "preprocessing_run_id": "PRE-72e9829c61769cea948faacc",
+  "rag_approval_status": "approved_for_local_demo",
+  "rag_evaluation_id": "RAGEVAL-d8d3b3b6892133372f91d017",
+  "rag_run_id": "RAG-515e2c68be10e720b613e874",
+  "registry_id": "RUNREG-647dc62d8ab9236152ee9fa2",
+  "retrieval_approval_id": "RETAPP-5c6d5b0f63deeff03a1ea155",
+  "retrieval_comparison_ids": [
+    "RETCOMP-11dee1c6ea11ed7908dff7ce",
+    "REMCOMP-1a3a8c86fc4567de3049f352"
+  ],
+  "retrieval_evaluation_ids": [
+    "RETEVAL-e7f370442452fb045cd7d541",
+    "RETEVAL-7ca00cad930651cbf7a6881b"
+  ],
+  "retrieval_index_id": "IDX-364c8b97f9ad74ecea7444a9",
+  "retrieval_run_ids": [
+    "RET-f8cc230a729145594d08b389",
+    "RET-864c03959a1c33a50926b296"
+  ],
+  "synthetic_dataset_id": "synthetic_clinical_documents"
+}

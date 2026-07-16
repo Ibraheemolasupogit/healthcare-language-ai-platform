@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "artifact_id": {
+      "title": "Artifact Id",
+      "type": "string"
+    },
+    "artifact_type": {
+      "enum": [
+        "document",
+        "diagram"
+      ],
+      "title": "Artifact Type",
+      "type": "string"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "artifact_id",
+    "title",
+    "artifact_type",
+    "path",
+    "status"
+  ],
+  "title": "ArchitectureArtifact",
+  "type": "object"
+}

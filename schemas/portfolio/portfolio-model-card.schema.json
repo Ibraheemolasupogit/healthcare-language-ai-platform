@@ -1,0 +1,148 @@
+{
+  "properties": {
+    "api": {
+      "title": "Api",
+      "type": "string"
+    },
+    "approvals": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Approvals",
+      "type": "array"
+    },
+    "clinical_use_prohibition": {
+      "title": "Clinical Use Prohibition",
+      "type": "boolean"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "type": "string"
+    },
+    "data": {
+      "title": "Data",
+      "type": "string"
+    },
+    "ethical_considerations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Ethical Considerations",
+      "type": "array"
+    },
+    "evaluation": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evaluation",
+      "type": "array"
+    },
+    "future_work": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Future Work",
+      "type": "array"
+    },
+    "intended_users": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Intended Users",
+      "type": "array"
+    },
+    "intended_uses": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Intended Uses",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "model_card_id": {
+      "title": "Model Card Id",
+      "type": "string"
+    },
+    "models_and_non_model_components": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Models And Non Model Components",
+      "type": "array"
+    },
+    "observability": {
+      "title": "Observability",
+      "type": "string"
+    },
+    "out_of_scope_uses": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Out Of Scope Uses",
+      "type": "array"
+    },
+    "privacy_position": {
+      "title": "Privacy Position",
+      "type": "string"
+    },
+    "rag": {
+      "title": "Rag",
+      "type": "string"
+    },
+    "retrieval": {
+      "title": "Retrieval",
+      "type": "string"
+    },
+    "safety_controls": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Safety Controls",
+      "type": "array"
+    },
+    "security_assurance": {
+      "title": "Security Assurance",
+      "type": "string"
+    },
+    "supply_chain_assurance": {
+      "title": "Supply Chain Assurance",
+      "type": "string"
+    },
+    "system_purpose": {
+      "title": "System Purpose",
+      "type": "string"
+    }
+  },
+  "required": [
+    "model_card_id",
+    "system_purpose",
+    "intended_users",
+    "intended_uses",
+    "out_of_scope_uses",
+    "data",
+    "models_and_non_model_components",
+    "retrieval",
+    "rag",
+    "safety_controls",
+    "evaluation",
+    "approvals",
+    "api",
+    "dashboard",
+    "observability",
+    "security_assurance",
+    "supply_chain_assurance",
+    "limitations",
+    "ethical_considerations",
+    "privacy_position",
+    "clinical_use_prohibition",
+    "future_work"
+  ],
+  "title": "PortfolioModelCard",
+  "type": "object"
+}

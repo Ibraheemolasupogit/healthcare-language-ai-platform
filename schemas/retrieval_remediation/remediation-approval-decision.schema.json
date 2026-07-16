@@ -1,0 +1,65 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "approval_status": {
+      "title": "Approval Status",
+      "type": "string"
+    },
+    "approved_for_future_rag_prototype": {
+      "title": "Approved For Future Rag Prototype",
+      "type": "boolean"
+    },
+    "databricks_contract": {
+      "additionalProperties": true,
+      "title": "Databricks Contract",
+      "type": "object"
+    },
+    "failed_required_gates": {
+      "title": "Failed Required Gates",
+      "type": "integer"
+    },
+    "mlflow_contract": {
+      "additionalProperties": true,
+      "title": "Mlflow Contract",
+      "type": "object"
+    },
+    "passed_required_gates": {
+      "title": "Passed Required Gates",
+      "type": "integer"
+    },
+    "required_gate_count": {
+      "title": "Required Gate Count",
+      "type": "integer"
+    },
+    "required_limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Required Limitations",
+      "type": "array"
+    },
+    "selected_configuration_id": {
+      "title": "Selected Configuration Id",
+      "type": "string"
+    },
+    "vector_search_contract": {
+      "additionalProperties": true,
+      "title": "Vector Search Contract",
+      "type": "object"
+    }
+  },
+  "required": [
+    "selected_configuration_id",
+    "approval_status",
+    "approved_for_future_rag_prototype",
+    "required_gate_count",
+    "passed_required_gates",
+    "failed_required_gates",
+    "required_limitations",
+    "mlflow_contract",
+    "databricks_contract",
+    "vector_search_contract"
+  ],
+  "title": "RemediationApprovalDecision",
+  "type": "object"
+}

@@ -1,0 +1,169 @@
+{
+  "$defs": {
+    "RetrievalRunStatus": {
+      "enum": [
+        "completed",
+        "completed_with_warnings",
+        "failed"
+      ],
+      "title": "RetrievalRunStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "evaluated_query_count": {
+      "title": "Evaluated Query Count",
+      "type": "integer"
+    },
+    "failure_count": {
+      "title": "Failure Count",
+      "type": "integer"
+    },
+    "hit_rate_at_1": {
+      "title": "Hit Rate At 1",
+      "type": "number"
+    },
+    "hit_rate_at_5": {
+      "title": "Hit Rate At 5",
+      "type": "number"
+    },
+    "k_values": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "K Values",
+      "type": "array"
+    },
+    "manifest_schema_version": {
+      "title": "Manifest Schema Version",
+      "type": "string"
+    },
+    "map_score": {
+      "title": "Map Score",
+      "type": "number"
+    },
+    "mrr": {
+      "title": "Mrr",
+      "type": "number"
+    },
+    "ndcg_at_5": {
+      "title": "Ndcg At 5",
+      "type": "number"
+    },
+    "output_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output File Checksums",
+      "type": "object"
+    },
+    "output_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Files",
+      "type": "array"
+    },
+    "precision_at_1": {
+      "title": "Precision At 1",
+      "type": "number"
+    },
+    "precision_at_5": {
+      "title": "Precision At 5",
+      "type": "number"
+    },
+    "recall_at_5": {
+      "title": "Recall At 5",
+      "type": "number"
+    },
+    "reconciliation_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "relevance_judgment_checksum": {
+      "title": "Relevance Judgment Checksum",
+      "type": "string"
+    },
+    "retrieval_evaluation_contract_version": {
+      "title": "Retrieval Evaluation Contract Version",
+      "type": "string"
+    },
+    "retrieval_evaluation_run_id": {
+      "title": "Retrieval Evaluation Run Id",
+      "type": "string"
+    },
+    "retrieval_failure_version": {
+      "title": "Retrieval Failure Version",
+      "type": "string"
+    },
+    "retrieval_manifest_checksum": {
+      "title": "Retrieval Manifest Checksum",
+      "type": "string"
+    },
+    "retrieval_metrics_version": {
+      "title": "Retrieval Metrics Version",
+      "type": "string"
+    },
+    "retrieval_run_id": {
+      "title": "Retrieval Run Id",
+      "type": "string"
+    },
+    "run_status": {
+      "$ref": "#/$defs/RetrievalRunStatus"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "zero_hit_query_count": {
+      "title": "Zero Hit Query Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "retrieval_evaluation_contract_version",
+    "retrieval_evaluation_run_id",
+    "run_status",
+    "retrieval_run_id",
+    "retrieval_manifest_checksum",
+    "relevance_judgment_checksum",
+    "evaluated_query_count",
+    "k_values",
+    "precision_at_1",
+    "precision_at_5",
+    "recall_at_5",
+    "hit_rate_at_1",
+    "hit_rate_at_5",
+    "mrr",
+    "map_score",
+    "ndcg_at_5",
+    "zero_hit_query_count",
+    "failure_count",
+    "retrieval_metrics_version",
+    "retrieval_failure_version",
+    "reference_timestamp",
+    "output_files",
+    "output_file_checksums",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "reconciliation_status"
+  ],
+  "title": "RetrievalEvaluationManifest",
+  "type": "object"
+}

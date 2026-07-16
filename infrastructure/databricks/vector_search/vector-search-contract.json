@@ -1,0 +1,20 @@
+{
+  "access_control_expectations": [
+    "least privilege",
+    "synthetic data only"
+  ],
+  "connection_attempted": false,
+  "embedding_column": "hash_embedding",
+  "endpoint_placeholder": "hla-vector-search-endpoint-placeholder",
+  "execution_permitted": false,
+  "filter_columns": [
+    "document_type",
+    "section_label",
+    "unit_type",
+    "synthetic_subject_id",
+    "synthetic_encounter_id"
+  ],
+  "index_placeholder": "hla_retrieval_units_index_placeholder",
+  "primary_key": "retrieval_unit_id",
+  "sync_strategy": "reference-only batch sync"
+}

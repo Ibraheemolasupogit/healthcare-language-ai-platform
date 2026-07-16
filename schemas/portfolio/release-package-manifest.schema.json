@@ -1,0 +1,121 @@
+{
+  "properties": {
+    "architecture_pack_checksum": {
+      "title": "Architecture Pack Checksum",
+      "type": "string"
+    },
+    "credential_exclusion_status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Credential Exclusion Status",
+      "type": "string"
+    },
+    "documentation_checksum": {
+      "title": "Documentation Checksum",
+      "type": "string"
+    },
+    "evidence_index_checksum": {
+      "title": "Evidence Index Checksum",
+      "type": "string"
+    },
+    "fixture_manifest_checksum": {
+      "title": "Fixture Manifest Checksum",
+      "type": "string"
+    },
+    "milestones_included": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Milestones Included",
+      "type": "array"
+    },
+    "model_weight_exclusion_status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Model Weight Exclusion Status",
+      "type": "string"
+    },
+    "mutable_log_exclusion_status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Mutable Log Exclusion Status",
+      "type": "string"
+    },
+    "package_checksum_status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Package Checksum Status",
+      "type": "string"
+    },
+    "package_output_path": {
+      "title": "Package Output Path",
+      "type": "string"
+    },
+    "package_validation_status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Package Validation Status",
+      "type": "string"
+    },
+    "portfolio_model_card_checksum": {
+      "title": "Portfolio Model Card Checksum",
+      "type": "string"
+    },
+    "release_id": {
+      "title": "Release Id",
+      "type": "string"
+    },
+    "release_scope": {
+      "title": "Release Scope",
+      "type": "string"
+    },
+    "release_version": {
+      "title": "Release Version",
+      "type": "string"
+    },
+    "selected_file_count": {
+      "title": "Selected File Count",
+      "type": "integer"
+    },
+    "source_tree_checksum": {
+      "title": "Source Tree Checksum",
+      "type": "string"
+    },
+    "source_tree_file_count": {
+      "title": "Source Tree File Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "release_id",
+    "release_version",
+    "release_scope",
+    "milestones_included",
+    "selected_file_count",
+    "source_tree_file_count",
+    "evidence_index_checksum",
+    "portfolio_model_card_checksum",
+    "architecture_pack_checksum",
+    "documentation_checksum",
+    "fixture_manifest_checksum",
+    "source_tree_checksum",
+    "package_checksum_status",
+    "credential_exclusion_status",
+    "mutable_log_exclusion_status",
+    "model_weight_exclusion_status",
+    "package_validation_status",
+    "package_output_path"
+  ],
+  "title": "ReleasePackageManifest",
+  "type": "object"
+}

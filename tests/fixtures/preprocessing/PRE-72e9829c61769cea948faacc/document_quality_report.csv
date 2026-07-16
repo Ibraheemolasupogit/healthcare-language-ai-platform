@@ -1,0 +1,91 @@
+document_id,check_name,status,severity,observed_value,threshold,message,preprocessing_run_id
+SYN-DOC-004873,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-004873,empty_text,passed,info,421,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-004873,extremely_long_sentence,passed,info,60,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-004873,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-004873,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-004873,very_short_text,passed,info,422,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-043303,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-043303,empty_text,passed,info,372,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-043303,extremely_long_sentence,passed,info,52,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-043303,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-043303,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-043303,very_short_text,passed,info,373,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-121909,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-121909,empty_text,passed,info,346,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-121909,extremely_long_sentence,passed,info,59,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-121909,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-121909,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-121909,very_short_text,passed,info,347,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-260561,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-260561,empty_text,passed,info,286,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-260561,extremely_long_sentence,passed,info,61,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-260561,section_coverage,passed,info,4,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-260561,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-260561,very_short_text,passed,info,287,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-274035,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-274035,empty_text,passed,info,378,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-274035,extremely_long_sentence,passed,info,58,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-274035,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-274035,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-274035,very_short_text,passed,info,379,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-331779,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-331779,empty_text,passed,info,301,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-331779,extremely_long_sentence,passed,info,57,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-331779,section_coverage,passed,info,4,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-331779,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-331779,very_short_text,passed,info,302,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-339753,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-339753,empty_text,passed,info,405,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-339753,extremely_long_sentence,passed,info,60,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-339753,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-339753,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-339753,very_short_text,passed,info,406,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-355045,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-355045,empty_text,passed,info,308,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-355045,extremely_long_sentence,passed,info,54,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-355045,section_coverage,passed,info,4,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-355045,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-355045,very_short_text,passed,info,309,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-494697,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-494697,empty_text,passed,info,375,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-494697,extremely_long_sentence,passed,info,59,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-494697,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-494697,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-494697,very_short_text,passed,info,376,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-550005,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-550005,empty_text,passed,info,409,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-550005,extremely_long_sentence,passed,info,65,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-550005,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-550005,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-550005,very_short_text,passed,info,410,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-808823,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-808823,empty_text,passed,info,375,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-808823,extremely_long_sentence,passed,info,51,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-808823,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-808823,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-808823,very_short_text,passed,info,376,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-849532,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-849532,empty_text,passed,info,301,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-849532,extremely_long_sentence,passed,info,57,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-849532,section_coverage,passed,info,4,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-849532,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-849532,very_short_text,passed,info,302,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-863541,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-863541,empty_text,passed,info,280,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-863541,extremely_long_sentence,passed,info,61,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-863541,section_coverage,passed,info,4,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-863541,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-863541,very_short_text,passed,info,281,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-975651,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-975651,empty_text,passed,info,284,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-975651,extremely_long_sentence,passed,info,61,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-975651,section_coverage,passed,info,4,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-975651,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-975651,very_short_text,passed,info,285,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc
+SYN-DOC-993081,annotation_projection_success,passed,info,0,0,all span annotations projected or retained,PRE-72e9829c61769cea948faacc
+SYN-DOC-993081,empty_text,passed,info,370,>0,document text is non-empty,PRE-72e9829c61769cea948faacc
+SYN-DOC-993081,extremely_long_sentence,passed,info,59,500,sentence length within configured maximum,PRE-72e9829c61769cea948faacc
+SYN-DOC-993081,section_coverage,passed,info,5,>0,at least one section parsed,PRE-72e9829c61769cea948faacc
+SYN-DOC-993081,unicode_replacement_character,passed,info,0,0,no Unicode replacement character detected,PRE-72e9829c61769cea948faacc
+SYN-DOC-993081,very_short_text,passed,info,371,80,document is above minimum configured length,PRE-72e9829c61769cea948faacc

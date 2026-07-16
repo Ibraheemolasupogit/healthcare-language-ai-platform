@@ -1,0 +1,19 @@
+{
+  "compatibility_run_id": "COMPAT-4f53cda18c2baa0c0354bb5f",
+  "baseline_id": "CONTRACTBASE-339a223ac598786d39f7edd0",
+  "current_inventory_id": "CONTRACTBASE-339a223ac598786d39f7edd0",
+  "added_contract_count": 0,
+  "removed_contract_count": 0,
+  "changed_contract_count": 0,
+  "backward_compatible_change_count": 0,
+  "conditionally_compatible_change_count": 0,
+  "breaking_change_count": 0,
+  "unknown_change_count": 0,
+  "api_breaking_change_count": 0,
+  "cli_breaking_change_count": 0,
+  "configuration_breaking_change_count": 0,
+  "compatibility_policy_version": "1.0.0",
+  "overall_compatibility_status": "passed",
+  "output_checksum_status": "passed",
+  "changes": []
+}

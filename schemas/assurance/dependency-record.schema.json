@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "dependency_group": {
+      "title": "Dependency Group",
+      "type": "string"
+    },
+    "direct": {
+      "title": "Direct",
+      "type": "boolean"
+    },
+    "installed_version": {
+      "title": "Installed Version",
+      "type": "string"
+    },
+    "license_metadata": {
+      "default": "",
+      "title": "License Metadata",
+      "type": "string"
+    },
+    "package_name": {
+      "title": "Package Name",
+      "type": "string"
+    },
+    "runtime": {
+      "title": "Runtime",
+      "type": "boolean"
+    },
+    "source_metadata": {
+      "default": "",
+      "title": "Source Metadata",
+      "type": "string"
+    }
+  },
+  "required": [
+    "package_name",
+    "installed_version",
+    "dependency_group",
+    "direct",
+    "runtime"
+  ],
+  "title": "DependencyRecord",
+  "type": "object"
+}

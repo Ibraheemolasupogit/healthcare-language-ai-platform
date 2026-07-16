@@ -1,0 +1,70 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "checksum": {
+      "title": "Checksum",
+      "type": "string"
+    },
+    "compatibility_policy": {
+      "default": "stable_contract_v1",
+      "title": "Compatibility Policy",
+      "type": "string"
+    },
+    "contract_id": {
+      "title": "Contract Id",
+      "type": "string"
+    },
+    "contract_type": {
+      "title": "Contract Type",
+      "type": "string"
+    },
+    "contract_version": {
+      "default": "1.0.0",
+      "title": "Contract Version",
+      "type": "string"
+    },
+    "deprecated": {
+      "default": false,
+      "title": "Deprecated",
+      "type": "boolean"
+    },
+    "introduced_milestone": {
+      "default": "M11",
+      "title": "Introduced Milestone",
+      "type": "string"
+    },
+    "location": {
+      "title": "Location",
+      "type": "string"
+    },
+    "owner_module": {
+      "title": "Owner Module",
+      "type": "string"
+    },
+    "replacement_contract_id": {
+      "default": "",
+      "title": "Replacement Contract Id",
+      "type": "string"
+    },
+    "stability": {
+      "default": "stable",
+      "enum": [
+        "experimental",
+        "stable",
+        "deprecated",
+        "internal"
+      ],
+      "title": "Stability",
+      "type": "string"
+    }
+  },
+  "required": [
+    "contract_id",
+    "contract_type",
+    "location",
+    "owner_module",
+    "checksum"
+  ],
+  "title": "ContractInventoryRecord",
+  "type": "object"
+}

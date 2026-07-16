@@ -1,0 +1,10 @@
+configuration_id,split,query_group,query_count,hit_rate_at_5,recall_at_5,mrr,ndcg_at_5,zero_hit_query_count
+negation_numeric_bm25_v1,development,all,38,0.236842,0.210526,0.198246,0.187188,29
+negation_numeric_bm25_v1,development,paraphrased,4,0.0,0.0,0.0,0.0,4
+negation_numeric_bm25_v1,development,negation_sensitive,3,0.0,0.0,0.0,0.0,3
+negation_numeric_bm25_v1,validation,all,38,0.210526,0.197368,0.189474,0.184211,30
+negation_numeric_bm25_v1,validation,paraphrased,4,0.0,0.0,0.0,0.0,4
+negation_numeric_bm25_v1,validation,negation_sensitive,3,0.333333,0.333333,0.333333,0.333333,2
+negation_numeric_bm25_v1,holdout,all,19,0.210526,0.210526,0.168421,0.178255,15
+negation_numeric_bm25_v1,holdout,paraphrased,2,0.0,0.0,0.0,0.0,2
+negation_numeric_bm25_v1,holdout,negation_sensitive,2,0.0,0.0,0.0,0.0,2

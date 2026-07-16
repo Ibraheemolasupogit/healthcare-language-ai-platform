@@ -1,0 +1,160 @@
+{
+  "$defs": {
+    "CitationSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "citation_id": {
+          "title": "Citation Id",
+          "type": "string"
+        },
+        "citation_label": {
+          "title": "Citation Label",
+          "type": "string"
+        },
+        "citation_status": {
+          "title": "Citation Status",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "evidence_id": {
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "quoted_span": {
+          "title": "Quoted Span",
+          "type": "string"
+        },
+        "section_id": {
+          "default": "",
+          "title": "Section Id",
+          "type": "string"
+        },
+        "sentence_id": {
+          "default": "",
+          "title": "Sentence Id",
+          "type": "string"
+        },
+        "source_text_checksum": {
+          "title": "Source Text Checksum",
+          "type": "string"
+        }
+      },
+      "required": [
+        "citation_id",
+        "citation_label",
+        "evidence_id",
+        "document_id",
+        "citation_status",
+        "quoted_span",
+        "source_text_checksum"
+      ],
+      "title": "CitationSummary",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "answer_status": {
+      "title": "Answer Status",
+      "type": "string"
+    },
+    "answer_text": {
+      "title": "Answer Text",
+      "type": "string"
+    },
+    "citations": {
+      "items": {
+        "$ref": "#/$defs/CitationSummary"
+      },
+      "title": "Citations",
+      "type": "array"
+    },
+    "clinical_use_prohibited": {
+      "default": true,
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "disclaimer": {
+      "default": "Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated.",
+      "title": "Disclaimer",
+      "type": "string"
+    },
+    "generator_provider": {
+      "title": "Generator Provider",
+      "type": "string"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "prompt_id": {
+      "title": "Prompt Id",
+      "type": "string"
+    },
+    "prompt_version": {
+      "title": "Prompt Version",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "rag_run_id": {
+      "title": "Rag Run Id",
+      "type": "string"
+    },
+    "request_id": {
+      "title": "Request Id",
+      "type": "string"
+    },
+    "retrieval_confidence": {
+      "title": "Retrieval Confidence",
+      "type": "number"
+    },
+    "retrieval_status": {
+      "title": "Retrieval Status",
+      "type": "string"
+    },
+    "synthetic_data_only": {
+      "default": true,
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "trace_id": {
+      "title": "Trace Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "request_id",
+    "query_id",
+    "answer_id",
+    "answer_status",
+    "answer_text",
+    "citations",
+    "retrieval_status",
+    "retrieval_confidence",
+    "trace_id",
+    "rag_run_id",
+    "prompt_id",
+    "prompt_version",
+    "generator_provider",
+    "generator_version"
+  ],
+  "title": "AnswerResponse",
+  "type": "object"
+}

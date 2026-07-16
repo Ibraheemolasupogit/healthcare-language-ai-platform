@@ -1,0 +1,70 @@
+{
+  "properties": {
+    "actual": {
+      "title": "Actual",
+      "type": "string"
+    },
+    "audit_item_id": {
+      "title": "Audit Item Id",
+      "type": "string"
+    },
+    "category": {
+      "title": "Category",
+      "type": "string"
+    },
+    "evidence_path": {
+      "title": "Evidence Path",
+      "type": "string"
+    },
+    "expected": {
+      "title": "Expected",
+      "type": "string"
+    },
+    "item": {
+      "title": "Item",
+      "type": "string"
+    },
+    "message": {
+      "default": "",
+      "title": "Message",
+      "type": "string"
+    },
+    "milestone": {
+      "title": "Milestone",
+      "type": "string"
+    },
+    "severity": {
+      "default": "info",
+      "enum": [
+        "info",
+        "low",
+        "medium",
+        "high"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "audit_item_id",
+    "category",
+    "item",
+    "expected",
+    "actual",
+    "status",
+    "evidence_path",
+    "milestone"
+  ],
+  "title": "RepositoryAuditRecord",
+  "type": "object"
+}

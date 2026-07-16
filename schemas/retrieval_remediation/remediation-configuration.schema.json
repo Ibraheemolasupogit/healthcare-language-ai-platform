@@ -1,0 +1,80 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "abstention": {
+      "default": false,
+      "title": "Abstention",
+      "type": "boolean"
+    },
+    "candidate_retrievers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Candidate Retrievers",
+      "type": "array"
+    },
+    "character_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Character Features",
+      "type": "array"
+    },
+    "configuration_id": {
+      "title": "Configuration Id",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "diversification": {
+      "default": false,
+      "title": "Diversification",
+      "type": "boolean"
+    },
+    "entity_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Entity Features",
+      "type": "array"
+    },
+    "phrase_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Phrase Features",
+      "type": "array"
+    },
+    "proximity_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Proximity Features",
+      "type": "array"
+    },
+    "pseudo_relevance_feedback": {
+      "default": false,
+      "title": "Pseudo Relevance Feedback",
+      "type": "boolean"
+    },
+    "reranker": {
+      "default": "none",
+      "title": "Reranker",
+      "type": "string"
+    },
+    "synonym_expansion": {
+      "default": false,
+      "title": "Synonym Expansion",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "configuration_id",
+    "candidate_retrievers",
+    "description"
+  ],
+  "title": "RemediationConfiguration",
+  "type": "object"
+}

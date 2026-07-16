@@ -1,0 +1,213 @@
+{
+  "$defs": {
+    "EmbeddingProvider": {
+      "enum": [
+        "deterministic_hash",
+        "sentence_transformer"
+      ],
+      "title": "EmbeddingProvider",
+      "type": "string"
+    },
+    "RetrievalRunStatus": {
+      "enum": [
+        "completed",
+        "completed_with_warnings",
+        "failed"
+      ],
+      "title": "RetrievalRunStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "bm25_version": {
+      "title": "Bm25 Version",
+      "type": "string"
+    },
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "corpus_version": {
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "document_count": {
+      "title": "Document Count",
+      "type": "integer"
+    },
+    "embedding_dimension": {
+      "title": "Embedding Dimension",
+      "type": "integer"
+    },
+    "embedding_provider": {
+      "$ref": "#/$defs/EmbeddingProvider"
+    },
+    "hash_embedding_version": {
+      "title": "Hash Embedding Version",
+      "type": "string"
+    },
+    "hybrid_version": {
+      "title": "Hybrid Version",
+      "type": "string"
+    },
+    "index_id": {
+      "title": "Index Id",
+      "type": "string"
+    },
+    "index_strategies": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Index Strategies",
+      "type": "array"
+    },
+    "keyword_version": {
+      "title": "Keyword Version",
+      "type": "string"
+    },
+    "manifest_schema_version": {
+      "title": "Manifest Schema Version",
+      "type": "string"
+    },
+    "output_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output File Checksums",
+      "type": "object"
+    },
+    "output_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Files",
+      "type": "array"
+    },
+    "reconciliation_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "retrieval_contract_version": {
+      "title": "Retrieval Contract Version",
+      "type": "string"
+    },
+    "retrieval_unit_count": {
+      "title": "Retrieval Unit Count",
+      "type": "integer"
+    },
+    "run_status": {
+      "$ref": "#/$defs/RetrievalRunStatus"
+    },
+    "section_count": {
+      "title": "Section Count",
+      "type": "integer"
+    },
+    "sentence_count": {
+      "title": "Sentence Count",
+      "type": "integer"
+    },
+    "source_extraction_manifest_checksum": {
+      "title": "Source Extraction Manifest Checksum",
+      "type": "string"
+    },
+    "source_extraction_run_id": {
+      "title": "Source Extraction Run Id",
+      "type": "string"
+    },
+    "source_preprocessing_manifest_checksum": {
+      "title": "Source Preprocessing Manifest Checksum",
+      "type": "string"
+    },
+    "source_preprocessing_run_id": {
+      "title": "Source Preprocessing Run Id",
+      "type": "string"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "text_representation": {
+      "const": "normalised_text",
+      "title": "Text Representation",
+      "type": "string"
+    },
+    "tfidf_version": {
+      "title": "Tfidf Version",
+      "type": "string"
+    },
+    "token_count": {
+      "title": "Token Count",
+      "type": "integer"
+    },
+    "tokeniser_version": {
+      "title": "Tokeniser Version",
+      "type": "string"
+    },
+    "unit_types": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unit Types",
+      "type": "array"
+    },
+    "vocabulary_size": {
+      "title": "Vocabulary Size",
+      "type": "integer"
+    },
+    "writer_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Writer Versions",
+      "type": "object"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "retrieval_contract_version",
+    "index_id",
+    "run_status",
+    "source_preprocessing_run_id",
+    "source_preprocessing_manifest_checksum",
+    "source_extraction_run_id",
+    "source_extraction_manifest_checksum",
+    "corpus_version",
+    "unit_types",
+    "text_representation",
+    "retrieval_unit_count",
+    "document_count",
+    "section_count",
+    "sentence_count",
+    "token_count",
+    "vocabulary_size",
+    "index_strategies",
+    "embedding_provider",
+    "embedding_dimension",
+    "tokeniser_version",
+    "keyword_version",
+    "tfidf_version",
+    "bm25_version",
+    "hash_embedding_version",
+    "hybrid_version",
+    "reference_timestamp",
+    "writer_versions",
+    "output_files",
+    "output_file_checksums",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "reconciliation_status"
+  ],
+  "title": "IndexManifest",
+  "type": "object"
+}

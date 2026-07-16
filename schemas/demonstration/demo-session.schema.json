@@ -1,0 +1,112 @@
+{
+  "$defs": {
+    "DemoResult": {
+      "additionalProperties": false,
+      "properties": {
+        "actual_status": {
+          "title": "Actual Status",
+          "type": "string"
+        },
+        "answer_id": {
+          "title": "Answer Id",
+          "type": "string"
+        },
+        "answer_status": {
+          "title": "Answer Status",
+          "type": "string"
+        },
+        "citation_count": {
+          "title": "Citation Count",
+          "type": "integer"
+        },
+        "expected_status": {
+          "title": "Expected Status",
+          "type": "string"
+        },
+        "groundedness_outcome": {
+          "title": "Groundedness Outcome",
+          "type": "string"
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "query_id": {
+          "title": "Query Id",
+          "type": "string"
+        },
+        "retrieval_status": {
+          "title": "Retrieval Status",
+          "type": "string"
+        },
+        "safety_outcome": {
+          "title": "Safety Outcome",
+          "type": "string"
+        },
+        "scenario_id": {
+          "title": "Scenario Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scenario_id",
+        "query_id",
+        "expected_status",
+        "actual_status",
+        "retrieval_status",
+        "answer_status",
+        "citation_count",
+        "groundedness_outcome",
+        "safety_outcome",
+        "passed",
+        "answer_id"
+      ],
+      "title": "DemoResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "demo_session_id": {
+      "title": "Demo Session Id",
+      "type": "string"
+    },
+    "demo_session_version": {
+      "default": "1.0.0",
+      "title": "Demo Session Version",
+      "type": "string"
+    },
+    "failed_scenarios": {
+      "title": "Failed Scenarios",
+      "type": "integer"
+    },
+    "passed_scenarios": {
+      "title": "Passed Scenarios",
+      "type": "integer"
+    },
+    "results": {
+      "items": {
+        "$ref": "#/$defs/DemoResult"
+      },
+      "title": "Results",
+      "type": "array"
+    },
+    "scenario_count": {
+      "title": "Scenario Count",
+      "type": "integer"
+    },
+    "scenario_set": {
+      "title": "Scenario Set",
+      "type": "string"
+    }
+  },
+  "required": [
+    "demo_session_id",
+    "scenario_set",
+    "scenario_count",
+    "passed_scenarios",
+    "failed_scenarios"
+  ],
+  "title": "DemoSession",
+  "type": "object"
+}

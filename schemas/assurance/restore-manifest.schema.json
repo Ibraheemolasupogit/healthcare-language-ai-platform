@@ -1,0 +1,51 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "backup_id": {
+      "title": "Backup Id",
+      "type": "string"
+    },
+    "checksum_status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Checksum Status",
+      "type": "string"
+    },
+    "destination": {
+      "title": "Destination",
+      "type": "string"
+    },
+    "path_traversal_validation": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Path Traversal Validation",
+      "type": "string"
+    },
+    "restored_file_count": {
+      "title": "Restored File Count",
+      "type": "integer"
+    },
+    "symlink_validation": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Symlink Validation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "backup_id",
+    "destination",
+    "restored_file_count",
+    "checksum_status",
+    "path_traversal_validation",
+    "symlink_validation"
+  ],
+  "title": "RestoreManifest",
+  "type": "object"
+}

@@ -1,0 +1,58 @@
+{
+  "properties": {
+    "demonstration_examples": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Demonstration Examples",
+      "type": "array"
+    },
+    "evidence_paths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Paths",
+      "type": "array"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    },
+    "relevant_capabilities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Relevant Capabilities",
+      "type": "array"
+    },
+    "role": {
+      "title": "Role",
+      "type": "string"
+    },
+    "role_id": {
+      "title": "Role Id",
+      "type": "string"
+    },
+    "technical_discussion_points": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Technical Discussion Points",
+      "type": "array"
+    }
+  },
+  "required": [
+    "role_id",
+    "role",
+    "relevant_capabilities",
+    "evidence_paths",
+    "demonstration_examples",
+    "technical_discussion_points",
+    "limitations"
+  ],
+  "title": "RoleAlignment",
+  "type": "object"
+}

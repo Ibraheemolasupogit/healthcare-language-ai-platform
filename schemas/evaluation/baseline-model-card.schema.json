@@ -1,0 +1,136 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "benchmark_leakage": {
+      "title": "Benchmark Leakage",
+      "type": "string"
+    },
+    "clinical_safety_limitations": {
+      "title": "Clinical Safety Limitations",
+      "type": "string"
+    },
+    "evaluation_data": {
+      "title": "Evaluation Data",
+      "type": "string"
+    },
+    "failure_modes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Failure Modes",
+      "type": "array"
+    },
+    "fairness_limitations": {
+      "title": "Fairness Limitations",
+      "type": "string"
+    },
+    "future_model_comparison_plan": {
+      "title": "Future Model Comparison Plan",
+      "type": "string"
+    },
+    "human_review_expectations": {
+      "title": "Human Review Expectations",
+      "type": "string"
+    },
+    "input_contract": {
+      "title": "Input Contract",
+      "type": "string"
+    },
+    "intended_use": {
+      "title": "Intended Use",
+      "type": "string"
+    },
+    "known_limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Limitations",
+      "type": "array"
+    },
+    "metrics": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Metrics",
+      "type": "object"
+    },
+    "model_name": {
+      "title": "Model Name",
+      "type": "string"
+    },
+    "model_type": {
+      "title": "Model Type",
+      "type": "string"
+    },
+    "model_version": {
+      "title": "Model Version",
+      "type": "string"
+    },
+    "monitoring_recommendations": {
+      "title": "Monitoring Recommendations",
+      "type": "string"
+    },
+    "out_of_scope_use": {
+      "title": "Out Of Scope Use",
+      "type": "string"
+    },
+    "output_contract": {
+      "title": "Output Contract",
+      "type": "string"
+    },
+    "privacy_position": {
+      "title": "Privacy Position",
+      "type": "string"
+    },
+    "purpose": {
+      "title": "Purpose",
+      "type": "string"
+    },
+    "rule_and_vocabulary_sources": {
+      "title": "Rule And Vocabulary Sources",
+      "type": "string"
+    },
+    "supported_labels": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Supported Labels",
+      "type": "array"
+    },
+    "synthetic_data_limitation": {
+      "title": "Synthetic Data Limitation",
+      "type": "string"
+    },
+    "training_data": {
+      "title": "Training Data",
+      "type": "string"
+    }
+  },
+  "required": [
+    "model_name",
+    "model_version",
+    "model_type",
+    "purpose",
+    "intended_use",
+    "out_of_scope_use",
+    "training_data",
+    "evaluation_data",
+    "rule_and_vocabulary_sources",
+    "input_contract",
+    "output_contract",
+    "supported_labels",
+    "metrics",
+    "known_limitations",
+    "synthetic_data_limitation",
+    "benchmark_leakage",
+    "clinical_safety_limitations",
+    "fairness_limitations",
+    "privacy_position",
+    "failure_modes",
+    "human_review_expectations",
+    "monitoring_recommendations",
+    "future_model_comparison_plan"
+  ],
+  "title": "BaselineModelCard",
+  "type": "object"
+}

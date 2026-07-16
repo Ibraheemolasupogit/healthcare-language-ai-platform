@@ -1,0 +1,158 @@
+{
+  "$defs": {
+    "RetrievalRunStatus": {
+      "enum": [
+        "completed",
+        "completed_with_warnings",
+        "failed"
+      ],
+      "title": "RetrievalRunStatus",
+      "type": "string"
+    },
+    "RetrievalStrategy": {
+      "enum": [
+        "keyword",
+        "tfidf",
+        "bm25",
+        "hybrid"
+      ],
+      "title": "RetrievalStrategy",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "filter_policy": {
+      "title": "Filter Policy",
+      "type": "string"
+    },
+    "fusion_version": {
+      "title": "Fusion Version",
+      "type": "string"
+    },
+    "fusion_weights": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Fusion Weights",
+      "type": "object"
+    },
+    "index_id": {
+      "title": "Index Id",
+      "type": "string"
+    },
+    "index_manifest_checksum": {
+      "title": "Index Manifest Checksum",
+      "type": "string"
+    },
+    "manifest_schema_version": {
+      "title": "Manifest Schema Version",
+      "type": "string"
+    },
+    "metadata_filtered_query_count": {
+      "title": "Metadata Filtered Query Count",
+      "type": "integer"
+    },
+    "output_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output File Checksums",
+      "type": "object"
+    },
+    "output_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Files",
+      "type": "array"
+    },
+    "query_count": {
+      "title": "Query Count",
+      "type": "integer"
+    },
+    "query_set_checksum": {
+      "title": "Query Set Checksum",
+      "type": "string"
+    },
+    "reconciliation_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "retrieval_contract_version": {
+      "title": "Retrieval Contract Version",
+      "type": "string"
+    },
+    "retrieval_run_id": {
+      "title": "Retrieval Run Id",
+      "type": "string"
+    },
+    "returned_result_count": {
+      "title": "Returned Result Count",
+      "type": "integer"
+    },
+    "run_status": {
+      "$ref": "#/$defs/RetrievalRunStatus"
+    },
+    "score_normalisation_version": {
+      "title": "Score Normalisation Version",
+      "type": "string"
+    },
+    "strategy": {
+      "$ref": "#/$defs/RetrievalStrategy"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "top_k": {
+      "title": "Top K",
+      "type": "integer"
+    },
+    "zero_result_query_count": {
+      "title": "Zero Result Query Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "retrieval_contract_version",
+    "retrieval_run_id",
+    "run_status",
+    "index_id",
+    "index_manifest_checksum",
+    "query_set_checksum",
+    "strategy",
+    "top_k",
+    "query_count",
+    "returned_result_count",
+    "zero_result_query_count",
+    "metadata_filtered_query_count",
+    "filter_policy",
+    "score_normalisation_version",
+    "fusion_version",
+    "fusion_weights",
+    "reference_timestamp",
+    "output_files",
+    "output_file_checksums",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "reconciliation_status"
+  ],
+  "title": "RetrievalManifest",
+  "type": "object"
+}

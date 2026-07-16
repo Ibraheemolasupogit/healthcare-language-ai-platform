@@ -1,0 +1,184 @@
+document_id,synthetic_subject_id,synthetic_encounter_id,document_type,source_text,normalised_text,analytical_text,preprocessing_mode,source_character_count,normalised_character_count,sentence_count,section_count,token_count,unique_token_count,line_count,empty_line_count,uppercase_ratio,digit_ratio,whitespace_ratio,contains_replacement_character,source_record_checksum,normalised_text_checksum,analytical_text_checksum,ingestion_run_id,preprocessing_run_id,preprocessed_at,normalisation_version,section_parser_version,sentence_segmenter_version,tokeniser_version,quality_rules_version
+SYN-DOC-004873,SYN-SUBJ-163947,SYN-ENC-672374,clinical_note,"This is a synthetic document for educational NLP testing only.
+Reason for attendance: fictional shortness of breath episode.
+Relevant history: Fictional history linked to synthetic outpatient attendance.
+Observations: respiratory rate 16, oxygen saturation 97 percent on air.
+Assessment summary: Simulation summary for left knee review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+","This is a synthetic document for educational NLP testing only.
+Reason for attendance: fictional shortness of breath episode.
+Relevant history: Fictional history linked to synthetic outpatient attendance.
+Observations: respiratory rate 16, oxygen saturation 97 percent on air.
+Assessment summary: Simulation summary for left knee review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+",,conservative,422,422,5,5,69,50,6,1,0.028436,0.009479,0.132701,False,a8898968a14cf5a19774e0dafdeb3a9361d2c52c728ba4fa6c937cabd5da2ac7,8f6c7281a1661c00dba64b04ade9a64ac268a363acfda2fd1e7b8364b9e4b2da,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-043303,SYN-SUBJ-511700,SYN-ENC-205548,referral_letter,"This is a synthetic document for educational NLP testing only.
+Referral reason: synthetic joint swelling.
+Relevant synthetic history: simulated same-day assessment in portfolio fixture.
+Current concerns: Review of chest with no focal simulated abnormality.
+Requested review: general medicine review for simulation workflow.
+Administrative priority label: workflow_queue_a.
+","This is a synthetic document for educational NLP testing only.
+Referral reason: synthetic joint swelling.
+Relevant synthetic history: simulated same-day assessment in portfolio fixture.
+Current concerns: Review of chest with no focal simulated abnormality.
+Requested review: general medicine review for simulation workflow.
+Administrative priority label: workflow_queue_a.
+",,conservative,373,373,5,5,59,42,6,1,0.02681,0.0,0.123324,False,b1249e9c88d31bcd57a9ef032787c35f0da50e3ab6c2ce23ea815335f809fb46,f27e229951cfe2cd86cb720e92de5f700dd5f19fc7a07fc038c6a0e1b00d90cc,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-121909,SYN-SUBJ-626233,SYN-ENC-380616,discharge_summary,"This is a synthetic document for educational NLP testing only.
+Admission reason: synthetic joint swelling.
+Synthetic hospital-course summary: Monitored in simulated same-day assessment.
+Recorded investigations: simulated chest radiograph.
+Discharge status: draft.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+","This is a synthetic document for educational NLP testing only.
+Admission reason: synthetic joint swelling.
+Synthetic hospital-course summary: Monitored in simulated same-day assessment.
+Recorded investigations: simulated chest radiograph.
+Discharge status: draft.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+",,conservative,347,347,5,5,51,34,6,1,0.0317,0.0,0.115274,False,5f298d014f9f54af7abb09f8ad106f5fa45e1b6519ec915de7d57eb99c01f44d,abd111c857f7ef2d5edf1c3f7a800c2382dc7d1743d1a0526de632eafe3f9e11,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-260561,SYN-SUBJ-864331,SYN-ENC-430487,radiology_report,"This is a synthetic document for educational NLP testing only.
+Study: simulated chest radiograph.
+Synthetic indication: fictional shortness of breath episode.
+Findings: stable fictional finding involving abdomen.
+Impression: Synthetic radiology-style report for fixture validation only.
+","This is a synthetic document for educational NLP testing only.
+Study: simulated chest radiograph.
+Synthetic indication: fictional shortness of breath episode.
+Findings: stable fictional finding involving abdomen.
+Impression: Synthetic radiology-style report for fixture validation only.
+",,conservative,287,287,4,4,44,32,5,1,0.031359,0.0,0.121951,False,fceca1970fd151fc39069f492122d2ba20c2d817579a67a1e69c0bed982cfeb1,43c489793c7051980945ef9e498b62592a8c26260788fedea4bdacb0908d6e0b,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-274035,SYN-SUBJ-329386,SYN-ENC-447819,referral_letter,"This is a synthetic document for educational NLP testing only.
+Referral reason: simulated headache review.
+Relevant synthetic history: fictional observation unit encounter in portfolio fixture.
+Current concerns: Review of abdomen with stable fictional finding.
+Requested review: general medicine review for simulation workflow.
+Administrative priority label: routine_simulation.
+","This is a synthetic document for educational NLP testing only.
+Referral reason: simulated headache review.
+Relevant synthetic history: fictional observation unit encounter in portfolio fixture.
+Current concerns: Review of abdomen with stable fictional finding.
+Requested review: general medicine review for simulation workflow.
+Administrative priority label: routine_simulation.
+",,conservative,379,379,5,5,58,42,6,1,0.026385,0.0,0.121372,False,85480af40a0785f262c06684b39f489e7a1a3b83176914409f709ef2b2a51704,821f9bc61db47b6e2d35ee6768d4f2b0223a4715d0a8688f2f9b7b7ba1588993,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-331779,SYN-SUBJ-679968,SYN-ENC-835115,pathology_report,"This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from right wrist.
+Macroscopic description: stable fictional finding in fictional specimen container.
+Microscopic description: Simulated cellular notes for radiology.
+Synthetic interpretation label: draft.
+","This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from right wrist.
+Macroscopic description: stable fictional finding in fictional specimen container.
+Microscopic description: Simulated cellular notes for radiology.
+Synthetic interpretation label: draft.
+",,conservative,302,302,4,4,46,32,5,1,0.029801,0.0,0.122517,False,e89b2bf2e66657d6482cfecf6b39289b3edf0dfd0142575009d2dad9e6fad5c7,2d9b8ef4077f0d747265eea832f53e498271cf69852a86c1165ac50ae353985f,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-339753,SYN-SUBJ-893610,SYN-ENC-848998,clinical_note,"This is a synthetic document for educational NLP testing only.
+Reason for attendance: synthetic abdominal discomfort.
+Relevant history: Fictional history linked to synthetic outpatient attendance.
+Observations: oxygen saturation 98 percent on air, pulse 72.
+Assessment summary: Simulation summary for right wrist review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+","This is a synthetic document for educational NLP testing only.
+Reason for attendance: synthetic abdominal discomfort.
+Relevant history: Fictional history linked to synthetic outpatient attendance.
+Observations: oxygen saturation 98 percent on air, pulse 72.
+Assessment summary: Simulation summary for right wrist review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+",,conservative,406,406,5,5,66,47,6,1,0.029557,0.009852,0.130542,False,806321d56dd4269b39c114a78e9370da4f7732a5b17fb884821aac30b474ec0a,965aadd0a4771a72dfae6d13690e5edf919c1027181c39516bc95aa38ed446a4,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-355045,SYN-SUBJ-219885,SYN-ENC-685707,pathology_report,"This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from right wrist.
+Macroscopic description: mild simulated change in fictional specimen container.
+Microscopic description: Simulated cellular notes for pathology.
+Synthetic interpretation label: quality_checked.
+","This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from right wrist.
+Macroscopic description: mild simulated change in fictional specimen container.
+Microscopic description: Simulated cellular notes for pathology.
+Synthetic interpretation label: quality_checked.
+",,conservative,309,309,4,4,47,33,5,1,0.029126,0.0,0.119741,False,33256ac7e4745cc03acfc26ceee3f906a5db94aaa41588c2441d94708be27ad2,1e8b96fa12ab5a7ab912e1ce85438eb6ffac29f8113d4b502c0e945cb82cea9b,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-494697,SYN-SUBJ-725581,SYN-ENC-500947,discharge_summary,"This is a synthetic document for educational NLP testing only.
+Admission reason: fictional shortness of breath episode.
+Synthetic hospital-course summary: Monitored in fictional observation unit encounter.
+Recorded investigations: synthetic knee radiograph.
+Discharge status: quality_checked.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+","This is a synthetic document for educational NLP testing only.
+Admission reason: fictional shortness of breath episode.
+Synthetic hospital-course summary: Monitored in fictional observation unit encounter.
+Recorded investigations: synthetic knee radiograph.
+Discharge status: quality_checked.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+",,conservative,376,376,5,5,55,38,6,1,0.029255,0.0,0.114362,False,dd962ff73c31e75de9496df476f89a85b6907bd65e1fc9348644773288bbc6ce,f44df60db403fee430383c7e8ab98feead88be5b334c4a257a19751536feb2b1,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-550005,SYN-SUBJ-308360,SYN-ENC-445530,clinical_note,"This is a synthetic document for educational NLP testing only.
+Reason for attendance: synthetic joint swelling.
+Relevant history: Fictional history linked to fictional observation unit encounter.
+Observations: respiratory rate 16, oxygen saturation 97 percent on air.
+Assessment summary: Simulation summary for chest review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+","This is a synthetic document for educational NLP testing only.
+Reason for attendance: synthetic joint swelling.
+Relevant history: Fictional history linked to fictional observation unit encounter.
+Observations: respiratory rate 16, oxygen saturation 97 percent on air.
+Assessment summary: Simulation summary for chest review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+",,conservative,410,410,5,5,67,49,6,1,0.029268,0.009756,0.131707,False,bce1b6eaa17eba41c9b7fac99568bb1b4dc1228a2e3b313868ea0a15456c7e69,7405c2e949520d42ba28bc817bfba6fc8837896df2ac8a5d2f0c807e9f42d531,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-808823,SYN-SUBJ-369489,SYN-ENC-005147,referral_letter,"This is a synthetic document for educational NLP testing only.
+Referral reason: synthetic abdominal discomfort.
+Relevant synthetic history: simulated same-day assessment in portfolio fixture.
+Current concerns: Review of left knee with mild simulated change.
+Requested review: gastroenterology review for simulation workflow.
+Administrative priority label: routine_simulation.
+","This is a synthetic document for educational NLP testing only.
+Referral reason: synthetic abdominal discomfort.
+Relevant synthetic history: simulated same-day assessment in portfolio fixture.
+Current concerns: Review of left knee with mild simulated change.
+Requested review: gastroenterology review for simulation workflow.
+Administrative priority label: routine_simulation.
+",,conservative,376,376,5,5,57,41,6,1,0.026596,0.0,0.119681,False,4e6298c07b97ffd324063289a68ddd3792f6a2334f43d3dc93e54549534d3b9d,5f93c1d1af987754ca4c101d531ad191e1c73d12bdaba7ee169c718ded547bc2,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-849532,SYN-SUBJ-122325,SYN-ENC-829005,pathology_report,"This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from head.
+Macroscopic description: stable fictional finding in fictional specimen container.
+Microscopic description: Simulated cellular notes for general medicine.
+Synthetic interpretation label: draft.
+","This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from head.
+Macroscopic description: stable fictional finding in fictional specimen container.
+Microscopic description: Simulated cellular notes for general medicine.
+Synthetic interpretation label: draft.
+",,conservative,302,302,4,4,46,32,5,1,0.029801,0.0,0.122517,False,d07cb8699a9c7ea0ff5fa90722d2e42377c03a41566b0a1f7fe59ad27ee684a9,231da10d9b6781150000ec7664ec66e95a499bc3258dad1b2f1f50ddfcb00e1a,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-863541,SYN-SUBJ-698864,SYN-ENC-889065,radiology_report,"This is a synthetic document for educational NLP testing only.
+Study: fictional ultrasound abdomen.
+Synthetic indication: synthetic abdominal discomfort.
+Findings: mild simulated change involving left knee.
+Impression: Synthetic radiology-style report for fixture validation only.
+","This is a synthetic document for educational NLP testing only.
+Study: fictional ultrasound abdomen.
+Synthetic indication: synthetic abdominal discomfort.
+Findings: mild simulated change involving left knee.
+Impression: Synthetic radiology-style report for fixture validation only.
+",,conservative,281,281,4,4,43,31,5,1,0.032028,0.0,0.120996,False,00624b7d1e2d2de219bc7577c2b59880698fbb0b442d3b6d2938ff1d48554189,8c233d58528f22bb691c55b7bb9898159ccecc6301a3decb09f6fadc0f8c8e5c,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-975651,SYN-SUBJ-676896,SYN-ENC-663320,radiology_report,"This is a synthetic document for educational NLP testing only.
+Study: fictional ultrasound abdomen.
+Synthetic indication: synthetic abdominal discomfort.
+Findings: no focal simulated abnormality involving head.
+Impression: Synthetic radiology-style report for fixture validation only.
+","This is a synthetic document for educational NLP testing only.
+Study: fictional ultrasound abdomen.
+Synthetic indication: synthetic abdominal discomfort.
+Findings: no focal simulated abnormality involving head.
+Impression: Synthetic radiology-style report for fixture validation only.
+",,conservative,285,285,4,4,43,31,5,1,0.031579,0.0,0.119298,False,9d9cb448660e099fcf44f83dc7c4a323dc64b90a549a9e011ac5a8e63aec84f9,1884c4ef08cddb8df8fad350d48b0fbc00102fab61147e81a591810c566cdbfd,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0
+SYN-DOC-993081,SYN-SUBJ-387352,SYN-ENC-837600,discharge_summary,"This is a synthetic document for educational NLP testing only.
+Admission reason: fictional shortness of breath episode.
+Synthetic hospital-course summary: Monitored in synthetic outpatient attendance.
+Recorded investigations: simulated pathology panel.
+Discharge status: quality_checked.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+","This is a synthetic document for educational NLP testing only.
+Admission reason: fictional shortness of breath episode.
+Synthetic hospital-course summary: Monitored in synthetic outpatient attendance.
+Recorded investigations: simulated pathology panel.
+Discharge status: quality_checked.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+",,conservative,371,371,5,5,54,38,6,1,0.02965,0.0,0.113208,False,e1bd5d1a749d323fb6c613e06deccbfe2db8b007285378e32d2b63c24266bf74,46030f9f8dc9bac5ea1e4fd83b079fde7e33478faaf26042e808d96a235ded9c,,ING-92a15c8f10047400ee895203,PRE-72e9829c61769cea948faacc,2026-01-03T09:00:00Z,1.0.0,1.0.0,1.0.0,1.0.0,1.0.0

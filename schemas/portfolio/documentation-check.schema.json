@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "check_id": {
+      "title": "Check Id",
+      "type": "string"
+    },
+    "check_type": {
+      "title": "Check Type",
+      "type": "string"
+    },
+    "message": {
+      "default": "",
+      "title": "Message",
+      "type": "string"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "check_id",
+    "path",
+    "check_type",
+    "status"
+  ],
+  "title": "DocumentationCheck",
+  "type": "object"
+}

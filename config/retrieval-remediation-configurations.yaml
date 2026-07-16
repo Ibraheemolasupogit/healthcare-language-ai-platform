@@ -1,0 +1,175 @@
+configurations:
+- configuration_id: char_tfidf_v1
+  candidate_retrievers:
+  - char_tfidf
+  character_features:
+  - char_3_5
+  phrase_features: []
+  proximity_features: []
+  synonym_expansion: false
+  pseudo_relevance_feedback: false
+  entity_features: []
+  reranker: none
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration char_tfidf_v1.
+- configuration_id: word_char_hybrid_v1
+  candidate_retrievers:
+  - bm25
+  - char_tfidf
+  character_features:
+  - char_3_5
+  phrase_features: []
+  proximity_features: []
+  synonym_expansion: false
+  pseudo_relevance_feedback: false
+  entity_features: []
+  reranker: rrf
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration word_char_hybrid_v1.
+- configuration_id: phrase_proximity_bm25_v1
+  candidate_retrievers:
+  - bm25
+  character_features: []
+  phrase_features:
+  - ordered_bigram
+  proximity_features:
+  - window_span
+  synonym_expansion: false
+  pseudo_relevance_feedback: false
+  entity_features: []
+  reranker: none
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration phrase_proximity_bm25_v1.
+- configuration_id: field_aware_bm25_v1
+  candidate_retrievers:
+  - field_bm25
+  character_features: []
+  phrase_features: []
+  proximity_features: []
+  synonym_expansion: false
+  pseudo_relevance_feedback: false
+  entity_features:
+  - document_type
+  - section_label
+  reranker: none
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration field_aware_bm25_v1.
+- configuration_id: entity_enriched_hybrid_v1
+  candidate_retrievers:
+  - bm25
+  - entity
+  character_features: []
+  phrase_features: []
+  proximity_features: []
+  synonym_expansion: true
+  pseudo_relevance_feedback: false
+  entity_features:
+  - clinical_concept
+  reranker: rrf
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration entity_enriched_hybrid_v1.
+- configuration_id: pseudo_feedback_bm25_v1
+  candidate_retrievers:
+  - bm25
+  - prf
+  character_features: []
+  phrase_features: []
+  proximity_features: []
+  synonym_expansion: true
+  pseudo_relevance_feedback: true
+  entity_features: []
+  reranker: none
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration pseudo_feedback_bm25_v1.
+- configuration_id: multi_retriever_rrf_v1
+  candidate_retrievers:
+  - bm25
+  - char_tfidf
+  - field_bm25
+  - entity
+  character_features:
+  - char_3_5
+  phrase_features:
+  - ordered_bigram
+  proximity_features:
+  - window_span
+  synonym_expansion: true
+  pseudo_relevance_feedback: false
+  entity_features:
+  - clinical_concept
+  reranker: rrf
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration multi_retriever_rrf_v1.
+- configuration_id: advanced_feature_reranked_v1
+  candidate_retrievers:
+  - bm25
+  - char_tfidf
+  - field_bm25
+  - entity
+  character_features:
+  - char_3_5
+  phrase_features:
+  - ordered_bigram
+  proximity_features:
+  - window_span
+  synonym_expansion: true
+  pseudo_relevance_feedback: true
+  entity_features:
+  - clinical_concept
+  - numeric
+  - negation
+  reranker: feature_reranker
+  diversification: false
+  abstention: false
+  description: Milestone 8 model-free remediation configuration advanced_feature_reranked_v1.
+- configuration_id: diversified_ensemble_v1
+  candidate_retrievers:
+  - bm25
+  - char_tfidf
+  - field_bm25
+  - entity
+  character_features:
+  - char_3_5
+  phrase_features:
+  - ordered_bigram
+  proximity_features:
+  - window_span
+  synonym_expansion: true
+  pseudo_relevance_feedback: true
+  entity_features:
+  - clinical_concept
+  - numeric
+  - negation
+  reranker: feature_reranker
+  diversification: true
+  abstention: false
+  description: Milestone 8 model-free remediation configuration diversified_ensemble_v1.
+- configuration_id: abstaining_ensemble_v1
+  candidate_retrievers:
+  - bm25
+  - char_tfidf
+  - field_bm25
+  - entity
+  character_features:
+  - char_3_5
+  phrase_features:
+  - ordered_bigram
+  proximity_features:
+  - window_span
+  synonym_expansion: true
+  pseudo_relevance_feedback: true
+  entity_features:
+  - clinical_concept
+  - numeric
+  - negation
+  reranker: feature_reranker
+  diversification: true
+  abstention: true
+  description: Milestone 8 model-free remediation configuration abstaining_ensemble_v1.

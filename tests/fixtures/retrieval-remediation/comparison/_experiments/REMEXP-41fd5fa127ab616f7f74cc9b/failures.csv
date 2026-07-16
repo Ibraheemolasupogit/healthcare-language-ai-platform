@@ -1,0 +1,8 @@
+query_id,query_category,split,failure_type
+RQ-c02a338fa45d9f60d0,direct,validation,lexical_gap
+RQ-797b213a14d5f0f669,negation_sensitive,development,negation_conflict
+RQ-2bf968e1dd5fa9a353,numeric_detail,validation,numeric_conflict
+RQ-f037031ed3ff824285,numeric_detail,development,numeric_conflict
+RQ-cdd03e8e472bf0203a,numeric_detail,validation,numeric_conflict
+RQ-bdddef061c01afb0d9,abbreviation,holdout,abbreviation_gap
+RQ-6bd66caf962f38e221,abbreviation,validation,abbreviation_gap

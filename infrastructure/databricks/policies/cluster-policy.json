@@ -1,0 +1,29 @@
+{
+  "autotermination_minutes": {
+    "type": "fixed",
+    "value": 30
+  },
+  "cluster_type": "job",
+  "custom_tags.environment": {
+    "type": "fixed",
+    "value": "portfolio-local-reference"
+  },
+  "custom_tags.synthetic_data_only": {
+    "type": "fixed",
+    "value": "true"
+  },
+  "data_security_mode": "USER_ISOLATION_PLACEHOLDER",
+  "execution_permitted": false,
+  "init_scripts": {
+    "type": "forbidden"
+  },
+  "max_workers": {
+    "type": "range",
+    "maxValue": 2
+  },
+  "node_type_id": {
+    "type": "allowlist",
+    "values": ["PLACEHOLDER_SMALL_NODE_TYPE"]
+  },
+  "runtime_family": "PLACEHOLDER_APPROVED_RUNTIME_FAMILY"
+}

@@ -1,0 +1,1 @@
+{"approval_status":"not_approved","approved_for_future_rag_prototype":false,"decision_reason":"Derived from required retrieval quality gates","failed_required_gates":7,"known_failing_query_groups":["all","all","all","paraphrased","all","all","all"],"passed_required_gates":1,"required_gate_count":8,"selected_configuration_id":"feature_reranked_hybrid_v1"}

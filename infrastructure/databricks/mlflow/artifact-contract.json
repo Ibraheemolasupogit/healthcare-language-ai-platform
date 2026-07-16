@@ -1,0 +1,12 @@
+{
+  "artifacts": [
+    "baseline_model_card.json",
+    "baseline_model_card.md",
+    "evaluation_manifest.json",
+    "entity_metrics_overall.csv",
+    "classification_metrics.csv",
+    "document_type_confusion_matrix.csv"
+  ],
+  "connection_attempted": false,
+  "execution_permitted": false
+}

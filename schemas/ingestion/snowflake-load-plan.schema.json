@@ -1,0 +1,205 @@
+{
+  "$defs": {
+    "SnowflakeColumnContract": {
+      "additionalProperties": false,
+      "properties": {
+        "column_name": {
+          "title": "Column Name",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "governance_classification": {
+          "title": "Governance Classification",
+          "type": "string"
+        },
+        "key_role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Key Role"
+        },
+        "nullable": {
+          "title": "Nullable",
+          "type": "boolean"
+        },
+        "snowflake_type": {
+          "title": "Snowflake Type",
+          "type": "string"
+        },
+        "source_field": {
+          "title": "Source Field",
+          "type": "string"
+        }
+      },
+      "required": [
+        "column_name",
+        "snowflake_type",
+        "nullable",
+        "description",
+        "source_field",
+        "governance_classification"
+      ],
+      "title": "SnowflakeColumnContract",
+      "type": "object"
+    },
+    "SnowflakeTableContract": {
+      "additionalProperties": false,
+      "properties": {
+        "columns": {
+          "items": {
+            "$ref": "#/$defs/SnowflakeColumnContract"
+          },
+          "title": "Columns",
+          "type": "array"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "namespace": {
+          "title": "Namespace",
+          "type": "string"
+        },
+        "table_name": {
+          "title": "Table Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "table_name",
+        "namespace",
+        "description",
+        "columns"
+      ],
+      "title": "SnowflakeTableContract",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "column_mappings": {
+      "additionalProperties": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "type": "object"
+      },
+      "title": "Column Mappings",
+      "type": "object"
+    },
+    "copy_into_reference_statements": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Copy Into Reference Statements",
+      "type": "array"
+    },
+    "dry_run_status": {
+      "const": "validated",
+      "title": "Dry Run Status",
+      "type": "string"
+    },
+    "execution_prohibited": {
+      "title": "Execution Prohibited",
+      "type": "boolean"
+    },
+    "expected_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Expected Checksums",
+      "type": "object"
+    },
+    "expected_row_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Expected Row Counts",
+      "type": "object"
+    },
+    "input_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Input Files",
+      "type": "array"
+    },
+    "input_format": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Input Format",
+      "type": "object"
+    },
+    "no_connection_attempted": {
+      "title": "No Connection Attempted",
+      "type": "boolean"
+    },
+    "plan_schema_version": {
+      "title": "Plan Schema Version",
+      "type": "string"
+    },
+    "post_load_validation_queries": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Post Load Validation Queries",
+      "type": "array"
+    },
+    "required_target_state_role": {
+      "title": "Required Target State Role",
+      "type": "string"
+    },
+    "snowflake_contract_version": {
+      "title": "Snowflake Contract Version",
+      "type": "string"
+    },
+    "target_database": {
+      "title": "Target Database",
+      "type": "string"
+    },
+    "target_schemas": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Target Schemas",
+      "type": "array"
+    },
+    "target_tables": {
+      "items": {
+        "$ref": "#/$defs/SnowflakeTableContract"
+      },
+      "title": "Target Tables",
+      "type": "array"
+    }
+  },
+  "required": [
+    "plan_schema_version",
+    "snowflake_contract_version",
+    "target_database",
+    "target_schemas",
+    "target_tables",
+    "input_files",
+    "input_format",
+    "expected_row_counts",
+    "expected_checksums",
+    "column_mappings",
+    "copy_into_reference_statements",
+    "post_load_validation_queries",
+    "required_target_state_role",
+    "dry_run_status",
+    "execution_prohibited",
+    "no_connection_attempted"
+  ],
+  "title": "SnowflakeLoadPlan",
+  "type": "object"
+}

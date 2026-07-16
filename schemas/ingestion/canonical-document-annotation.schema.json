@@ -1,0 +1,87 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "annotation_id": {
+      "title": "Annotation Id",
+      "type": "string"
+    },
+    "annotation_source": {
+      "title": "Annotation Source",
+      "type": "string"
+    },
+    "annotation_type": {
+      "enum": [
+        "span",
+        "document_level"
+      ],
+      "title": "Annotation Type",
+      "type": "string"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "end_offset": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End Offset"
+    },
+    "ingestion_run_id": {
+      "title": "Ingestion Run Id",
+      "type": "string"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "normalised_value": {
+      "title": "Normalised Value",
+      "type": "string"
+    },
+    "source_annotation_index": {
+      "title": "Source Annotation Index",
+      "type": "integer"
+    },
+    "source_record_checksum": {
+      "title": "Source Record Checksum",
+      "type": "string"
+    },
+    "start_offset": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Offset"
+    },
+    "value": {
+      "title": "Value",
+      "type": "string"
+    }
+  },
+  "required": [
+    "annotation_id",
+    "document_id",
+    "annotation_type",
+    "label",
+    "value",
+    "normalised_value",
+    "annotation_source",
+    "source_annotation_index",
+    "source_record_checksum",
+    "ingestion_run_id"
+  ],
+  "title": "CanonicalDocumentAnnotation",
+  "type": "object"
+}

@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "category": {
+      "title": "Category",
+      "type": "string"
+    },
+    "message": {
+      "default": "",
+      "title": "Message",
+      "type": "string"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "size_bytes": {
+      "title": "Size Bytes",
+      "type": "integer"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "path",
+    "size_bytes",
+    "category",
+    "status"
+  ],
+  "title": "RepositorySizeRecord",
+  "type": "object"
+}

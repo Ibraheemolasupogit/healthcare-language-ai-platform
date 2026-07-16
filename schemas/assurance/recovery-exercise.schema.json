@@ -1,0 +1,105 @@
+{
+  "$defs": {
+    "RestoreManifest": {
+      "additionalProperties": false,
+      "properties": {
+        "backup_id": {
+          "title": "Backup Id",
+          "type": "string"
+        },
+        "checksum_status": {
+          "enum": [
+            "passed",
+            "failed"
+          ],
+          "title": "Checksum Status",
+          "type": "string"
+        },
+        "destination": {
+          "title": "Destination",
+          "type": "string"
+        },
+        "path_traversal_validation": {
+          "enum": [
+            "passed",
+            "failed"
+          ],
+          "title": "Path Traversal Validation",
+          "type": "string"
+        },
+        "restored_file_count": {
+          "title": "Restored File Count",
+          "type": "integer"
+        },
+        "symlink_validation": {
+          "enum": [
+            "passed",
+            "failed"
+          ],
+          "title": "Symlink Validation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "backup_id",
+        "destination",
+        "restored_file_count",
+        "checksum_status",
+        "path_traversal_validation",
+        "symlink_validation"
+      ],
+      "title": "RestoreManifest",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "backup_id": {
+      "title": "Backup Id",
+      "type": "string"
+    },
+    "recovery_exercise_status": {
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Recovery Exercise Status",
+      "type": "string"
+    },
+    "recovery_run_id": {
+      "title": "Recovery Run Id",
+      "type": "string"
+    },
+    "restore_manifest": {
+      "$ref": "#/$defs/RestoreManifest"
+    },
+    "restored_contract_validation": {
+      "title": "Restored Contract Validation",
+      "type": "string"
+    },
+    "restored_rag_approval_validation": {
+      "title": "Restored Rag Approval Validation",
+      "type": "string"
+    },
+    "restored_rag_fixture_validation": {
+      "title": "Restored Rag Fixture Validation",
+      "type": "string"
+    },
+    "restored_retrieval_approval_validation": {
+      "title": "Restored Retrieval Approval Validation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "recovery_run_id",
+    "backup_id",
+    "restore_manifest",
+    "restored_contract_validation",
+    "restored_retrieval_approval_validation",
+    "restored_rag_approval_validation",
+    "restored_rag_fixture_validation",
+    "recovery_exercise_status"
+  ],
+  "title": "RecoveryExercise",
+  "type": "object"
+}

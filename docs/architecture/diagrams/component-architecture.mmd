@@ -1,0 +1,5 @@
+flowchart TB
+  CLI["Typer CLI"] --> Services["Shared services"]
+  API["FastAPI"] --> Services
+  Dashboard["Streamlit"] --> Services
+  Services --> Fixtures["Deterministic fixtures"]

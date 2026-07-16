@@ -1,0 +1,54 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "accepted_count": {
+      "minimum": 0,
+      "title": "Accepted Count",
+      "type": "integer"
+    },
+    "accepted_count_by_label": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Accepted Count By Label",
+      "type": "object"
+    },
+    "candidate_count": {
+      "minimum": 0,
+      "title": "Candidate Count",
+      "type": "integer"
+    },
+    "candidate_count_by_label": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Candidate Count By Label",
+      "type": "object"
+    },
+    "duplicate_prediction_count": {
+      "minimum": 0,
+      "title": "Duplicate Prediction Count",
+      "type": "integer"
+    },
+    "extraction_run_id": {
+      "title": "Extraction Run Id",
+      "type": "string"
+    },
+    "suppressed_overlap_count": {
+      "minimum": 0,
+      "title": "Suppressed Overlap Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "extraction_run_id",
+    "candidate_count",
+    "accepted_count",
+    "suppressed_overlap_count",
+    "duplicate_prediction_count",
+    "candidate_count_by_label",
+    "accepted_count_by_label"
+  ],
+  "title": "CandidateSummary",
+  "type": "object"
+}

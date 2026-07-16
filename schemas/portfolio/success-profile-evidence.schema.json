@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "behaviour": {
+      "title": "Behaviour",
+      "type": "string"
+    },
+    "behaviour_id": {
+      "title": "Behaviour Id",
+      "type": "string"
+    },
+    "evidence_paths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Paths",
+      "type": "array"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string"
+    }
+  },
+  "required": [
+    "behaviour_id",
+    "behaviour",
+    "evidence_paths",
+    "summary"
+  ],
+  "title": "SuccessProfileEvidence",
+  "type": "object"
+}

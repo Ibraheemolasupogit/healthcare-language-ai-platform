@@ -1,0 +1,9 @@
+gate_id,metric_name,split,query_group,operator,threshold,actual_value,status,required,message
+validation_hit_rate,hit_rate_at_5,validation,all,>=,0.7,0.289474,failed,True,0.289474 >= 0.7
+validation_recall,recall_at_5,validation,all,>=,0.6,0.289474,failed,True,0.289474 >= 0.6
+validation_ndcg,ndcg_at_5,validation,all,>=,0.5,0.276316,failed,True,0.276316 >= 0.5
+paraphrased_hit_rate,hit_rate_at_5,validation,paraphrased,>=,0.6,0.0,failed,True,0.0 >= 0.6
+negation_hit_rate,hit_rate_at_5,validation,negation_sensitive,>=,0.5,1.0,passed,True,1.0 >= 0.5
+holdout_hit_rate,hit_rate_at_5,holdout,all,>=,0.55,0.473684,failed,True,0.473684 >= 0.55
+holdout_ndcg,ndcg_at_5,holdout,all,>=,0.4,0.356004,failed,True,0.356004 >= 0.4
+zero_hit_count,zero_hit_query_count,validation,all,<=,12.0,27.0,failed,True,27.0 <= 12.0

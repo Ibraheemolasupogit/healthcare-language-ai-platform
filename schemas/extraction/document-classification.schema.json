@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "classification_rule_version": {
+      "title": "Classification Rule Version",
+      "type": "string"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "extraction_run_id": {
+      "title": "Extraction Run Id",
+      "type": "string"
+    },
+    "matched_rule_ids": {
+      "title": "Matched Rule Ids",
+      "type": "string"
+    },
+    "predicted_document_type": {
+      "title": "Predicted Document Type",
+      "type": "string"
+    },
+    "score_by_class": {
+      "title": "Score By Class",
+      "type": "string"
+    }
+  },
+  "required": [
+    "document_id",
+    "predicted_document_type",
+    "confidence",
+    "matched_rule_ids",
+    "score_by_class",
+    "classification_rule_version",
+    "extraction_run_id"
+  ],
+  "title": "DocumentClassificationPrediction",
+  "type": "object"
+}

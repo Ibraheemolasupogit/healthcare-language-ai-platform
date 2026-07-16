@@ -1,0 +1,56 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "checksum": {
+      "title": "Checksum",
+      "type": "string"
+    },
+    "closed_at": {
+      "format": "date-time",
+      "title": "Closed At",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "event_count": {
+      "title": "Event Count",
+      "type": "integer"
+    },
+    "event_file": {
+      "title": "Event File",
+      "type": "string"
+    },
+    "file_size": {
+      "title": "File Size",
+      "type": "integer"
+    },
+    "rotation_reason": {
+      "default": "active_file",
+      "title": "Rotation Reason",
+      "type": "string"
+    },
+    "sequence_end": {
+      "title": "Sequence End",
+      "type": "integer"
+    },
+    "sequence_start": {
+      "title": "Sequence Start",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "event_file",
+    "sequence_start",
+    "sequence_end",
+    "event_count",
+    "file_size",
+    "checksum",
+    "created_at",
+    "closed_at"
+  ],
+  "title": "OperationalEventManifest",
+  "type": "object"
+}

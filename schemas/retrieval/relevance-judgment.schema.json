@@ -1,0 +1,41 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "judgment_id": {
+      "title": "Judgment Id",
+      "type": "string"
+    },
+    "judgment_source": {
+      "title": "Judgment Source",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "query_version": {
+      "title": "Query Version",
+      "type": "string"
+    },
+    "relevance_grade": {
+      "maximum": 2,
+      "minimum": 0,
+      "title": "Relevance Grade",
+      "type": "integer"
+    },
+    "retrieval_unit_id": {
+      "title": "Retrieval Unit Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "judgment_id",
+    "query_id",
+    "retrieval_unit_id",
+    "relevance_grade",
+    "judgment_source",
+    "query_version"
+  ],
+  "title": "RelevanceJudgment",
+  "type": "object"
+}

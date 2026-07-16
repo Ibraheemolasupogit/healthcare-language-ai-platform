@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "automatic_download_permitted": {
+      "title": "Automatic Download Permitted",
+      "type": "boolean"
+    },
+    "embedding_dimension": {
+      "title": "Embedding Dimension",
+      "type": "integer"
+    },
+    "embedding_provider": {
+      "title": "Embedding Provider",
+      "type": "string"
+    },
+    "hash_embedding_version": {
+      "title": "Hash Embedding Version",
+      "type": "string"
+    },
+    "model_checksum": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Checksum"
+    },
+    "model_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Path"
+    },
+    "ngram_range": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Ngram Range",
+      "type": "array"
+    },
+    "tokeniser_version": {
+      "title": "Tokeniser Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "embedding_provider",
+    "embedding_dimension",
+    "hash_embedding_version",
+    "tokeniser_version",
+    "ngram_range",
+    "automatic_download_permitted"
+  ],
+  "title": "EmbeddingMetadata",
+  "type": "object"
+}

@@ -1,0 +1,1379 @@
+{
+  "components": {
+    "schemas": {
+      "AnswerResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "answer_id": {
+            "title": "Answer Id",
+            "type": "string"
+          },
+          "answer_status": {
+            "title": "Answer Status",
+            "type": "string"
+          },
+          "answer_text": {
+            "title": "Answer Text",
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "$ref": "#/components/schemas/CitationSummary"
+            },
+            "title": "Citations",
+            "type": "array"
+          },
+          "clinical_use_prohibited": {
+            "default": true,
+            "title": "Clinical Use Prohibited",
+            "type": "boolean"
+          },
+          "disclaimer": {
+            "default": "Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated.",
+            "title": "Disclaimer",
+            "type": "string"
+          },
+          "generator_provider": {
+            "title": "Generator Provider",
+            "type": "string"
+          },
+          "generator_version": {
+            "title": "Generator Version",
+            "type": "string"
+          },
+          "prompt_id": {
+            "title": "Prompt Id",
+            "type": "string"
+          },
+          "prompt_version": {
+            "title": "Prompt Version",
+            "type": "string"
+          },
+          "query_id": {
+            "title": "Query Id",
+            "type": "string"
+          },
+          "rag_run_id": {
+            "title": "Rag Run Id",
+            "type": "string"
+          },
+          "request_id": {
+            "title": "Request Id",
+            "type": "string"
+          },
+          "retrieval_confidence": {
+            "title": "Retrieval Confidence",
+            "type": "number"
+          },
+          "retrieval_status": {
+            "title": "Retrieval Status",
+            "type": "string"
+          },
+          "synthetic_data_only": {
+            "default": true,
+            "title": "Synthetic Data Only",
+            "type": "boolean"
+          },
+          "trace_id": {
+            "title": "Trace Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "request_id",
+          "query_id",
+          "answer_id",
+          "answer_status",
+          "answer_text",
+          "citations",
+          "retrieval_status",
+          "retrieval_confidence",
+          "trace_id",
+          "rag_run_id",
+          "prompt_id",
+          "prompt_version",
+          "generator_provider",
+          "generator_version"
+        ],
+        "title": "AnswerResponse",
+        "type": "object"
+      },
+      "ApprovalResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "approval_id": {
+            "title": "Approval Id",
+            "type": "string"
+          },
+          "approval_status": {
+            "title": "Approval Status",
+            "type": "string"
+          },
+          "approval_type": {
+            "enum": [
+              "retrieval",
+              "rag"
+            ],
+            "title": "Approval Type",
+            "type": "string"
+          },
+          "approved_for_local_synthetic_demo": {
+            "title": "Approved For Local Synthetic Demo",
+            "type": "boolean"
+          },
+          "configuration": {
+            "title": "Configuration",
+            "type": "string"
+          },
+          "failed_required_gates": {
+            "title": "Failed Required Gates",
+            "type": "integer"
+          },
+          "known_failures": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Known Failures",
+            "type": "array"
+          },
+          "passed_required_gates": {
+            "title": "Passed Required Gates",
+            "type": "integer"
+          },
+          "required_gate_count": {
+            "title": "Required Gate Count",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "approval_type",
+          "approval_id",
+          "approval_status",
+          "approved_for_local_synthetic_demo",
+          "required_gate_count",
+          "passed_required_gates",
+          "failed_required_gates",
+          "configuration"
+        ],
+        "title": "ApprovalResponse",
+        "type": "object"
+      },
+      "CitationResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "bounded_text": {
+            "title": "Bounded Text",
+            "type": "string"
+          },
+          "citation_id": {
+            "title": "Citation Id",
+            "type": "string"
+          },
+          "citation_label": {
+            "title": "Citation Label",
+            "type": "string"
+          },
+          "citation_status": {
+            "title": "Citation Status",
+            "type": "string"
+          },
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Claim Ids",
+            "type": "array"
+          },
+          "document_id": {
+            "title": "Document Id",
+            "type": "string"
+          },
+          "evidence_id": {
+            "title": "Evidence Id",
+            "type": "string"
+          },
+          "quoted_span": {
+            "title": "Quoted Span",
+            "type": "string"
+          },
+          "section_id": {
+            "default": "",
+            "title": "Section Id",
+            "type": "string"
+          },
+          "sentence_id": {
+            "default": "",
+            "title": "Sentence Id",
+            "type": "string"
+          },
+          "source_text_checksum": {
+            "title": "Source Text Checksum",
+            "type": "string"
+          }
+        },
+        "required": [
+          "citation_id",
+          "citation_label",
+          "evidence_id",
+          "document_id",
+          "citation_status",
+          "quoted_span",
+          "source_text_checksum",
+          "bounded_text"
+        ],
+        "title": "CitationResponse",
+        "type": "object"
+      },
+      "CitationSummary": {
+        "additionalProperties": false,
+        "properties": {
+          "citation_id": {
+            "title": "Citation Id",
+            "type": "string"
+          },
+          "citation_label": {
+            "title": "Citation Label",
+            "type": "string"
+          },
+          "citation_status": {
+            "title": "Citation Status",
+            "type": "string"
+          },
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Claim Ids",
+            "type": "array"
+          },
+          "document_id": {
+            "title": "Document Id",
+            "type": "string"
+          },
+          "evidence_id": {
+            "title": "Evidence Id",
+            "type": "string"
+          },
+          "quoted_span": {
+            "title": "Quoted Span",
+            "type": "string"
+          },
+          "section_id": {
+            "default": "",
+            "title": "Section Id",
+            "type": "string"
+          },
+          "sentence_id": {
+            "default": "",
+            "title": "Sentence Id",
+            "type": "string"
+          },
+          "source_text_checksum": {
+            "title": "Source Text Checksum",
+            "type": "string"
+          }
+        },
+        "required": [
+          "citation_id",
+          "citation_label",
+          "evidence_id",
+          "document_id",
+          "citation_status",
+          "quoted_span",
+          "source_text_checksum"
+        ],
+        "title": "CitationSummary",
+        "type": "object"
+      },
+      "EvidenceResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "bounded_snippet": {
+            "title": "Bounded Snippet",
+            "type": "string"
+          },
+          "document_id": {
+            "title": "Document Id",
+            "type": "string"
+          },
+          "evidence_id": {
+            "title": "Evidence Id",
+            "type": "string"
+          },
+          "rank": {
+            "title": "Rank",
+            "type": "integer"
+          },
+          "retrieval_confidence": {
+            "title": "Retrieval Confidence",
+            "type": "number"
+          },
+          "retrieval_score": {
+            "title": "Retrieval Score",
+            "type": "number"
+          },
+          "retrieval_unit_id": {
+            "title": "Retrieval Unit Id",
+            "type": "string"
+          },
+          "section_id": {
+            "default": "",
+            "title": "Section Id",
+            "type": "string"
+          },
+          "sentence_id": {
+            "default": "",
+            "title": "Sentence Id",
+            "type": "string"
+          },
+          "source_extraction_run_id": {
+            "title": "Source Extraction Run Id",
+            "type": "string"
+          },
+          "source_index_id": {
+            "title": "Source Index Id",
+            "type": "string"
+          },
+          "source_preprocessing_run_id": {
+            "title": "Source Preprocessing Run Id",
+            "type": "string"
+          },
+          "text_checksum": {
+            "title": "Text Checksum",
+            "type": "string"
+          },
+          "unit_type": {
+            "title": "Unit Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "evidence_id",
+          "retrieval_unit_id",
+          "document_id",
+          "unit_type",
+          "rank",
+          "retrieval_score",
+          "retrieval_confidence",
+          "bounded_snippet",
+          "text_checksum",
+          "source_preprocessing_run_id",
+          "source_extraction_run_id",
+          "source_index_id"
+        ],
+        "title": "EvidenceResponse",
+        "type": "object"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "HealthResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "application": {
+            "title": "Application",
+            "type": "string"
+          },
+          "status": {
+            "const": "ok",
+            "title": "Status",
+            "type": "string"
+          },
+          "timestamp": {
+            "format": "date-time",
+            "title": "Timestamp",
+            "type": "string"
+          },
+          "version": {
+            "title": "Version",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "application",
+          "version"
+        ],
+        "title": "HealthResponse",
+        "type": "object"
+      },
+      "MetricSummaryResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "citation_failure_count": {
+            "title": "Citation Failure Count",
+            "type": "integer"
+          },
+          "error_count": {
+            "title": "Error Count",
+            "type": "integer"
+          },
+          "event_count": {
+            "title": "Event Count",
+            "type": "integer"
+          },
+          "grounded_answer_count": {
+            "title": "Grounded Answer Count",
+            "type": "integer"
+          },
+          "groundedness_failure_count": {
+            "title": "Groundedness Failure Count",
+            "type": "integer"
+          },
+          "p50_duration_ms": {
+            "title": "P50 Duration Ms",
+            "type": "number"
+          },
+          "p95_duration_ms": {
+            "title": "P95 Duration Ms",
+            "type": "number"
+          },
+          "refusal_count": {
+            "title": "Refusal Count",
+            "type": "integer"
+          },
+          "request_count": {
+            "title": "Request Count",
+            "type": "integer"
+          },
+          "retrieval_abstention_count": {
+            "title": "Retrieval Abstention Count",
+            "type": "integer"
+          },
+          "safety_failure_count": {
+            "title": "Safety Failure Count",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "event_count",
+          "request_count",
+          "grounded_answer_count",
+          "refusal_count",
+          "retrieval_abstention_count",
+          "citation_failure_count",
+          "groundedness_failure_count",
+          "safety_failure_count",
+          "error_count",
+          "p50_duration_ms",
+          "p95_duration_ms"
+        ],
+        "title": "MetricSummaryResponse",
+        "type": "object"
+      },
+      "QualityGateResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "failed_required_gates": {
+            "title": "Failed Required Gates",
+            "type": "integer"
+          },
+          "gate_set": {
+            "enum": [
+              "retrieval",
+              "rag"
+            ],
+            "title": "Gate Set",
+            "type": "string"
+          },
+          "gates": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Gates",
+            "type": "array"
+          },
+          "passed_required_gates": {
+            "title": "Passed Required Gates",
+            "type": "integer"
+          },
+          "required_gate_count": {
+            "title": "Required Gate Count",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "gate_set",
+          "required_gate_count",
+          "passed_required_gates",
+          "failed_required_gates",
+          "gates"
+        ],
+        "title": "QualityGateResponse",
+        "type": "object"
+      },
+      "QueryRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "include_trace": {
+            "default": false,
+            "title": "Include Trace",
+            "type": "boolean"
+          },
+          "metadata_filters": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "title": "Metadata Filters",
+            "type": "object"
+          },
+          "portfolio_demo_mode": {
+            "default": true,
+            "title": "Portfolio Demo Mode",
+            "type": "boolean"
+          },
+          "query_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Query Id"
+          },
+          "query_text": {
+            "minLength": 1,
+            "title": "Query Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query_text"
+        ],
+        "title": "QueryRequest",
+        "type": "object"
+      },
+      "QueryResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "answer_id": {
+            "title": "Answer Id",
+            "type": "string"
+          },
+          "answer_status": {
+            "title": "Answer Status",
+            "type": "string"
+          },
+          "answer_text": {
+            "title": "Answer Text",
+            "type": "string"
+          },
+          "citations": {
+            "items": {
+              "$ref": "#/components/schemas/CitationSummary"
+            },
+            "title": "Citations",
+            "type": "array"
+          },
+          "clinical_use_prohibited": {
+            "default": true,
+            "title": "Clinical Use Prohibited",
+            "type": "boolean"
+          },
+          "disclaimer": {
+            "default": "Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated.",
+            "title": "Disclaimer",
+            "type": "string"
+          },
+          "query_id": {
+            "title": "Query Id",
+            "type": "string"
+          },
+          "request_id": {
+            "title": "Request Id",
+            "type": "string"
+          },
+          "retrieval_confidence": {
+            "title": "Retrieval Confidence",
+            "type": "number"
+          },
+          "retrieval_status": {
+            "title": "Retrieval Status",
+            "type": "string"
+          },
+          "synthetic_data_only": {
+            "default": true,
+            "title": "Synthetic Data Only",
+            "type": "boolean"
+          },
+          "trace_id": {
+            "title": "Trace Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "request_id",
+          "query_id",
+          "answer_id",
+          "answer_status",
+          "answer_text",
+          "citations",
+          "retrieval_status",
+          "retrieval_confidence",
+          "trace_id"
+        ],
+        "title": "QueryResponse",
+        "type": "object"
+      },
+      "ReadinessCheck": {
+        "additionalProperties": false,
+        "properties": {
+          "detail": {
+            "default": "",
+            "title": "Detail",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "required": {
+            "default": true,
+            "title": "Required",
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "passed",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "status"
+        ],
+        "title": "ReadinessCheck",
+        "type": "object"
+      },
+      "ReadinessResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "checks": {
+            "items": {
+              "$ref": "#/components/schemas/ReadinessCheck"
+            },
+            "title": "Checks",
+            "type": "array"
+          },
+          "readiness_version": {
+            "title": "Readiness Version",
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "ready",
+              "not_ready"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "synthetic_data_only": {
+            "title": "Synthetic Data Only",
+            "type": "boolean"
+          },
+          "timestamp": {
+            "format": "date-time",
+            "title": "Timestamp",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "readiness_version",
+          "checks",
+          "synthetic_data_only"
+        ],
+        "title": "ReadinessResponse",
+        "type": "object"
+      },
+      "SystemStatusResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "api_contract_version": {
+            "title": "Api Contract Version",
+            "type": "string"
+          },
+          "api_version": {
+            "title": "Api Version",
+            "type": "string"
+          },
+          "application": {
+            "title": "Application",
+            "type": "string"
+          },
+          "application_service_version": {
+            "title": "Application Service Version",
+            "type": "string"
+          },
+          "approved_retrieval_configuration": {
+            "title": "Approved Retrieval Configuration",
+            "type": "string"
+          },
+          "clinical_use_prohibited": {
+            "title": "Clinical Use Prohibited",
+            "type": "boolean"
+          },
+          "generator_mode": {
+            "title": "Generator Mode",
+            "type": "string"
+          },
+          "operational_events_enabled": {
+            "title": "Operational Events Enabled",
+            "type": "boolean"
+          },
+          "rag_approval_status": {
+            "title": "Rag Approval Status",
+            "type": "string"
+          },
+          "retrieval_approval_status": {
+            "title": "Retrieval Approval Status",
+            "type": "string"
+          },
+          "streamlit_demo_version": {
+            "title": "Streamlit Demo Version",
+            "type": "string"
+          },
+          "synthetic_data_only": {
+            "title": "Synthetic Data Only",
+            "type": "boolean"
+          },
+          "version": {
+            "title": "Version",
+            "type": "string"
+          }
+        },
+        "required": [
+          "application",
+          "version",
+          "application_service_version",
+          "api_contract_version",
+          "api_version",
+          "streamlit_demo_version",
+          "synthetic_data_only",
+          "clinical_use_prohibited",
+          "retrieval_approval_status",
+          "rag_approval_status",
+          "approved_retrieval_configuration",
+          "generator_mode",
+          "operational_events_enabled"
+        ],
+        "title": "SystemStatusResponse",
+        "type": "object"
+      },
+      "TraceResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "answer_id": {
+            "title": "Answer Id",
+            "type": "string"
+          },
+          "answer_status": {
+            "title": "Answer Status",
+            "type": "string"
+          },
+          "citation_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Citation Ids",
+            "type": "array"
+          },
+          "citation_validation_status": {
+            "title": "Citation Validation Status",
+            "type": "string"
+          },
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Claim Ids",
+            "type": "array"
+          },
+          "clinical_use_prohibited": {
+            "default": true,
+            "title": "Clinical Use Prohibited",
+            "type": "boolean"
+          },
+          "excluded_retrieval_unit_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Excluded Retrieval Unit Ids",
+            "type": "array"
+          },
+          "generator_provider": {
+            "title": "Generator Provider",
+            "type": "string"
+          },
+          "generator_version": {
+            "title": "Generator Version",
+            "type": "string"
+          },
+          "groundedness_status": {
+            "title": "Groundedness Status",
+            "type": "string"
+          },
+          "prompt_id": {
+            "title": "Prompt Id",
+            "type": "string"
+          },
+          "prompt_version": {
+            "title": "Prompt Version",
+            "type": "string"
+          },
+          "query_category": {
+            "title": "Query Category",
+            "type": "string"
+          },
+          "query_id": {
+            "title": "Query Id",
+            "type": "string"
+          },
+          "retrieval_approval_id": {
+            "title": "Retrieval Approval Id",
+            "type": "string"
+          },
+          "retrieval_confidence": {
+            "title": "Retrieval Confidence",
+            "type": "number"
+          },
+          "retrieval_configuration_id": {
+            "title": "Retrieval Configuration Id",
+            "type": "string"
+          },
+          "retrieval_status": {
+            "title": "Retrieval Status",
+            "type": "string"
+          },
+          "safety_status": {
+            "title": "Safety Status",
+            "type": "string"
+          },
+          "selected_evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Selected Evidence Ids",
+            "type": "array"
+          },
+          "synthetic_data_only": {
+            "default": true,
+            "title": "Synthetic Data Only",
+            "type": "boolean"
+          },
+          "trace_id": {
+            "title": "Trace Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "trace_id",
+          "answer_id",
+          "query_id",
+          "query_category",
+          "answer_status",
+          "retrieval_status",
+          "retrieval_configuration_id",
+          "retrieval_approval_id",
+          "retrieval_confidence",
+          "selected_evidence_ids",
+          "excluded_retrieval_unit_ids",
+          "prompt_id",
+          "prompt_version",
+          "generator_provider",
+          "generator_version",
+          "claim_ids",
+          "citation_ids",
+          "citation_validation_status",
+          "groundedness_status",
+          "safety_status"
+        ],
+        "title": "TraceResponse",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "description": "Synthetic-only local portfolio demonstration API. Not for patient care, not medical advice, not clinically validated, and not connected to real patient systems.",
+    "title": "Healthcare Language AI Local Demonstration API",
+    "version": "v1"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/v1/answers/{answer_id}": {
+      "get": {
+        "operationId": "answer_api_v1_answers__answer_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "answer_id",
+            "required": true,
+            "schema": {
+              "title": "Answer Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnswerResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Answer",
+        "tags": [
+          "answers"
+        ]
+      }
+    },
+    "/api/v1/approvals/rag": {
+      "get": {
+        "operationId": "rag_approval_api_v1_approvals_rag_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApprovalResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Rag Approval",
+        "tags": [
+          "approvals"
+        ]
+      }
+    },
+    "/api/v1/approvals/retrieval": {
+      "get": {
+        "operationId": "retrieval_approval_api_v1_approvals_retrieval_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApprovalResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Retrieval Approval",
+        "tags": [
+          "approvals"
+        ]
+      }
+    },
+    "/api/v1/citations/{citation_id}": {
+      "get": {
+        "operationId": "citation_api_v1_citations__citation_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "citation_id",
+            "required": true,
+            "schema": {
+              "title": "Citation Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CitationResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Citation",
+        "tags": [
+          "citations"
+        ]
+      }
+    },
+    "/api/v1/evidence/{evidence_id}": {
+      "get": {
+        "operationId": "evidence_api_v1_evidence__evidence_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "evidence_id",
+            "required": true,
+            "schema": {
+              "title": "Evidence Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EvidenceResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Evidence",
+        "tags": [
+          "evidence"
+        ]
+      }
+    },
+    "/api/v1/metrics/rag": {
+      "get": {
+        "operationId": "rag_metrics_api_v1_metrics_rag_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MetricSummaryResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Rag Metrics",
+        "tags": [
+          "metrics"
+        ]
+      }
+    },
+    "/api/v1/metrics/retrieval": {
+      "get": {
+        "operationId": "retrieval_metrics_api_v1_metrics_retrieval_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MetricSummaryResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Retrieval Metrics",
+        "tags": [
+          "metrics"
+        ]
+      }
+    },
+    "/api/v1/metrics/summary": {
+      "get": {
+        "operationId": "metric_summary_api_v1_metrics_summary_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MetricSummaryResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Metric Summary",
+        "tags": [
+          "metrics"
+        ]
+      }
+    },
+    "/api/v1/quality-gates/rag": {
+      "get": {
+        "operationId": "rag_gates_api_v1_quality_gates_rag_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QualityGateResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Rag Gates",
+        "tags": [
+          "quality"
+        ]
+      }
+    },
+    "/api/v1/quality-gates/retrieval": {
+      "get": {
+        "operationId": "retrieval_gates_api_v1_quality_gates_retrieval_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QualityGateResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Retrieval Gates",
+        "tags": [
+          "quality"
+        ]
+      }
+    },
+    "/api/v1/query": {
+      "post": {
+        "operationId": "query_api_v1_query_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QueryRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/QueryResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Query",
+        "tags": [
+          "query"
+        ]
+      }
+    },
+    "/api/v1/system": {
+      "get": {
+        "operationId": "system_api_v1_system_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SystemStatusResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "System",
+        "tags": [
+          "system"
+        ]
+      }
+    },
+    "/api/v1/traces/{answer_id}": {
+      "get": {
+        "operationId": "trace_api_v1_traces__answer_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "answer_id",
+            "required": true,
+            "schema": {
+              "title": "Answer Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TraceResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Trace",
+        "tags": [
+          "traces"
+        ]
+      }
+    },
+    "/health/live": {
+      "get": {
+        "operationId": "live_health_live_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Live",
+        "tags": [
+          "health"
+        ]
+      }
+    },
+    "/health/ready": {
+      "get": {
+        "operationId": "ready_health_ready_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadinessResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Ready",
+        "tags": [
+          "health"
+        ]
+      }
+    }
+  }
+}

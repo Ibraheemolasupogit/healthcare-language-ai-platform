@@ -1,0 +1,10 @@
+metric_scope,scope_value,true_positive_count,false_positive_count,false_negative_count,precision,recall,f1,support,evaluation_run_id
+label,administrative_priority,3,0,0,1.0,1.0,1.0,3,EVAL-a56c0ad131cdbb85a69e1605
+label,body_site,12,0,0,1.0,1.0,1.0,12,EVAL-a56c0ad131cdbb85a69e1605
+label,descriptor,9,0,0,1.0,1.0,1.0,9,EVAL-a56c0ad131cdbb85a69e1605
+label,encounter_context,9,0,0,1.0,1.0,1.0,9,EVAL-a56c0ad131cdbb85a69e1605
+label,investigation,6,0,0,1.0,1.0,1.0,6,EVAL-a56c0ad131cdbb85a69e1605
+label,observation,3,0,0,1.0,1.0,1.0,3,EVAL-a56c0ad131cdbb85a69e1605
+label,presenting_concern,12,0,0,1.0,1.0,1.0,12,EVAL-a56c0ad131cdbb85a69e1605
+label,specialty,6,0,0,1.0,1.0,1.0,6,EVAL-a56c0ad131cdbb85a69e1605
+label,workflow_status,6,0,0,1.0,1.0,1.0,6,EVAL-a56c0ad131cdbb85a69e1605

@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "citation_validity_status": {
+      "title": "Citation Validity Status",
+      "type": "string"
+    },
+    "claims_with_citations": {
+      "title": "Claims With Citations",
+      "type": "integer"
+    },
+    "claims_without_citations": {
+      "title": "Claims Without Citations",
+      "type": "integer"
+    },
+    "invalid_citation_count": {
+      "title": "Invalid Citation Count",
+      "type": "integer"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "validation_version": {
+      "default": "1.0.0",
+      "title": "Validation Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "answer_id",
+    "query_id",
+    "citation_validity_status",
+    "invalid_citation_count",
+    "claims_with_citations",
+    "claims_without_citations"
+  ],
+  "title": "CitationValidationResult",
+  "type": "object"
+}

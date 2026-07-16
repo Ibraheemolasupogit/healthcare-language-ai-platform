@@ -1,0 +1,1463 @@
+{
+  "$defs": {
+    "ClinicalDocumentType": {
+      "description": "Supported synthetic clinical document categories.",
+      "enum": [
+        "clinical_note",
+        "discharge_summary",
+        "referral_letter",
+        "radiology_report",
+        "pathology_report"
+      ],
+      "title": "ClinicalDocumentType",
+      "type": "string"
+    },
+    "EvaluationSettings": {
+      "description": "Settings for deterministic local baseline evaluation.",
+      "properties": {
+        "context_window_characters": {
+          "default": 32,
+          "maximum": 200,
+          "minimum": 0,
+          "title": "Context Window Characters",
+          "type": "integer"
+        },
+        "default_matching_policy": {
+          "default": "exact",
+          "enum": [
+            "exact",
+            "exact_normalised_value",
+            "relaxed_overlap"
+          ],
+          "title": "Default Matching Policy",
+          "type": "string"
+        },
+        "default_output_root": {
+          "default": "outputs/evaluation",
+          "format": "path",
+          "title": "Default Output Root",
+          "type": "string"
+        },
+        "default_overwrite_policy": {
+          "default": "fail_if_exists",
+          "enum": [
+            "fail_if_exists",
+            "replace_identical",
+            "force_replace"
+          ],
+          "title": "Default Overwrite Policy",
+          "type": "string"
+        },
+        "error_analysis_version": {
+          "default": "1.0.0",
+          "title": "Error Analysis Version",
+          "type": "string"
+        },
+        "evaluation_contract_version": {
+          "default": "1.0.0",
+          "title": "Evaluation Contract Version",
+          "type": "string"
+        },
+        "evaluation_reference_timestamp": {
+          "default": "2026-01-05T09:00:00Z",
+          "format": "date-time",
+          "title": "Evaluation Reference Timestamp",
+          "type": "string"
+        },
+        "maximum_error_records": {
+          "default": 1000,
+          "minimum": 0,
+          "title": "Maximum Error Records",
+          "type": "integer"
+        },
+        "metrics_version": {
+          "default": "1.0.0",
+          "title": "Metrics Version",
+          "type": "string"
+        },
+        "mlflow_contract_version": {
+          "default": "1.0.0",
+          "title": "Mlflow Contract Version",
+          "type": "string"
+        },
+        "relaxed_overlap_threshold": {
+          "default": 0.5,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Relaxed Overlap Threshold",
+          "type": "number"
+        },
+        "write_csv": {
+          "default": true,
+          "title": "Write Csv",
+          "type": "boolean"
+        },
+        "write_parquet": {
+          "default": true,
+          "title": "Write Parquet",
+          "type": "boolean"
+        }
+      },
+      "title": "EvaluationSettings",
+      "type": "object"
+    },
+    "ExtractionSettings": {
+      "description": "Settings for deterministic local rule-based extraction.",
+      "properties": {
+        "allow_overlapping_predictions": {
+          "default": false,
+          "title": "Allow Overlapping Predictions",
+          "type": "boolean"
+        },
+        "allowed_preprocessing_roots": {
+          "items": {
+            "format": "path",
+            "type": "string"
+          },
+          "title": "Allowed Preprocessing Roots",
+          "type": "array"
+        },
+        "case_sensitive_matching": {
+          "default": false,
+          "title": "Case Sensitive Matching",
+          "type": "boolean"
+        },
+        "classification_rule_version": {
+          "default": "1.0.0",
+          "title": "Classification Rule Version",
+          "type": "string"
+        },
+        "default_output_root": {
+          "default": "outputs/extraction",
+          "format": "path",
+          "title": "Default Output Root",
+          "type": "string"
+        },
+        "default_overwrite_policy": {
+          "default": "fail_if_exists",
+          "enum": [
+            "fail_if_exists",
+            "replace_identical",
+            "force_replace"
+          ],
+          "title": "Default Overwrite Policy",
+          "type": "string"
+        },
+        "default_text_representation": {
+          "const": "normalised_text",
+          "default": "normalised_text",
+          "title": "Default Text Representation",
+          "type": "string"
+        },
+        "entity_rule_version": {
+          "default": "1.0.0",
+          "title": "Entity Rule Version",
+          "type": "string"
+        },
+        "extraction_contract_version": {
+          "default": "1.0.0",
+          "title": "Extraction Contract Version",
+          "type": "string"
+        },
+        "extraction_reference_timestamp": {
+          "default": "2026-01-04T09:00:00Z",
+          "format": "date-time",
+          "title": "Extraction Reference Timestamp",
+          "type": "string"
+        },
+        "maximum_documents_per_extraction_run": {
+          "default": 1000,
+          "exclusiveMinimum": 0,
+          "title": "Maximum Documents Per Extraction Run",
+          "type": "integer"
+        },
+        "overlap_resolution_version": {
+          "default": "1.0.0",
+          "title": "Overlap Resolution Version",
+          "type": "string"
+        },
+        "vocabulary_version": {
+          "default": "1.0.0",
+          "title": "Vocabulary Version",
+          "type": "string"
+        },
+        "word_boundary_required": {
+          "default": true,
+          "title": "Word Boundary Required",
+          "type": "boolean"
+        },
+        "write_csv": {
+          "default": true,
+          "title": "Write Csv",
+          "type": "boolean"
+        },
+        "write_parquet": {
+          "default": true,
+          "title": "Write Parquet",
+          "type": "boolean"
+        }
+      },
+      "title": "ExtractionSettings",
+      "type": "object"
+    },
+    "IngestionSettings": {
+      "description": "Settings for local deterministic ingestion.",
+      "properties": {
+        "allowed_source_roots": {
+          "items": {
+            "format": "path",
+            "type": "string"
+          },
+          "title": "Allowed Source Roots",
+          "type": "array"
+        },
+        "csv_null_value": {
+          "default": "",
+          "title": "Csv Null Value",
+          "type": "string"
+        },
+        "default_ingestion_mode": {
+          "default": "strict",
+          "enum": [
+            "strict",
+            "quarantine"
+          ],
+          "title": "Default Ingestion Mode",
+          "type": "string"
+        },
+        "default_output_root": {
+          "default": "outputs/ingestion",
+          "format": "path",
+          "title": "Default Output Root",
+          "type": "string"
+        },
+        "default_overwrite_policy": {
+          "default": "fail_if_exists",
+          "enum": [
+            "fail_if_exists",
+            "replace_identical",
+            "force_replace"
+          ],
+          "title": "Default Overwrite Policy",
+          "type": "string"
+        },
+        "follow_symlinks": {
+          "default": false,
+          "title": "Follow Symlinks",
+          "type": "boolean"
+        },
+        "ingestion_contract_version": {
+          "default": "1.0.0",
+          "title": "Ingestion Contract Version",
+          "type": "string"
+        },
+        "ingestion_reference_timestamp": {
+          "default": "2026-01-02T09:00:00Z",
+          "format": "date-time",
+          "title": "Ingestion Reference Timestamp",
+          "type": "string"
+        },
+        "maximum_source_records": {
+          "default": 1000,
+          "exclusiveMinimum": 0,
+          "title": "Maximum Source Records",
+          "type": "integer"
+        },
+        "parquet_compression": {
+          "default": "zstd",
+          "enum": [
+            "zstd",
+            "snappy",
+            "none"
+          ],
+          "title": "Parquet Compression",
+          "type": "string"
+        },
+        "snowflake_contract_version": {
+          "default": "1.0.0",
+          "title": "Snowflake Contract Version",
+          "type": "string"
+        },
+        "snowflake_governance_schema": {
+          "default": "GOVERNANCE",
+          "title": "Snowflake Governance Schema",
+          "type": "string"
+        },
+        "snowflake_raw_schema": {
+          "default": "RAW",
+          "title": "Snowflake Raw Schema",
+          "type": "string"
+        },
+        "snowflake_staging_schema": {
+          "default": "STAGING",
+          "title": "Snowflake Staging Schema",
+          "type": "string"
+        },
+        "snowflake_target_database": {
+          "default": "HEALTHCARE_LANGUAGE_AI",
+          "title": "Snowflake Target Database",
+          "type": "string"
+        },
+        "write_csv": {
+          "default": true,
+          "title": "Write Csv",
+          "type": "boolean"
+        },
+        "write_parquet": {
+          "default": true,
+          "title": "Write Parquet",
+          "type": "boolean"
+        }
+      },
+      "title": "IngestionSettings",
+      "type": "object"
+    },
+    "Milestone10Settings": {
+      "description": "Settings for local-only Milestone 10 demonstration services.",
+      "properties": {
+        "allowed_origins": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowed Origins",
+          "type": "array"
+        },
+        "api_contract_version": {
+          "default": "1.0.0",
+          "title": "Api Contract Version",
+          "type": "string"
+        },
+        "api_docs_enabled": {
+          "default": true,
+          "title": "Api Docs Enabled",
+          "type": "boolean"
+        },
+        "api_enabled": {
+          "default": true,
+          "title": "Api Enabled",
+          "type": "boolean"
+        },
+        "api_host": {
+          "default": "127.0.0.1",
+          "title": "Api Host",
+          "type": "string"
+        },
+        "api_port": {
+          "default": 8000,
+          "maximum": 65535,
+          "minimum": 1,
+          "title": "Api Port",
+          "type": "integer"
+        },
+        "api_reload": {
+          "default": false,
+          "title": "Api Reload",
+          "type": "boolean"
+        },
+        "api_version": {
+          "default": "v1",
+          "title": "Api Version",
+          "type": "string"
+        },
+        "application_service_version": {
+          "default": "1.0.0",
+          "title": "Application Service Version",
+          "type": "string"
+        },
+        "cors_enabled": {
+          "default": false,
+          "title": "Cors Enabled",
+          "type": "boolean"
+        },
+        "demo_report_root": {
+          "default": "reports/demo",
+          "format": "path",
+          "title": "Demo Report Root",
+          "type": "string"
+        },
+        "demo_session_version": {
+          "default": "1.0.0",
+          "title": "Demo Session Version",
+          "type": "string"
+        },
+        "maximum_metadata_filters": {
+          "default": 8,
+          "maximum": 50,
+          "minimum": 0,
+          "title": "Maximum Metadata Filters",
+          "type": "integer"
+        },
+        "maximum_query_characters": {
+          "default": 500,
+          "maximum": 5000,
+          "minimum": 1,
+          "title": "Maximum Query Characters",
+          "type": "integer"
+        },
+        "maximum_trace_depth": {
+          "default": 25,
+          "maximum": 100,
+          "minimum": 1,
+          "title": "Maximum Trace Depth",
+          "type": "integer"
+        },
+        "metric_aggregation_version": {
+          "default": "1.0.0",
+          "title": "Metric Aggregation Version",
+          "type": "string"
+        },
+        "observability_contract_version": {
+          "default": "1.0.0",
+          "title": "Observability Contract Version",
+          "type": "string"
+        },
+        "operational_event_max_bytes": {
+          "default": 250000,
+          "minimum": 1024,
+          "title": "Operational Event Max Bytes",
+          "type": "integer"
+        },
+        "operational_event_retention_files": {
+          "default": 5,
+          "minimum": 1,
+          "title": "Operational Event Retention Files",
+          "type": "integer"
+        },
+        "operational_event_root": {
+          "default": "outputs/observability/events",
+          "format": "path",
+          "title": "Operational Event Root",
+          "type": "string"
+        },
+        "operational_event_version": {
+          "default": "1.0.0",
+          "title": "Operational Event Version",
+          "type": "string"
+        },
+        "operational_events_enabled": {
+          "default": true,
+          "title": "Operational Events Enabled",
+          "type": "boolean"
+        },
+        "portfolio_report_root": {
+          "default": "reports/portfolio",
+          "format": "path",
+          "title": "Portfolio Report Root",
+          "type": "string"
+        },
+        "portfolio_summary_version": {
+          "default": "1.0.0",
+          "title": "Portfolio Summary Version",
+          "type": "string"
+        },
+        "prometheus_metrics_enabled": {
+          "default": true,
+          "title": "Prometheus Metrics Enabled",
+          "type": "boolean"
+        },
+        "readiness_validate_fixtures": {
+          "default": true,
+          "title": "Readiness Validate Fixtures",
+          "type": "boolean"
+        },
+        "readiness_version": {
+          "default": "1.0.0",
+          "title": "Readiness Version",
+          "type": "string"
+        },
+        "streamlit_demo_version": {
+          "default": "1.0.0",
+          "title": "Streamlit Demo Version",
+          "type": "string"
+        },
+        "streamlit_enabled": {
+          "default": true,
+          "title": "Streamlit Enabled",
+          "type": "boolean"
+        },
+        "streamlit_host": {
+          "default": "127.0.0.1",
+          "title": "Streamlit Host",
+          "type": "string"
+        },
+        "streamlit_port": {
+          "default": 8501,
+          "maximum": 65535,
+          "minimum": 1,
+          "title": "Streamlit Port",
+          "type": "integer"
+        },
+        "streamlit_service_mode": {
+          "default": "direct",
+          "enum": [
+            "direct",
+            "local_api"
+          ],
+          "title": "Streamlit Service Mode",
+          "type": "string"
+        }
+      },
+      "title": "Milestone10Settings",
+      "type": "object"
+    },
+    "Milestone11Settings": {
+      "description": "Settings for local Milestone 11 assurance and resilience controls.",
+      "properties": {
+        "allow_unsafe_local_binding": {
+          "default": false,
+          "title": "Allow Unsafe Local Binding",
+          "type": "boolean"
+        },
+        "backup_allowed_roots": {
+          "items": {
+            "format": "path",
+            "type": "string"
+          },
+          "title": "Backup Allowed Roots",
+          "type": "array"
+        },
+        "backup_contract_version": {
+          "default": "1.0.0",
+          "title": "Backup Contract Version",
+          "type": "string"
+        },
+        "backup_output_root": {
+          "default": "outputs/assurance/backups",
+          "format": "path",
+          "title": "Backup Output Root",
+          "type": "string"
+        },
+        "compatibility_policy_version": {
+          "default": "1.0.0",
+          "title": "Compatibility Policy Version",
+          "type": "string"
+        },
+        "configuration_assurance_version": {
+          "default": "1.0.0",
+          "title": "Configuration Assurance Version",
+          "type": "string"
+        },
+        "container_assurance_enabled": {
+          "default": true,
+          "title": "Container Assurance Enabled",
+          "type": "boolean"
+        },
+        "container_assurance_version": {
+          "default": "1.0.0",
+          "title": "Container Assurance Version",
+          "type": "string"
+        },
+        "contract_baseline_root": {
+          "default": "tests/fixtures/assurance/contracts/baseline",
+          "format": "path",
+          "title": "Contract Baseline Root",
+          "type": "string"
+        },
+        "contract_compatibility_required": {
+          "default": true,
+          "title": "Contract Compatibility Required",
+          "type": "boolean"
+        },
+        "contract_inventory_version": {
+          "default": "1.0.0",
+          "title": "Contract Inventory Version",
+          "type": "string"
+        },
+        "dependency_inventory_enabled": {
+          "default": true,
+          "title": "Dependency Inventory Enabled",
+          "type": "boolean"
+        },
+        "dependency_inventory_version": {
+          "default": "1.0.0",
+          "title": "Dependency Inventory Version",
+          "type": "string"
+        },
+        "lifecycle_version": {
+          "default": "1.0.0",
+          "title": "Lifecycle Version",
+          "type": "string"
+        },
+        "maximum_concurrent_queries": {
+          "default": 8,
+          "maximum": 100,
+          "minimum": 1,
+          "title": "Maximum Concurrent Queries",
+          "type": "integer"
+        },
+        "operational_event_checksum_enabled": {
+          "default": true,
+          "title": "Operational Event Checksum Enabled",
+          "type": "boolean"
+        },
+        "operational_event_quarantine_root": {
+          "default": "outputs/observability/quarantine",
+          "format": "path",
+          "title": "Operational Event Quarantine Root",
+          "type": "string"
+        },
+        "operational_integrity_version": {
+          "default": "1.0.0",
+          "title": "Operational Integrity Version",
+          "type": "string"
+        },
+        "portfolio_assurance_version": {
+          "default": "1.0.0",
+          "title": "Portfolio Assurance Version",
+          "type": "string"
+        },
+        "query_timeout_seconds": {
+          "default": 5.0,
+          "exclusiveMinimum": 0,
+          "maximum": 60,
+          "title": "Query Timeout Seconds",
+          "type": "number"
+        },
+        "rag_timeout_seconds": {
+          "default": 10.0,
+          "exclusiveMinimum": 0,
+          "maximum": 120,
+          "title": "Rag Timeout Seconds",
+          "type": "number"
+        },
+        "rate_limit_enabled": {
+          "default": true,
+          "title": "Rate Limit Enabled",
+          "type": "boolean"
+        },
+        "rate_limit_requests": {
+          "default": 30,
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Rate Limit Requests",
+          "type": "integer"
+        },
+        "rate_limit_version": {
+          "default": "1.0.0",
+          "title": "Rate Limit Version",
+          "type": "string"
+        },
+        "rate_limit_window_seconds": {
+          "default": 60,
+          "maximum": 3600,
+          "minimum": 1,
+          "title": "Rate Limit Window Seconds",
+          "type": "integer"
+        },
+        "readiness_timeout_seconds": {
+          "default": 10.0,
+          "exclusiveMinimum": 0,
+          "maximum": 60,
+          "title": "Readiness Timeout Seconds",
+          "type": "number"
+        },
+        "recovery_contract_version": {
+          "default": "1.0.0",
+          "title": "Recovery Contract Version",
+          "type": "string"
+        },
+        "restore_allowed_roots": {
+          "items": {
+            "format": "path",
+            "type": "string"
+          },
+          "title": "Restore Allowed Roots",
+          "type": "array"
+        },
+        "retrieval_timeout_seconds": {
+          "default": 5.0,
+          "exclusiveMinimum": 0,
+          "maximum": 60,
+          "title": "Retrieval Timeout Seconds",
+          "type": "number"
+        },
+        "runtime_smoke_api_port": {
+          "default": 0,
+          "maximum": 65535,
+          "minimum": 0,
+          "title": "Runtime Smoke Api Port",
+          "type": "integer"
+        },
+        "runtime_smoke_dashboard_port": {
+          "default": 0,
+          "maximum": 65535,
+          "minimum": 0,
+          "title": "Runtime Smoke Dashboard Port",
+          "type": "integer"
+        },
+        "runtime_smoke_enabled": {
+          "default": true,
+          "title": "Runtime Smoke Enabled",
+          "type": "boolean"
+        },
+        "runtime_smoke_timeout_seconds": {
+          "default": 30,
+          "maximum": 180,
+          "minimum": 1,
+          "title": "Runtime Smoke Timeout Seconds",
+          "type": "integer"
+        },
+        "runtime_smoke_version": {
+          "default": "1.0.0",
+          "title": "Runtime Smoke Version",
+          "type": "string"
+        },
+        "sbom_enabled": {
+          "default": true,
+          "title": "Sbom Enabled",
+          "type": "boolean"
+        },
+        "sbom_version": {
+          "default": "1.0.0",
+          "title": "Sbom Version",
+          "type": "string"
+        },
+        "secret_scan_enabled": {
+          "default": true,
+          "title": "Secret Scan Enabled",
+          "type": "boolean"
+        },
+        "security_assurance_version": {
+          "default": "1.0.0",
+          "title": "Security Assurance Version",
+          "type": "string"
+        },
+        "timeout_policy_version": {
+          "default": "1.0.0",
+          "title": "Timeout Policy Version",
+          "type": "string"
+        },
+        "trace_timeout_seconds": {
+          "default": 3.0,
+          "exclusiveMinimum": 0,
+          "maximum": 30,
+          "title": "Trace Timeout Seconds",
+          "type": "number"
+        }
+      },
+      "title": "Milestone11Settings",
+      "type": "object"
+    },
+    "Milestone12Settings": {
+      "description": "Settings for final local portfolio packaging and release evidence.",
+      "properties": {
+        "architecture_pack_version": {
+          "default": "1.0.0",
+          "title": "Architecture Pack Version",
+          "type": "string"
+        },
+        "capability_map_version": {
+          "default": "1.0.0",
+          "title": "Capability Map Version",
+          "type": "string"
+        },
+        "demo_pack_version": {
+          "default": "1.0.0",
+          "title": "Demo Pack Version",
+          "type": "string"
+        },
+        "documentation_link_validation_enabled": {
+          "default": true,
+          "title": "Documentation Link Validation Enabled",
+          "type": "boolean"
+        },
+        "documentation_validation_version": {
+          "default": "1.0.0",
+          "title": "Documentation Validation Version",
+          "type": "string"
+        },
+        "evidence_index_version": {
+          "default": "1.0.0",
+          "title": "Evidence Index Version",
+          "type": "string"
+        },
+        "interview_pack_version": {
+          "default": "1.0.0",
+          "title": "Interview Pack Version",
+          "type": "string"
+        },
+        "maximum_allowed_file_bytes": {
+          "default": 10000000,
+          "exclusiveMinimum": 0,
+          "title": "Maximum Allowed File Bytes",
+          "type": "integer"
+        },
+        "mermaid_validation_enabled": {
+          "default": true,
+          "title": "Mermaid Validation Enabled",
+          "type": "boolean"
+        },
+        "milestone_audit_version": {
+          "default": "1.0.0",
+          "title": "Milestone Audit Version",
+          "type": "string"
+        },
+        "portfolio_contract_version": {
+          "default": "1.0.0",
+          "title": "Portfolio Contract Version",
+          "type": "string"
+        },
+        "portfolio_model_card_version": {
+          "default": "1.0.0",
+          "title": "Portfolio Model Card Version",
+          "type": "string"
+        },
+        "portfolio_release_root": {
+          "default": "outputs/portfolio-release",
+          "format": "path",
+          "title": "Portfolio Release Root",
+          "type": "string"
+        },
+        "portfolio_report_root": {
+          "default": "reports/portfolio",
+          "format": "path",
+          "title": "Portfolio Report Root",
+          "type": "string"
+        },
+        "release_contract_version": {
+          "default": "1.0.0",
+          "title": "Release Contract Version",
+          "type": "string"
+        },
+        "release_manifest_version": {
+          "default": "1.0.0",
+          "title": "Release Manifest Version",
+          "type": "string"
+        },
+        "release_package_version": {
+          "default": "1.0.0",
+          "title": "Release Package Version",
+          "type": "string"
+        },
+        "release_readiness_version": {
+          "default": "1.0.0",
+          "title": "Release Readiness Version",
+          "type": "string"
+        },
+        "release_reference_timestamp": {
+          "default": "2026-01-20T09:00:00Z",
+          "format": "date-time",
+          "title": "Release Reference Timestamp",
+          "type": "string"
+        },
+        "release_report_root": {
+          "default": "reports/release",
+          "format": "path",
+          "title": "Release Report Root",
+          "type": "string"
+        },
+        "repository_audit_version": {
+          "default": "1.0.0",
+          "title": "Repository Audit Version",
+          "type": "string"
+        },
+        "repository_cleanliness_version": {
+          "default": "1.0.0",
+          "title": "Repository Cleanliness Version",
+          "type": "string"
+        },
+        "required_documentation_files": {
+          "items": {
+            "format": "path",
+            "type": "string"
+          },
+          "title": "Required Documentation Files",
+          "type": "array"
+        },
+        "required_milestones": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Milestones",
+          "type": "array"
+        },
+        "required_release_gates": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Release Gates",
+          "type": "array"
+        },
+        "role_alignment_version": {
+          "default": "1.0.0",
+          "title": "Role Alignment Version",
+          "type": "string"
+        },
+        "source_tree_excluded_paths": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Tree Excluded Paths",
+          "type": "array"
+        },
+        "technology_map_version": {
+          "default": "1.0.0",
+          "title": "Technology Map Version",
+          "type": "string"
+        },
+        "traceability_version": {
+          "default": "1.0.0",
+          "title": "Traceability Version",
+          "type": "string"
+        }
+      },
+      "title": "Milestone12Settings",
+      "type": "object"
+    },
+    "PreprocessingSettings": {
+      "description": "Settings for deterministic local text preprocessing.",
+      "properties": {
+        "allowed_ingestion_roots": {
+          "items": {
+            "format": "path",
+            "type": "string"
+          },
+          "title": "Allowed Ingestion Roots",
+          "type": "array"
+        },
+        "collapse_repeated_spaces": {
+          "default": true,
+          "title": "Collapse Repeated Spaces",
+          "type": "boolean"
+        },
+        "databricks_bronze_schema": {
+          "default": "bronze",
+          "title": "Databricks Bronze Schema",
+          "type": "string"
+        },
+        "databricks_catalog_placeholder": {
+          "default": "hla_catalog_placeholder",
+          "title": "Databricks Catalog Placeholder",
+          "type": "string"
+        },
+        "databricks_contract_version": {
+          "default": "1.0.0",
+          "title": "Databricks Contract Version",
+          "type": "string"
+        },
+        "databricks_gold_schema": {
+          "default": "gold",
+          "title": "Databricks Gold Schema",
+          "type": "string"
+        },
+        "databricks_silver_schema": {
+          "default": "silver",
+          "title": "Databricks Silver Schema",
+          "type": "string"
+        },
+        "default_output_root": {
+          "default": "outputs/preprocessing",
+          "format": "path",
+          "title": "Default Output Root",
+          "type": "string"
+        },
+        "default_overwrite_policy": {
+          "default": "fail_if_exists",
+          "enum": [
+            "fail_if_exists",
+            "replace_identical",
+            "force_replace"
+          ],
+          "title": "Default Overwrite Policy",
+          "type": "string"
+        },
+        "default_preprocessing_mode": {
+          "default": "conservative",
+          "enum": [
+            "conservative",
+            "analytical"
+          ],
+          "title": "Default Preprocessing Mode",
+          "type": "string"
+        },
+        "follow_symlinks": {
+          "default": false,
+          "title": "Follow Symlinks",
+          "type": "boolean"
+        },
+        "maximum_documents_per_run": {
+          "default": 1000,
+          "exclusiveMinimum": 0,
+          "title": "Maximum Documents Per Run",
+          "type": "integer"
+        },
+        "maximum_sentence_length": {
+          "default": 500,
+          "exclusiveMinimum": 0,
+          "title": "Maximum Sentence Length",
+          "type": "integer"
+        },
+        "minimum_document_length": {
+          "default": 80,
+          "exclusiveMinimum": 0,
+          "title": "Minimum Document Length",
+          "type": "integer"
+        },
+        "normalisation_version": {
+          "default": "1.0.0",
+          "title": "Normalisation Version",
+          "type": "string"
+        },
+        "preprocessing_contract_version": {
+          "default": "1.0.0",
+          "title": "Preprocessing Contract Version",
+          "type": "string"
+        },
+        "preprocessing_reference_timestamp": {
+          "default": "2026-01-03T09:00:00Z",
+          "format": "date-time",
+          "title": "Preprocessing Reference Timestamp",
+          "type": "string"
+        },
+        "preserve_final_newline": {
+          "default": true,
+          "title": "Preserve Final Newline",
+          "type": "boolean"
+        },
+        "quality_rules_version": {
+          "default": "1.0.0",
+          "title": "Quality Rules Version",
+          "type": "string"
+        },
+        "section_parser_version": {
+          "default": "1.0.0",
+          "title": "Section Parser Version",
+          "type": "string"
+        },
+        "sentence_segmenter_version": {
+          "default": "1.0.0",
+          "title": "Sentence Segmenter Version",
+          "type": "string"
+        },
+        "tab_width": {
+          "default": 4,
+          "exclusiveMinimum": 0,
+          "maximum": 8,
+          "title": "Tab Width",
+          "type": "integer"
+        },
+        "tokeniser_version": {
+          "default": "1.0.0",
+          "title": "Tokeniser Version",
+          "type": "string"
+        },
+        "unicode_normalisation_form": {
+          "default": "NFC",
+          "enum": [
+            "NFC",
+            "NFKC"
+          ],
+          "title": "Unicode Normalisation Form",
+          "type": "string"
+        },
+        "write_csv": {
+          "default": true,
+          "title": "Write Csv",
+          "type": "boolean"
+        },
+        "write_parquet": {
+          "default": true,
+          "title": "Write Parquet",
+          "type": "boolean"
+        }
+      },
+      "title": "PreprocessingSettings",
+      "type": "object"
+    },
+    "RetrievalSettings": {
+      "description": "Settings for deterministic local retrieval experiments.",
+      "properties": {
+        "bm25_b": {
+          "default": 0.75,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Bm25 B",
+          "type": "number"
+        },
+        "bm25_k1": {
+          "default": 1.5,
+          "exclusiveMinimum": 0,
+          "title": "Bm25 K1",
+          "type": "number"
+        },
+        "bm25_version": {
+          "default": "1.0.0",
+          "title": "Bm25 Version",
+          "type": "string"
+        },
+        "bm25_weight": {
+          "default": 0.4,
+          "minimum": 0,
+          "title": "Bm25 Weight",
+          "type": "number"
+        },
+        "corpus_version": {
+          "default": "1.0.0",
+          "title": "Corpus Version",
+          "type": "string"
+        },
+        "default_index_output_root": {
+          "default": "outputs/retrieval/indexes",
+          "format": "path",
+          "title": "Default Index Output Root",
+          "type": "string"
+        },
+        "default_overwrite_policy": {
+          "default": "fail_if_exists",
+          "enum": [
+            "fail_if_exists",
+            "replace_identical",
+            "force_replace"
+          ],
+          "title": "Default Overwrite Policy",
+          "type": "string"
+        },
+        "default_retrieval_evaluation_output_root": {
+          "default": "outputs/retrieval/evaluation",
+          "format": "path",
+          "title": "Default Retrieval Evaluation Output Root",
+          "type": "string"
+        },
+        "default_retrieval_output_root": {
+          "default": "outputs/retrieval/runs",
+          "format": "path",
+          "title": "Default Retrieval Output Root",
+          "type": "string"
+        },
+        "default_retrieval_strategy": {
+          "default": "hybrid",
+          "enum": [
+            "keyword",
+            "tfidf",
+            "bm25",
+            "hybrid"
+          ],
+          "title": "Default Retrieval Strategy",
+          "type": "string"
+        },
+        "default_text_representation": {
+          "const": "normalised_text",
+          "default": "normalised_text",
+          "title": "Default Text Representation",
+          "type": "string"
+        },
+        "default_top_k": {
+          "default": 5,
+          "exclusiveMinimum": 0,
+          "title": "Default Top K",
+          "type": "integer"
+        },
+        "default_unit_types": {
+          "default": "all",
+          "enum": [
+            "document",
+            "section",
+            "sentence",
+            "all"
+          ],
+          "title": "Default Unit Types",
+          "type": "string"
+        },
+        "dense_weight": {
+          "default": 0.15,
+          "minimum": 0,
+          "title": "Dense Weight",
+          "type": "number"
+        },
+        "embedding_dimension": {
+          "default": 32,
+          "exclusiveMinimum": 0,
+          "title": "Embedding Dimension",
+          "type": "integer"
+        },
+        "evaluation_k_values": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Evaluation K Values",
+          "type": "array"
+        },
+        "hash_embedding_version": {
+          "default": "1.0.0",
+          "title": "Hash Embedding Version",
+          "type": "string"
+        },
+        "hash_ngram_max": {
+          "default": 2,
+          "exclusiveMinimum": 0,
+          "title": "Hash Ngram Max",
+          "type": "integer"
+        },
+        "hash_ngram_min": {
+          "default": 1,
+          "exclusiveMinimum": 0,
+          "title": "Hash Ngram Min",
+          "type": "integer"
+        },
+        "hybrid_version": {
+          "default": "1.0.0",
+          "title": "Hybrid Version",
+          "type": "string"
+        },
+        "index_reference_timestamp": {
+          "default": "2026-01-06T09:00:00Z",
+          "format": "date-time",
+          "title": "Index Reference Timestamp",
+          "type": "string"
+        },
+        "keyword_version": {
+          "default": "1.0.0",
+          "title": "Keyword Version",
+          "type": "string"
+        },
+        "keyword_weight": {
+          "default": 0.15,
+          "minimum": 0,
+          "title": "Keyword Weight",
+          "type": "number"
+        },
+        "maximum_queries": {
+          "default": 500,
+          "exclusiveMinimum": 0,
+          "title": "Maximum Queries",
+          "type": "integer"
+        },
+        "maximum_retrieval_units": {
+          "default": 10000,
+          "exclusiveMinimum": 0,
+          "title": "Maximum Retrieval Units",
+          "type": "integer"
+        },
+        "metadata_weight": {
+          "default": 0.05,
+          "minimum": 0,
+          "title": "Metadata Weight",
+          "type": "number"
+        },
+        "relaxed_filter_policy": {
+          "const": "pre_filter",
+          "default": "pre_filter",
+          "title": "Relaxed Filter Policy",
+          "type": "string"
+        },
+        "retrieval_contract_version": {
+          "default": "1.0.0",
+          "title": "Retrieval Contract Version",
+          "type": "string"
+        },
+        "retrieval_evaluation_contract_version": {
+          "default": "1.0.0",
+          "title": "Retrieval Evaluation Contract Version",
+          "type": "string"
+        },
+        "retrieval_evaluation_reference_timestamp": {
+          "default": "2026-01-08T09:00:00Z",
+          "format": "date-time",
+          "title": "Retrieval Evaluation Reference Timestamp",
+          "type": "string"
+        },
+        "retrieval_failure_version": {
+          "default": "1.0.0",
+          "title": "Retrieval Failure Version",
+          "type": "string"
+        },
+        "retrieval_metrics_version": {
+          "default": "1.0.0",
+          "title": "Retrieval Metrics Version",
+          "type": "string"
+        },
+        "retrieval_reference_timestamp": {
+          "default": "2026-01-07T09:00:00Z",
+          "format": "date-time",
+          "title": "Retrieval Reference Timestamp",
+          "type": "string"
+        },
+        "snippet_character_limit": {
+          "default": 96,
+          "exclusiveMinimum": 0,
+          "maximum": 500,
+          "title": "Snippet Character Limit",
+          "type": "integer"
+        },
+        "tfidf_version": {
+          "default": "1.0.0",
+          "title": "Tfidf Version",
+          "type": "string"
+        },
+        "tfidf_weight": {
+          "default": 0.25,
+          "minimum": 0,
+          "title": "Tfidf Weight",
+          "type": "number"
+        },
+        "tokeniser_version": {
+          "default": "1.0.0",
+          "title": "Tokeniser Version",
+          "type": "string"
+        },
+        "vector_search_contract_version": {
+          "default": "1.0.0",
+          "title": "Vector Search Contract Version",
+          "type": "string"
+        }
+      },
+      "title": "RetrievalSettings",
+      "type": "object"
+    },
+    "SyntheticGenerationSettings": {
+      "description": "Settings for deterministic synthetic document generation.",
+      "properties": {
+        "allowed_document_types": {
+          "items": {
+            "$ref": "#/$defs/ClinicalDocumentType"
+          },
+          "title": "Allowed Document Types",
+          "type": "array"
+        },
+        "default_record_count": {
+          "default": 15,
+          "exclusiveMinimum": 0,
+          "title": "Default Record Count",
+          "type": "integer"
+        },
+        "generator_seed": {
+          "default": 2026,
+          "title": "Generator Seed",
+          "type": "integer"
+        },
+        "generator_version": {
+          "default": "1.0.0",
+          "title": "Generator Version",
+          "type": "string"
+        },
+        "include_annotations": {
+          "default": true,
+          "title": "Include Annotations",
+          "type": "boolean"
+        },
+        "maximum_records_per_run": {
+          "default": 500,
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Maximum Records Per Run",
+          "type": "integer"
+        },
+        "output_format": {
+          "const": "jsonl",
+          "default": "jsonl",
+          "title": "Output Format",
+          "type": "string"
+        },
+        "reference_timestamp": {
+          "default": "2026-01-01T09:00:00Z",
+          "format": "date-time",
+          "title": "Reference Timestamp",
+          "type": "string"
+        },
+        "template_version": {
+          "default": "1.0.0",
+          "title": "Template Version",
+          "type": "string"
+        },
+        "vocabulary_version": {
+          "default": "1.0.0",
+          "title": "Vocabulary Version",
+          "type": "string"
+        }
+      },
+      "title": "SyntheticGenerationSettings",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Application settings with safe defaults for local synthetic-data work.",
+  "properties": {
+    "application_name": {
+      "default": "Healthcare Language AI Platform",
+      "title": "Application Name",
+      "type": "string"
+    },
+    "data_root": {
+      "default": "data",
+      "format": "path",
+      "title": "Data Root",
+      "type": "string"
+    },
+    "deterministic_seed": {
+      "default": 42,
+      "title": "Deterministic Seed",
+      "type": "integer"
+    },
+    "environment": {
+      "default": "local",
+      "title": "Environment",
+      "type": "string"
+    },
+    "evaluation": {
+      "$ref": "#/$defs/EvaluationSettings"
+    },
+    "extraction": {
+      "$ref": "#/$defs/ExtractionSettings"
+    },
+    "ingestion": {
+      "$ref": "#/$defs/IngestionSettings"
+    },
+    "log_format": {
+      "default": "console",
+      "enum": [
+        "console",
+        "json"
+      ],
+      "title": "Log Format",
+      "type": "string"
+    },
+    "log_level": {
+      "default": "INFO",
+      "title": "Log Level",
+      "type": "string"
+    },
+    "max_document_text_length": {
+      "default": 20000,
+      "exclusiveMinimum": 0,
+      "title": "Max Document Text Length",
+      "type": "integer"
+    },
+    "milestone10": {
+      "$ref": "#/$defs/Milestone10Settings"
+    },
+    "milestone11": {
+      "$ref": "#/$defs/Milestone11Settings"
+    },
+    "milestone12": {
+      "$ref": "#/$defs/Milestone12Settings"
+    },
+    "output_root": {
+      "default": "outputs",
+      "format": "path",
+      "title": "Output Root",
+      "type": "string"
+    },
+    "preprocessing": {
+      "$ref": "#/$defs/PreprocessingSettings"
+    },
+    "report_root": {
+      "default": "reports",
+      "format": "path",
+      "title": "Report Root",
+      "type": "string"
+    },
+    "retrieval": {
+      "$ref": "#/$defs/RetrievalSettings"
+    },
+    "synthetic_data_only": {
+      "default": true,
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "synthetic_generation": {
+      "$ref": "#/$defs/SyntheticGenerationSettings"
+    }
+  },
+  "title": "AppSettings",
+  "type": "object"
+}

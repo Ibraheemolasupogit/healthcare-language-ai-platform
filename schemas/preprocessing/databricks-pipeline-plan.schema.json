@@ -1,0 +1,278 @@
+{
+  "$defs": {
+    "DatabricksColumnContract": {
+      "additionalProperties": false,
+      "properties": {
+        "column_name": {
+          "title": "Column Name",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "governance_classification": {
+          "title": "Governance Classification",
+          "type": "string"
+        },
+        "natural_key": {
+          "title": "Natural Key",
+          "type": "boolean"
+        },
+        "nullable": {
+          "title": "Nullable",
+          "type": "boolean"
+        },
+        "partition_recommendation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Partition Recommendation"
+        },
+        "source_field": {
+          "title": "Source Field",
+          "type": "string"
+        },
+        "spark_type": {
+          "title": "Spark Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "column_name",
+        "spark_type",
+        "nullable",
+        "natural_key",
+        "source_field",
+        "description",
+        "governance_classification"
+      ],
+      "title": "DatabricksColumnContract",
+      "type": "object"
+    },
+    "DatabricksJobContract": {
+      "additionalProperties": false,
+      "properties": {
+        "execution_permitted": {
+          "title": "Execution Permitted",
+          "type": "boolean"
+        },
+        "job_name": {
+          "title": "Job Name",
+          "type": "string"
+        },
+        "retry_policy": {
+          "title": "Retry Policy",
+          "type": "string"
+        },
+        "task_order": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Task Order",
+          "type": "array"
+        },
+        "timeout_policy": {
+          "title": "Timeout Policy",
+          "type": "string"
+        }
+      },
+      "required": [
+        "job_name",
+        "task_order",
+        "retry_policy",
+        "timeout_policy",
+        "execution_permitted"
+      ],
+      "title": "DatabricksJobContract",
+      "type": "object"
+    },
+    "DatabricksNotebookContract": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "notebook_name": {
+          "title": "Notebook Name",
+          "type": "string"
+        },
+        "outputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "purpose": {
+          "title": "Purpose",
+          "type": "string"
+        },
+        "validation_gates": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Validation Gates",
+          "type": "array"
+        }
+      },
+      "required": [
+        "notebook_name",
+        "purpose",
+        "inputs",
+        "outputs",
+        "validation_gates"
+      ],
+      "title": "DatabricksNotebookContract",
+      "type": "object"
+    },
+    "DatabricksTableContract": {
+      "additionalProperties": false,
+      "properties": {
+        "columns": {
+          "items": {
+            "$ref": "#/$defs/DatabricksColumnContract"
+          },
+          "title": "Columns",
+          "type": "array"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "medallion_layer": {
+          "enum": [
+            "bronze",
+            "silver",
+            "gold"
+          ],
+          "title": "Medallion Layer",
+          "type": "string"
+        },
+        "table_name": {
+          "title": "Table Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "table_name",
+        "medallion_layer",
+        "description",
+        "columns"
+      ],
+      "title": "DatabricksTableContract",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "connection_attempted": {
+      "title": "Connection Attempted",
+      "type": "boolean"
+    },
+    "dry_run_status": {
+      "const": "validated",
+      "title": "Dry Run Status",
+      "type": "string"
+    },
+    "execution_permitted": {
+      "title": "Execution Permitted",
+      "type": "boolean"
+    },
+    "expected_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Expected Checksums",
+      "type": "object"
+    },
+    "expected_record_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Expected Record Counts",
+      "type": "object"
+    },
+    "job_contract": {
+      "$ref": "#/$defs/DatabricksJobContract"
+    },
+    "notebook_task_sequence": {
+      "items": {
+        "$ref": "#/$defs/DatabricksNotebookContract"
+      },
+      "title": "Notebook Task Sequence",
+      "type": "array"
+    },
+    "plan_schema_version": {
+      "title": "Plan Schema Version",
+      "type": "string"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "quality_gates": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Quality Gates",
+      "type": "object"
+    },
+    "required_target_state_permissions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Required Target State Permissions",
+      "type": "array"
+    },
+    "source_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Files",
+      "type": "array"
+    },
+    "target_medallion_layers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Target Medallion Layers",
+      "type": "array"
+    },
+    "target_table_contracts": {
+      "items": {
+        "$ref": "#/$defs/DatabricksTableContract"
+      },
+      "title": "Target Table Contracts",
+      "type": "array"
+    }
+  },
+  "required": [
+    "plan_schema_version",
+    "preprocessing_run_id",
+    "source_files",
+    "target_medallion_layers",
+    "target_table_contracts",
+    "notebook_task_sequence",
+    "job_contract",
+    "expected_record_counts",
+    "expected_checksums",
+    "quality_gates",
+    "required_target_state_permissions",
+    "dry_run_status",
+    "connection_attempted",
+    "execution_permitted"
+  ],
+  "title": "DatabricksPipelinePlan",
+  "type": "object"
+}

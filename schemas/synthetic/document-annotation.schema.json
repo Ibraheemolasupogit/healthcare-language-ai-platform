@@ -1,0 +1,98 @@
+{
+  "$defs": {
+    "ClinicalDocumentType": {
+      "description": "Supported synthetic clinical document categories.",
+      "enum": [
+        "clinical_note",
+        "discharge_summary",
+        "referral_letter",
+        "radiology_report",
+        "pathology_report"
+      ],
+      "title": "ClinicalDocumentType",
+      "type": "string"
+    },
+    "EntityAnnotation": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "normalised_value": {
+          "title": "Normalised Value",
+          "type": "string"
+        },
+        "source": {
+          "const": "template",
+          "default": "template",
+          "title": "Source",
+          "type": "string"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "value",
+        "start",
+        "end",
+        "normalised_value"
+      ],
+      "title": "EntityAnnotation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_level": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Document Level",
+      "type": "object"
+    },
+    "document_type": {
+      "$ref": "#/$defs/ClinicalDocumentType"
+    },
+    "entities": {
+      "items": {
+        "$ref": "#/$defs/EntityAnnotation"
+      },
+      "title": "Entities",
+      "type": "array"
+    },
+    "synthetic_encounter_id": {
+      "title": "Synthetic Encounter Id",
+      "type": "string"
+    },
+    "synthetic_subject_id": {
+      "title": "Synthetic Subject Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "document_id",
+    "synthetic_subject_id",
+    "synthetic_encounter_id",
+    "document_type"
+  ],
+  "title": "DocumentAnnotation",
+  "type": "object"
+}

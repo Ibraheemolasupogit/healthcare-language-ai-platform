@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "detail": "configuration loaded",
+      "name": "configuration",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "detail": "synthetic only",
+      "name": "synthetic_only_mode",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "detail": "approved_for_rag_prototype",
+      "name": "retrieval_approval",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "detail": "approved_for_local_demo",
+      "name": "rag_approval",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "detail": "abstaining_ensemble_v1",
+      "name": "approved_retriever_config",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "detail": "prompt records available",
+      "name": "prompt_assets",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "detail": "canonical fixture readable",
+      "name": "fixture_evidence",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "detail": "local portfolio evidence",
+      "name": "operational_output_directory",
+      "required": true,
+      "status": "passed"
+    }
+  ],
+  "readiness_version": "1.0.0",
+  "status": "ready",
+  "synthetic_data_only": true,
+  "timestamp": "2026-01-18T09:00:00Z"
+}

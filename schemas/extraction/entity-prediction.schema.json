@@ -1,0 +1,140 @@
+{
+  "$defs": {
+    "PredictionScope": {
+      "enum": [
+        "span",
+        "document",
+        "section"
+      ],
+      "title": "PredictionScope",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "end_offset": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End Offset"
+    },
+    "extraction_run_id": {
+      "title": "Extraction Run Id",
+      "type": "string"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "matched_text": {
+      "title": "Matched Text",
+      "type": "string"
+    },
+    "normalised_value": {
+      "title": "Normalised Value",
+      "type": "string"
+    },
+    "prediction_id": {
+      "title": "Prediction Id",
+      "type": "string"
+    },
+    "prediction_scope": {
+      "$ref": "#/$defs/PredictionScope"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "rule_id": {
+      "title": "Rule Id",
+      "type": "string"
+    },
+    "rule_version": {
+      "title": "Rule Version",
+      "type": "string"
+    },
+    "section_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Section Id"
+    },
+    "sentence_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sentence Id"
+    },
+    "source_text_representation": {
+      "const": "normalised_text",
+      "title": "Source Text Representation",
+      "type": "string"
+    },
+    "start_offset": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Offset"
+    },
+    "value": {
+      "title": "Value",
+      "type": "string"
+    },
+    "vocabulary_version": {
+      "title": "Vocabulary Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "prediction_id",
+    "document_id",
+    "label",
+    "value",
+    "normalised_value",
+    "prediction_scope",
+    "confidence",
+    "rule_id",
+    "rule_version",
+    "vocabulary_version",
+    "matched_text",
+    "source_text_representation",
+    "preprocessing_run_id",
+    "extraction_run_id"
+  ],
+  "title": "EntityPrediction",
+  "type": "object"
+}

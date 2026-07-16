@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "ClinicalDocumentType": {
+      "description": "Supported synthetic clinical document categories.",
+      "enum": [
+        "clinical_note",
+        "discharge_summary",
+        "referral_letter",
+        "radiology_report",
+        "pathology_report"
+      ],
+      "title": "ClinicalDocumentType",
+      "type": "string"
+    },
+    "DataClassification": {
+      "description": "Allowed non-real-patient data classifications.",
+      "enum": [
+        "synthetic",
+        "public",
+        "restricted"
+      ],
+      "title": "DataClassification",
+      "type": "string"
+    },
+    "SyntheticDocumentMetadata": {
+      "additionalProperties": false,
+      "properties": {
+        "administrative_priority": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Administrative Priority"
+        },
+        "body_site": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Body Site"
+        },
+        "encounter_context": {
+          "title": "Encounter Context",
+          "type": "string"
+        },
+        "investigation": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Investigation"
+        },
+        "presenting_concern": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Presenting Concern"
+        },
+        "specialty": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Specialty"
+        },
+        "synthetic_encounter_id": {
+          "title": "Synthetic Encounter Id",
+          "type": "string"
+        },
+        "synthetic_subject_id": {
+          "title": "Synthetic Subject Id",
+          "type": "string"
+        },
+        "workflow_status": {
+          "title": "Workflow Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "synthetic_subject_id",
+        "synthetic_encounter_id",
+        "encounter_context",
+        "workflow_status"
+      ],
+      "title": "SyntheticDocumentMetadata",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "data_classification": {
+      "$ref": "#/$defs/DataClassification",
+      "default": "synthetic"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_type": {
+      "$ref": "#/$defs/ClinicalDocumentType"
+    },
+    "encounter_ended_at": {
+      "format": "date-time",
+      "title": "Encounter Ended At",
+      "type": "string"
+    },
+    "encounter_started_at": {
+      "format": "date-time",
+      "title": "Encounter Started At",
+      "type": "string"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "metadata": {
+      "$ref": "#/$defs/SyntheticDocumentMetadata"
+    },
+    "record_index": {
+      "minimum": 1,
+      "title": "Record Index",
+      "type": "integer"
+    },
+    "seed": {
+      "title": "Seed",
+      "type": "integer"
+    },
+    "source_system": {
+      "default": "synthetic_generator",
+      "title": "Source System",
+      "type": "string"
+    },
+    "template_name": {
+      "title": "Template Name",
+      "type": "string"
+    },
+    "template_version": {
+      "title": "Template Version",
+      "type": "string"
+    },
+    "text": {
+      "minLength": 1,
+      "title": "Text",
+      "type": "string"
+    },
+    "vocabulary_version": {
+      "title": "Vocabulary Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "document_id",
+    "document_type",
+    "text",
+    "created_at",
+    "encounter_started_at",
+    "encounter_ended_at",
+    "metadata",
+    "generator_version",
+    "template_name",
+    "template_version",
+    "vocabulary_version",
+    "seed",
+    "record_index"
+  ],
+  "title": "SyntheticClinicalDocument",
+  "type": "object"
+}

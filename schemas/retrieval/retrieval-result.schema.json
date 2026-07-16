@@ -1,0 +1,143 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bm25_score": {
+      "title": "Bm25 Score",
+      "type": "number"
+    },
+    "dense_score": {
+      "title": "Dense Score",
+      "type": "number"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_type": {
+      "title": "Document Type",
+      "type": "string"
+    },
+    "fusion_score": {
+      "title": "Fusion Score",
+      "type": "number"
+    },
+    "keyword_score": {
+      "title": "Keyword Score",
+      "type": "number"
+    },
+    "matched_terms": {
+      "title": "Matched Terms",
+      "type": "string"
+    },
+    "metadata_score": {
+      "title": "Metadata Score",
+      "type": "number"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "rank": {
+      "minimum": 1,
+      "title": "Rank",
+      "type": "integer"
+    },
+    "relevance_grade": {
+      "maximum": 2,
+      "minimum": 0,
+      "title": "Relevance Grade",
+      "type": "integer"
+    },
+    "relevant": {
+      "title": "Relevant",
+      "type": "boolean"
+    },
+    "retrieval_run_id": {
+      "title": "Retrieval Run Id",
+      "type": "string"
+    },
+    "retrieval_unit_id": {
+      "title": "Retrieval Unit Id",
+      "type": "string"
+    },
+    "sanitised_snippet": {
+      "title": "Sanitised Snippet",
+      "type": "string"
+    },
+    "score": {
+      "title": "Score",
+      "type": "number"
+    },
+    "section_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Section Id"
+    },
+    "section_label": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Section Label"
+    },
+    "sentence_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sentence Id"
+    },
+    "text_checksum": {
+      "title": "Text Checksum",
+      "type": "string"
+    },
+    "tfidf_score": {
+      "title": "Tfidf Score",
+      "type": "number"
+    },
+    "unit_type": {
+      "title": "Unit Type",
+      "type": "string"
+    }
+  },
+  "required": [
+    "retrieval_run_id",
+    "query_id",
+    "rank",
+    "retrieval_unit_id",
+    "document_id",
+    "unit_type",
+    "document_type",
+    "score",
+    "keyword_score",
+    "tfidf_score",
+    "bm25_score",
+    "dense_score",
+    "metadata_score",
+    "fusion_score",
+    "matched_terms",
+    "text_checksum",
+    "sanitised_snippet",
+    "relevant",
+    "relevance_grade"
+  ],
+  "title": "RetrievalResult",
+  "type": "object"
+}

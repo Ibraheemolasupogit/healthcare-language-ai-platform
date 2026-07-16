@@ -1,0 +1,12 @@
+log_format: console
+log_level: INFO
+policy:
+  redact_fields:
+    - text
+    - secret
+    - token
+    - password
+  safe_context_fields:
+    - run_id
+    - document_id
+    - pipeline_stage

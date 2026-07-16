@@ -1,0 +1,108 @@
+{
+  "$defs": {
+    "EvaluationReconciliationMetric": {
+      "additionalProperties": false,
+      "properties": {
+        "actual_value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            }
+          ],
+          "title": "Actual Value"
+        },
+        "expected_value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            }
+          ],
+          "title": "Expected Value"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "metric_name": {
+          "title": "Metric Name",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "info",
+            "warning",
+            "error"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "passed",
+            "warning",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "metric_name",
+        "expected_value",
+        "actual_value",
+        "status",
+        "severity",
+        "message"
+      ],
+      "title": "EvaluationReconciliationMetric",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "metrics": {
+      "items": {
+        "$ref": "#/$defs/EvaluationReconciliationMetric"
+      },
+      "title": "Metrics",
+      "type": "array"
+    },
+    "overall_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Overall Status",
+      "type": "string"
+    },
+    "reconciliation_schema_version": {
+      "title": "Reconciliation Schema Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "reconciliation_schema_version",
+    "evaluation_run_id",
+    "overall_status",
+    "metrics"
+  ],
+  "title": "EvaluationReconciliationReport",
+  "type": "object"
+}

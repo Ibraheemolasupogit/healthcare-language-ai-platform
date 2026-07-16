@@ -1,0 +1,122 @@
+{
+  "$defs": {
+    "AssuranceGateResult": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "title": "Evidence",
+          "type": "string"
+        },
+        "gate_id": {
+          "title": "Gate Id",
+          "type": "string"
+        },
+        "required": {
+          "title": "Required",
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "passed",
+            "failed",
+            "conditional",
+            "blocked"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "gate_id",
+        "required",
+        "status",
+        "evidence"
+      ],
+      "title": "AssuranceGateResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "assurance_run_id": {
+      "title": "Assurance Run Id",
+      "type": "string"
+    },
+    "clinically_ready": {
+      "default": false,
+      "title": "Clinically Ready",
+      "type": "boolean"
+    },
+    "cloud_deployment_approved": {
+      "default": false,
+      "title": "Cloud Deployment Approved",
+      "type": "boolean"
+    },
+    "conditional_gate_count": {
+      "title": "Conditional Gate Count",
+      "type": "integer"
+    },
+    "failed_required_gates": {
+      "title": "Failed Required Gates",
+      "type": "integer"
+    },
+    "gates": {
+      "items": {
+        "$ref": "#/$defs/AssuranceGateResult"
+      },
+      "title": "Gates",
+      "type": "array"
+    },
+    "known_blocked_checks": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Blocked Checks",
+      "type": "array"
+    },
+    "known_degraded_components": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Degraded Components",
+      "type": "array"
+    },
+    "passed_required_gates": {
+      "title": "Passed Required Gates",
+      "type": "integer"
+    },
+    "portfolio_readiness_status": {
+      "enum": [
+        "ready_for_local_portfolio_demonstration",
+        "conditionally_ready",
+        "not_ready"
+      ],
+      "title": "Portfolio Readiness Status",
+      "type": "string"
+    },
+    "production_ready": {
+      "default": false,
+      "title": "Production Ready",
+      "type": "boolean"
+    },
+    "ready_for_local_portfolio_demonstration": {
+      "title": "Ready For Local Portfolio Demonstration",
+      "type": "boolean"
+    },
+    "required_gate_count": {
+      "title": "Required Gate Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "assurance_run_id",
+    "required_gate_count",
+    "passed_required_gates",
+    "failed_required_gates",
+    "conditional_gate_count",
+    "portfolio_readiness_status",
+    "ready_for_local_portfolio_demonstration"
+  ],
+  "title": "PortfolioAssuranceDecision",
+  "type": "object"
+}

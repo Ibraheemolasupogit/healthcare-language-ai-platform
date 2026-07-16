@@ -1,0 +1,133 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "accepted_adjudication_count": {
+      "title": "Accepted Adjudication Count",
+      "type": "integer"
+    },
+    "adjudication_version": {
+      "title": "Adjudication Version",
+      "type": "string"
+    },
+    "authoring_method_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Authoring Method Counts",
+      "type": "object"
+    },
+    "benchmark_id": {
+      "title": "Benchmark Id",
+      "type": "string"
+    },
+    "benchmark_version": {
+      "title": "Benchmark Version",
+      "type": "string"
+    },
+    "development_query_count": {
+      "title": "Development Query Count",
+      "type": "integer"
+    },
+    "holdout_query_count": {
+      "title": "Holdout Query Count",
+      "type": "integer"
+    },
+    "judgment_count": {
+      "title": "Judgment Count",
+      "type": "integer"
+    },
+    "judgment_version": {
+      "title": "Judgment Version",
+      "type": "string"
+    },
+    "negation_sensitive_query_count": {
+      "title": "Negation Sensitive Query Count",
+      "type": "integer"
+    },
+    "numeric_detail_query_count": {
+      "title": "Numeric Detail Query Count",
+      "type": "integer"
+    },
+    "original_benchmark_mutation_status": {
+      "title": "Original Benchmark Mutation Status",
+      "type": "string"
+    },
+    "output_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output Checksums",
+      "type": "object"
+    },
+    "paraphrased_query_count": {
+      "title": "Paraphrased Query Count",
+      "type": "integer"
+    },
+    "query_category_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Query Category Counts",
+      "type": "object"
+    },
+    "query_count": {
+      "title": "Query Count",
+      "type": "integer"
+    },
+    "rejected_adjudication_count": {
+      "title": "Rejected Adjudication Count",
+      "type": "integer"
+    },
+    "source_benchmark_version": {
+      "title": "Source Benchmark Version",
+      "type": "string"
+    },
+    "split_overlap_status": {
+      "title": "Split Overlap Status",
+      "type": "string"
+    },
+    "unanswerable_query_count": {
+      "title": "Unanswerable Query Count",
+      "type": "integer"
+    },
+    "unresolved_adjudication_count": {
+      "title": "Unresolved Adjudication Count",
+      "type": "integer"
+    },
+    "validation_query_count": {
+      "title": "Validation Query Count",
+      "type": "integer"
+    },
+    "validation_status": {
+      "title": "Validation Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "benchmark_id",
+    "benchmark_version",
+    "source_benchmark_version",
+    "judgment_version",
+    "adjudication_version",
+    "query_count",
+    "judgment_count",
+    "accepted_adjudication_count",
+    "rejected_adjudication_count",
+    "unresolved_adjudication_count",
+    "development_query_count",
+    "validation_query_count",
+    "holdout_query_count",
+    "query_category_counts",
+    "authoring_method_counts",
+    "paraphrased_query_count",
+    "negation_sensitive_query_count",
+    "numeric_detail_query_count",
+    "unanswerable_query_count",
+    "split_overlap_status",
+    "original_benchmark_mutation_status",
+    "validation_status",
+    "output_checksums"
+  ],
+  "title": "BenchmarkUpgradeManifest",
+  "type": "object"
+}

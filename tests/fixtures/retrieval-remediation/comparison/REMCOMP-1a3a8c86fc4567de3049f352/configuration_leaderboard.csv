@@ -1,0 +1,11 @@
+configuration_id,validation_ndcg_at_5,validation_hit_rate_at_5,paraphrased_hit_rate_at_5,quality_gate_status
+abstaining_ensemble_v1,0.842105,0.842105,1.0,passed
+advanced_feature_reranked_v1,0.736842,0.736842,1.0,failed
+diversified_ensemble_v1,0.736842,0.736842,1.0,failed
+char_tfidf_v1,0.052632,0.052632,0.0,failed
+word_char_hybrid_v1,0.052632,0.052632,0.0,failed
+field_aware_bm25_v1,0.052632,0.052632,0.0,failed
+entity_enriched_hybrid_v1,0.052632,0.052632,0.0,failed
+pseudo_feedback_bm25_v1,0.052632,0.052632,0.0,failed
+phrase_proximity_bm25_v1,0.026316,0.026316,0.0,failed
+multi_retriever_rrf_v1,0.026316,0.026316,0.0,failed

@@ -1,0 +1,86 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "actual_status": {
+      "title": "Actual Status",
+      "type": "string"
+    },
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "bounded_answer_excerpt": {
+      "title": "Bounded Answer Excerpt",
+      "type": "string"
+    },
+    "bounded_query": {
+      "title": "Bounded Query",
+      "type": "string"
+    },
+    "citation_id": {
+      "default": "",
+      "title": "Citation Id",
+      "type": "string"
+    },
+    "claim_id": {
+      "default": "",
+      "title": "Claim Id",
+      "type": "string"
+    },
+    "error_id": {
+      "title": "Error Id",
+      "type": "string"
+    },
+    "error_type": {
+      "title": "Error Type",
+      "type": "string"
+    },
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "expected_status": {
+      "title": "Expected Status",
+      "type": "string"
+    },
+    "likely_reason": {
+      "title": "Likely Reason",
+      "type": "string"
+    },
+    "query_category": {
+      "title": "Query Category",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "remediation": {
+      "title": "Remediation",
+      "type": "string"
+    }
+  },
+  "required": [
+    "error_id",
+    "query_id",
+    "query_category",
+    "answer_id",
+    "error_type",
+    "expected_status",
+    "actual_status",
+    "bounded_query",
+    "bounded_answer_excerpt",
+    "likely_reason",
+    "remediation",
+    "evaluation_run_id"
+  ],
+  "title": "RagErrorRecord",
+  "type": "object"
+}

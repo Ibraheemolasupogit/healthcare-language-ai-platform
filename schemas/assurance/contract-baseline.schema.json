@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "api_route_count": {
+      "title": "Api Route Count",
+      "type": "integer"
+    },
+    "baseline_id": {
+      "title": "Baseline Id",
+      "type": "string"
+    },
+    "checksum": {
+      "title": "Checksum",
+      "type": "string"
+    },
+    "cli_command_count": {
+      "title": "Cli Command Count",
+      "type": "integer"
+    },
+    "configuration_section_count": {
+      "title": "Configuration Section Count",
+      "type": "integer"
+    },
+    "contract_count": {
+      "title": "Contract Count",
+      "type": "integer"
+    },
+    "contract_inventory_version": {
+      "default": "1.0.0",
+      "title": "Contract Inventory Version",
+      "type": "string"
+    },
+    "deprecated_contract_count": {
+      "title": "Deprecated Contract Count",
+      "type": "integer"
+    },
+    "experimental_contract_count": {
+      "title": "Experimental Contract Count",
+      "type": "integer"
+    },
+    "json_schema_count": {
+      "title": "Json Schema Count",
+      "type": "integer"
+    },
+    "prompt_contract_count": {
+      "title": "Prompt Contract Count",
+      "type": "integer"
+    },
+    "pydantic_contract_count": {
+      "title": "Pydantic Contract Count",
+      "type": "integer"
+    },
+    "stable_contract_count": {
+      "title": "Stable Contract Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "baseline_id",
+    "contract_count",
+    "pydantic_contract_count",
+    "json_schema_count",
+    "api_route_count",
+    "cli_command_count",
+    "prompt_contract_count",
+    "configuration_section_count",
+    "stable_contract_count",
+    "experimental_contract_count",
+    "deprecated_contract_count",
+    "checksum"
+  ],
+  "title": "ContractBaseline",
+  "type": "object"
+}

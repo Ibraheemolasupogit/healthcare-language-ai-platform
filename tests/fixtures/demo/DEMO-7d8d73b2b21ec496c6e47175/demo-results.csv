@@ -1,0 +1,12 @@
+scenario_id,query_id,expected_status,actual_status,retrieval_status,answer_status,citation_count,groundedness_outcome,safety_outcome,passed,answer_id
+scenario-01,RAGQ-52586597c68bc36f48,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-b292a0b6d9d8835169869ea8
+scenario-02,RAGQ-eec7ae707e978365a1,conflicting_evidence,conflicting_evidence,evidence_selected,conflicting_evidence,2,grounded,passed,True,ANS-461c9ce7a9501ed99cf68a82
+scenario-03,RAGQ-128fea5fb09267e137,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-d07deff8e2da0e9db88f640b
+scenario-04,RAGQ-b6b11f62958a60b288,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-122307048dc78bdd2e937367
+scenario-05,RAGQ-44536f6e10e650ef63,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-7397500f3bdfbedf2b347e65
+scenario-06,RAGQ-b9a51b8e7635ccf620,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-cde7fcf147b72a7801e0b2ee
+scenario-07,RAGQ-3ed92e9bacedb01085,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-2c508e29a68b0b373ed47442
+scenario-08,RAGQ-53c1f56f1e4a943feb,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-5f30e9b1a47cc1fccb5e32c5
+scenario-09,RAGQ-291d7a45e3bbc6e245,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-de7fd308e7da0d1c7be91bad
+scenario-10,RAGQ-0221596fb6e6c2341a,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-18cb958dc53cc002601a6b72
+scenario-11,RAGQ-2246f230478252727f,grounded_answer,grounded_answer,evidence_selected,grounded_answer,1,grounded,passed,True,ANS-72ca5b0de7291fc853e08341

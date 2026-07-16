@@ -1,0 +1,43 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "embedding_dimension": {
+      "exclusiveMinimum": 0,
+      "title": "Embedding Dimension",
+      "type": "integer"
+    },
+    "embedding_provider": {
+      "title": "Embedding Provider",
+      "type": "string"
+    },
+    "hash_embedding_version": {
+      "title": "Hash Embedding Version",
+      "type": "string"
+    },
+    "retrieval_unit_id": {
+      "title": "Retrieval Unit Id",
+      "type": "string"
+    },
+    "vector": {
+      "items": {
+        "type": "number"
+      },
+      "title": "Vector",
+      "type": "array"
+    },
+    "vector_norm": {
+      "title": "Vector Norm",
+      "type": "number"
+    }
+  },
+  "required": [
+    "retrieval_unit_id",
+    "embedding_provider",
+    "embedding_dimension",
+    "vector",
+    "vector_norm",
+    "hash_embedding_version"
+  ],
+  "title": "EmbeddingVector",
+  "type": "object"
+}

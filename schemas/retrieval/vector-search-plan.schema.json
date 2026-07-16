@@ -1,0 +1,86 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "access_control_expectations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Access Control Expectations",
+      "type": "array"
+    },
+    "connection_attempted": {
+      "title": "Connection Attempted",
+      "type": "boolean"
+    },
+    "dry_run_status": {
+      "const": "validated",
+      "title": "Dry Run Status",
+      "type": "string"
+    },
+    "embedding_column": {
+      "title": "Embedding Column",
+      "type": "string"
+    },
+    "embedding_dimension": {
+      "title": "Embedding Dimension",
+      "type": "integer"
+    },
+    "endpoint_placeholder": {
+      "title": "Endpoint Placeholder",
+      "type": "string"
+    },
+    "execution_permitted": {
+      "title": "Execution Permitted",
+      "type": "boolean"
+    },
+    "index_placeholder": {
+      "title": "Index Placeholder",
+      "type": "string"
+    },
+    "metadata_filter_columns": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Metadata Filter Columns",
+      "type": "array"
+    },
+    "plan_schema_version": {
+      "title": "Plan Schema Version",
+      "type": "string"
+    },
+    "primary_key": {
+      "title": "Primary Key",
+      "type": "string"
+    },
+    "source_index_id": {
+      "title": "Source Index Id",
+      "type": "string"
+    },
+    "sync_strategy": {
+      "title": "Sync Strategy",
+      "type": "string"
+    },
+    "vector_search_contract_version": {
+      "title": "Vector Search Contract Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "plan_schema_version",
+    "vector_search_contract_version",
+    "endpoint_placeholder",
+    "index_placeholder",
+    "primary_key",
+    "embedding_column",
+    "embedding_dimension",
+    "metadata_filter_columns",
+    "sync_strategy",
+    "access_control_expectations",
+    "source_index_id",
+    "dry_run_status",
+    "connection_attempted",
+    "execution_permitted"
+  ],
+  "title": "VectorSearchPlan",
+  "type": "object"
+}

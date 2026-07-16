@@ -1,0 +1,6 @@
+rank,configuration_id,dependency_profile,validation_ndcg_at_5,validation_recall_at_5,validation_mrr,validation_hit_rate_at_5,negation_hit_rate_at_5,paraphrased_hit_rate_at_5,zero_hit_query_count,quality_gate_status,selection_status
+1,feature_reranked_hybrid_v1,model_free,0.276316,0.289474,0.27193,0.289474,1.0,0.0,27,failed,selected
+2,negation_numeric_bm25_v1,model_free,0.184211,0.197368,0.189474,0.210526,0.333333,0.0,30,failed,not_selected
+3,cross_granularity_hybrid_v1,model_free,0.184211,0.197368,0.189474,0.210526,0.333333,0.0,30,failed,not_selected
+4,bm25_v2,model_free,0.027937,0.052632,0.019737,0.052632,0.0,0.0,36,failed,not_selected
+5,query_expanded_bm25_v1,model_free,0.027937,0.052632,0.019737,0.052632,0.0,0.0,36,failed,not_selected

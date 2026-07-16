@@ -1,0 +1,70 @@
+section_id,document_id,predicted_section_label,confidence,classification_rule_version,extraction_run_id
+SEC_b696548d15bc1549c035c786,SYN-DOC-004873,reason for attendance,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_b8a2471818cf1ae660751f41,SYN-DOC-004873,relevant history,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_eb0391ef0c2e4df95eafb87a,SYN-DOC-004873,observations,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_8fdea558cfea18b83962e15c,SYN-DOC-004873,assessment summary,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_c2e80713274d7cf6a86178b2,SYN-DOC-004873,plan recorded for simulation,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_dd54bf43dcdf7638a7962bcc,SYN-DOC-043303,referral reason,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_3046a9cdec63d988dfe3226c,SYN-DOC-043303,relevant synthetic history,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_730c09405d6f755cb752ba4b,SYN-DOC-043303,current concerns,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_dfa7899f07228f4b2f103cc7,SYN-DOC-043303,requested review,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_cf73458712f9a62d38a27224,SYN-DOC-043303,administrative priority label,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_07bc300caae7b386fb52289f,SYN-DOC-121909,admission reason,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_5a719ce801d8e5c5e4b05161,SYN-DOC-121909,synthetic hospital course summary,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_1c67bb71443387e28ad0ace6,SYN-DOC-121909,recorded investigations,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_62a9ff24868d99fcac5bd77a,SYN-DOC-121909,discharge status,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_0bb07e0249dd9b3e4def472b,SYN-DOC-121909,follow up placeholder,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_b3d444e26c747b744e3e8392,SYN-DOC-260561,study,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_4e79a8e9189ca26546de9a9a,SYN-DOC-260561,synthetic indication,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_b94d0943b049d94431c3bae8,SYN-DOC-260561,findings,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_da19f613f76ecdeba4dc6673,SYN-DOC-260561,impression,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_4ecd7a7a7eabb9134d7985e0,SYN-DOC-274035,referral reason,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_175323d4b3b5253c5f90d7d3,SYN-DOC-274035,relevant synthetic history,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_5f76a6ffcde9147cfc2ea56b,SYN-DOC-274035,current concerns,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_63bf6fe72e05f2e3d2e364ac,SYN-DOC-274035,requested review,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_2dbd401940f6c096d5581ec8,SYN-DOC-274035,administrative priority label,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_29930c51bdcb510ac8253310,SYN-DOC-331779,specimen type,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_cba0958c5d328fc251e9aa0f,SYN-DOC-331779,macroscopic description,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_7267da54d0f00af0e4ae274a,SYN-DOC-331779,microscopic description,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_ca0d83c5b42ce475fc4917a2,SYN-DOC-331779,synthetic interpretation label,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_5cec6fbdb24556287c4247b7,SYN-DOC-339753,reason for attendance,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_b72fd9797e3c7641f59c1691,SYN-DOC-339753,relevant history,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_104a1598785ceaea93e7723f,SYN-DOC-339753,observations,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_29ce407838f4fd4da72d5f73,SYN-DOC-339753,assessment summary,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_2bfa7b330f265892ff645fb5,SYN-DOC-339753,plan recorded for simulation,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_0ffda8a9b76a05662c90335d,SYN-DOC-355045,specimen type,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_d617c1fc98b9791ab63ed4f3,SYN-DOC-355045,macroscopic description,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_23905711a2be4e018ac8c361,SYN-DOC-355045,microscopic description,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_045080ae04696aa1e62bcc12,SYN-DOC-355045,synthetic interpretation label,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_4f20160bb80d53ad507f1627,SYN-DOC-494697,admission reason,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_ed35433613790aa066f1ca5c,SYN-DOC-494697,synthetic hospital course summary,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_7a7fd8d645fadb3a5a83c2b3,SYN-DOC-494697,recorded investigations,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_984a7d20004e787f9bca293e,SYN-DOC-494697,discharge status,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_8af3e70810329c39483da7b9,SYN-DOC-494697,follow up placeholder,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_8be0eec256895ba7bc67f605,SYN-DOC-550005,reason for attendance,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_8138862c8b26661beee9b81a,SYN-DOC-550005,relevant history,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_f8fe33bf373afd8abb35cb95,SYN-DOC-550005,observations,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_1d9cb61a50c0a6f2f8626ad2,SYN-DOC-550005,assessment summary,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_87ee687d6d71435b74f739f0,SYN-DOC-550005,plan recorded for simulation,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_237c6b6c1f71dce1cb1e06c3,SYN-DOC-808823,referral reason,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_602a2f5284ea898d5ead5eba,SYN-DOC-808823,relevant synthetic history,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_40c2410f447e2bdce1a71a4d,SYN-DOC-808823,current concerns,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_615afd5f12677a9e79fcc21d,SYN-DOC-808823,requested review,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_5d79d78741cc3a964e054f10,SYN-DOC-808823,administrative priority label,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_244c70510843e4aff6ab1b95,SYN-DOC-849532,specimen type,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_28a36c7962a3d1ac81157d65,SYN-DOC-849532,macroscopic description,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_ba40d09675bbdeb8e661cb78,SYN-DOC-849532,microscopic description,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_bc20fa3017a91d04cd0d2b35,SYN-DOC-849532,synthetic interpretation label,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_ca9fa90f3450fa00f3b328ec,SYN-DOC-863541,study,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_41231244b0c6cc1689ddb4cd,SYN-DOC-863541,synthetic indication,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_5f836dc9b7c8193f8cd4780b,SYN-DOC-863541,findings,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_76caef079e131af4213cd15d,SYN-DOC-863541,impression,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_e2705dcd579e97d06b7eed8f,SYN-DOC-975651,study,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_9dfc53f67f8bb5496b3b644a,SYN-DOC-975651,synthetic indication,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_eb24b698bad90921d1f17fe1,SYN-DOC-975651,findings,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_db8f1029c7a4a6aa24a3553a,SYN-DOC-975651,impression,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_034d3674823eb3305067324e,SYN-DOC-993081,admission reason,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_4471b88890022a1438dc0913,SYN-DOC-993081,synthetic hospital course summary,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_5eafc24095b8e599ad5afa20,SYN-DOC-993081,recorded investigations,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_04c9d86764060c3c54659b34,SYN-DOC-993081,discharge status,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d
+SEC_4e74840564df5db988ddb973,SYN-DOC-993081,follow up placeholder,1.0,1.0.0,EXT-723871c87dfd1f3a3bb89b8d

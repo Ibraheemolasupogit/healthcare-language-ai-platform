@@ -1,0 +1,29 @@
+{
+  "request_id": "REQ-fixture-grounded",
+  "query_id": "RAGQ-52586597c68bc36f48",
+  "answer_id": "ANS-b292a0b6d9d8835169869ea8",
+  "answer_status": "grounded_answer",
+  "answer_text": "The retrieved synthetic records indicate: Relevant history: Synthetic-only encounter 1 describes blood pressure log; the note also mentions unrelated skin observation for distractor testing.\n\nReport findings: MRI context i [E1]",
+  "citations": [
+    {
+      "citation_id": "CIT-a994b530dd13-ab4a00",
+      "citation_label": "[E1]",
+      "evidence_id": "EVID-c98602078054dd6454ab4a00",
+      "document_id": "SYN-DOC-161275",
+      "section_id": "",
+      "sentence_id": "",
+      "claim_ids": [
+        "CLM-f929d8ce1a0b759f"
+      ],
+      "citation_status": "valid",
+      "quoted_span": "Relevant history: Synthetic-only encounter 1 describes blood pressure log; the note also mentions unrelated skin observa",
+      "source_text_checksum": "3c3e6515e753ac280475fd9d7da01d45358ad1b4d27ae6d18815d574fd083fc9"
+    }
+  ],
+  "retrieval_status": "evidence_selected",
+  "retrieval_confidence": 1.0,
+  "trace_id": "ANS-b292a0b6d9d8835169869ea8",
+  "synthetic_data_only": true,
+  "clinical_use_prohibited": true,
+  "disclaimer": "Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated."
+}

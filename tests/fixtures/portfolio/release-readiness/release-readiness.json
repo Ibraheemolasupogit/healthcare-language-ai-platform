@@ -1,0 +1,116 @@
+{
+  "clinically_validated": false,
+  "cloud_deployed": false,
+  "conditional_gate_count": 0,
+  "coverage": 82.97,
+  "failed_required_gates": 0,
+  "gates": [
+    {
+      "evidence": "reports/assurance/portfolio-assurance-decision.json",
+      "gate_id": "tests",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/assurance/compatibility/compatibility-report.json",
+      "gate_id": "contracts",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "tests/fixtures/retrieval-remediation/comparison/REMCOMP-1a3a8c86fc4567de3049f352/retrieval_approval_decision.json",
+      "gate_id": "retrieval_approval",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "tests/fixtures/rag/evaluation/RAGEVAL-d8d3b3b6892133372f91d017/rag_approval_decision.json",
+      "gate_id": "rag_approval",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/assurance/portfolio-assurance-decision.json",
+      "gate_id": "portfolio_assurance",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "docs/REVIEWER_GUIDE.md",
+      "gate_id": "documentation",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "docs/FINAL_LIMITATIONS.md",
+      "gate_id": "limitations",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/portfolio/evidence-index.json",
+      "gate_id": "evidence_index",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/portfolio/portfolio-model-card.json",
+      "gate_id": "model_card",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/runtime-smoke/api-smoke-report.json",
+      "gate_id": "runtime_smoke",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/assurance/recovery/backup-recovery-report.json",
+      "gate_id": "backup_recovery",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/assurance/security-control-report.json",
+      "gate_id": "security",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/assurance/dependency-inventory.json",
+      "gate_id": "dependency",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "evidence": "reports/assurance/container-assurance.json",
+      "gate_id": "container",
+      "message": "path exists and is managed by prior validation",
+      "required": true,
+      "status": "passed"
+    }
+  ],
+  "output_checksum_status": "passed",
+  "passed_required_gates": 14,
+  "production_ready": false,
+  "ready_for_portfolio_release": true,
+  "release_readiness_run_id": "RELREADY-10b1344caffc25dd8658c683",
+  "release_readiness_status": "ready_for_portfolio_release",
+  "release_readiness_version": "1.0.0",
+  "required_gate_count": 14,
+  "test_count": 161
+}

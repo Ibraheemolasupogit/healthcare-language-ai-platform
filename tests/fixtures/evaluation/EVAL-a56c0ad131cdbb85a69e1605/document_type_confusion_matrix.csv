@@ -1,0 +1,6 @@
+actual_document_type,predicted_document_type,count,evaluation_run_id
+clinical_note,clinical_note,3,EVAL-a56c0ad131cdbb85a69e1605
+discharge_summary,discharge_summary,3,EVAL-a56c0ad131cdbb85a69e1605
+pathology_report,pathology_report,3,EVAL-a56c0ad131cdbb85a69e1605
+radiology_report,radiology_report,3,EVAL-a56c0ad131cdbb85a69e1605
+referral_letter,referral_letter,3,EVAL-a56c0ad131cdbb85a69e1605

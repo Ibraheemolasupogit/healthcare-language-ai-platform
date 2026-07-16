@@ -1,0 +1,95 @@
+{
+  "$defs": {
+    "DependencyRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "dependency_group": {
+          "title": "Dependency Group",
+          "type": "string"
+        },
+        "direct": {
+          "title": "Direct",
+          "type": "boolean"
+        },
+        "installed_version": {
+          "title": "Installed Version",
+          "type": "string"
+        },
+        "license_metadata": {
+          "default": "",
+          "title": "License Metadata",
+          "type": "string"
+        },
+        "package_name": {
+          "title": "Package Name",
+          "type": "string"
+        },
+        "runtime": {
+          "title": "Runtime",
+          "type": "boolean"
+        },
+        "source_metadata": {
+          "default": "",
+          "title": "Source Metadata",
+          "type": "string"
+        }
+      },
+      "required": [
+        "package_name",
+        "installed_version",
+        "dependency_group",
+        "direct",
+        "runtime"
+      ],
+      "title": "DependencyRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "dependency_count": {
+      "title": "Dependency Count",
+      "type": "integer"
+    },
+    "dependency_inventory_id": {
+      "title": "Dependency Inventory Id",
+      "type": "string"
+    },
+    "dependency_inventory_version": {
+      "default": "1.0.0",
+      "title": "Dependency Inventory Version",
+      "type": "string"
+    },
+    "development_dependency_count": {
+      "title": "Development Dependency Count",
+      "type": "integer"
+    },
+    "direct_dependency_count": {
+      "title": "Direct Dependency Count",
+      "type": "integer"
+    },
+    "policy_violations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Policy Violations",
+      "type": "array"
+    },
+    "records": {
+      "items": {
+        "$ref": "#/$defs/DependencyRecord"
+      },
+      "title": "Records",
+      "type": "array"
+    }
+  },
+  "required": [
+    "dependency_inventory_id",
+    "records",
+    "dependency_count",
+    "direct_dependency_count",
+    "development_dependency_count"
+  ],
+  "title": "DependencyInventory",
+  "type": "object"
+}

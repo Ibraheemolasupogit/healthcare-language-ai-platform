@@ -1,0 +1,69 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "f1": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "F1",
+      "type": "number"
+    },
+    "false_negative_count": {
+      "minimum": 0,
+      "title": "False Negative Count",
+      "type": "integer"
+    },
+    "false_positive_count": {
+      "minimum": 0,
+      "title": "False Positive Count",
+      "type": "integer"
+    },
+    "metric_scope": {
+      "title": "Metric Scope",
+      "type": "string"
+    },
+    "precision": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Precision",
+      "type": "number"
+    },
+    "recall": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Recall",
+      "type": "number"
+    },
+    "scope_value": {
+      "title": "Scope Value",
+      "type": "string"
+    },
+    "support": {
+      "minimum": 0,
+      "title": "Support",
+      "type": "integer"
+    },
+    "true_positive_count": {
+      "minimum": 0,
+      "title": "True Positive Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "metric_scope",
+    "scope_value",
+    "true_positive_count",
+    "false_positive_count",
+    "false_negative_count",
+    "precision",
+    "recall",
+    "f1",
+    "support",
+    "evaluation_run_id"
+  ],
+  "title": "EntityEvaluationMetric",
+  "type": "object"
+}

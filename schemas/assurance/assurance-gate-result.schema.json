@@ -1,0 +1,35 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "evidence": {
+      "title": "Evidence",
+      "type": "string"
+    },
+    "gate_id": {
+      "title": "Gate Id",
+      "type": "string"
+    },
+    "required": {
+      "title": "Required",
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed",
+        "conditional",
+        "blocked"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "gate_id",
+    "required",
+    "status",
+    "evidence"
+  ],
+  "title": "AssuranceGateResult",
+  "type": "object"
+}

@@ -1,0 +1,73 @@
+environment: test
+log_level: INFO
+log_format: json
+data_root: data
+output_root: outputs
+report_root: reports
+synthetic_data_only: true
+deterministic_seed: 123
+synthetic_generation:
+  default_record_count: 15
+  allowed_document_types:
+    - clinical_note
+    - discharge_summary
+    - referral_letter
+    - radiology_report
+    - pathology_report
+  reference_timestamp: "2026-01-01T09:00:00+00:00"
+  generator_seed: 2026
+  generator_version: "1.0.0"
+  template_version: "1.0.0"
+  vocabulary_version: "1.0.0"
+  maximum_records_per_run: 100
+  output_format: jsonl
+  include_annotations: true
+ingestion:
+  default_ingestion_mode: strict
+  default_output_root: outputs/ingestion
+  ingestion_reference_timestamp: "2026-01-02T09:00:00+00:00"
+  maximum_source_records: 1000
+  allowed_source_roots:
+    - tests/fixtures
+    - outputs
+  follow_symlinks: false
+  default_overwrite_policy: fail_if_exists
+  write_csv: true
+  write_parquet: true
+  csv_null_value: ""
+  parquet_compression: zstd
+  ingestion_contract_version: "1.0.0"
+  snowflake_contract_version: "1.0.0"
+  snowflake_target_database: HEALTHCARE_LANGUAGE_AI
+  snowflake_raw_schema: RAW
+  snowflake_staging_schema: STAGING
+  snowflake_governance_schema: GOVERNANCE
+preprocessing:
+  default_preprocessing_mode: conservative
+  default_output_root: outputs/preprocessing
+  preprocessing_reference_timestamp: "2026-01-03T09:00:00+00:00"
+  maximum_documents_per_run: 1000
+  allowed_ingestion_roots:
+    - tests/fixtures/ingestion
+    - outputs/ingestion
+  follow_symlinks: false
+  default_overwrite_policy: fail_if_exists
+  write_csv: true
+  write_parquet: true
+  unicode_normalisation_form: NFC
+  tab_width: 4
+  collapse_repeated_spaces: true
+  preserve_final_newline: true
+  maximum_sentence_length: 500
+  minimum_document_length: 80
+  preprocessing_contract_version: "1.0.0"
+  normalisation_version: "1.0.0"
+  section_parser_version: "1.0.0"
+  sentence_segmenter_version: "1.0.0"
+  tokeniser_version: "1.0.0"
+  quality_rules_version: "1.0.0"
+  databricks_contract_version: "1.0.0"
+  databricks_catalog_placeholder: hla_catalog_placeholder
+  databricks_bronze_schema: bronze
+  databricks_silver_schema: silver
+  databricks_gold_schema: gold

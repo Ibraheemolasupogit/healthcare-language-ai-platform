@@ -1,0 +1,98 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "browser_interaction_performed": {
+      "default": false,
+      "title": "Browser Interaction Performed",
+      "type": "boolean"
+    },
+    "component": {
+      "enum": [
+        "api",
+        "dashboard"
+      ],
+      "title": "Component",
+      "type": "string"
+    },
+    "duration_seconds": {
+      "title": "Duration Seconds",
+      "type": "number"
+    },
+    "http_smoke_status": {
+      "title": "Http Smoke Status",
+      "type": "string"
+    },
+    "liveness_status": {
+      "title": "Liveness Status",
+      "type": "string"
+    },
+    "local_host": {
+      "title": "Local Host",
+      "type": "string"
+    },
+    "local_port": {
+      "title": "Local Port",
+      "type": "integer"
+    },
+    "output_path": {
+      "title": "Output Path",
+      "type": "string"
+    },
+    "overall_status": {
+      "enum": [
+        "passed",
+        "failed",
+        "blocked"
+      ],
+      "title": "Overall Status",
+      "type": "string"
+    },
+    "process_started": {
+      "title": "Process Started",
+      "type": "boolean"
+    },
+    "process_termination_status": {
+      "title": "Process Termination Status",
+      "type": "string"
+    },
+    "prohibited_query_refusal_status": {
+      "default": "not_applicable",
+      "title": "Prohibited Query Refusal Status",
+      "type": "string"
+    },
+    "readiness_status": {
+      "default": "not_applicable",
+      "title": "Readiness Status",
+      "type": "string"
+    },
+    "security_header_status": {
+      "default": "not_applicable",
+      "title": "Security Header Status",
+      "type": "string"
+    },
+    "smoke_run_id": {
+      "title": "Smoke Run Id",
+      "type": "string"
+    },
+    "synthetic_query_status": {
+      "default": "not_applicable",
+      "title": "Synthetic Query Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "smoke_run_id",
+    "component",
+    "process_started",
+    "local_host",
+    "local_port",
+    "liveness_status",
+    "http_smoke_status",
+    "process_termination_status",
+    "duration_seconds",
+    "overall_status",
+    "output_path"
+  ],
+  "title": "RuntimeSmokeReport",
+  "type": "object"
+}

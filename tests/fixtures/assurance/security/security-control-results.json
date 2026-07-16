@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "check_id": "localhost_default_binding",
+      "description": "Localhost defaults are configured",
+      "message": "",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "check_id": "wildcard_cors_prohibited",
+      "description": "Wildcard CORS is not configured",
+      "message": "",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "check_id": "no_mutation_routes",
+      "description": "No unsafe API mutation routes are present",
+      "message": "",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "check_id": "secret_scan",
+      "description": "No common secret patterns found",
+      "message": "0",
+      "required": true,
+      "status": "passed"
+    },
+    {
+      "check_id": "sensitive_content_scan",
+      "description": "No unexpected sensitive content found",
+      "message": "0",
+      "required": true,
+      "status": "passed"
+    }
+  ],
+  "overall_status": "passed",
+  "secret_findings": [],
+  "security_assurance_run_id": "SECURITY-local-1",
+  "sensitive_findings": []
+}

@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "actual_status": {
+      "title": "Actual Status",
+      "type": "string"
+    },
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "answer_status": {
+      "title": "Answer Status",
+      "type": "string"
+    },
+    "citation_count": {
+      "title": "Citation Count",
+      "type": "integer"
+    },
+    "expected_status": {
+      "title": "Expected Status",
+      "type": "string"
+    },
+    "groundedness_outcome": {
+      "title": "Groundedness Outcome",
+      "type": "string"
+    },
+    "passed": {
+      "title": "Passed",
+      "type": "boolean"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "retrieval_status": {
+      "title": "Retrieval Status",
+      "type": "string"
+    },
+    "safety_outcome": {
+      "title": "Safety Outcome",
+      "type": "string"
+    },
+    "scenario_id": {
+      "title": "Scenario Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "scenario_id",
+    "query_id",
+    "expected_status",
+    "actual_status",
+    "retrieval_status",
+    "answer_status",
+    "citation_count",
+    "groundedness_outcome",
+    "safety_outcome",
+    "passed",
+    "answer_id"
+  ],
+  "title": "DemoResult",
+  "type": "object"
+}

@@ -1,0 +1,1 @@
+{"abstention":false,"candidate_retrievers":["char_tfidf"],"character_features":["char_3_5"],"configuration_id":"char_tfidf_v1","description":"Milestone 8 model-free remediation configuration char_tfidf_v1.","diversification":false,"entity_features":[],"phrase_features":[],"proximity_features":[],"pseudo_relevance_feedback":false,"reranker":"none","synonym_expansion":false}

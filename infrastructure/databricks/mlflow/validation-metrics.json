@@ -1,0 +1,8 @@
+{
+  "classification_accuracy": "logged from evaluation manifest",
+  "classification_macro_f1": "logged from evaluation manifest",
+  "connection_attempted": false,
+  "entity_macro_f1": "logged from evaluation manifest",
+  "entity_micro_f1": "logged from evaluation manifest",
+  "execution_permitted": false
+}

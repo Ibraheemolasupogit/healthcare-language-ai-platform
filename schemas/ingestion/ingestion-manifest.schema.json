@@ -1,0 +1,193 @@
+{
+  "$defs": {
+    "IngestionMode": {
+      "enum": [
+        "strict",
+        "quarantine"
+      ],
+      "title": "IngestionMode",
+      "type": "string"
+    },
+    "IngestionRunStatus": {
+      "enum": [
+        "completed",
+        "completed_with_quarantine",
+        "failed"
+      ],
+      "title": "IngestionRunStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "annotation_label_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Annotation Label Counts",
+      "type": "object"
+    },
+    "canonical_annotation_count": {
+      "title": "Canonical Annotation Count",
+      "type": "integer"
+    },
+    "canonical_document_count": {
+      "title": "Canonical Document Count",
+      "type": "integer"
+    },
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "document_type_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Document Type Counts",
+      "type": "object"
+    },
+    "duplicate_count": {
+      "title": "Duplicate Count",
+      "type": "integer"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "ingestion_contract_version": {
+      "title": "Ingestion Contract Version",
+      "type": "string"
+    },
+    "ingestion_mode": {
+      "$ref": "#/$defs/IngestionMode"
+    },
+    "ingestion_run_id": {
+      "title": "Ingestion Run Id",
+      "type": "string"
+    },
+    "manifest_schema_version": {
+      "title": "Manifest Schema Version",
+      "type": "string"
+    },
+    "orphan_annotation_count": {
+      "title": "Orphan Annotation Count",
+      "type": "integer"
+    },
+    "output_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output File Checksums",
+      "type": "object"
+    },
+    "output_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Files",
+      "type": "array"
+    },
+    "quarantine_count": {
+      "title": "Quarantine Count",
+      "type": "integer"
+    },
+    "reconciliation_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "run_status": {
+      "$ref": "#/$defs/IngestionRunStatus"
+    },
+    "snowflake_contract_version": {
+      "title": "Snowflake Contract Version",
+      "type": "string"
+    },
+    "source_annotation_count": {
+      "title": "Source Annotation Count",
+      "type": "integer"
+    },
+    "source_dataset_name": {
+      "title": "Source Dataset Name",
+      "type": "string"
+    },
+    "source_dataset_version": {
+      "title": "Source Dataset Version",
+      "type": "string"
+    },
+    "source_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Source File Checksums",
+      "type": "object"
+    },
+    "source_manifest_checksum": {
+      "title": "Source Manifest Checksum",
+      "type": "string"
+    },
+    "source_record_count": {
+      "title": "Source Record Count",
+      "type": "integer"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "template_version": {
+      "title": "Template Version",
+      "type": "string"
+    },
+    "vocabulary_version": {
+      "title": "Vocabulary Version",
+      "type": "string"
+    },
+    "writer_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Writer Versions",
+      "type": "object"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "ingestion_contract_version",
+    "ingestion_run_id",
+    "ingestion_mode",
+    "run_status",
+    "source_dataset_name",
+    "source_dataset_version",
+    "source_manifest_checksum",
+    "source_file_checksums",
+    "source_record_count",
+    "source_annotation_count",
+    "canonical_document_count",
+    "canonical_annotation_count",
+    "quarantine_count",
+    "duplicate_count",
+    "orphan_annotation_count",
+    "generator_version",
+    "template_version",
+    "vocabulary_version",
+    "reference_timestamp",
+    "writer_versions",
+    "output_files",
+    "output_file_checksums",
+    "snowflake_contract_version",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "reconciliation_status"
+  ],
+  "title": "IngestionManifest",
+  "type": "object"
+}

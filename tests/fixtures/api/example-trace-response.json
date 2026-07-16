@@ -1,0 +1,34 @@
+{
+  "trace_id": "ANS-b292a0b6d9d8835169869ea8",
+  "answer_id": "ANS-b292a0b6d9d8835169869ea8",
+  "query_id": "RAGQ-52586597c68bc36f48",
+  "query_category": "single_evidence",
+  "answer_status": "grounded_answer",
+  "retrieval_status": "evidence_selected",
+  "retrieval_configuration_id": "abstaining_ensemble_v1",
+  "retrieval_approval_id": "REMCOMP-1a3a8c86fc4567de3049f352",
+  "retrieval_confidence": 1.0,
+  "selected_evidence_ids": [
+    "EVID-c98602078054dd6454ab4a00",
+    "EVID-6d4cc11c1b1943f2fc532f38",
+    "EVID-147b2fc50fbce91d27394ea1",
+    "EVID-7d54e61ffc1d662350f462fa",
+    "EVID-35cbcdd5d4f079dc9fafbf89"
+  ],
+  "excluded_retrieval_unit_ids": [],
+  "prompt_id": "grounded-answer",
+  "prompt_version": "1.0.0",
+  "generator_provider": "deterministic_extract",
+  "generator_version": "1.0.0",
+  "claim_ids": [
+    "CLM-f929d8ce1a0b759f"
+  ],
+  "citation_ids": [
+    "CIT-a994b530dd13-ab4a00"
+  ],
+  "citation_validation_status": "passed",
+  "groundedness_status": "grounded",
+  "safety_status": "passed",
+  "synthetic_data_only": true,
+  "clinical_use_prohibited": true
+}

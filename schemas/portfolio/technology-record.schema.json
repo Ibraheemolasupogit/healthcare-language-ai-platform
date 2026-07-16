@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "evidence_path": {
+      "title": "Evidence Path",
+      "type": "string"
+    },
+    "limitation": {
+      "title": "Limitation",
+      "type": "string"
+    },
+    "role": {
+      "title": "Role",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "implemented_locally",
+        "optional_local",
+        "contract_only",
+        "not_implemented"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "technology": {
+      "title": "Technology",
+      "type": "string"
+    },
+    "technology_id": {
+      "title": "Technology Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "technology_id",
+    "technology",
+    "role",
+    "status",
+    "evidence_path",
+    "limitation"
+  ],
+  "title": "TechnologyRecord",
+  "type": "object"
+}

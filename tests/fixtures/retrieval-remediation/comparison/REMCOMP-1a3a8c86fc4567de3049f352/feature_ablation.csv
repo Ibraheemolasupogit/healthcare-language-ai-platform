@@ -1,0 +1,3 @@
+feature_group,conclusion
+character_phrase_entity_abstention,full abstaining ensemble met all gates; weaker single-feature variants did not
+holdout,holdout metrics computed after validation selection only

@@ -1,0 +1,131 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "answer_status": {
+      "title": "Answer Status",
+      "type": "string"
+    },
+    "citation_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Citation Ids",
+      "type": "array"
+    },
+    "citation_validation_status": {
+      "title": "Citation Validation Status",
+      "type": "string"
+    },
+    "claim_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Claim Ids",
+      "type": "array"
+    },
+    "clinical_use_prohibited": {
+      "default": true,
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "excluded_retrieval_unit_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Excluded Retrieval Unit Ids",
+      "type": "array"
+    },
+    "generator_provider": {
+      "title": "Generator Provider",
+      "type": "string"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "groundedness_status": {
+      "title": "Groundedness Status",
+      "type": "string"
+    },
+    "prompt_id": {
+      "title": "Prompt Id",
+      "type": "string"
+    },
+    "prompt_version": {
+      "title": "Prompt Version",
+      "type": "string"
+    },
+    "query_category": {
+      "title": "Query Category",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "retrieval_approval_id": {
+      "title": "Retrieval Approval Id",
+      "type": "string"
+    },
+    "retrieval_confidence": {
+      "title": "Retrieval Confidence",
+      "type": "number"
+    },
+    "retrieval_configuration_id": {
+      "title": "Retrieval Configuration Id",
+      "type": "string"
+    },
+    "retrieval_status": {
+      "title": "Retrieval Status",
+      "type": "string"
+    },
+    "safety_status": {
+      "title": "Safety Status",
+      "type": "string"
+    },
+    "selected_evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Selected Evidence Ids",
+      "type": "array"
+    },
+    "synthetic_data_only": {
+      "default": true,
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "trace_id": {
+      "title": "Trace Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "trace_id",
+    "answer_id",
+    "query_id",
+    "query_category",
+    "answer_status",
+    "retrieval_status",
+    "retrieval_configuration_id",
+    "retrieval_approval_id",
+    "retrieval_confidence",
+    "selected_evidence_ids",
+    "excluded_retrieval_unit_ids",
+    "prompt_id",
+    "prompt_version",
+    "generator_provider",
+    "generator_version",
+    "claim_ids",
+    "citation_ids",
+    "citation_validation_status",
+    "groundedness_status",
+    "safety_status"
+  ],
+  "title": "TraceResponse",
+  "type": "object"
+}

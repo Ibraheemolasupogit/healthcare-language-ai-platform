@@ -1,0 +1,61 @@
+{
+  "properties": {
+    "category": {
+      "title": "Category",
+      "type": "string"
+    },
+    "checksum": {
+      "title": "Checksum",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "evidence_id": {
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "milestone": {
+      "title": "Milestone",
+      "type": "string"
+    },
+    "path": {
+      "title": "Path",
+      "type": "string"
+    },
+    "related_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Related Ids",
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "evidence_id",
+    "title",
+    "category",
+    "milestone",
+    "path",
+    "description",
+    "status",
+    "checksum"
+  ],
+  "title": "EvidenceIndexRecord",
+  "type": "object"
+}

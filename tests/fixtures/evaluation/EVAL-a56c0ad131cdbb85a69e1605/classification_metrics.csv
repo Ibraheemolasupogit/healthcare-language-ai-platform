@@ -1,0 +1,6 @@
+class_label,true_positive_count,false_positive_count,false_negative_count,precision,recall,f1,support,accuracy,evaluation_run_id
+clinical_note,3,0,0,1.0,1.0,1.0,3,1.0,EVAL-a56c0ad131cdbb85a69e1605
+discharge_summary,3,0,0,1.0,1.0,1.0,3,1.0,EVAL-a56c0ad131cdbb85a69e1605
+pathology_report,3,0,0,1.0,1.0,1.0,3,1.0,EVAL-a56c0ad131cdbb85a69e1605
+radiology_report,3,0,0,1.0,1.0,1.0,3,1.0,EVAL-a56c0ad131cdbb85a69e1605
+referral_letter,3,0,0,1.0,1.0,1.0,3,1.0,EVAL-a56c0ad131cdbb85a69e1605

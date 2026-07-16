@@ -1,0 +1,146 @@
+{
+  "properties": {
+    "architecture_pack_checksum": {
+      "title": "Architecture Pack Checksum",
+      "type": "string"
+    },
+    "assurance_run_id": {
+      "title": "Assurance Run Id",
+      "type": "string"
+    },
+    "clinical_use_prohibited": {
+      "default": true,
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "clinically_validated": {
+      "default": false,
+      "title": "Clinically Validated",
+      "type": "boolean"
+    },
+    "cloud_deployed": {
+      "default": false,
+      "title": "Cloud Deployed",
+      "type": "boolean"
+    },
+    "contract_baseline_id": {
+      "title": "Contract Baseline Id",
+      "type": "string"
+    },
+    "coverage": {
+      "title": "Coverage",
+      "type": "number"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "demo_session_id": {
+      "title": "Demo Session Id",
+      "type": "string"
+    },
+    "documentation_checksum": {
+      "title": "Documentation Checksum",
+      "type": "string"
+    },
+    "evidence_index_checksum": {
+      "title": "Evidence Index Checksum",
+      "type": "string"
+    },
+    "fixture_manifest_checksum": {
+      "title": "Fixture Manifest Checksum",
+      "type": "string"
+    },
+    "milestones_completed": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Milestones Completed",
+      "type": "array"
+    },
+    "portfolio_model_card_checksum": {
+      "title": "Portfolio Model Card Checksum",
+      "type": "string"
+    },
+    "production_ready": {
+      "default": false,
+      "title": "Production Ready",
+      "type": "boolean"
+    },
+    "rag_evaluation_id": {
+      "title": "Rag Evaluation Id",
+      "type": "string"
+    },
+    "rag_run_id": {
+      "title": "Rag Run Id",
+      "type": "string"
+    },
+    "release_id": {
+      "title": "Release Id",
+      "type": "string"
+    },
+    "release_readiness_status": {
+      "enum": [
+        "ready_for_portfolio_release",
+        "conditionally_ready",
+        "not_ready"
+      ],
+      "title": "Release Readiness Status",
+      "type": "string"
+    },
+    "release_scope": {
+      "title": "Release Scope",
+      "type": "string"
+    },
+    "release_version": {
+      "title": "Release Version",
+      "type": "string"
+    },
+    "repository_name": {
+      "title": "Repository Name",
+      "type": "string"
+    },
+    "retrieval_approval_id": {
+      "title": "Retrieval Approval Id",
+      "type": "string"
+    },
+    "source_tree_checksum": {
+      "title": "Source Tree Checksum",
+      "type": "string"
+    },
+    "synthetic_data_only": {
+      "default": true,
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "test_count": {
+      "title": "Test Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "release_id",
+    "release_version",
+    "repository_name",
+    "release_scope",
+    "milestones_completed",
+    "test_count",
+    "coverage",
+    "contract_baseline_id",
+    "retrieval_approval_id",
+    "rag_run_id",
+    "rag_evaluation_id",
+    "demo_session_id",
+    "assurance_run_id",
+    "release_readiness_status",
+    "evidence_index_checksum",
+    "portfolio_model_card_checksum",
+    "architecture_pack_checksum",
+    "documentation_checksum",
+    "fixture_manifest_checksum",
+    "source_tree_checksum",
+    "created_at"
+  ],
+  "title": "ReleaseManifest",
+  "type": "object"
+}

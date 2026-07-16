@@ -1,0 +1,5 @@
+flowchart LR
+  Synthetic["Synthetic documents"] --> Ingest["Ingestion"]
+  Ingest --> Prep["Preprocessing"] --> Extract["Extraction"]
+  Extract --> Retrieve["Retrieval"] --> Rag["Guarded RAG"]
+  Rag --> Assurance["Assurance"]

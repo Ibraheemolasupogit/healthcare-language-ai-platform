@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "expected_answer_status": {
+      "title": "Expected Answer Status",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "query_text": {
+      "title": "Query Text",
+      "type": "string"
+    },
+    "scenario_id": {
+      "title": "Scenario Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "scenario_id",
+    "name",
+    "query_id",
+    "query_text",
+    "expected_answer_status"
+  ],
+  "title": "DemoScenario",
+  "type": "object"
+}

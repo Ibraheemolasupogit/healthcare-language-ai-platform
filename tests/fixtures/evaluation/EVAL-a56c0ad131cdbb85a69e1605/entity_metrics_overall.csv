@@ -1,0 +1,2 @@
+metric_scope,scope_value,true_positive_count,false_positive_count,false_negative_count,precision,recall,f1,support,evaluation_run_id
+overall,micro,66,0,0,1.0,1.0,1.0,66,EVAL-a56c0ad131cdbb85a69e1605

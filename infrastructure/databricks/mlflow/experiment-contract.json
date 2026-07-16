@@ -1,0 +1,12 @@
+{
+  "connection_attempted": false,
+  "execution_permitted": false,
+  "experiment_name_placeholder": "/Shared/hla/rule_based_baseline",
+  "purpose": "Reference-only MLflow experiment for synthetic rule-based baseline evaluation",
+  "required_tags": [
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "extraction_run_id",
+    "evaluation_run_id"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "layer": "silver",
+  "tables": [
+    "silver_processed_documents",
+    "silver_document_sections",
+    "silver_document_sentences",
+    "silver_projected_annotations",
+    "silver_document_quality"
+  ]
+}

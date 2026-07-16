@@ -1,0 +1,76 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "clinically_validated": {
+      "title": "Clinically Validated",
+      "type": "boolean"
+    },
+    "evaluation_metrics": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Evaluation Metrics",
+      "type": "object"
+    },
+    "generator_type": {
+      "title": "Generator Type",
+      "type": "string"
+    },
+    "known_limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Limitations",
+      "type": "array"
+    },
+    "prompt_contracts": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Prompt Contracts",
+      "type": "array"
+    },
+    "retrieval_baseline": {
+      "title": "Retrieval Baseline",
+      "type": "string"
+    },
+    "synthetic_only": {
+      "title": "Synthetic Only",
+      "type": "boolean"
+    },
+    "system_name": {
+      "title": "System Name",
+      "type": "string"
+    },
+    "system_type": {
+      "title": "System Type",
+      "type": "string"
+    },
+    "unsupported_uses": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported Uses",
+      "type": "array"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "system_name",
+    "version",
+    "system_type",
+    "retrieval_baseline",
+    "generator_type",
+    "prompt_contracts",
+    "evaluation_metrics",
+    "known_limitations",
+    "unsupported_uses",
+    "synthetic_only",
+    "clinically_validated"
+  ],
+  "title": "RagModelCard",
+  "type": "object"
+}

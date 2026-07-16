@@ -1,0 +1,51 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "backup_contract_version": {
+      "default": "1.0.0",
+      "title": "Backup Contract Version",
+      "type": "string"
+    },
+    "backup_id": {
+      "title": "Backup Id",
+      "type": "string"
+    },
+    "checksum": {
+      "title": "Checksum",
+      "type": "string"
+    },
+    "credential_exclusion_status": {
+      "default": "passed",
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Credential Exclusion Status",
+      "type": "string"
+    },
+    "files": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Files",
+      "type": "object"
+    },
+    "profile": {
+      "title": "Profile",
+      "type": "string"
+    },
+    "selected_file_count": {
+      "title": "Selected File Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "backup_id",
+    "profile",
+    "selected_file_count",
+    "files",
+    "checksum"
+  ],
+  "title": "BackupManifest",
+  "type": "object"
+}

@@ -1,0 +1,24 @@
+# Traceability
+
+- REQ-001: Synthetic data engineering
+- REQ-002: Data quality
+- REQ-003: Data contracts
+- REQ-004: Clinical NLP
+- REQ-005: Rule-based extraction
+- REQ-006: Document classification
+- REQ-007: Retrieval engineering
+- REQ-008: Retrieval evaluation
+- REQ-009: RAG orchestration
+- REQ-010: Citation validation
+- REQ-011: Groundedness
+- REQ-012: Safety and refusal
+- REQ-013: API engineering
+- REQ-014: Dashboard engineering
+- REQ-015: Observability
+- REQ-016: Testing
+- REQ-017: CI/CD
+- REQ-018: Security assurance
+- REQ-019: Supply-chain assurance
+- REQ-020: Backup and recovery
+- REQ-021: Architecture
+- REQ-022: Documentation

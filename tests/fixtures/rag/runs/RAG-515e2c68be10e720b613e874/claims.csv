@@ -1,0 +1,55 @@
+claim_id,claim_text,claim_type,sentence_index,support_status,supporting_citation_ids,unsupported_reason,safety_status
+CLM-f929d8ce1a0b759f,"The retrieved synthetic records indicate: Relevant history: Synthetic-only encounter 1 describes blood pressure log; the note also mentions unrelated skin observation for distractor testing.
+
+Report findings: MRI context i [E1]",factual,0,supported,['CIT-a994b530dd13-ab4a00'],,passed
+CLM-574c17392ff03987,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-e1cfa16dcfba-55f9d4'],,passed
+CLM-555f5d5fb17083a7,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-0b92050ae995-ad7b72'],,passed
+CLM-4e2900a19edd890e,The retrieved synthetic records indicate: Synthetic-only encounter 6 describes respiratory observation; the note also mentions unrelated cardiac rhythm check for distractor testing. [E1],factual,0,supported,['CIT-36220e85b97b-c55071'],,passed
+CLM-f1026ad27b769a05,The retrieved synthetic records indicate: Synthetic-only encounter 8 describes skin observation; the note also mentions unrelated renal marker review for distractor testing. [E1],factual,0,supported,['CIT-77351630ecc5-fe4580'],,passed
+CLM-7886d882a723074a,"The retrieved synthetic records indicate: Context: Synthetic-only encounter 10 describes magnetic resonance imaging note; the note also mentions unrelated mobility note for distractor testing.
+
+Measurements: BP context is  [E1]",factual,0,supported,['CIT-905e5eb606df-17fc63'],,passed
+CLM-bc295e10c4f052ab,The retrieved synthetic records indicate: HR context is recorded with value 98 percent. The wording is deliberately varied and negative for fracture. [E1],factual,0,supported,['CIT-d9eef91a8698-0f0178'],,passed
+CLM-1d4a32ad6a9bea1d,The retrieved synthetic records indicate: Synthetic-only encounter 17 describes magnetic resonance imaging note; the note also mentions unrelated respiratory observation for distractor testing. [E1],factual,0,supported,['CIT-8ffd847d844c-679999'],,passed
+CLM-13210cd4a56124ef,The retrieved synthetic records indicate: Synthetic-only encounter 19 describes respiratory observation; the note also mentions unrelated hepatic panel comparison for distractor testing. [E1],factual,0,supported,['CIT-21e01dc11842-10901e'],,passed
+CLM-584a2e7eae882610,"The retrieved synthetic records indicate: Relevant history: Synthetic-only encounter 21 describes computed tomography review; the note also mentions unrelated skin observation for distractor testing.
+
+Report findings: MRI  [E1]",factual,0,supported,['CIT-c0baf52ef766-2ace22'],,passed
+CLM-60fa617b4df8a3a6,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-bc2bdd3c4dbd-c850f8'],,passed
+CLM-5e195c034b2d0ae9,The retrieved synthetic records indicate: CT context is recorded with value 8 mm. The wording is deliberately varied and no fever. [E1],factual,0,supported,['CIT-31ec1624ad8b-62bd1e'],,passed
+CLM-9e15329057223aa2,"The retrieved synthetic records indicate: Relevant history: Synthetic-only encounter 21 describes computed tomography review; the note also mentions unrelated skin observation for distractor testing.
+
+Report findings: MRI  [E1]",factual,0,supported,['CIT-ff5c7519ab6f-576214'],,passed
+CLM-5b2664fce22e20dd,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-51a4cfff4d0e-2b0b57'],,passed
+CLM-bd1b4f0132751049,The retrieved synthetic records indicate: CT context is recorded with value 8 mm. The wording is deliberately varied and no fever. [E1],factual,0,supported,['CIT-a1c21604e3d1-6d6324'],,passed
+CLM-aed0c292da97b935,The retrieved synthetic records indicate: HR context is recorded with value 30 mL. The wording is deliberately varied and negative for fracture. [E1],factual,0,supported,['CIT-906d43153f7b-3079cf'],,passed
+CLM-bbfae19b7d0f4ae2,The retrieved synthetic records indicate: Synthetic-only encounter 28 describes computed tomography review; the note also mentions unrelated renal marker review for distractor testing. [E1],factual,0,supported,['CIT-74787659bb1d-d788cd'],,passed
+CLM-4812be74f4a45e1e,"The retrieved synthetic records indicate: Context: Synthetic-only encounter 30 describes respiratory observation; the note also mentions unrelated mobility note for distractor testing.
+
+Measurements: BP context is recorded [E1]",factual,0,supported,['CIT-b9354a1a3096-b1fd4b'],,passed
+CLM-38a5d5de20f5918d,The retrieved synthetic records indicate: HR context is recorded with value 30 mL. The wording is deliberately varied and negative for fracture. [E1],factual,0,supported,['CIT-6acc1d537c53-1a1656'],,passed
+CLM-7eb8c942139d8c2e,The retrieved synthetic records indicate: MRI context is recorded with value 2.5 cm. The wording is deliberately varied and without swelling. [E1],factual,0,supported,['CIT-8d4b2142773c-36529f'],,passed
+CLM-a65b1ed552f6df84,The retrieved synthetic records indicate: MRI context is recorded with value 98 percent. The wording is deliberately varied and without swelling. [E1],factual,0,supported,['CIT-78fb2d230a22-b2e544'],,passed
+CLM-e1da557c8488ebd2,"The retrieved synthetic records indicate: Relevant history: Synthetic-only encounter 1 describes blood pressure log; the note also mentions unrelated skin observation for distractor testing.
+
+Report findings: MRI context i [E1]",factual,0,supported,['CIT-c953b01408cf-4a317c'],,passed
+CLM-37e4de53091449b1,The retrieved synthetic records indicate: MRI context is recorded with value 2.5 cm. The wording is deliberately varied and without swelling. [E1],factual,0,supported,['CIT-cfa0fecbf4cf-00557a'],,passed
+CLM-15d4fe9194459edd,The retrieved synthetic records indicate: CT context is recorded with value 14 mg. The wording is deliberately varied and no fever. [E1],factual,0,supported,['CIT-3de6c1f3d0b1-d4775a'],,passed
+CLM-d6e71fb5acf6996f,"The retrieved synthetic records indicate: Context: Synthetic-only encounter 10 describes magnetic resonance imaging note; the note also mentions unrelated mobility note for distractor testing.
+
+Measurements: BP context is  [E1]",factual,0,supported,['CIT-64ed0cb4f202-95b95f'],,passed
+CLM-99a94fc9c0bacf10,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-b08ef4107721-20f946'],,passed
+CLM-489684b7208e1deb,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-b77326ab8912-d740a1'],,passed
+CLM-5805d5c701b4e94f,The retrieved synthetic records indicate: HR context is recorded with value 98 percent. The wording is deliberately varied and negative for fracture. [E1],factual,0,supported,['CIT-f5cd16d1d8ac-ed4ab2'],,passed
+CLM-0db022296468613f,The retrieved synthetic records indicate: Synthetic-only encounter 17 describes magnetic resonance imaging note; the note also mentions unrelated respiratory observation for distractor testing. [E1],factual,0,supported,['CIT-8267e306c97e-1930af'],,passed
+CLM-d84c5196f3b14747,The retrieved synthetic evidence contains conflicting statements and this prototype does not choose a clinical conclusion.,factual,0,supported,"['CIT-0092663fb4c4-0d5c84', 'CIT-0092663fb4c4-5ea125']",,passed
+CLM-b757e25231993824,The retrieved synthetic evidence contains conflicting statements and this prototype does not choose a clinical conclusion.,factual,0,supported,"['CIT-562a15ad6991-31f64e', 'CIT-562a15ad6991-896a34']",,passed
+CLM-c759be9ed0d8988c,The retrieved synthetic evidence contains conflicting statements and this prototype does not choose a clinical conclusion.,factual,0,supported,"['CIT-d6361293f605-0a60c4', 'CIT-d6361293f605-7d31ad']",,passed
+CLM-c1fba44119fd5267,The retrieved synthetic evidence contains conflicting statements and this prototype does not choose a clinical conclusion.,factual,0,supported,"['CIT-e8555f3940ee-7fcb0a', 'CIT-e8555f3940ee-1a053c']",,passed
+CLM-a4df57edbdf1fc27,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-c314ace5b062-3df360'],,passed
+CLM-671b4861bc6ebb99,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-d3c28d8a9bbd-b3cfaa'],,passed
+CLM-f84de87e4f186a4d,The retrieved synthetic records indicate: Synthetic-only encounter 39 describes renal marker review; the note also mentions unrelated hepatic panel comparison for distractor testing. [E1],factual,0,supported,['CIT-ddec07131235-4a00b1'],,passed
+CLM-f23d4f5c8b9bd78d,"The retrieved synthetic records indicate: Relevant history: Synthetic-only encounter 1 describes blood pressure log; the note also mentions unrelated skin observation for distractor testing.
+
+Report findings: MRI context i [E1]",factual,0,supported,['CIT-a537024b3b07-370eb2'],,passed
+CLM-95919a70d4e84a24,The retrieved synthetic records indicate: Fictional workflow status is stable for SYN-ENC evidence. No treatment recommendation or confirmed diagnosis is provided. [E1],factual,0,supported,['CIT-765dccae80d1-21e257'],,passed

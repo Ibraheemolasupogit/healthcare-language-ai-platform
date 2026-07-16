@@ -1,0 +1,96 @@
+{
+  "evidence_count": 8,
+  "evidence_index_id": "EVIDX-e3ae856683faf0e6bdfcac0b",
+  "evidence_index_version": "1.0.0",
+  "records": [
+    {
+      "category": "fixture",
+      "checksum": "9f683b9762d81693102b8225c4bd43c4644269c22dda8b71966131bf7f547dab",
+      "description": "Synthetic dataset evidence for M2",
+      "evidence_id": "EV-SYN",
+      "milestone": "M2",
+      "path": "tests/fixtures/synthetic/dataset_manifest.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "Synthetic dataset"
+    },
+    {
+      "category": "fixture",
+      "checksum": "0ee5305aab429ccc522478911b08a0a4788b5f56a83796217f272d60f979d7a6",
+      "description": "Ingestion manifest evidence for M3",
+      "evidence_id": "EV-ING",
+      "milestone": "M3",
+      "path": "tests/fixtures/ingestion/ING-92a15c8f10047400ee895203/ingestion_manifest.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "Ingestion manifest"
+    },
+    {
+      "category": "fixture",
+      "checksum": "4ebf7e94e54503c3e7902348a40bfe169da56aea5839267cab44925ab6e99c23",
+      "description": "Preprocessing manifest evidence for M4",
+      "evidence_id": "EV-PRE",
+      "milestone": "M4",
+      "path": "tests/fixtures/preprocessing/PRE-72e9829c61769cea948faacc/preprocessing_manifest.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "Preprocessing manifest"
+    },
+    {
+      "category": "fixture",
+      "checksum": "47d3ef242ad4ad1c8106b56d74183238931c9f3ebb8c46d68f8ee09a654f0267",
+      "description": "Extraction manifest evidence for M5",
+      "evidence_id": "EV-EXT",
+      "milestone": "M5",
+      "path": "tests/fixtures/extraction/EXT-723871c87dfd1f3a3bb89b8d/extraction_manifest.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "Extraction manifest"
+    },
+    {
+      "category": "fixture",
+      "checksum": "81e1954c1ca3e6b5918a560896a5c1ec3d3ef0b1287fb265b869d82eebf88bc4",
+      "description": "Evaluation manifest evidence for M5",
+      "evidence_id": "EV-EVAL",
+      "milestone": "M5",
+      "path": "tests/fixtures/evaluation/EVAL-a56c0ad131cdbb85a69e1605/evaluation_manifest.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "Evaluation manifest"
+    },
+    {
+      "category": "approval",
+      "checksum": "eda114e9f524a990a8ba73a5234ab952ecc6410d5300ad0f02dafa9531562f6c",
+      "description": "RAG approval evidence for M9",
+      "evidence_id": "EV-RAG",
+      "milestone": "M9",
+      "path": "tests/fixtures/rag/evaluation/RAGEVAL-d8d3b3b6892133372f91d017/rag_approval_decision.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "RAG approval"
+    },
+    {
+      "category": "report",
+      "checksum": "670539694ab1816bcaf461b621ae2cd80d4fe1d5511b048e6edf192141287593",
+      "description": "Demo session evidence for M10",
+      "evidence_id": "EV-DEMO",
+      "milestone": "M10",
+      "path": "tests/fixtures/demo/DEMO-7d8d73b2b21ec496c6e47175/demo-session.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "Demo session"
+    },
+    {
+      "category": "assurance",
+      "checksum": "0ad23656869f7676140a3e1fe44434813676931ae21d200d2dde26edf08dfe45",
+      "description": "Portfolio assurance evidence for M11",
+      "evidence_id": "EV-ASSURE",
+      "milestone": "M11",
+      "path": "reports/assurance/portfolio-assurance-decision.json",
+      "related_ids": [],
+      "status": "passed",
+      "title": "Portfolio assurance"
+    }
+  ],
+  "validation_status": "passed"
+}

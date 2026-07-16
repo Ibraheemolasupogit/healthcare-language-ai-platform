@@ -1,0 +1,92 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "end_offset": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "End Offset"
+    },
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "ground_truth_annotation_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ground Truth Annotation Id"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "match_id": {
+      "title": "Match Id",
+      "type": "string"
+    },
+    "match_type": {
+      "enum": [
+        "true_positive",
+        "false_positive",
+        "false_negative"
+      ],
+      "title": "Match Type",
+      "type": "string"
+    },
+    "matching_policy": {
+      "title": "Matching Policy",
+      "type": "string"
+    },
+    "prediction_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Prediction Id"
+    },
+    "start_offset": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Start Offset"
+    }
+  },
+  "required": [
+    "match_id",
+    "document_id",
+    "label",
+    "match_type",
+    "matching_policy",
+    "evaluation_run_id"
+  ],
+  "title": "EvaluationMatch",
+  "type": "object"
+}

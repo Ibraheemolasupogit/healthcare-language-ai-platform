@@ -1,0 +1,6 @@
+{
+  "connection_attempted": false,
+  "execution_permitted": false,
+  "minimum_processed_documents": 1,
+  "quality_gate": "passed"
+}

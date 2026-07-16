@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "include_trace": {
+      "default": false,
+      "title": "Include Trace",
+      "type": "boolean"
+    },
+    "metadata_filters": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Metadata Filters",
+      "type": "object"
+    },
+    "portfolio_demo_mode": {
+      "default": true,
+      "title": "Portfolio Demo Mode",
+      "type": "boolean"
+    },
+    "query_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Query Id"
+    },
+    "query_text": {
+      "minLength": 1,
+      "title": "Query Text",
+      "type": "string"
+    }
+  },
+  "required": [
+    "query_text"
+  ],
+  "title": "QueryRequest",
+  "type": "object"
+}

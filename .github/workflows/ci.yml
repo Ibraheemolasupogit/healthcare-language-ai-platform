@@ -1,0 +1,277 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-dev.txt
+
+      - name: Ruff lint
+        run: python -m ruff check .
+
+      - name: Ruff format check
+        run: python -m ruff format --check .
+
+      - name: mypy
+        run: python -m mypy src
+
+      - name: pytest
+        run: python -m pytest
+
+      - name: Synthetic fixture reproducibility
+        run: make verify-synthetic-fixtures
+
+      - name: Ingestion fixture reproducibility
+        run: make verify-ingestion-fixtures
+
+      - name: Preprocessing fixture reproducibility
+        run: make verify-preprocessing-fixtures
+
+      - name: Extraction fixture reproducibility
+        run: make verify-extraction-fixtures
+
+      - name: Evaluation fixture reproducibility
+        run: make verify-evaluation-fixtures
+
+      - name: Retrieval query fixture reproducibility
+        run: make verify-retrieval-query-fixtures
+
+      - name: Retrieval index fixture reproducibility
+        run: make verify-retrieval-index-fixtures
+
+      - name: Retrieval run fixture reproducibility
+        run: make verify-retrieval-run-fixtures
+
+      - name: Retrieval evaluation fixture reproducibility
+        run: make verify-retrieval-evaluation-fixtures
+
+      - name: Retrieval holdout fixture reproducibility
+        run: make verify-retrieval-holdout-fixtures
+
+      - name: Retrieval quality query fixture reproducibility
+        run: make verify-retrieval-quality-query-fixtures
+
+      - name: Retrieval quality experiment fixture reproducibility
+        run: make verify-retrieval-quality-experiment-fixtures
+
+      - name: Retrieval quality comparison fixture reproducibility
+        run: make verify-retrieval-quality-comparison-fixtures
+
+      - name: Retrieval remediation failure fixture reproducibility
+        run: make verify-retrieval-failure-fixtures
+
+      - name: Retrieval remediation benchmark fixture reproducibility
+        run: make verify-retrieval-remediation-benchmark
+
+      - name: Retrieval remediation experiment fixture reproducibility
+        run: make verify-retrieval-remediation-experiment-fixtures
+
+      - name: Retrieval remediation comparison fixture reproducibility
+        run: make verify-retrieval-remediation-comparison-fixtures
+
+      - name: RAG query fixture reproducibility
+        run: make verify-rag-query-fixtures
+
+      - name: RAG run fixture reproducibility
+        run: make verify-rag-run-fixtures
+
+      - name: RAG evaluation fixture reproducibility
+        run: make verify-rag-evaluation-fixtures
+
+      - name: API contract fixture reproducibility
+        run: make verify-api-contract-fixtures
+
+      - name: Demo fixture reproducibility
+        run: make verify-demo-fixtures
+
+      - name: Contract baseline reproducibility
+        run: make verify-contract-baseline
+
+      - name: Contract compatibility reproducibility
+        run: make verify-assurance-compatibility-fixtures
+
+      - name: Security fixture reproducibility
+        run: make verify-assurance-security-fixtures
+
+      - name: Synthetic dataset validation
+        run: python -m healthcare_language_ai synthetic-validate --dataset-dir tests/fixtures/synthetic
+
+      - name: Ingestion evidence validation
+        run: python -m healthcare_language_ai ingest-validate --ingestion-dir tests/fixtures/ingestion/ING-92a15c8f10047400ee895203
+
+      - name: Preprocessing evidence validation
+        run: python -m healthcare_language_ai preprocess-validate --preprocessing-dir tests/fixtures/preprocessing/PRE-72e9829c61769cea948faacc
+
+      - name: Extraction evidence validation
+        run: python -m healthcare_language_ai extract-validate --extraction-dir tests/fixtures/extraction/EXT-723871c87dfd1f3a3bb89b8d
+
+      - name: Evaluation evidence validation
+        run: python -m healthcare_language_ai evaluate-validate --evaluation-dir tests/fixtures/evaluation/EVAL-a56c0ad131cdbb85a69e1605
+
+      - name: Retrieval index evidence validation
+        run: python -m healthcare_language_ai index-validate --index-dir tests/fixtures/retrieval/indexes/IDX-364c8b97f9ad74ecea7444a9
+
+      - name: Retrieval run evidence validation
+        run: python -m healthcare_language_ai retrieve-validate --retrieval-dir tests/fixtures/retrieval/runs/RET-864c03959a1c33a50926b296
+
+      - name: Retrieval evaluation evidence validation
+        run: python -m healthcare_language_ai retrieval-evaluate-validate --evaluation-dir tests/fixtures/retrieval/evaluation/RETEVAL-7ca00cad930651cbf7a6881b
+
+      - name: Snowflake dry-run plan validation
+        run: python -m healthcare_language_ai snowflake-plan --ingestion-dir tests/fixtures/ingestion/ING-92a15c8f10047400ee895203
+
+      - name: Databricks dry-run plan validation
+        run: python -m healthcare_language_ai databricks-plan --preprocessing-dir tests/fixtures/preprocessing/PRE-72e9829c61769cea948faacc
+
+      - name: MLflow dry-run plan validation
+        run: python -m healthcare_language_ai mlflow-plan --evaluation-dir tests/fixtures/evaluation/EVAL-a56c0ad131cdbb85a69e1605
+
+      - name: Retrieval MLflow dry-run plan validation
+        run: python -m healthcare_language_ai retrieval-mlflow-plan --evaluation-dir tests/fixtures/retrieval/evaluation/RETEVAL-7ca00cad930651cbf7a6881b
+
+      - name: Vector Search dry-run plan validation
+        run: python -m healthcare_language_ai vector-search-plan --evaluation-dir tests/fixtures/retrieval/evaluation/RETEVAL-7ca00cad930651cbf7a6881b
+
+      - name: Retrieval quality holdout validation
+        run: python -m healthcare_language_ai holdout-validate --holdout-dir tests/fixtures/retrieval-quality/holdout
+
+      - name: Retrieval quality comparison validation
+        run: python -m healthcare_language_ai retrieval-compare-validate --comparison-dir tests/fixtures/retrieval-quality/comparison/RETCOMP-11dee1c6ea11ed7908dff7ce
+
+      - name: Retrieval approval validation
+        run: python -m healthcare_language_ai retrieval-approval --comparison-dir tests/fixtures/retrieval-quality/comparison/RETCOMP-11dee1c6ea11ed7908dff7ce
+
+      - name: Retrieval remediation failure validation
+        run: python -m healthcare_language_ai retrieval-failure-validate --failure-dir tests/fixtures/retrieval-remediation/failures/RFAIL-43f65b8f8118261fe023e705
+
+      - name: Retrieval remediation benchmark validation
+        run: python -m healthcare_language_ai retrieval-remediation-validate --benchmark-dir tests/fixtures/retrieval-remediation/benchmark-v2.1
+
+      - name: Retrieval remediation experiment validation
+        run: python -m healthcare_language_ai retrieval-remediation-validate --experiment-dir tests/fixtures/retrieval-remediation/experiments/REMEXP-41fd5fa127ab616f7f74cc9b
+
+      - name: Retrieval remediation comparison validation
+        run: python -m healthcare_language_ai retrieval-remediation-compare-validate --comparison-dir tests/fixtures/retrieval-remediation/comparison/REMCOMP-1a3a8c86fc4567de3049f352
+
+      - name: Retrieval remediation approval validation
+        run: python -m healthcare_language_ai retrieval-remediation-approval --comparison-dir tests/fixtures/retrieval-remediation/comparison/REMCOMP-1a3a8c86fc4567de3049f352
+
+      - name: RAG run validation
+        run: python -m healthcare_language_ai rag-validate --rag-dir tests/fixtures/rag/runs/RAG-515e2c68be10e720b613e874
+
+      - name: RAG evaluation validation
+        run: python -m healthcare_language_ai rag-evaluate-validate --evaluation-dir tests/fixtures/rag/evaluation/RAGEVAL-d8d3b3b6892133372f91d017
+
+      - name: RAG approval validation
+        run: python -m healthcare_language_ai rag-approval --evaluation-dir tests/fixtures/rag/evaluation/RAGEVAL-d8d3b3b6892133372f91d017
+
+      - name: API validation
+        run: python -m healthcare_language_ai api-validate
+
+      - name: Dashboard validation
+        run: python -m healthcare_language_ai dashboard-validate
+
+      - name: Observability validation
+        run: python -m healthcare_language_ai operational-events-validate --events-dir tests/fixtures/observability
+
+      - name: System readiness validation
+        run: python -m healthcare_language_ai system-readiness
+
+      - name: Portfolio summary validation
+        run: python -m healthcare_language_ai portfolio-summary --output-dir reports/portfolio
+
+      - name: Contract compatibility assurance
+        run: |
+          python -m healthcare_language_ai contracts-compare --baseline-dir tests/fixtures/assurance/contracts/baseline --output-dir reports/assurance/compatibility
+          python -m healthcare_language_ai contracts-validate --compatibility-dir reports/assurance/compatibility
+
+      - name: Configuration assurance
+        run: python -m healthcare_language_ai configuration-assurance --output-dir reports/assurance
+
+      - name: Operational integrity assurance
+        run: python -m healthcare_language_ai operational-integrity --events-dir tests/fixtures/observability --output-dir reports/assurance/observability
+
+      - name: Backup assurance validation
+        run: python -m healthcare_language_ai assurance-backup-validate --backup-dir tests/fixtures/assurance/backup/BACKUP-b487bf0c20ada4ec0058d954
+
+      - name: Recovery exercise
+        run: python -m healthcare_language_ai assurance-recovery-exercise --profile portfolio-critical --output-root reports/assurance/recovery
+
+      - name: Security assurance
+        run: python -m healthcare_language_ai security-assurance --output-dir reports/assurance
+
+      - name: Dependency inventory
+        run: python -m healthcare_language_ai dependency-inventory --output-dir reports/assurance
+
+      - name: SBOM generation
+        run: python -m healthcare_language_ai sbom-generate --output-dir reports/assurance
+
+      - name: Container assurance
+        run: python -m healthcare_language_ai container-assurance --dockerfile Dockerfile --output-dir reports/assurance
+
+      - name: Portfolio assurance
+        run: python -m healthcare_language_ai portfolio-assurance --output-dir reports/assurance
+
+      - name: Portfolio assurance validation
+        run: python -m healthcare_language_ai portfolio-assurance-validate --assurance-dir reports/assurance
+
+      - name: Milestone 12 architecture pack
+        run: |
+          python -m healthcare_language_ai schemas-generate
+          python -m healthcare_language_ai architecture-pack --output-dir reports/portfolio/architecture
+          python -m healthcare_language_ai architecture-validate --architecture-dir reports/portfolio/architecture
+
+      - name: Milestone 12 portfolio evidence
+        run: |
+          python -m healthcare_language_ai interview-pack --output-dir docs/interview
+          python -m healthcare_language_ai demo-pack --output-dir docs/demo
+          python -m healthcare_language_ai portfolio-audit --output-dir reports/portfolio/audit
+          python -m healthcare_language_ai portfolio-audit-validate --audit-dir reports/portfolio/audit
+          python -m healthcare_language_ai milestones-audit --output-dir reports/portfolio/milestones
+          python -m healthcare_language_ai traceability-build --output-dir reports/portfolio/traceability
+          python -m healthcare_language_ai traceability-validate --traceability-dir reports/portfolio/traceability
+          python -m healthcare_language_ai capability-map --output-dir reports/portfolio
+          python -m healthcare_language_ai technology-map --output-dir reports/portfolio
+          python -m healthcare_language_ai role-alignment --output-dir reports/portfolio
+          python -m healthcare_language_ai evidence-index --output-dir reports/portfolio
+          python -m healthcare_language_ai evidence-index-validate --evidence-dir reports/portfolio
+          python -m healthcare_language_ai run-registry --output-dir reports/portfolio
+          python -m healthcare_language_ai portfolio-model-card --output-dir reports/portfolio
+          python -m healthcare_language_ai documentation-validate
+          python -m healthcare_language_ai repository-size-audit --output-dir reports/portfolio
+
+      - name: Milestone 12 release readiness
+        run: |
+          python -m healthcare_language_ai release-readiness --output-dir reports/release --reference-timestamp 2026-01-19T09:00:00+00:00
+          python -m healthcare_language_ai release-readiness-validate --readiness-dir reports/release
+          python -m healthcare_language_ai release-manifest --readiness-dir reports/release --output-dir reports/release --reference-timestamp 2026-01-20T09:00:00+00:00
+          python -m healthcare_language_ai release-package --readiness-dir reports/release --output-root outputs/portfolio-release --reference-timestamp 2026-01-20T09:00:00+00:00
+          python -m healthcare_language_ai release-package-validate --package-dir outputs/portfolio-release/$(python -c "import json; print(json.load(open('reports/release/release-manifest.json'))['release_id'])")
+          python -m healthcare_language_ai portfolio-final-summary
+
+      - name: Milestone 12 fixture reproducibility
+        run: |
+          make verify-portfolio-fixtures
+          make verify-release-fixtures
+
+      - name: CLI environment validation
+        run: python -m healthcare_language_ai validate-environment
+
+      - name: Docker build
+        run: docker build -t healthcare-language-ai-platform:milestone-12 .

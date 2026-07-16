@@ -1,0 +1,135 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "benchmark_leakage": {
+      "title": "Benchmark Leakage",
+      "type": "string"
+    },
+    "clinical_safety_position": {
+      "title": "Clinical Safety Position",
+      "type": "string"
+    },
+    "corpus_size": {
+      "title": "Corpus Size",
+      "type": "integer"
+    },
+    "corpus_source": {
+      "title": "Corpus Source",
+      "type": "string"
+    },
+    "dense_vector_method": {
+      "title": "Dense Vector Method",
+      "type": "string"
+    },
+    "evaluation_metrics": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Evaluation Metrics",
+      "type": "object"
+    },
+    "failure_modes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Failure Modes",
+      "type": "array"
+    },
+    "future_dense_model_comparison": {
+      "title": "Future Dense Model Comparison",
+      "type": "string"
+    },
+    "human_review_expectations": {
+      "title": "Human Review Expectations",
+      "type": "string"
+    },
+    "hybrid_fusion": {
+      "title": "Hybrid Fusion",
+      "type": "string"
+    },
+    "known_limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Limitations",
+      "type": "array"
+    },
+    "performance_by_query_group": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Performance By Query Group",
+      "type": "object"
+    },
+    "privacy_position": {
+      "title": "Privacy Position",
+      "type": "string"
+    },
+    "query_set_construction": {
+      "title": "Query Set Construction",
+      "type": "string"
+    },
+    "retrieval_strategies": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Retrieval Strategies",
+      "type": "array"
+    },
+    "retrieval_units": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Retrieval Units",
+      "type": "object"
+    },
+    "sparse_features": {
+      "title": "Sparse Features",
+      "type": "string"
+    },
+    "system_name": {
+      "title": "System Name",
+      "type": "string"
+    },
+    "tokenisation": {
+      "title": "Tokenisation",
+      "type": "string"
+    },
+    "unsupported_uses": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported Uses",
+      "type": "array"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "system_name",
+    "version",
+    "retrieval_strategies",
+    "corpus_source",
+    "corpus_size",
+    "retrieval_units",
+    "tokenisation",
+    "sparse_features",
+    "dense_vector_method",
+    "hybrid_fusion",
+    "query_set_construction",
+    "evaluation_metrics",
+    "performance_by_query_group",
+    "benchmark_leakage",
+    "known_limitations",
+    "clinical_safety_position",
+    "privacy_position",
+    "unsupported_uses",
+    "failure_modes",
+    "human_review_expectations",
+    "future_dense_model_comparison"
+  ],
+  "title": "RetrievalModelCard",
+  "type": "object"
+}

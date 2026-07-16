@@ -1,0 +1,163 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "abstention": {
+      "title": "Abstention",
+      "type": "boolean"
+    },
+    "answerable_coverage": {
+      "title": "Answerable Coverage",
+      "type": "number"
+    },
+    "benchmark_id": {
+      "title": "Benchmark Id",
+      "type": "string"
+    },
+    "benchmark_version": {
+      "title": "Benchmark Version",
+      "type": "string"
+    },
+    "candidate_retrievers": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Candidate Retrievers",
+      "type": "array"
+    },
+    "character_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Character Features",
+      "type": "array"
+    },
+    "configuration_id": {
+      "title": "Configuration Id",
+      "type": "string"
+    },
+    "development_hit_rate_at_5": {
+      "title": "Development Hit Rate At 5",
+      "type": "number"
+    },
+    "diversification": {
+      "title": "Diversification",
+      "type": "boolean"
+    },
+    "entity_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Entity Features",
+      "type": "array"
+    },
+    "experiment_id": {
+      "title": "Experiment Id",
+      "type": "string"
+    },
+    "negation_sensitive_hit_rate_at_5": {
+      "title": "Negation Sensitive Hit Rate At 5",
+      "type": "number"
+    },
+    "output_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output Checksums",
+      "type": "object"
+    },
+    "paraphrased_hit_rate_at_5": {
+      "title": "Paraphrased Hit Rate At 5",
+      "type": "number"
+    },
+    "phrase_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Phrase Features",
+      "type": "array"
+    },
+    "proximity_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Proximity Features",
+      "type": "array"
+    },
+    "pseudo_relevance_feedback": {
+      "title": "Pseudo Relevance Feedback",
+      "type": "boolean"
+    },
+    "quality_gate_status": {
+      "title": "Quality Gate Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "reranker": {
+      "title": "Reranker",
+      "type": "string"
+    },
+    "synonym_expansion": {
+      "title": "Synonym Expansion",
+      "type": "boolean"
+    },
+    "unanswerable_abstention_accuracy": {
+      "title": "Unanswerable Abstention Accuracy",
+      "type": "number"
+    },
+    "validation_hit_rate_at_5": {
+      "title": "Validation Hit Rate At 5",
+      "type": "number"
+    },
+    "validation_mrr": {
+      "title": "Validation Mrr",
+      "type": "number"
+    },
+    "validation_ndcg_at_5": {
+      "title": "Validation Ndcg At 5",
+      "type": "number"
+    },
+    "validation_recall_at_5": {
+      "title": "Validation Recall At 5",
+      "type": "number"
+    },
+    "validation_zero_hit_count": {
+      "title": "Validation Zero Hit Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "experiment_id",
+    "configuration_id",
+    "benchmark_id",
+    "benchmark_version",
+    "reference_timestamp",
+    "candidate_retrievers",
+    "character_features",
+    "phrase_features",
+    "proximity_features",
+    "synonym_expansion",
+    "pseudo_relevance_feedback",
+    "entity_features",
+    "reranker",
+    "diversification",
+    "abstention",
+    "development_hit_rate_at_5",
+    "validation_hit_rate_at_5",
+    "validation_recall_at_5",
+    "validation_mrr",
+    "validation_ndcg_at_5",
+    "paraphrased_hit_rate_at_5",
+    "negation_sensitive_hit_rate_at_5",
+    "validation_zero_hit_count",
+    "unanswerable_abstention_accuracy",
+    "answerable_coverage",
+    "quality_gate_status",
+    "output_checksums"
+  ],
+  "title": "RemediationExperimentManifest",
+  "type": "object"
+}

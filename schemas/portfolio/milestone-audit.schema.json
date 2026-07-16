@@ -1,0 +1,77 @@
+{
+  "properties": {
+    "completion_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Completion Status",
+      "type": "string"
+    },
+    "fixture_evidence": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Fixture Evidence",
+      "type": "array"
+    },
+    "implemented_capabilities": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Implemented Capabilities",
+      "type": "array"
+    },
+    "known_limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Limitations",
+      "type": "array"
+    },
+    "milestone": {
+      "title": "Milestone",
+      "type": "string"
+    },
+    "objective": {
+      "title": "Objective",
+      "type": "string"
+    },
+    "primary_commands": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Primary Commands",
+      "type": "array"
+    },
+    "primary_modules": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Primary Modules",
+      "type": "array"
+    },
+    "validation_evidence": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Validation Evidence",
+      "type": "array"
+    }
+  },
+  "required": [
+    "milestone",
+    "objective",
+    "implemented_capabilities",
+    "primary_modules",
+    "primary_commands",
+    "fixture_evidence",
+    "validation_evidence",
+    "known_limitations",
+    "completion_status"
+  ],
+  "title": "MilestoneAudit",
+  "type": "object"
+}

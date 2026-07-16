@@ -1,0 +1,10 @@
+configuration_id,split,query_group,query_count,hit_rate_at_5,recall_at_5,mrr,ndcg_at_5,zero_hit_query_count
+feature_reranked_hybrid_v1,development,all,38,0.368421,0.355263,0.300439,0.30723,24
+feature_reranked_hybrid_v1,development,paraphrased,4,0.0,0.0,0.0,0.0,4
+feature_reranked_hybrid_v1,development,negation_sensitive,3,1.0,1.0,1.0,1.0,0
+feature_reranked_hybrid_v1,validation,all,38,0.289474,0.289474,0.27193,0.276316,27
+feature_reranked_hybrid_v1,validation,paraphrased,4,0.0,0.0,0.0,0.0,4
+feature_reranked_hybrid_v1,validation,negation_sensitive,3,1.0,1.0,1.0,1.0,0
+feature_reranked_hybrid_v1,holdout,all,19,0.473684,0.447368,0.328947,0.356004,10
+feature_reranked_hybrid_v1,holdout,paraphrased,2,0.0,0.0,0.0,0.0,2
+feature_reranked_hybrid_v1,holdout,negation_sensitive,2,1.0,1.0,1.0,1.0,0

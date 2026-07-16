@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "api_contract_version": {
+      "title": "Api Contract Version",
+      "type": "string"
+    },
+    "api_version": {
+      "title": "Api Version",
+      "type": "string"
+    },
+    "application": {
+      "title": "Application",
+      "type": "string"
+    },
+    "application_service_version": {
+      "title": "Application Service Version",
+      "type": "string"
+    },
+    "approved_retrieval_configuration": {
+      "title": "Approved Retrieval Configuration",
+      "type": "string"
+    },
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "generator_mode": {
+      "title": "Generator Mode",
+      "type": "string"
+    },
+    "operational_events_enabled": {
+      "title": "Operational Events Enabled",
+      "type": "boolean"
+    },
+    "rag_approval_status": {
+      "title": "Rag Approval Status",
+      "type": "string"
+    },
+    "retrieval_approval_status": {
+      "title": "Retrieval Approval Status",
+      "type": "string"
+    },
+    "streamlit_demo_version": {
+      "title": "Streamlit Demo Version",
+      "type": "string"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "application",
+    "version",
+    "application_service_version",
+    "api_contract_version",
+    "api_version",
+    "streamlit_demo_version",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "retrieval_approval_status",
+    "rag_approval_status",
+    "approved_retrieval_configuration",
+    "generator_mode",
+    "operational_events_enabled"
+  ],
+  "title": "SystemStatusResponse",
+  "type": "object"
+}

@@ -1,0 +1,4 @@
+flowchart LR
+  Reviewer["Portfolio reviewer"] --> App["Local portfolio platform"]
+  App -. "contract only" .-> Snowflake["Snowflake target state"]
+  App -. "not connected" .-> Databricks["Databricks target state"]

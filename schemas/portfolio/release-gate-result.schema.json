@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "evidence": {
+      "title": "Evidence",
+      "type": "string"
+    },
+    "gate_id": {
+      "title": "Gate Id",
+      "type": "string"
+    },
+    "message": {
+      "default": "",
+      "title": "Message",
+      "type": "string"
+    },
+    "required": {
+      "title": "Required",
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "gate_id",
+    "required",
+    "status",
+    "evidence"
+  ],
+  "title": "ReleaseGateResult",
+  "type": "object"
+}

@@ -1,0 +1,9 @@
+sequenceDiagram
+  participant U as User
+  participant S as Safety
+  participant R as Retrieval
+  participant G as Generator
+  U->>S: synthetic query
+  S->>R: allowed query
+  R->>G: cited evidence
+  G-->>U: grounded answer or refusal

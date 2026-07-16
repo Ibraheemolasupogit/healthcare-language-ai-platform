@@ -1,0 +1,117 @@
+{
+  "properties": {
+    "backup_id": {
+      "title": "Backup Id",
+      "type": "string"
+    },
+    "compatibility_run_id": {
+      "title": "Compatibility Run Id",
+      "type": "string"
+    },
+    "contract_baseline_id": {
+      "title": "Contract Baseline Id",
+      "type": "string"
+    },
+    "demo_session_id": {
+      "title": "Demo Session Id",
+      "type": "string"
+    },
+    "entity_evaluation_run_id": {
+      "title": "Entity Evaluation Run Id",
+      "type": "string"
+    },
+    "extraction_run_id": {
+      "title": "Extraction Run Id",
+      "type": "string"
+    },
+    "holdout_dataset_id": {
+      "title": "Holdout Dataset Id",
+      "type": "string"
+    },
+    "ingestion_run_id": {
+      "title": "Ingestion Run Id",
+      "type": "string"
+    },
+    "portfolio_assurance_id": {
+      "title": "Portfolio Assurance Id",
+      "type": "string"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "rag_approval_status": {
+      "title": "Rag Approval Status",
+      "type": "string"
+    },
+    "rag_evaluation_id": {
+      "title": "Rag Evaluation Id",
+      "type": "string"
+    },
+    "rag_run_id": {
+      "title": "Rag Run Id",
+      "type": "string"
+    },
+    "registry_id": {
+      "title": "Registry Id",
+      "type": "string"
+    },
+    "retrieval_approval_id": {
+      "title": "Retrieval Approval Id",
+      "type": "string"
+    },
+    "retrieval_comparison_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Retrieval Comparison Ids",
+      "type": "array"
+    },
+    "retrieval_evaluation_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Retrieval Evaluation Ids",
+      "type": "array"
+    },
+    "retrieval_index_id": {
+      "title": "Retrieval Index Id",
+      "type": "string"
+    },
+    "retrieval_run_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Retrieval Run Ids",
+      "type": "array"
+    },
+    "synthetic_dataset_id": {
+      "title": "Synthetic Dataset Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "registry_id",
+    "synthetic_dataset_id",
+    "ingestion_run_id",
+    "preprocessing_run_id",
+    "extraction_run_id",
+    "entity_evaluation_run_id",
+    "retrieval_index_id",
+    "retrieval_run_ids",
+    "retrieval_evaluation_ids",
+    "holdout_dataset_id",
+    "retrieval_comparison_ids",
+    "retrieval_approval_id",
+    "rag_run_id",
+    "rag_evaluation_id",
+    "rag_approval_status",
+    "demo_session_id",
+    "contract_baseline_id",
+    "compatibility_run_id",
+    "backup_id",
+    "portfolio_assurance_id"
+  ],
+  "title": "RunRegistry",
+  "type": "object"
+}

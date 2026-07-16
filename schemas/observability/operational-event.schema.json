@@ -1,0 +1,89 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "answer_status": {
+      "default": "",
+      "title": "Answer Status",
+      "type": "string"
+    },
+    "application_version": {
+      "default": "0.1.0",
+      "title": "Application Version",
+      "type": "string"
+    },
+    "citation_status": {
+      "default": "",
+      "title": "Citation Status",
+      "type": "string"
+    },
+    "duration_ms": {
+      "default": 0.0,
+      "title": "Duration Ms",
+      "type": "number"
+    },
+    "environment": {
+      "default": "local",
+      "title": "Environment",
+      "type": "string"
+    },
+    "error_code": {
+      "default": "",
+      "title": "Error Code",
+      "type": "string"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "event_type": {
+      "title": "Event Type",
+      "type": "string"
+    },
+    "groundedness_status": {
+      "default": "",
+      "title": "Groundedness Status",
+      "type": "string"
+    },
+    "operational_event_version": {
+      "default": "1.0.0",
+      "title": "Operational Event Version",
+      "type": "string"
+    },
+    "query_category": {
+      "default": "",
+      "title": "Query Category",
+      "type": "string"
+    },
+    "query_checksum": {
+      "default": "",
+      "title": "Query Checksum",
+      "type": "string"
+    },
+    "request_id": {
+      "title": "Request Id",
+      "type": "string"
+    },
+    "retrieval_status": {
+      "default": "",
+      "title": "Retrieval Status",
+      "type": "string"
+    },
+    "safety_status": {
+      "default": "",
+      "title": "Safety Status",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    }
+  },
+  "required": [
+    "event_id",
+    "event_type",
+    "request_id"
+  ],
+  "title": "OperationalEvent",
+  "type": "object"
+}

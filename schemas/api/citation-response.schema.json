@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bounded_text": {
+      "title": "Bounded Text",
+      "type": "string"
+    },
+    "citation_id": {
+      "title": "Citation Id",
+      "type": "string"
+    },
+    "citation_label": {
+      "title": "Citation Label",
+      "type": "string"
+    },
+    "citation_status": {
+      "title": "Citation Status",
+      "type": "string"
+    },
+    "claim_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Claim Ids",
+      "type": "array"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "evidence_id": {
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "quoted_span": {
+      "title": "Quoted Span",
+      "type": "string"
+    },
+    "section_id": {
+      "default": "",
+      "title": "Section Id",
+      "type": "string"
+    },
+    "sentence_id": {
+      "default": "",
+      "title": "Sentence Id",
+      "type": "string"
+    },
+    "source_text_checksum": {
+      "title": "Source Text Checksum",
+      "type": "string"
+    }
+  },
+  "required": [
+    "citation_id",
+    "citation_label",
+    "evidence_id",
+    "document_id",
+    "citation_status",
+    "quoted_span",
+    "source_text_checksum",
+    "bounded_text"
+  ],
+  "title": "CitationResponse",
+  "type": "object"
+}

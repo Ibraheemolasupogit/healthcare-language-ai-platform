@@ -1,0 +1,19 @@
+{
+  "execution_permitted": false,
+  "job_name": "hla-preprocessing-target-state",
+  "parameters": {
+    "mode": "conservative",
+    "synthetic_data_only": "true"
+  },
+  "retry_policy": "reference-only: max 1 retry",
+  "task_order": [
+    "01_validate_ingestion_source",
+    "02_preprocess_documents",
+    "03_parse_sections",
+    "04_segment_sentences",
+    "05_project_annotations",
+    "06_quality_and_reconciliation",
+    "07_publish_silver_gold"
+  ],
+  "timeout_policy": "reference-only: 30 minutes per task"
+}

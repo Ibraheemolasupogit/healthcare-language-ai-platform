@@ -1,0 +1,1 @@
+{"approval_status":"approved_for_local_demo","approved_for_local_synthetic_demo":true,"failed_required_gates":0,"generator_provider":"deterministic_extract","known_failures":[],"passed_required_gates":13,"rag_configuration":"abstaining_ensemble_v1","rag_evaluation_id":"RAGEVAL-d8d3b3b6892133372f91d017","required_gate_count":13,"source_rag_run_id":"RAG-515e2c68be10e720b613e874"}

@@ -1,0 +1,55 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "after_value": {
+      "default": "",
+      "title": "After Value",
+      "type": "string"
+    },
+    "before_value": {
+      "default": "",
+      "title": "Before Value",
+      "type": "string"
+    },
+    "change_id": {
+      "title": "Change Id",
+      "type": "string"
+    },
+    "change_type": {
+      "title": "Change Type",
+      "type": "string"
+    },
+    "compatibility": {
+      "enum": [
+        "backward_compatible",
+        "conditionally_compatible",
+        "breaking",
+        "unknown"
+      ],
+      "title": "Compatibility",
+      "type": "string"
+    },
+    "contract_id": {
+      "title": "Contract Id",
+      "type": "string"
+    },
+    "field_path": {
+      "default": "",
+      "title": "Field Path",
+      "type": "string"
+    },
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "change_id",
+    "contract_id",
+    "change_type",
+    "compatibility",
+    "reason"
+  ],
+  "title": "ContractChange",
+  "type": "object"
+}

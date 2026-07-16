@@ -1,0 +1,17 @@
+{
+  "documents": [
+    "architecture-walkthrough.md",
+    "concise-talking-points.md",
+    "failure-and-remediation-stories.md",
+    "likely-interview-questions.md",
+    "project-overview.md",
+    "retrieval-and-rag-evidence.md",
+    "safety-and-governance.md",
+    "star-examples.md",
+    "technical-deep-dive.md",
+    "testing-and-assurance.md",
+    "trade-offs-and-decisions.md"
+  ],
+  "interview_pack_version": "1.0.0",
+  "status": "passed"
+}

@@ -1,0 +1,14 @@
+{
+  "request_id": "REQ-fixture-refusal",
+  "query_id": "ad-hoc",
+  "answer_id": "REF-fixture-refusal",
+  "answer_status": "unsupported_request_refusal",
+  "answer_text": "This local synthetic portfolio demonstration cannot provide clinical, real-patient, medication, treatment, diagnosis, or emergency guidance. Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated.",
+  "citations": [],
+  "retrieval_status": "not_invoked",
+  "retrieval_confidence": 0.0,
+  "trace_id": "REQ-fixture-refusal",
+  "synthetic_data_only": true,
+  "clinical_use_prohibited": true,
+  "disclaimer": "Synthetic portfolio demonstration only. Not for patient care. Not medical advice. Not clinically validated."
+}

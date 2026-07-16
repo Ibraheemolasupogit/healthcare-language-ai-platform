@@ -1,0 +1,62 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "approval_status": {
+      "title": "Approval Status",
+      "type": "string"
+    },
+    "approved_for_local_synthetic_demo": {
+      "title": "Approved For Local Synthetic Demo",
+      "type": "boolean"
+    },
+    "failed_required_gates": {
+      "title": "Failed Required Gates",
+      "type": "integer"
+    },
+    "generator_provider": {
+      "title": "Generator Provider",
+      "type": "string"
+    },
+    "known_failures": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Failures",
+      "type": "array"
+    },
+    "passed_required_gates": {
+      "title": "Passed Required Gates",
+      "type": "integer"
+    },
+    "rag_configuration": {
+      "title": "Rag Configuration",
+      "type": "string"
+    },
+    "rag_evaluation_id": {
+      "title": "Rag Evaluation Id",
+      "type": "string"
+    },
+    "required_gate_count": {
+      "title": "Required Gate Count",
+      "type": "integer"
+    },
+    "source_rag_run_id": {
+      "title": "Source Rag Run Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "rag_evaluation_id",
+    "source_rag_run_id",
+    "rag_configuration",
+    "generator_provider",
+    "approval_status",
+    "approved_for_local_synthetic_demo",
+    "required_gate_count",
+    "passed_required_gates",
+    "failed_required_gates",
+    "known_failures"
+  ],
+  "title": "RagApprovalDecision",
+  "type": "object"
+}

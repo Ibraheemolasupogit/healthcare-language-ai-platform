@@ -1,0 +1,166 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "answerable_coverage": {
+      "title": "Answerable Coverage",
+      "type": "number"
+    },
+    "approval_status": {
+      "title": "Approval Status",
+      "type": "string"
+    },
+    "approved_for_future_rag_prototype": {
+      "title": "Approved For Future Rag Prototype",
+      "type": "boolean"
+    },
+    "benchmark_id": {
+      "title": "Benchmark Id",
+      "type": "string"
+    },
+    "benchmark_version": {
+      "title": "Benchmark Version",
+      "type": "string"
+    },
+    "comparison_id": {
+      "title": "Comparison Id",
+      "type": "string"
+    },
+    "configurations_evaluated": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Configurations Evaluated",
+      "type": "array"
+    },
+    "configurations_skipped": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Configurations Skipped",
+      "type": "array"
+    },
+    "failed_required_gates": {
+      "title": "Failed Required Gates",
+      "type": "integer"
+    },
+    "feature_ablation_conclusion": {
+      "title": "Feature Ablation Conclusion",
+      "type": "string"
+    },
+    "holdout_hit_rate_at_5": {
+      "title": "Holdout Hit Rate At 5",
+      "type": "number"
+    },
+    "holdout_mrr": {
+      "title": "Holdout Mrr",
+      "type": "number"
+    },
+    "holdout_ndcg_at_5": {
+      "title": "Holdout Ndcg At 5",
+      "type": "number"
+    },
+    "holdout_recall_at_5": {
+      "title": "Holdout Recall At 5",
+      "type": "number"
+    },
+    "known_failing_query_groups": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Known Failing Query Groups",
+      "type": "array"
+    },
+    "negation_sensitive_hit_rate_at_5": {
+      "title": "Negation Sensitive Hit Rate At 5",
+      "type": "number"
+    },
+    "output_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output Checksums",
+      "type": "object"
+    },
+    "paraphrased_hit_rate_at_5": {
+      "title": "Paraphrased Hit Rate At 5",
+      "type": "number"
+    },
+    "passed_required_gates": {
+      "title": "Passed Required Gates",
+      "type": "integer"
+    },
+    "primary_metric": {
+      "title": "Primary Metric",
+      "type": "string"
+    },
+    "reconciliation_status": {
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "required_gate_count": {
+      "title": "Required Gate Count",
+      "type": "integer"
+    },
+    "selected_configuration_id": {
+      "title": "Selected Configuration Id",
+      "type": "string"
+    },
+    "unanswerable_abstention_accuracy": {
+      "title": "Unanswerable Abstention Accuracy",
+      "type": "number"
+    },
+    "validation_hit_rate_at_5": {
+      "title": "Validation Hit Rate At 5",
+      "type": "number"
+    },
+    "validation_mrr": {
+      "title": "Validation Mrr",
+      "type": "number"
+    },
+    "validation_ndcg_at_5": {
+      "title": "Validation Ndcg At 5",
+      "type": "number"
+    },
+    "validation_recall_at_5": {
+      "title": "Validation Recall At 5",
+      "type": "number"
+    },
+    "validation_zero_hit_count": {
+      "title": "Validation Zero Hit Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "comparison_id",
+    "benchmark_id",
+    "benchmark_version",
+    "configurations_evaluated",
+    "configurations_skipped",
+    "selected_configuration_id",
+    "primary_metric",
+    "validation_hit_rate_at_5",
+    "validation_recall_at_5",
+    "validation_mrr",
+    "validation_ndcg_at_5",
+    "paraphrased_hit_rate_at_5",
+    "negation_sensitive_hit_rate_at_5",
+    "validation_zero_hit_count",
+    "holdout_hit_rate_at_5",
+    "holdout_recall_at_5",
+    "holdout_mrr",
+    "holdout_ndcg_at_5",
+    "unanswerable_abstention_accuracy",
+    "answerable_coverage",
+    "required_gate_count",
+    "passed_required_gates",
+    "failed_required_gates",
+    "approval_status",
+    "approved_for_future_rag_prototype",
+    "known_failing_query_groups",
+    "feature_ablation_conclusion",
+    "reconciliation_status",
+    "output_checksums"
+  ],
+  "title": "RemediationComparisonManifest",
+  "type": "object"
+}

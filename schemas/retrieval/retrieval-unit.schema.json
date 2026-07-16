@@ -1,0 +1,116 @@
+{
+  "$defs": {
+    "RetrievalUnitType": {
+      "enum": [
+        "document",
+        "section",
+        "sentence"
+      ],
+      "title": "RetrievalUnitType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "corpus_version": {
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_type": {
+      "title": "Document Type",
+      "type": "string"
+    },
+    "retrieval_unit_id": {
+      "title": "Retrieval Unit Id",
+      "type": "string"
+    },
+    "section_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Section Id"
+    },
+    "section_label": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Section Label"
+    },
+    "sentence_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sentence Id"
+    },
+    "source_extraction_run_id": {
+      "title": "Source Extraction Run Id",
+      "type": "string"
+    },
+    "source_preprocessing_run_id": {
+      "title": "Source Preprocessing Run Id",
+      "type": "string"
+    },
+    "synthetic_encounter_id": {
+      "title": "Synthetic Encounter Id",
+      "type": "string"
+    },
+    "synthetic_subject_id": {
+      "title": "Synthetic Subject Id",
+      "type": "string"
+    },
+    "text": {
+      "title": "Text",
+      "type": "string"
+    },
+    "text_checksum": {
+      "title": "Text Checksum",
+      "type": "string"
+    },
+    "token_count": {
+      "minimum": 0,
+      "title": "Token Count",
+      "type": "integer"
+    },
+    "unit_type": {
+      "$ref": "#/$defs/RetrievalUnitType"
+    }
+  },
+  "required": [
+    "retrieval_unit_id",
+    "document_id",
+    "unit_type",
+    "document_type",
+    "text",
+    "text_checksum",
+    "token_count",
+    "synthetic_subject_id",
+    "synthetic_encounter_id",
+    "source_preprocessing_run_id",
+    "source_extraction_run_id",
+    "corpus_version"
+  ],
+  "title": "RetrievalUnit",
+  "type": "object"
+}

@@ -1,0 +1,83 @@
+{
+  "$defs": {
+    "DependencyRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "dependency_group": {
+          "title": "Dependency Group",
+          "type": "string"
+        },
+        "direct": {
+          "title": "Direct",
+          "type": "boolean"
+        },
+        "installed_version": {
+          "title": "Installed Version",
+          "type": "string"
+        },
+        "license_metadata": {
+          "default": "",
+          "title": "License Metadata",
+          "type": "string"
+        },
+        "package_name": {
+          "title": "Package Name",
+          "type": "string"
+        },
+        "runtime": {
+          "title": "Runtime",
+          "type": "boolean"
+        },
+        "source_metadata": {
+          "default": "",
+          "title": "Source Metadata",
+          "type": "string"
+        }
+      },
+      "required": [
+        "package_name",
+        "installed_version",
+        "dependency_group",
+        "direct",
+        "runtime"
+      ],
+      "title": "DependencyRecord",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "components": {
+      "items": {
+        "$ref": "#/$defs/DependencyRecord"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "sbom_format": {
+      "default": "CycloneDX-like-local",
+      "title": "Sbom Format",
+      "type": "string"
+    },
+    "sbom_id": {
+      "title": "Sbom Id",
+      "type": "string"
+    },
+    "sbom_version": {
+      "default": "1.0.0",
+      "title": "Sbom Version",
+      "type": "string"
+    },
+    "vulnerability_status": {
+      "default": "not_evaluated_offline_inventory_only",
+      "title": "Vulnerability Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "sbom_id",
+    "components"
+  ],
+  "title": "SbomDocument",
+  "type": "object"
+}

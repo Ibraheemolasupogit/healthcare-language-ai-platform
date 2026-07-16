@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "PreprocessingMode": {
+      "enum": [
+        "conservative",
+        "analytical"
+      ],
+      "title": "PreprocessingMode",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "analytical_text": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Analytical Text"
+    },
+    "analytical_text_checksum": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Analytical Text Checksum"
+    },
+    "contains_replacement_character": {
+      "title": "Contains Replacement Character",
+      "type": "boolean"
+    },
+    "digit_ratio": {
+      "minimum": 0,
+      "title": "Digit Ratio",
+      "type": "number"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_type": {
+      "title": "Document Type",
+      "type": "string"
+    },
+    "empty_line_count": {
+      "minimum": 0,
+      "title": "Empty Line Count",
+      "type": "integer"
+    },
+    "ingestion_run_id": {
+      "title": "Ingestion Run Id",
+      "type": "string"
+    },
+    "line_count": {
+      "minimum": 0,
+      "title": "Line Count",
+      "type": "integer"
+    },
+    "normalisation_version": {
+      "title": "Normalisation Version",
+      "type": "string"
+    },
+    "normalised_character_count": {
+      "minimum": 0,
+      "title": "Normalised Character Count",
+      "type": "integer"
+    },
+    "normalised_text": {
+      "title": "Normalised Text",
+      "type": "string"
+    },
+    "normalised_text_checksum": {
+      "title": "Normalised Text Checksum",
+      "type": "string"
+    },
+    "preprocessed_at": {
+      "format": "date-time",
+      "title": "Preprocessed At",
+      "type": "string"
+    },
+    "preprocessing_mode": {
+      "$ref": "#/$defs/PreprocessingMode"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "quality_rules_version": {
+      "title": "Quality Rules Version",
+      "type": "string"
+    },
+    "section_count": {
+      "minimum": 0,
+      "title": "Section Count",
+      "type": "integer"
+    },
+    "section_parser_version": {
+      "title": "Section Parser Version",
+      "type": "string"
+    },
+    "sentence_count": {
+      "minimum": 0,
+      "title": "Sentence Count",
+      "type": "integer"
+    },
+    "sentence_segmenter_version": {
+      "title": "Sentence Segmenter Version",
+      "type": "string"
+    },
+    "source_character_count": {
+      "minimum": 0,
+      "title": "Source Character Count",
+      "type": "integer"
+    },
+    "source_record_checksum": {
+      "title": "Source Record Checksum",
+      "type": "string"
+    },
+    "source_text": {
+      "title": "Source Text",
+      "type": "string"
+    },
+    "synthetic_encounter_id": {
+      "title": "Synthetic Encounter Id",
+      "type": "string"
+    },
+    "synthetic_subject_id": {
+      "title": "Synthetic Subject Id",
+      "type": "string"
+    },
+    "token_count": {
+      "minimum": 0,
+      "title": "Token Count",
+      "type": "integer"
+    },
+    "tokeniser_version": {
+      "title": "Tokeniser Version",
+      "type": "string"
+    },
+    "unique_token_count": {
+      "minimum": 0,
+      "title": "Unique Token Count",
+      "type": "integer"
+    },
+    "uppercase_ratio": {
+      "minimum": 0,
+      "title": "Uppercase Ratio",
+      "type": "number"
+    },
+    "whitespace_ratio": {
+      "minimum": 0,
+      "title": "Whitespace Ratio",
+      "type": "number"
+    }
+  },
+  "required": [
+    "document_id",
+    "synthetic_subject_id",
+    "synthetic_encounter_id",
+    "document_type",
+    "source_text",
+    "normalised_text",
+    "preprocessing_mode",
+    "source_character_count",
+    "normalised_character_count",
+    "sentence_count",
+    "section_count",
+    "token_count",
+    "unique_token_count",
+    "line_count",
+    "empty_line_count",
+    "uppercase_ratio",
+    "digit_ratio",
+    "whitespace_ratio",
+    "contains_replacement_character",
+    "source_record_checksum",
+    "normalised_text_checksum",
+    "ingestion_run_id",
+    "preprocessing_run_id",
+    "preprocessed_at",
+    "normalisation_version",
+    "section_parser_version",
+    "sentence_segmenter_version",
+    "tokeniser_version",
+    "quality_rules_version"
+  ],
+  "title": "ProcessedClinicalDocument",
+  "type": "object"
+}

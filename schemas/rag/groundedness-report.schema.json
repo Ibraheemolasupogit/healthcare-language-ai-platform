@@ -1,0 +1,96 @@
+{
+  "$defs": {
+    "ClaimGroundingResult": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "grounding_status": {
+          "title": "Grounding Status",
+          "type": "string"
+        },
+        "support_score": {
+          "title": "Support Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "claim_id",
+        "grounding_status",
+        "support_score",
+        "evidence_ids"
+      ],
+      "title": "ClaimGroundingResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "claim_results": {
+      "items": {
+        "$ref": "#/$defs/ClaimGroundingResult"
+      },
+      "title": "Claim Results",
+      "type": "array"
+    },
+    "groundedness_status": {
+      "title": "Groundedness Status",
+      "type": "string"
+    },
+    "groundedness_version": {
+      "default": "1.0.0",
+      "title": "Groundedness Version",
+      "type": "string"
+    },
+    "negation_consistency_status": {
+      "title": "Negation Consistency Status",
+      "type": "string"
+    },
+    "numeric_consistency_status": {
+      "title": "Numeric Consistency Status",
+      "type": "string"
+    },
+    "partially_supported_claim_count": {
+      "title": "Partially Supported Claim Count",
+      "type": "integer"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "supported_claim_count": {
+      "title": "Supported Claim Count",
+      "type": "integer"
+    },
+    "unsupported_claim_count": {
+      "title": "Unsupported Claim Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "answer_id",
+    "query_id",
+    "groundedness_status",
+    "supported_claim_count",
+    "partially_supported_claim_count",
+    "unsupported_claim_count",
+    "numeric_consistency_status",
+    "negation_consistency_status",
+    "claim_results"
+  ],
+  "title": "GroundednessReport",
+  "type": "object"
+}

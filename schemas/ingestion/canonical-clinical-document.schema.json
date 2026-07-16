@@ -1,0 +1,134 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "data_classification": {
+      "title": "Data Classification",
+      "type": "string"
+    },
+    "document_created_at": {
+      "format": "date-time",
+      "title": "Document Created At",
+      "type": "string"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_text": {
+      "title": "Document Text",
+      "type": "string"
+    },
+    "document_type": {
+      "title": "Document Type",
+      "type": "string"
+    },
+    "encounter_ended_at": {
+      "format": "date-time",
+      "title": "Encounter Ended At",
+      "type": "string"
+    },
+    "encounter_started_at": {
+      "format": "date-time",
+      "title": "Encounter Started At",
+      "type": "string"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "ingested_at": {
+      "format": "date-time",
+      "title": "Ingested At",
+      "type": "string"
+    },
+    "ingestion_run_id": {
+      "title": "Ingestion Run Id",
+      "type": "string"
+    },
+    "source_dataset_name": {
+      "title": "Source Dataset Name",
+      "type": "string"
+    },
+    "source_dataset_version": {
+      "title": "Source Dataset Version",
+      "type": "string"
+    },
+    "source_file": {
+      "title": "Source File",
+      "type": "string"
+    },
+    "source_line_number": {
+      "title": "Source Line Number",
+      "type": "integer"
+    },
+    "source_record_checksum": {
+      "title": "Source Record Checksum",
+      "type": "string"
+    },
+    "source_record_index": {
+      "title": "Source Record Index",
+      "type": "integer"
+    },
+    "source_reference_timestamp": {
+      "format": "date-time",
+      "title": "Source Reference Timestamp",
+      "type": "string"
+    },
+    "source_seed": {
+      "title": "Source Seed",
+      "type": "integer"
+    },
+    "source_system": {
+      "title": "Source System",
+      "type": "string"
+    },
+    "synthetic_encounter_id": {
+      "title": "Synthetic Encounter Id",
+      "type": "string"
+    },
+    "synthetic_subject_id": {
+      "title": "Synthetic Subject Id",
+      "type": "string"
+    },
+    "template_name": {
+      "title": "Template Name",
+      "type": "string"
+    },
+    "template_version": {
+      "title": "Template Version",
+      "type": "string"
+    },
+    "vocabulary_version": {
+      "title": "Vocabulary Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "document_id",
+    "synthetic_subject_id",
+    "synthetic_encounter_id",
+    "document_type",
+    "source_system",
+    "data_classification",
+    "document_text",
+    "document_created_at",
+    "encounter_started_at",
+    "encounter_ended_at",
+    "generator_version",
+    "template_name",
+    "template_version",
+    "vocabulary_version",
+    "source_dataset_name",
+    "source_dataset_version",
+    "source_seed",
+    "source_reference_timestamp",
+    "source_record_index",
+    "source_file",
+    "source_line_number",
+    "source_record_checksum",
+    "ingestion_run_id",
+    "ingested_at"
+  ],
+  "title": "CanonicalClinicalDocument",
+  "type": "object"
+}

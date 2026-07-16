@@ -1,0 +1,236 @@
+{
+  "$defs": {
+    "RagCitation": {
+      "additionalProperties": false,
+      "properties": {
+        "citation_id": {
+          "title": "Citation Id",
+          "type": "string"
+        },
+        "citation_label": {
+          "title": "Citation Label",
+          "type": "string"
+        },
+        "citation_status": {
+          "title": "Citation Status",
+          "type": "string"
+        },
+        "claim_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Claim Ids",
+          "type": "array"
+        },
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "evidence_id": {
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "quoted_span": {
+          "title": "Quoted Span",
+          "type": "string"
+        },
+        "quoted_span_end": {
+          "title": "Quoted Span End",
+          "type": "integer"
+        },
+        "quoted_span_start": {
+          "title": "Quoted Span Start",
+          "type": "integer"
+        },
+        "retrieval_unit_id": {
+          "title": "Retrieval Unit Id",
+          "type": "string"
+        },
+        "section_id": {
+          "default": "",
+          "title": "Section Id",
+          "type": "string"
+        },
+        "sentence_id": {
+          "default": "",
+          "title": "Sentence Id",
+          "type": "string"
+        },
+        "source_text_checksum": {
+          "title": "Source Text Checksum",
+          "type": "string"
+        }
+      },
+      "required": [
+        "citation_id",
+        "citation_label",
+        "evidence_id",
+        "retrieval_unit_id",
+        "document_id",
+        "claim_ids",
+        "quoted_span",
+        "quoted_span_start",
+        "quoted_span_end",
+        "source_text_checksum",
+        "citation_status"
+      ],
+      "title": "RagCitation",
+      "type": "object"
+    },
+    "RagClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "claim_text": {
+          "title": "Claim Text",
+          "type": "string"
+        },
+        "claim_type": {
+          "title": "Claim Type",
+          "type": "string"
+        },
+        "safety_status": {
+          "default": "passed",
+          "title": "Safety Status",
+          "type": "string"
+        },
+        "sentence_index": {
+          "title": "Sentence Index",
+          "type": "integer"
+        },
+        "support_status": {
+          "title": "Support Status",
+          "type": "string"
+        },
+        "supporting_citation_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supporting Citation Ids",
+          "type": "array"
+        },
+        "unsupported_reason": {
+          "default": "",
+          "title": "Unsupported Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claim_id",
+        "claim_text",
+        "claim_type",
+        "sentence_index",
+        "support_status"
+      ],
+      "title": "RagClaim",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "answer_status": {
+      "title": "Answer Status",
+      "type": "string"
+    },
+    "answer_text": {
+      "title": "Answer Text",
+      "type": "string"
+    },
+    "answer_text_checksum": {
+      "title": "Answer Text Checksum",
+      "type": "string"
+    },
+    "citations": {
+      "items": {
+        "$ref": "#/$defs/RagCitation"
+      },
+      "title": "Citations",
+      "type": "array"
+    },
+    "claims": {
+      "items": {
+        "$ref": "#/$defs/RagClaim"
+      },
+      "title": "Claims",
+      "type": "array"
+    },
+    "clinical_use_prohibited": {
+      "default": true,
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "generator_provider": {
+      "title": "Generator Provider",
+      "type": "string"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "prompt_id": {
+      "title": "Prompt Id",
+      "type": "string"
+    },
+    "prompt_version": {
+      "title": "Prompt Version",
+      "type": "string"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "rag_run_id": {
+      "title": "Rag Run Id",
+      "type": "string"
+    },
+    "refusal_reason": {
+      "title": "Refusal Reason",
+      "type": "string"
+    },
+    "retrieval_confidence": {
+      "title": "Retrieval Confidence",
+      "type": "number"
+    },
+    "retrieval_status": {
+      "title": "Retrieval Status",
+      "type": "string"
+    },
+    "synthetic_data_only": {
+      "default": true,
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "answer_id",
+    "rag_run_id",
+    "query_id",
+    "answer_status",
+    "answer_text",
+    "answer_text_checksum",
+    "citations",
+    "claims",
+    "refusal_reason",
+    "retrieval_status",
+    "retrieval_confidence",
+    "generator_provider",
+    "generator_version",
+    "prompt_id",
+    "prompt_version",
+    "created_at"
+  ],
+  "title": "RagAnswer",
+  "type": "object"
+}

@@ -1,0 +1,46 @@
+{
+  "ANS-122307048dc78bdd2e937367": {
+    "query_id": "RAGQ-b6b11f62958a60b288",
+    "scenario_id": "scenario-04"
+  },
+  "ANS-18cb958dc53cc002601a6b72": {
+    "query_id": "RAGQ-0221596fb6e6c2341a",
+    "scenario_id": "scenario-10"
+  },
+  "ANS-2c508e29a68b0b373ed47442": {
+    "query_id": "RAGQ-3ed92e9bacedb01085",
+    "scenario_id": "scenario-07"
+  },
+  "ANS-461c9ce7a9501ed99cf68a82": {
+    "query_id": "RAGQ-eec7ae707e978365a1",
+    "scenario_id": "scenario-02"
+  },
+  "ANS-5f30e9b1a47cc1fccb5e32c5": {
+    "query_id": "RAGQ-53c1f56f1e4a943feb",
+    "scenario_id": "scenario-08"
+  },
+  "ANS-72ca5b0de7291fc853e08341": {
+    "query_id": "RAGQ-2246f230478252727f",
+    "scenario_id": "scenario-11"
+  },
+  "ANS-7397500f3bdfbedf2b347e65": {
+    "query_id": "RAGQ-44536f6e10e650ef63",
+    "scenario_id": "scenario-05"
+  },
+  "ANS-b292a0b6d9d8835169869ea8": {
+    "query_id": "RAGQ-52586597c68bc36f48",
+    "scenario_id": "scenario-01"
+  },
+  "ANS-cde7fcf147b72a7801e0b2ee": {
+    "query_id": "RAGQ-b9a51b8e7635ccf620",
+    "scenario_id": "scenario-06"
+  },
+  "ANS-d07deff8e2da0e9db88f640b": {
+    "query_id": "RAGQ-128fea5fb09267e137",
+    "scenario_id": "scenario-03"
+  },
+  "ANS-de7fd308e7da0d1c7be91bad": {
+    "query_id": "RAGQ-291d7a45e3bbc6e245",
+    "scenario_id": "scenario-09"
+  }
+}

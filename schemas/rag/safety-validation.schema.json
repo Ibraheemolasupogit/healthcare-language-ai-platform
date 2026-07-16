@@ -1,0 +1,41 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "answer_id": {
+      "title": "Answer Id",
+      "type": "string"
+    },
+    "prohibited_patterns": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Prohibited Patterns",
+      "type": "array"
+    },
+    "query_id": {
+      "title": "Query Id",
+      "type": "string"
+    },
+    "safety_rules_version": {
+      "default": "1.0.0",
+      "title": "Safety Rules Version",
+      "type": "string"
+    },
+    "safety_status": {
+      "title": "Safety Status",
+      "type": "string"
+    },
+    "violation_count": {
+      "title": "Violation Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "answer_id",
+    "query_id",
+    "safety_status",
+    "violation_count"
+  ],
+  "title": "SafetyValidationResult",
+  "type": "object"
+}

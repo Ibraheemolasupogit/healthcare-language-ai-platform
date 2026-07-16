@@ -1,0 +1,223 @@
+{
+  "$defs": {
+    "PreprocessingMode": {
+      "enum": [
+        "conservative",
+        "analytical"
+      ],
+      "title": "PreprocessingMode",
+      "type": "string"
+    },
+    "PreprocessingRunStatus": {
+      "enum": [
+        "completed",
+        "completed_with_warnings",
+        "failed"
+      ],
+      "title": "PreprocessingRunStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "annotation_projection_status_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Annotation Projection Status Counts",
+      "type": "object"
+    },
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "databricks_contract_version": {
+      "title": "Databricks Contract Version",
+      "type": "string"
+    },
+    "document_type_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Document Type Counts",
+      "type": "object"
+    },
+    "failure_count": {
+      "title": "Failure Count",
+      "type": "integer"
+    },
+    "manifest_schema_version": {
+      "title": "Manifest Schema Version",
+      "type": "string"
+    },
+    "normalisation_version": {
+      "title": "Normalisation Version",
+      "type": "string"
+    },
+    "output_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output File Checksums",
+      "type": "object"
+    },
+    "output_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Files",
+      "type": "array"
+    },
+    "preprocessing_contract_version": {
+      "title": "Preprocessing Contract Version",
+      "type": "string"
+    },
+    "preprocessing_mode": {
+      "$ref": "#/$defs/PreprocessingMode"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "processed_document_count": {
+      "title": "Processed Document Count",
+      "type": "integer"
+    },
+    "projected_annotation_count": {
+      "title": "Projected Annotation Count",
+      "type": "integer"
+    },
+    "quality_rules_version": {
+      "title": "Quality Rules Version",
+      "type": "string"
+    },
+    "quality_status_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Quality Status Counts",
+      "type": "object"
+    },
+    "reconciliation_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "run_status": {
+      "$ref": "#/$defs/PreprocessingRunStatus"
+    },
+    "section_count": {
+      "title": "Section Count",
+      "type": "integer"
+    },
+    "section_label_counts": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Section Label Counts",
+      "type": "object"
+    },
+    "section_parser_version": {
+      "title": "Section Parser Version",
+      "type": "string"
+    },
+    "sentence_count": {
+      "title": "Sentence Count",
+      "type": "integer"
+    },
+    "sentence_segmenter_version": {
+      "title": "Sentence Segmenter Version",
+      "type": "string"
+    },
+    "source_annotation_count": {
+      "title": "Source Annotation Count",
+      "type": "integer"
+    },
+    "source_document_count": {
+      "title": "Source Document Count",
+      "type": "integer"
+    },
+    "source_ingestion_manifest_checksum": {
+      "title": "Source Ingestion Manifest Checksum",
+      "type": "string"
+    },
+    "source_ingestion_run_id": {
+      "title": "Source Ingestion Run Id",
+      "type": "string"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "tokeniser_version": {
+      "title": "Tokeniser Version",
+      "type": "string"
+    },
+    "total_lexical_token_count": {
+      "title": "Total Lexical Token Count",
+      "type": "integer"
+    },
+    "unresolved_annotation_count": {
+      "title": "Unresolved Annotation Count",
+      "type": "integer"
+    },
+    "warning_count": {
+      "title": "Warning Count",
+      "type": "integer"
+    },
+    "writer_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Writer Versions",
+      "type": "object"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "preprocessing_contract_version",
+    "preprocessing_run_id",
+    "preprocessing_mode",
+    "run_status",
+    "source_ingestion_run_id",
+    "source_ingestion_manifest_checksum",
+    "source_document_count",
+    "source_annotation_count",
+    "processed_document_count",
+    "section_count",
+    "sentence_count",
+    "projected_annotation_count",
+    "unresolved_annotation_count",
+    "warning_count",
+    "failure_count",
+    "total_lexical_token_count",
+    "normalisation_version",
+    "section_parser_version",
+    "sentence_segmenter_version",
+    "tokeniser_version",
+    "quality_rules_version",
+    "databricks_contract_version",
+    "reference_timestamp",
+    "writer_versions",
+    "output_files",
+    "output_file_checksums",
+    "document_type_counts",
+    "section_label_counts",
+    "quality_status_counts",
+    "annotation_projection_status_counts",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "reconciliation_status"
+  ],
+  "title": "PreprocessingManifest",
+  "type": "object"
+}

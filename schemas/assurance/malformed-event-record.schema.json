@@ -1,0 +1,29 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "line_number": {
+      "title": "Line Number",
+      "type": "integer"
+    },
+    "quarantined_path": {
+      "title": "Quarantined Path",
+      "type": "string"
+    },
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    },
+    "source_file": {
+      "title": "Source File",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_file",
+    "line_number",
+    "reason",
+    "quarantined_path"
+  ],
+  "title": "MalformedEventRecord",
+  "type": "object"
+}

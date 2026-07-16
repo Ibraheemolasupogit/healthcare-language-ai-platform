@@ -1,0 +1,4 @@
+environment: local
+log_level: DEBUG
+log_format: console
+synthetic_data_only: true

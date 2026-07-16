@@ -1,0 +1,12 @@
+{
+  "config/application.yaml": "8cd89bba45188afc54ef67405acc785604b8446d38dded4a7dae633a5c1e217f",
+  "reports/portfolio/platform-evidence-summary.md": "e039c9c742189c866176e9c4d3f103449d840b70be1edd5815631626ae26ef66",
+  "schemas/api/query-request.schema.json": "eadbea81c3087b5b0128997d2865d5a9178a410b96dce73f97cc1df3ea701543",
+  "schemas/api/query-response.schema.json": "c5a1eecec85684f75b745c585680d945bbe9b74452bc8a1acfa3b7d18979090f",
+  "tests/fixtures/api/openapi.json": "8b3ecf046b2f865cbaa913f12c6ee0bb22294e865ae0fd076819edd1d474cc4f",
+  "tests/fixtures/api/routes.json": "6855b926eb87d5fe7a7d678640754fb9c293ea58698fa2787935f2e0e33a973b",
+  "tests/fixtures/demo/DEMO-7d8d73b2b21ec496c6e47175/demo-session.json": "670539694ab1816bcaf461b621ae2cd80d4fe1d5511b048e6edf192141287593",
+  "tests/fixtures/rag/evaluation/RAGEVAL-d8d3b3b6892133372f91d017/rag_approval_decision.json": "eda114e9f524a990a8ba73a5234ab952ecc6410d5300ad0f02dafa9531562f6c",
+  "tests/fixtures/rag/runs/RAG-515e2c68be10e720b613e874/rag_manifest.json": "542a0dbc234bf1870664a0d678d535558a62f5ec33390df66c3ec9913aec6eae",
+  "tests/fixtures/retrieval-remediation/comparison/REMCOMP-1a3a8c86fc4567de3049f352/retrieval_approval_decision.json": "76dafc7e122fee994bf055df3ac436ec47835f278247694694a35242909fd963"
+}

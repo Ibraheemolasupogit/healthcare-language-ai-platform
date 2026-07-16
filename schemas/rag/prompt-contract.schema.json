@@ -1,0 +1,76 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "allowed_input_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Allowed Input Fields",
+      "type": "array"
+    },
+    "citation_format": {
+      "title": "Citation Format",
+      "type": "string"
+    },
+    "maximum_answer_size": {
+      "title": "Maximum Answer Size",
+      "type": "integer"
+    },
+    "maximum_context_size": {
+      "title": "Maximum Context Size",
+      "type": "integer"
+    },
+    "prohibited_content": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Prohibited Content",
+      "type": "array"
+    },
+    "prompt_id": {
+      "title": "Prompt Id",
+      "type": "string"
+    },
+    "prompt_version": {
+      "title": "Prompt Version",
+      "type": "string"
+    },
+    "purpose": {
+      "title": "Purpose",
+      "type": "string"
+    },
+    "refusal_rules": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Refusal Rules",
+      "type": "array"
+    },
+    "required_output_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Required Output Fields",
+      "type": "array"
+    },
+    "safety_disclaimer": {
+      "title": "Safety Disclaimer",
+      "type": "string"
+    }
+  },
+  "required": [
+    "prompt_id",
+    "prompt_version",
+    "purpose",
+    "allowed_input_fields",
+    "required_output_fields",
+    "citation_format",
+    "refusal_rules",
+    "prohibited_content",
+    "maximum_context_size",
+    "maximum_answer_size",
+    "safety_disclaimer"
+  ],
+  "title": "PromptContract",
+  "type": "object"
+}

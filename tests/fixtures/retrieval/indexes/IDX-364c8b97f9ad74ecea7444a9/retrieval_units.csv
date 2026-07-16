@@ -1,0 +1,307 @@
+retrieval_unit_id,document_id,section_id,sentence_id,unit_type,document_type,section_label,text,text_checksum,token_count,synthetic_subject_id,synthetic_encounter_id,source_preprocessing_run_id,source_extraction_run_id,corpus_version
+RU_bb355f5398dfe530f1f407b7,SYN-DOC-004873,,,document,clinical_note,,"This is a synthetic document for educational NLP testing only.
+Reason for attendance: fictional shortness of breath episode.
+Relevant history: Fictional history linked to synthetic outpatient attendance.
+Observations: respiratory rate 16, oxygen saturation 97 percent on air.
+Assessment summary: Simulation summary for left knee review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+",f0d1129a2ccb7f5267a2718af22bf6e387e09a94d16128cfe9ac8a8dd3c99239,56,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_374dbf6b42791850d622e170,SYN-DOC-043303,,,document,referral_letter,,"This is a synthetic document for educational NLP testing only.
+Referral reason: synthetic joint swelling.
+Relevant synthetic history: simulated same-day assessment in portfolio fixture.
+Current concerns: Review of chest with no focal simulated abnormality.
+Requested review: general medicine review for simulation workflow.
+Administrative priority label: workflow_queue_a.
+",f60dcaf5c5b5590afc543b49d58d81c17e7c1713afa79d93ac328a4dc19afa62,48,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_dc99e6fcd3b0648ac515c5b1,SYN-DOC-121909,,,document,discharge_summary,,"This is a synthetic document for educational NLP testing only.
+Admission reason: synthetic joint swelling.
+Synthetic hospital-course summary: Monitored in simulated same-day assessment.
+Recorded investigations: simulated chest radiograph.
+Discharge status: draft.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+",d8d624c13ae087374adc3d46da566a2fd281b054b522101d5d84845f01209b81,40,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_6737b9c3e2e89fa82d735371,SYN-DOC-260561,,,document,radiology_report,,"This is a synthetic document for educational NLP testing only.
+Study: simulated chest radiograph.
+Synthetic indication: fictional shortness of breath episode.
+Findings: stable fictional finding involving abdomen.
+Impression: Synthetic radiology-style report for fixture validation only.
+",98c8788c4ef539b992663e341b11461c055f19c64290a9ec4f66a65c763070e3,35,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_90e320d785eac202bd3ffcd7,SYN-DOC-274035,,,document,referral_letter,,"This is a synthetic document for educational NLP testing only.
+Referral reason: simulated headache review.
+Relevant synthetic history: fictional observation unit encounter in portfolio fixture.
+Current concerns: Review of abdomen with stable fictional finding.
+Requested review: general medicine review for simulation workflow.
+Administrative priority label: routine_simulation.
+",8c8821f25f66955a338731aa8b34af46173e0c0e3dd4d02e72246a10d49441e1,47,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_001cac917497735c177767cf,SYN-DOC-331779,,,document,pathology_report,,"This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from right wrist.
+Macroscopic description: stable fictional finding in fictional specimen container.
+Microscopic description: Simulated cellular notes for radiology.
+Synthetic interpretation label: draft.
+",c933b6d870b120a354c80922a7aa5afc80423e3899501bc3cbb8c42ed27dc7ca,37,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_9709eb56da3281b9ee0d2b1a,SYN-DOC-339753,,,document,clinical_note,,"This is a synthetic document for educational NLP testing only.
+Reason for attendance: synthetic abdominal discomfort.
+Relevant history: Fictional history linked to synthetic outpatient attendance.
+Observations: oxygen saturation 98 percent on air, pulse 72.
+Assessment summary: Simulation summary for right wrist review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+",4a3b7dfd0042999beda66910fe39c28c253b69e8eeda0d7d4ca604da026ada71,53,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_08cd3963d9bd240ebd45406b,SYN-DOC-355045,,,document,pathology_report,,"This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from right wrist.
+Macroscopic description: mild simulated change in fictional specimen container.
+Microscopic description: Simulated cellular notes for pathology.
+Synthetic interpretation label: quality_checked.
+",fbf741163236c51a6a4c8af87045bef080d5b36e2a5c8fb5c090e2f3b8e385ab,38,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_3913509ede9dae0d0a58948c,SYN-DOC-494697,,,document,discharge_summary,,"This is a synthetic document for educational NLP testing only.
+Admission reason: fictional shortness of breath episode.
+Synthetic hospital-course summary: Monitored in fictional observation unit encounter.
+Recorded investigations: synthetic knee radiograph.
+Discharge status: quality_checked.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+",29f5de1b4c29b75b7e8903063845408ac9e48d4e498a26285a10cb69e5b66e65,44,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_cfad26fe2553fd663c791992,SYN-DOC-550005,,,document,clinical_note,,"This is a synthetic document for educational NLP testing only.
+Reason for attendance: synthetic joint swelling.
+Relevant history: Fictional history linked to fictional observation unit encounter.
+Observations: respiratory rate 16, oxygen saturation 97 percent on air.
+Assessment summary: Simulation summary for chest review.
+Plan recorded for simulation: Placeholder workflow note only; not clinical guidance.
+",12cb52718dcea64a5cd624596508f9f031e18f740f011de8941da8cf54214210,54,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_7f19678f64fd3e57e10882ae,SYN-DOC-808823,,,document,referral_letter,,"This is a synthetic document for educational NLP testing only.
+Referral reason: synthetic abdominal discomfort.
+Relevant synthetic history: simulated same-day assessment in portfolio fixture.
+Current concerns: Review of left knee with mild simulated change.
+Requested review: gastroenterology review for simulation workflow.
+Administrative priority label: routine_simulation.
+",0780f21f606dcf5f7bbce97b790823b15911088b70715c98e31e53257a2a5c42,46,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_fd67e5fe3d2bd6aaff2443b4,SYN-DOC-849532,,,document,pathology_report,,"This is a synthetic document for educational NLP testing only.
+Specimen type: synthetic specimen from head.
+Macroscopic description: stable fictional finding in fictional specimen container.
+Microscopic description: Simulated cellular notes for general medicine.
+Synthetic interpretation label: draft.
+",64efd2b548668dbbd8f8cd87a58f9ca6949eec1ef84d0f830573588386d408b4,37,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_c9148dc0f9b41ad6da5233be,SYN-DOC-863541,,,document,radiology_report,,"This is a synthetic document for educational NLP testing only.
+Study: fictional ultrasound abdomen.
+Synthetic indication: synthetic abdominal discomfort.
+Findings: mild simulated change involving left knee.
+Impression: Synthetic radiology-style report for fixture validation only.
+",c8fe7c01ad38553454a30c1026339f4551a9ccc9dd16dd77e11861b860d10e11,34,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_f273798191c0df6d73764acd,SYN-DOC-975651,,,document,radiology_report,,"This is a synthetic document for educational NLP testing only.
+Study: fictional ultrasound abdomen.
+Synthetic indication: synthetic abdominal discomfort.
+Findings: no focal simulated abnormality involving head.
+Impression: Synthetic radiology-style report for fixture validation only.
+",4d60f31a34c00589b86c9c0653933b1134a5fd2cdb4d0b61422435926f330880,34,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_56cca85b7899d2f9abb846df,SYN-DOC-993081,,,document,discharge_summary,,"This is a synthetic document for educational NLP testing only.
+Admission reason: fictional shortness of breath episode.
+Synthetic hospital-course summary: Monitored in synthetic outpatient attendance.
+Recorded investigations: simulated pathology panel.
+Discharge status: quality_checked.
+Follow-up placeholder: Follow-up placeholder for synthetic workflow tracking only.
+",43d90c4134e86a0f666f0ae33b11ffd7c49178b75a4fcb7fc2a2502dc7f43059,43,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_2a73e037b01d36de4fb4485b,SYN-DOC-004873,SEC_8fdea558cfea18b83962e15c,,section,clinical_note,assessment summary,"Simulation summary for left knee review.
+",fd8609fc0ffc281bdbd7e261ad9ce105a79be4c2b4dc69a0fd8b5c3d4263c6e2,6,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_4bbcea11f4bdd058b9620750,SYN-DOC-004873,SEC_eb0391ef0c2e4df95eafb87a,,section,clinical_note,observations,"respiratory rate 16, oxygen saturation 97 percent on air.
+",a801bf44072520ced2e290205a8cc170ec9f49252d35e9f749aab166922b1816,9,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_90edaafb69800f29b932219f,SYN-DOC-004873,SEC_c2e80713274d7cf6a86178b2,,section,clinical_note,plan recorded for simulation,"Placeholder workflow note only; not clinical guidance.
+",04f4649dde041536219c0c6ebe11461c78b68416a5d80f64d0addb4e9c555bd1,7,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_a92dca8b2663efe48195cf88,SYN-DOC-004873,SEC_b696548d15bc1549c035c786,,section,clinical_note,reason for attendance,"fictional shortness of breath episode.
+",496b43d994ff65730c08d452bdacff18dff908ab931263f4a5ddd1029ba5f94e,5,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_d5f96672b8614c324f459dbb,SYN-DOC-004873,SEC_b8a2471818cf1ae660751f41,,section,clinical_note,relevant history,"Fictional history linked to synthetic outpatient attendance.
+",aadef80dd31f01ae7f4c882077585b3ee3d9fbc46d66adee30684e13b784352b,7,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_1dfb7c270cca481bae7a9d33,SYN-DOC-043303,SEC_dd54bf43dcdf7638a7962bcc,,section,referral_letter,referral reason,"synthetic joint swelling.
+",3bf5cc758b02f40333ceb04912085d3e16e6989722a16c87e07477735f832c4f,3,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_2b68af7f0a16053716b4c34d,SYN-DOC-043303,SEC_3046a9cdec63d988dfe3226c,,section,referral_letter,relevant synthetic history,"simulated same-day assessment in portfolio fixture.
+",e558731bfa2376ef618ca5dcaadebdfbbb975a7ff30520f0fb69f4c8ff0cbf54,6,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_905d941a169e30d942bb5fbd,SYN-DOC-043303,SEC_cf73458712f9a62d38a27224,,section,referral_letter,administrative priority label,"workflow_queue_a.
+",d5f3efff8617afc40ab11b9eb4fbed6646ee907c485eedb8121e79f573adc977,3,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_ab88e2505ab7e96251a02671,SYN-DOC-043303,SEC_730c09405d6f755cb752ba4b,,section,referral_letter,current concerns,"Review of chest with no focal simulated abnormality.
+",970955260d3014a3c642c4c9a8d785b06605d261d74d3150d355d696029b9cf0,8,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_d1542145dd66d406b12c6667,SYN-DOC-043303,SEC_dfa7899f07228f4b2f103cc7,,section,referral_letter,requested review,"general medicine review for simulation workflow.
+",1f8384aa2729433a8ddf385412fb261108d713ca2ea1d7377c46b2a8a7cb0362,6,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_19608d454c11230fb720d6c4,SYN-DOC-121909,SEC_0bb07e0249dd9b3e4def472b,,section,discharge_summary,follow up placeholder,"Follow-up placeholder for synthetic workflow tracking only.
+",67f61a2619ed44beb1da389eb75890855a4643ac14363c6bfcb319ebeae0d7b1,7,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_55feadf8ae15c333127f6f74,SYN-DOC-121909,SEC_07bc300caae7b386fb52289f,,section,discharge_summary,admission reason,"synthetic joint swelling.
+",3bf5cc758b02f40333ceb04912085d3e16e6989722a16c87e07477735f832c4f,3,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_b10fc485d79f27a8436020cc,SYN-DOC-121909,SEC_5a719ce801d8e5c5e4b05161,,section,discharge_summary,synthetic hospital course summary,"Monitored in simulated same-day assessment.
+",ff6f7ac7d8ce61495390a7427e6717f7217220e34ac9a3889368bd02f261cd2a,5,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e609b6aa96d37d8dcd6e753b,SYN-DOC-121909,SEC_1c67bb71443387e28ad0ace6,,section,discharge_summary,recorded investigations,"simulated chest radiograph.
+",b6cfa23206415ed5f904f04160309f31888236129fc5cea304997a8e704506dc,3,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_f5149c89c8bee7f72584a21d,SYN-DOC-121909,SEC_62a9ff24868d99fcac5bd77a,,section,discharge_summary,discharge status,"draft.
+",4c2d6462620864db134a0615c178261fa522a21f6af4fa524247731bbd355517,1,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_2b6ff844036db81a1258a615,SYN-DOC-260561,SEC_4e79a8e9189ca26546de9a9a,,section,radiology_report,synthetic indication,"fictional shortness of breath episode.
+",496b43d994ff65730c08d452bdacff18dff908ab931263f4a5ddd1029ba5f94e,5,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_3987d03827d66e7a9ae1e230,SYN-DOC-260561,SEC_da19f613f76ecdeba4dc6673,,section,radiology_report,impression,"Synthetic radiology-style report for fixture validation only.
+",de3a544a5301159869534a5cf8e89a870c9c087d23f220cded9d0716f28df273,7,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_a8cc1e91b7e2760269f3c0d2,SYN-DOC-260561,SEC_b3d444e26c747b744e3e8392,,section,radiology_report,study,"simulated chest radiograph.
+",b6cfa23206415ed5f904f04160309f31888236129fc5cea304997a8e704506dc,3,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_c696f48546ada8459b0373b6,SYN-DOC-260561,SEC_b94d0943b049d94431c3bae8,,section,radiology_report,findings,"stable fictional finding involving abdomen.
+",cde9687180140b8bd0595fdb6ae73e1227a997f53e92d234c4e7fed110fe2cdf,5,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_201cf92571102dadf114bb2a,SYN-DOC-274035,SEC_2dbd401940f6c096d5581ec8,,section,referral_letter,administrative priority label,"routine_simulation.
+",928359573b6e097260651c61cb1962528b2f47a3ed46c9cec31c72097f2b2f3c,2,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_36d7f2c146f6652a428ed6f3,SYN-DOC-274035,SEC_63bf6fe72e05f2e3d2e364ac,,section,referral_letter,requested review,"general medicine review for simulation workflow.
+",1f8384aa2729433a8ddf385412fb261108d713ca2ea1d7377c46b2a8a7cb0362,6,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_81f1a41e21e3ace682c69a51,SYN-DOC-274035,SEC_4ecd7a7a7eabb9134d7985e0,,section,referral_letter,referral reason,"simulated headache review.
+",f4ebe00b87fb635475f853b734d0d5dd5f42b56a51de88599a359b030e78fde6,3,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_936b64de9cc0ff9edd6f9eda,SYN-DOC-274035,SEC_5f76a6ffcde9147cfc2ea56b,,section,referral_letter,current concerns,"Review of abdomen with stable fictional finding.
+",7689906a6d96641e5bddd73a2faf4c6cae6f4ea07fb08446ff8e8d835640f61f,7,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e3ca0c0e127df6a11dda46a0,SYN-DOC-274035,SEC_175323d4b3b5253c5f90d7d3,,section,referral_letter,relevant synthetic history,"fictional observation unit encounter in portfolio fixture.
+",47fae488254176ddb507dce6819c63369b984d72516c146b59e05480cf5e2024,7,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_0216bae1a3478460ab9a7d47,SYN-DOC-331779,SEC_7267da54d0f00af0e4ae274a,,section,pathology_report,microscopic description,"Simulated cellular notes for radiology.
+",906ca95ee47f64c88a10a0b211a649d2ff1ccb2a5f94725fc9eb5163923dd235,5,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_4c4bacbdaa5148988eb8d644,SYN-DOC-331779,SEC_ca0d83c5b42ce475fc4917a2,,section,pathology_report,synthetic interpretation label,"draft.
+",4c2d6462620864db134a0615c178261fa522a21f6af4fa524247731bbd355517,1,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e53e296545087d40b2da388e,SYN-DOC-331779,SEC_29930c51bdcb510ac8253310,,section,pathology_report,specimen type,"synthetic specimen from right wrist.
+",262164fba05656343aff8d70aa776cbf5f0969c2ef9b33ee8587630ca9008495,5,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_fa031dd13094121ec3faa41f,SYN-DOC-331779,SEC_cba0958c5d328fc251e9aa0f,,section,pathology_report,macroscopic description,"stable fictional finding in fictional specimen container.
+",e792a406ff04cc379da5861ee9ad43126eda6e87a840971dfd8d395313e95703,7,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_0652e458d5d8c2c03d09f46b,SYN-DOC-339753,SEC_104a1598785ceaea93e7723f,,section,clinical_note,observations,"oxygen saturation 98 percent on air, pulse 72.
+",075f67b3f6fad6576a857951738a8fd19e5313bc2b1faaac5bac1ac5ca051ca8,8,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_42885302c2bc751f965a7d01,SYN-DOC-339753,SEC_5cec6fbdb24556287c4247b7,,section,clinical_note,reason for attendance,"synthetic abdominal discomfort.
+",a0dc7f6f9dbdd4cb347ff0b26ce91cf1386f86c80791fd166e0e7b9408d52e75,3,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_66c17c69b36e8e691b20b31f,SYN-DOC-339753,SEC_29ce407838f4fd4da72d5f73,,section,clinical_note,assessment summary,"Simulation summary for right wrist review.
+",50eb997ed6a9bf3967e7ae5d68f1c2c14b68b0658b91a06b1665ef19e0c2f018,6,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e648de683edd94c1a55d0458,SYN-DOC-339753,SEC_b72fd9797e3c7641f59c1691,,section,clinical_note,relevant history,"Fictional history linked to synthetic outpatient attendance.
+",aadef80dd31f01ae7f4c882077585b3ee3d9fbc46d66adee30684e13b784352b,7,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_fcc7c2429bfae01936bb1e4a,SYN-DOC-339753,SEC_2bfa7b330f265892ff645fb5,,section,clinical_note,plan recorded for simulation,"Placeholder workflow note only; not clinical guidance.
+",04f4649dde041536219c0c6ebe11461c78b68416a5d80f64d0addb4e9c555bd1,7,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_2c5487afa3d82e822b7733a4,SYN-DOC-355045,SEC_0ffda8a9b76a05662c90335d,,section,pathology_report,specimen type,"synthetic specimen from right wrist.
+",262164fba05656343aff8d70aa776cbf5f0969c2ef9b33ee8587630ca9008495,5,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_5116d0f0a9e1540390843b58,SYN-DOC-355045,SEC_d617c1fc98b9791ab63ed4f3,,section,pathology_report,macroscopic description,"mild simulated change in fictional specimen container.
+",8af9981b190b1378dd742c06e647a5483d87cf229779184a38d3aba7e597e539,7,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_673d15195a62ec66b7159be2,SYN-DOC-355045,SEC_23905711a2be4e018ac8c361,,section,pathology_report,microscopic description,"Simulated cellular notes for pathology.
+",bf51ebc95b0147e204bba14a229e35cda36a9e3f3c118bbedc7a230e05644f09,5,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_7f900da20a54c91ab59d70db,SYN-DOC-355045,SEC_045080ae04696aa1e62bcc12,,section,pathology_report,synthetic interpretation label,"quality_checked.
+",324199aeb5d0fb04d09d7109f2c88a4fcc89311f716caa025124be0dc0bbda95,2,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_102851de8a53190e38de8fa2,SYN-DOC-494697,SEC_984a7d20004e787f9bca293e,,section,discharge_summary,discharge status,"quality_checked.
+",324199aeb5d0fb04d09d7109f2c88a4fcc89311f716caa025124be0dc0bbda95,2,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_1acbf44229fdc7eb4ce7d1f5,SYN-DOC-494697,SEC_4f20160bb80d53ad507f1627,,section,discharge_summary,admission reason,"fictional shortness of breath episode.
+",496b43d994ff65730c08d452bdacff18dff908ab931263f4a5ddd1029ba5f94e,5,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_7cad96fba66656442a267bd8,SYN-DOC-494697,SEC_7a7fd8d645fadb3a5a83c2b3,,section,discharge_summary,recorded investigations,"synthetic knee radiograph.
+",6610051183af98e6b9acb601e7831ac86d6c8c7101bcd4b484e57d04303e3014,3,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_a5f67d2ab376fb52c5ce408a,SYN-DOC-494697,SEC_ed35433613790aa066f1ca5c,,section,discharge_summary,synthetic hospital course summary,"Monitored in fictional observation unit encounter.
+",6eea7bf631d197acada0e985f598b90cee39b92baa5013d2e5f787de39c806df,6,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_f48fe7cbd41f26f4cb4192d7,SYN-DOC-494697,SEC_8af3e70810329c39483da7b9,,section,discharge_summary,follow up placeholder,"Follow-up placeholder for synthetic workflow tracking only.
+",67f61a2619ed44beb1da389eb75890855a4643ac14363c6bfcb319ebeae0d7b1,7,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_608c11ad41f5a75628d9bcbc,SYN-DOC-550005,SEC_1d9cb61a50c0a6f2f8626ad2,,section,clinical_note,assessment summary,"Simulation summary for chest review.
+",3b9bb96979b8003ec425b378bec8b609ee3ec2504c333eac48b3b054326ec321,5,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_8513d9d8158ef169d44f0719,SYN-DOC-550005,SEC_f8fe33bf373afd8abb35cb95,,section,clinical_note,observations,"respiratory rate 16, oxygen saturation 97 percent on air.
+",a801bf44072520ced2e290205a8cc170ec9f49252d35e9f749aab166922b1816,9,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_a59929efac36901cb6b10868,SYN-DOC-550005,SEC_8138862c8b26661beee9b81a,,section,clinical_note,relevant history,"Fictional history linked to fictional observation unit encounter.
+",63bc50c23f74596d751f99b8625bf29c7cb4e258f7d90adc30878f47234a2fdb,8,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_a61f54f11753e5acf39597b0,SYN-DOC-550005,SEC_8be0eec256895ba7bc67f605,,section,clinical_note,reason for attendance,"synthetic joint swelling.
+",3bf5cc758b02f40333ceb04912085d3e16e6989722a16c87e07477735f832c4f,3,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e46681d4cb2c1b06cddf52ca,SYN-DOC-550005,SEC_87ee687d6d71435b74f739f0,,section,clinical_note,plan recorded for simulation,"Placeholder workflow note only; not clinical guidance.
+",04f4649dde041536219c0c6ebe11461c78b68416a5d80f64d0addb4e9c555bd1,7,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_070e6ea6a90e463a088c21a8,SYN-DOC-808823,SEC_602a2f5284ea898d5ead5eba,,section,referral_letter,relevant synthetic history,"simulated same-day assessment in portfolio fixture.
+",e558731bfa2376ef618ca5dcaadebdfbbb975a7ff30520f0fb69f4c8ff0cbf54,6,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_4b0b5eaa63ec8cefd5497802,SYN-DOC-808823,SEC_5d79d78741cc3a964e054f10,,section,referral_letter,administrative priority label,"routine_simulation.
+",928359573b6e097260651c61cb1962528b2f47a3ed46c9cec31c72097f2b2f3c,2,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_810ab033fd15e23725606d1a,SYN-DOC-808823,SEC_615afd5f12677a9e79fcc21d,,section,referral_letter,requested review,"gastroenterology review for simulation workflow.
+",0cd1f095bb2f40b294aabce2e72e7f17729544e7157e6d772e64767117cf59f6,5,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e4611de1949bb1bdffcd8814,SYN-DOC-808823,SEC_237c6b6c1f71dce1cb1e06c3,,section,referral_letter,referral reason,"synthetic abdominal discomfort.
+",a0dc7f6f9dbdd4cb347ff0b26ce91cf1386f86c80791fd166e0e7b9408d52e75,3,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_f648211483c07721a91c7ed3,SYN-DOC-808823,SEC_40c2410f447e2bdce1a71a4d,,section,referral_letter,current concerns,"Review of left knee with mild simulated change.
+",9b15f01f18e219634299d3f50be7b2cec33c3d40f0295b604dcb585970526790,8,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_60349ad3b7b2029b848a243d,SYN-DOC-849532,SEC_bc20fa3017a91d04cd0d2b35,,section,pathology_report,synthetic interpretation label,"draft.
+",4c2d6462620864db134a0615c178261fa522a21f6af4fa524247731bbd355517,1,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_8df873759ca72f546e5533d4,SYN-DOC-849532,SEC_28a36c7962a3d1ac81157d65,,section,pathology_report,macroscopic description,"stable fictional finding in fictional specimen container.
+",e792a406ff04cc379da5861ee9ad43126eda6e87a840971dfd8d395313e95703,7,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_9505ede1081303086834570a,SYN-DOC-849532,SEC_ba40d09675bbdeb8e661cb78,,section,pathology_report,microscopic description,"Simulated cellular notes for general medicine.
+",23ebb0e826767b7b31d035ebf8c545dd950573763e72a790449d361ef5e24065,6,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_a7a37d2bffe1cc8f0eee90c7,SYN-DOC-849532,SEC_244c70510843e4aff6ab1b95,,section,pathology_report,specimen type,"synthetic specimen from head.
+",69ef69c6deb62ec3d4478f58bcc3878b8d2dfd4fede349c0f109b06753b65e05,4,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_76b904f208673f39d9416c21,SYN-DOC-863541,SEC_76caef079e131af4213cd15d,,section,radiology_report,impression,"Synthetic radiology-style report for fixture validation only.
+",de3a544a5301159869534a5cf8e89a870c9c087d23f220cded9d0716f28df273,7,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_8325f918e4587049f19162ea,SYN-DOC-863541,SEC_ca9fa90f3450fa00f3b328ec,,section,radiology_report,study,"fictional ultrasound abdomen.
+",240ecead808f6036ad57e1e7752156f03bf3faefd95be6c9fc2597ac89b9ed43,3,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_beee101aba5021b880e12645,SYN-DOC-863541,SEC_41231244b0c6cc1689ddb4cd,,section,radiology_report,synthetic indication,"synthetic abdominal discomfort.
+",a0dc7f6f9dbdd4cb347ff0b26ce91cf1386f86c80791fd166e0e7b9408d52e75,3,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_f62647c8a7380281a6af9477,SYN-DOC-863541,SEC_5f836dc9b7c8193f8cd4780b,,section,radiology_report,findings,"mild simulated change involving left knee.
+",efe3b1cb52f070c637688d27e049ea95a8b290bc0a93efcea5a7d9bf6314c4f2,6,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_71467ac019e9e9aa110e753b,SYN-DOC-975651,SEC_e2705dcd579e97d06b7eed8f,,section,radiology_report,study,"fictional ultrasound abdomen.
+",240ecead808f6036ad57e1e7752156f03bf3faefd95be6c9fc2597ac89b9ed43,3,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_83ea840a854bd13f7e550910,SYN-DOC-975651,SEC_eb24b698bad90921d1f17fe1,,section,radiology_report,findings,"no focal simulated abnormality involving head.
+",38d507b34e7f3f476639a10b178464be58b04862b40499cea3930b21f2afe76c,6,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_8ad02be6fce95ac62b3eb322,SYN-DOC-975651,SEC_db8f1029c7a4a6aa24a3553a,,section,radiology_report,impression,"Synthetic radiology-style report for fixture validation only.
+",de3a544a5301159869534a5cf8e89a870c9c087d23f220cded9d0716f28df273,7,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_b0fb99661bc645cbcc9dba27,SYN-DOC-975651,SEC_9dfc53f67f8bb5496b3b644a,,section,radiology_report,synthetic indication,"synthetic abdominal discomfort.
+",a0dc7f6f9dbdd4cb347ff0b26ce91cf1386f86c80791fd166e0e7b9408d52e75,3,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_096f2feb4aa7c52ad2bd5506,SYN-DOC-993081,SEC_4471b88890022a1438dc0913,,section,discharge_summary,synthetic hospital course summary,"Monitored in synthetic outpatient attendance.
+",7fddc1f0f9fa72af81c74d696c0570e13ed52b36b8f5279008a7fe68dd1acd33,5,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_274b2da043e398cdbb4eb24d,SYN-DOC-993081,SEC_4e74840564df5db988ddb973,,section,discharge_summary,follow up placeholder,"Follow-up placeholder for synthetic workflow tracking only.
+",67f61a2619ed44beb1da389eb75890855a4643ac14363c6bfcb319ebeae0d7b1,7,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_5d611577d1cb9d3cdf157efe,SYN-DOC-993081,SEC_5eafc24095b8e599ad5afa20,,section,discharge_summary,recorded investigations,"simulated pathology panel.
+",d4cfe009fc54936cc85cc70d31fa1a93fe11b336ad16c11bf338349b95aa110f,3,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_89794d7ca5f3aa3694858fb8,SYN-DOC-993081,SEC_034d3674823eb3305067324e,,section,discharge_summary,admission reason,"fictional shortness of breath episode.
+",496b43d994ff65730c08d452bdacff18dff908ab931263f4a5ddd1029ba5f94e,5,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_c92066b9c5928af0bb3c3418,SYN-DOC-993081,SEC_04c9d86764060c3c54659b34,,section,discharge_summary,discharge status,"quality_checked.
+",324199aeb5d0fb04d09d7109f2c88a4fcc89311f716caa025124be0dc0bbda95,2,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_08b0679bfd55e6f714ed0e61,SYN-DOC-004873,SEC_eb0391ef0c2e4df95eafb87a,SENT_2bf9163eeded0ee2fab276ac,sentence,clinical_note,observations,"respiratory rate 16, oxygen saturation 97 percent on air.",9a6cb09cb45e0bcd71168aff21df080fce810a3caee619f136bd879ca1a5d6fa,9,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_3d0983e0ef2e341ee0015d2b,SYN-DOC-004873,SEC_b8a2471818cf1ae660751f41,SENT_17f6327a12551c34abf57355,sentence,clinical_note,relevant history,Fictional history linked to synthetic outpatient attendance.,8c1d5409fb1602db98bcfd213964b912b9077dfe056b174f29b93666b8ad2928,7,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_459a10e3a519e786587f13ce,SYN-DOC-004873,SEC_b696548d15bc1549c035c786,SENT_07fa549d3ad594be89d77cd1,sentence,clinical_note,reason for attendance,fictional shortness of breath episode.,b07aa4313fd2d048bd21700a625f1c04c9c7418180a8744e7a22f427838a9f50,5,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_647b2ab68047b2a1a4f43071,SYN-DOC-004873,SEC_8fdea558cfea18b83962e15c,SENT_d55145a074272a96b54e2296,sentence,clinical_note,assessment summary,Simulation summary for left knee review.,95dd6f84cba5c578db7e0f7a3fd23cb40a8444ad715c5cc3dd8d4cd50736afb2,6,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_fcc895eba0826f47fcfec422,SYN-DOC-004873,SEC_c2e80713274d7cf6a86178b2,SENT_458d584f06b903278d9a3d50,sentence,clinical_note,plan recorded for simulation,Placeholder workflow note only; not clinical guidance.,f6a8fc9d5b5aa528b604aea0c6936cddf7d5ef13bd2828339cb0d6e2c6d4d271,7,SYN-SUBJ-163947,SYN-ENC-672374,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_12d9f11392a14dfe8290adcf,SYN-DOC-043303,SEC_dd54bf43dcdf7638a7962bcc,SENT_eadd868e200b4c502b23baa2,sentence,referral_letter,referral reason,synthetic joint swelling.,16ee973a403e5bd03cf86360448efec9d4e4595024da8678ed655d083dbdb76e,3,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_7c21ba87cde227a1f8a83bae,SYN-DOC-043303,SEC_dfa7899f07228f4b2f103cc7,SENT_74814a317e9406233c3cf8b1,sentence,referral_letter,requested review,general medicine review for simulation workflow.,96c3884c36a51320b93f57af121a8cb18566e3f696f022ba280a5760cd17497c,6,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_bb0ce3ed3520af124b9a056a,SYN-DOC-043303,SEC_3046a9cdec63d988dfe3226c,SENT_2d1fc417dbd73ab62f326d7d,sentence,referral_letter,relevant synthetic history,simulated same-day assessment in portfolio fixture.,2e517411b0dff38508df949137e49a1a51e9b6241d2ab650e9c6931348cc70ad,6,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_c27d2dcb8b18efb2b983a3cb,SYN-DOC-043303,SEC_cf73458712f9a62d38a27224,SENT_ae53d188bc46a6823d2e7f97,sentence,referral_letter,administrative priority label,workflow_queue_a.,1558e4aaabbb7cfe42feb4c05e9d6283be51f367875e73b97266b3375741f17e,3,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_dd9b136b03706f48ba033bca,SYN-DOC-043303,SEC_730c09405d6f755cb752ba4b,SENT_8e45fa5c0310b888b96c5832,sentence,referral_letter,current concerns,Review of chest with no focal simulated abnormality.,d446d9d7d5997f3bdca7aef7732ca6ca5c8ecc6ccf75e8cbad5de56096998a54,8,SYN-SUBJ-511700,SYN-ENC-205548,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_06a06abfdc16cc290e585782,SYN-DOC-121909,SEC_1c67bb71443387e28ad0ace6,SENT_3447f0198429a5a25c2dfdc9,sentence,discharge_summary,recorded investigations,simulated chest radiograph.,6651948ef048e31a530d5ecd4498e64446666204d3d419ffbe6511e74651c77a,3,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_163d8eceaa6495e63ba47a55,SYN-DOC-121909,SEC_0bb07e0249dd9b3e4def472b,SENT_01536bebe51f494acdfe840a,sentence,discharge_summary,follow up placeholder,Follow-up placeholder for synthetic workflow tracking only.,eca7296da9fdadf0de2840d1fc020b3170aeb06fc0129c219c5c5cec27b115f9,7,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_b4dbbabf7887a9833348d1df,SYN-DOC-121909,SEC_62a9ff24868d99fcac5bd77a,SENT_416c2dd87dcfd1a34cceb36a,sentence,discharge_summary,discharge status,draft.,e11f9d1217ba4bcf442bec46c1b5fc354c1c70a5299b16b8379a907a65b7b283,1,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_db0ceacb5c96629d4e3f80e3,SYN-DOC-121909,SEC_07bc300caae7b386fb52289f,SENT_b9e4793d41016eb78d26b418,sentence,discharge_summary,admission reason,synthetic joint swelling.,16ee973a403e5bd03cf86360448efec9d4e4595024da8678ed655d083dbdb76e,3,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e3193865ba3e3c3ce947203b,SYN-DOC-121909,SEC_5a719ce801d8e5c5e4b05161,SENT_308c39105fa15e3d0ebcc11a,sentence,discharge_summary,synthetic hospital course summary,Monitored in simulated same-day assessment.,0b9a6408a51e68327f1faff89093c49db40637e09c29d31e7d1342c9a48dceb0,5,SYN-SUBJ-626233,SYN-ENC-380616,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_4e114401324e52513021bb99,SYN-DOC-260561,SEC_da19f613f76ecdeba4dc6673,SENT_26105c0f9d0f261fd8b892d4,sentence,radiology_report,impression,Synthetic radiology-style report for fixture validation only.,de5978dafcdf322524319d65bb02ad71e1d21ec8a3b6b23debfe01a48d742f6b,7,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_5140e1531ed72664d085d282,SYN-DOC-260561,SEC_4e79a8e9189ca26546de9a9a,SENT_66d4d0ed485a834fbd340b6a,sentence,radiology_report,synthetic indication,fictional shortness of breath episode.,b07aa4313fd2d048bd21700a625f1c04c9c7418180a8744e7a22f427838a9f50,5,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_7376cd02c62b73f3bbcf2455,SYN-DOC-260561,SEC_b94d0943b049d94431c3bae8,SENT_f159f2b4b278b1b7a11d3452,sentence,radiology_report,findings,stable fictional finding involving abdomen.,a8448de988118d83ee52e3f74650169eb36679dcf4050479dd02cc79b69bd8f7,5,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_92d4f7396fa3ce3191247381,SYN-DOC-260561,SEC_b3d444e26c747b744e3e8392,SENT_9e24747654347791a8e0ee38,sentence,radiology_report,study,simulated chest radiograph.,6651948ef048e31a530d5ecd4498e64446666204d3d419ffbe6511e74651c77a,3,SYN-SUBJ-864331,SYN-ENC-430487,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_12fee9598151b3f128924b2f,SYN-DOC-274035,SEC_63bf6fe72e05f2e3d2e364ac,SENT_14d022c84d19d190b9fe1694,sentence,referral_letter,requested review,general medicine review for simulation workflow.,96c3884c36a51320b93f57af121a8cb18566e3f696f022ba280a5760cd17497c,6,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_16b9165497485bbf4fad4d2c,SYN-DOC-274035,SEC_4ecd7a7a7eabb9134d7985e0,SENT_3088c48eab3751f87f40849a,sentence,referral_letter,referral reason,simulated headache review.,335270bb4b3acc8e761244fc30e0b26cda0018f59be3762c313513b59f29d6a3,3,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_40b14195611496bdf5bbabce,SYN-DOC-274035,SEC_175323d4b3b5253c5f90d7d3,SENT_27f3801d44e22f3aae569ccc,sentence,referral_letter,relevant synthetic history,fictional observation unit encounter in portfolio fixture.,5fdc9b290f1e456ce0de292c61ffaa3dc80c6cd4b0152e64c9f28db38f129a86,7,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_5360ef4a84f7b077db4ea69e,SYN-DOC-274035,SEC_5f76a6ffcde9147cfc2ea56b,SENT_4aefa95ac6de0ba188ffb09e,sentence,referral_letter,current concerns,Review of abdomen with stable fictional finding.,725356fbe1afd4ba892aa08c79c96a20673df59ff4d4b4f97822bb934076ea86,7,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_8246ceb7fa14919038e5c7e3,SYN-DOC-274035,SEC_2dbd401940f6c096d5581ec8,SENT_b5aa3cfc1d9f2f340b2ad220,sentence,referral_letter,administrative priority label,routine_simulation.,d3121bb6198a98bed5fd988f78f8ec77caaccd0fb0de5dac9b7e61635d6bc9e4,2,SYN-SUBJ-329386,SYN-ENC-447819,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_13443efcd35b2afd27f755dc,SYN-DOC-331779,SEC_7267da54d0f00af0e4ae274a,SENT_be7dcf9367fd51da0aa37c53,sentence,pathology_report,microscopic description,Simulated cellular notes for radiology.,beefc9a7faffda1536f2cae46941fa64e73e0f45336aa0389c42d8706e070fcb,5,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_6ae560b3d7c13147081a76e5,SYN-DOC-331779,SEC_cba0958c5d328fc251e9aa0f,SENT_37f2b4daf744f970b89cf3c6,sentence,pathology_report,macroscopic description,stable fictional finding in fictional specimen container.,19ab4884ecfd5ae150689e2378be47e3aaa67604f66acbafed886ced83d269b1,7,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_6fe5a5bee0d1e24d61e9d276,SYN-DOC-331779,SEC_29930c51bdcb510ac8253310,SENT_5c3fa244b607f58c67af7bb5,sentence,pathology_report,specimen type,synthetic specimen from right wrist.,cd4b5cf6508a8ca4c99fc8417b757c2b469a5a57d04551946c91ecd8619e138f,5,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_9ec872bd65eb3c230de61116,SYN-DOC-331779,SEC_ca0d83c5b42ce475fc4917a2,SENT_a643d9c3b9c4d2f9faef98f9,sentence,pathology_report,synthetic interpretation label,draft.,e11f9d1217ba4bcf442bec46c1b5fc354c1c70a5299b16b8379a907a65b7b283,1,SYN-SUBJ-679968,SYN-ENC-835115,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_1cb9deaacaa736b6fab09cca,SYN-DOC-339753,SEC_5cec6fbdb24556287c4247b7,SENT_c3ef32ecd1ee8eeecb9ea408,sentence,clinical_note,reason for attendance,synthetic abdominal discomfort.,daf3fba83680e9bcf2aa8a2c7386c385c6a1fa0e728321f40d5080cb91dd1d1f,3,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_3000f10811d5a749ec5e2555,SYN-DOC-339753,SEC_b72fd9797e3c7641f59c1691,SENT_35271b6541662e5ae5744d89,sentence,clinical_note,relevant history,Fictional history linked to synthetic outpatient attendance.,8c1d5409fb1602db98bcfd213964b912b9077dfe056b174f29b93666b8ad2928,7,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_9b98f664fc08c70fef7e12a9,SYN-DOC-339753,SEC_104a1598785ceaea93e7723f,SENT_a256daeb1c254f2e446a754e,sentence,clinical_note,observations,"oxygen saturation 98 percent on air, pulse 72.",cb00e0c883c2a4beb2822b06baff5fa74e7583768c708fdbb857fc2aa618b314,8,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_b2e4dc4578baca6829f4926f,SYN-DOC-339753,SEC_2bfa7b330f265892ff645fb5,SENT_879788fc7a99d4b70dfd576a,sentence,clinical_note,plan recorded for simulation,Placeholder workflow note only; not clinical guidance.,f6a8fc9d5b5aa528b604aea0c6936cddf7d5ef13bd2828339cb0d6e2c6d4d271,7,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_bca0fc6a8ad90d2e405cc71f,SYN-DOC-339753,SEC_29ce407838f4fd4da72d5f73,SENT_d901a5abddd5733d028b07df,sentence,clinical_note,assessment summary,Simulation summary for right wrist review.,7c33bcfc05124dbd4af89a95815cf87983b652822d746007e5fb4cc02108b59a,6,SYN-SUBJ-893610,SYN-ENC-848998,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_04e4389217c25f471b282195,SYN-DOC-355045,SEC_23905711a2be4e018ac8c361,SENT_50eb5dc0318ea8936e669918,sentence,pathology_report,microscopic description,Simulated cellular notes for pathology.,317dbb8962ba9d11758ed7cb1f64b4de16ce40a973caf404cfbe79794215e125,5,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_3ddbc7e5fbd225d1bd235ad4,SYN-DOC-355045,SEC_045080ae04696aa1e62bcc12,SENT_30ad575b9f2841de769c5f05,sentence,pathology_report,synthetic interpretation label,quality_checked.,48c77f791a6774009cb6a037e8ca3f30f2ef7bed1edd21830289ac825706ef6b,2,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_d845a7900d294dc77ade89e7,SYN-DOC-355045,SEC_d617c1fc98b9791ab63ed4f3,SENT_356b97e4378fc1436b402e05,sentence,pathology_report,macroscopic description,mild simulated change in fictional specimen container.,9d17e2092a2907beb1af12920eca413368ce7e19d1fce4351635d56cee196da4,7,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_f40c2ff35a56a07c7e3732a0,SYN-DOC-355045,SEC_0ffda8a9b76a05662c90335d,SENT_d997758777c501159a880ada,sentence,pathology_report,specimen type,synthetic specimen from right wrist.,cd4b5cf6508a8ca4c99fc8417b757c2b469a5a57d04551946c91ecd8619e138f,5,SYN-SUBJ-219885,SYN-ENC-685707,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_5506785ee5a584b3e1331dbb,SYN-DOC-494697,SEC_4f20160bb80d53ad507f1627,SENT_5cb7e5c05dce116399401236,sentence,discharge_summary,admission reason,fictional shortness of breath episode.,b07aa4313fd2d048bd21700a625f1c04c9c7418180a8744e7a22f427838a9f50,5,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_80a5a3c4906ffc334bd90e70,SYN-DOC-494697,SEC_7a7fd8d645fadb3a5a83c2b3,SENT_bebb57f60e4be769b73b2076,sentence,discharge_summary,recorded investigations,synthetic knee radiograph.,1a9af33acd97369b61dc80cd4183d447c38162dddb8b9a79141f43abec8a81d6,3,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_85e2f4b6ad1e16fc6fe2c4ad,SYN-DOC-494697,SEC_ed35433613790aa066f1ca5c,SENT_8289805ecc916fc9f895c983,sentence,discharge_summary,synthetic hospital course summary,Monitored in fictional observation unit encounter.,a8874e7b3c338ef18b70a14fa2891fa1de9af7293425cb96a04d83e2354544e8,6,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_a76ab23ae0f81141cf198fd2,SYN-DOC-494697,SEC_8af3e70810329c39483da7b9,SENT_c39a55f4b33ad7bd0c56a913,sentence,discharge_summary,follow up placeholder,Follow-up placeholder for synthetic workflow tracking only.,eca7296da9fdadf0de2840d1fc020b3170aeb06fc0129c219c5c5cec27b115f9,7,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_dd27f2e97d24ffd69c17405b,SYN-DOC-494697,SEC_984a7d20004e787f9bca293e,SENT_f7803b3146c215bbaf2f464d,sentence,discharge_summary,discharge status,quality_checked.,48c77f791a6774009cb6a037e8ca3f30f2ef7bed1edd21830289ac825706ef6b,2,SYN-SUBJ-725581,SYN-ENC-500947,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_1806a92dfb04691ea464a59e,SYN-DOC-550005,SEC_8be0eec256895ba7bc67f605,SENT_fa1f16004c4768d7530d7c92,sentence,clinical_note,reason for attendance,synthetic joint swelling.,16ee973a403e5bd03cf86360448efec9d4e4595024da8678ed655d083dbdb76e,3,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_8b8d53f96232d08ef97ec8ee,SYN-DOC-550005,SEC_f8fe33bf373afd8abb35cb95,SENT_5e164f7d113ba91ef965def0,sentence,clinical_note,observations,"respiratory rate 16, oxygen saturation 97 percent on air.",9a6cb09cb45e0bcd71168aff21df080fce810a3caee619f136bd879ca1a5d6fa,9,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_93641b1b83935315bbb1db83,SYN-DOC-550005,SEC_1d9cb61a50c0a6f2f8626ad2,SENT_fb2bdd06ba59bd2de81cef11,sentence,clinical_note,assessment summary,Simulation summary for chest review.,edfd2f244470124f683b31c3461d8e85999879934d03d9565a0c7934537bd1b1,5,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_ba8327c002d451c812fa67fa,SYN-DOC-550005,SEC_8138862c8b26661beee9b81a,SENT_ff8cd3075787d115033c6bfe,sentence,clinical_note,relevant history,Fictional history linked to fictional observation unit encounter.,a46b37a149b381a6c9ca479c266e56addcd14243d9578ba52baed8fa29412663,8,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_bc3b4668fafbe9df392986ef,SYN-DOC-550005,SEC_87ee687d6d71435b74f739f0,SENT_bb87ac9547025fea89ad3699,sentence,clinical_note,plan recorded for simulation,Placeholder workflow note only; not clinical guidance.,f6a8fc9d5b5aa528b604aea0c6936cddf7d5ef13bd2828339cb0d6e2c6d4d271,7,SYN-SUBJ-308360,SYN-ENC-445530,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_16c79bed213f30b46291587e,SYN-DOC-808823,SEC_237c6b6c1f71dce1cb1e06c3,SENT_ff4869f52f8e68f8d928caa7,sentence,referral_letter,referral reason,synthetic abdominal discomfort.,daf3fba83680e9bcf2aa8a2c7386c385c6a1fa0e728321f40d5080cb91dd1d1f,3,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_2bf7d9d870d24741dc625507,SYN-DOC-808823,SEC_615afd5f12677a9e79fcc21d,SENT_06d40e2fe043d0e2478ee263,sentence,referral_letter,requested review,gastroenterology review for simulation workflow.,a977ed1c0db14f92160484b0f634c23f9059b4b0ad6e988e499ae91bd3a86de3,5,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_58b6267284d9160654bea0f0,SYN-DOC-808823,SEC_602a2f5284ea898d5ead5eba,SENT_2c4f1dfeb947e543062a7912,sentence,referral_letter,relevant synthetic history,simulated same-day assessment in portfolio fixture.,2e517411b0dff38508df949137e49a1a51e9b6241d2ab650e9c6931348cc70ad,6,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e01c13fa90e2eac0785be198,SYN-DOC-808823,SEC_5d79d78741cc3a964e054f10,SENT_c3802cd86050a3709275e0df,sentence,referral_letter,administrative priority label,routine_simulation.,d3121bb6198a98bed5fd988f78f8ec77caaccd0fb0de5dac9b7e61635d6bc9e4,2,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_e8cf369dae9e37898a0c839e,SYN-DOC-808823,SEC_40c2410f447e2bdce1a71a4d,SENT_1fa227a4f799f72e4dac8c0c,sentence,referral_letter,current concerns,Review of left knee with mild simulated change.,f2063bc043126f50849f32d4a14850c7e5a3047f98c509fc30ebfbd87d171d23,8,SYN-SUBJ-369489,SYN-ENC-005147,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_1a5ac9ac5742e14fd0042c41,SYN-DOC-849532,SEC_28a36c7962a3d1ac81157d65,SENT_94cb5d4003872484fcc17388,sentence,pathology_report,macroscopic description,stable fictional finding in fictional specimen container.,19ab4884ecfd5ae150689e2378be47e3aaa67604f66acbafed886ced83d269b1,7,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_41a116ce2f5c438cd76082eb,SYN-DOC-849532,SEC_244c70510843e4aff6ab1b95,SENT_a36ba310b6eb451d9a22153b,sentence,pathology_report,specimen type,synthetic specimen from head.,7d68f4b2c7e941f8742cadd0fa9d779f5ac386ea81646d7580ce49ad6addc98d,4,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_803123be6af98f8b46ce7292,SYN-DOC-849532,SEC_bc20fa3017a91d04cd0d2b35,SENT_deb8dda9324027234dcdfb5f,sentence,pathology_report,synthetic interpretation label,draft.,e11f9d1217ba4bcf442bec46c1b5fc354c1c70a5299b16b8379a907a65b7b283,1,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_9f86281ffe1462e705f03bc3,SYN-DOC-849532,SEC_ba40d09675bbdeb8e661cb78,SENT_84c1dffcd9d26772c62c16e4,sentence,pathology_report,microscopic description,Simulated cellular notes for general medicine.,14b3f0afe542b992609369c1923f1fe7271c583833ba9f38e769a65282cfaea7,6,SYN-SUBJ-122325,SYN-ENC-829005,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_12e4557f9805a610596b73c8,SYN-DOC-863541,SEC_5f836dc9b7c8193f8cd4780b,SENT_9cd374ff9dbe6e8be21e0cd6,sentence,radiology_report,findings,mild simulated change involving left knee.,fd3ceeb27e5d0c70690c7fce1c3d569f8516665137c364ad9fcd45dd19905cdc,6,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_7cc52afcaf9f7f9aba4968ec,SYN-DOC-863541,SEC_41231244b0c6cc1689ddb4cd,SENT_e7800b5a99c3effb5437d942,sentence,radiology_report,synthetic indication,synthetic abdominal discomfort.,daf3fba83680e9bcf2aa8a2c7386c385c6a1fa0e728321f40d5080cb91dd1d1f,3,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_cabaaf006c15e2437efa6fee,SYN-DOC-863541,SEC_ca9fa90f3450fa00f3b328ec,SENT_fd8a067fcd50094025cf2be4,sentence,radiology_report,study,fictional ultrasound abdomen.,48cdcbe65f7a50b19092e3411d6da79b6ba3212de2fa0f44378d6483ce8b6837,3,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_cb43aa9159a72e74d7772063,SYN-DOC-863541,SEC_76caef079e131af4213cd15d,SENT_cee777fd46c0e01ab1f1368d,sentence,radiology_report,impression,Synthetic radiology-style report for fixture validation only.,de5978dafcdf322524319d65bb02ad71e1d21ec8a3b6b23debfe01a48d742f6b,7,SYN-SUBJ-698864,SYN-ENC-889065,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_324030132c07651dc0d3eed5,SYN-DOC-975651,SEC_e2705dcd579e97d06b7eed8f,SENT_00bea352b72e54ab300ea82a,sentence,radiology_report,study,fictional ultrasound abdomen.,48cdcbe65f7a50b19092e3411d6da79b6ba3212de2fa0f44378d6483ce8b6837,3,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_51398ebf61a07c6eddd4b5f0,SYN-DOC-975651,SEC_eb24b698bad90921d1f17fe1,SENT_6c21e74d7b7c4ab1fbafc8a0,sentence,radiology_report,findings,no focal simulated abnormality involving head.,2701c7a357e03098ede6d65fe0530029868e194d3b1584de8ad05245b98206cf,6,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_9b91bbfd4f04907623877351,SYN-DOC-975651,SEC_db8f1029c7a4a6aa24a3553a,SENT_d2db433caf57d2ff6d4dfd71,sentence,radiology_report,impression,Synthetic radiology-style report for fixture validation only.,de5978dafcdf322524319d65bb02ad71e1d21ec8a3b6b23debfe01a48d742f6b,7,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_f9f23604cdbb92a024076825,SYN-DOC-975651,SEC_9dfc53f67f8bb5496b3b644a,SENT_1af11c37da8ec9ea4f22aee2,sentence,radiology_report,synthetic indication,synthetic abdominal discomfort.,daf3fba83680e9bcf2aa8a2c7386c385c6a1fa0e728321f40d5080cb91dd1d1f,3,SYN-SUBJ-676896,SYN-ENC-663320,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_4813267d82104e74f4c10777,SYN-DOC-993081,SEC_4e74840564df5db988ddb973,SENT_3a768547523d4134d8e83445,sentence,discharge_summary,follow up placeholder,Follow-up placeholder for synthetic workflow tracking only.,eca7296da9fdadf0de2840d1fc020b3170aeb06fc0129c219c5c5cec27b115f9,7,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_899541189d4a9bcc254b3729,SYN-DOC-993081,SEC_5eafc24095b8e599ad5afa20,SENT_5f6f41f2137bcfec75f8ad72,sentence,discharge_summary,recorded investigations,simulated pathology panel.,b30eeee762b4f4a078680b9d618909adc8a2cac69d18e092c9546805a401ca73,3,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_ab1bf7ba093bc4ad13a2ac15,SYN-DOC-993081,SEC_034d3674823eb3305067324e,SENT_acb7b939407cb19928bc1f90,sentence,discharge_summary,admission reason,fictional shortness of breath episode.,b07aa4313fd2d048bd21700a625f1c04c9c7418180a8744e7a22f427838a9f50,5,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_bb5cfcf09e630234ffe2413b,SYN-DOC-993081,SEC_4471b88890022a1438dc0913,SENT_3a685dd5762ff3d0c323d1f2,sentence,discharge_summary,synthetic hospital course summary,Monitored in synthetic outpatient attendance.,af543ee9b8853e01dacfe31ef143ea027b116692e697f9cf6a9ec6bfc437bba2,5,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0
+RU_c637d36d6bdfd8a384add374,SYN-DOC-993081,SEC_04c9d86764060c3c54659b34,SENT_237bef0167a1691045630cf2,sentence,discharge_summary,discharge status,quality_checked.,48c77f791a6774009cb6a037e8ca3f30f2ef7bed1edd21830289ac825706ef6b,2,SYN-SUBJ-387352,SYN-ENC-837600,PRE-72e9829c61769cea948faacc,EXT-723871c87dfd1f3a3bb89b8d,1.0.0

@@ -1,0 +1,8 @@
+{
+  "layer": "gold",
+  "tables": [
+    "gold_preprocessing_summary",
+    "gold_document_type_metrics",
+    "gold_quality_metrics"
+  ]
+}

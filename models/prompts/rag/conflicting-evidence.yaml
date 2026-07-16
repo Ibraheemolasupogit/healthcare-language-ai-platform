@@ -1,0 +1,25 @@
+prompt_id: conflicting-evidence
+prompt_version: 1.0.0
+purpose: conflicting_evidence
+allowed_input_fields:
+- query
+- retrieval_status
+- evidence_units
+- safety_classification
+required_output_fields:
+- answer_status
+- answer_text
+- claims
+- citations
+citation_format: '[E<number>]'
+refusal_rules:
+- refuse unsupported clinical requests
+- refuse retrieval abstention
+prohibited_content:
+- diagnosis
+- treatment advice
+- medication advice
+- patient-specific medical advice
+maximum_context_size: 6000
+maximum_answer_size: 900
+safety_disclaimer: Synthetic portfolio prototype only; not for clinical use.

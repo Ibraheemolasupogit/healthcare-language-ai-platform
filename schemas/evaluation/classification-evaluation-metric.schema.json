@@ -1,0 +1,71 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "accuracy": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Accuracy",
+      "type": "number"
+    },
+    "class_label": {
+      "title": "Class Label",
+      "type": "string"
+    },
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "f1": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "F1",
+      "type": "number"
+    },
+    "false_negative_count": {
+      "minimum": 0,
+      "title": "False Negative Count",
+      "type": "integer"
+    },
+    "false_positive_count": {
+      "minimum": 0,
+      "title": "False Positive Count",
+      "type": "integer"
+    },
+    "precision": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Precision",
+      "type": "number"
+    },
+    "recall": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Recall",
+      "type": "number"
+    },
+    "support": {
+      "minimum": 0,
+      "title": "Support",
+      "type": "integer"
+    },
+    "true_positive_count": {
+      "minimum": 0,
+      "title": "True Positive Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "class_label",
+    "true_positive_count",
+    "false_positive_count",
+    "false_negative_count",
+    "precision",
+    "recall",
+    "f1",
+    "support",
+    "accuracy",
+    "evaluation_run_id"
+  ],
+  "title": "ClassificationEvaluationMetric",
+  "type": "object"
+}

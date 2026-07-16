@@ -1,0 +1,136 @@
+{
+  "$defs": {
+    "ReleaseGateResult": {
+      "properties": {
+        "evidence": {
+          "title": "Evidence",
+          "type": "string"
+        },
+        "gate_id": {
+          "title": "Gate Id",
+          "type": "string"
+        },
+        "message": {
+          "default": "",
+          "title": "Message",
+          "type": "string"
+        },
+        "required": {
+          "title": "Required",
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "passed",
+            "warning",
+            "failed",
+            "not_applicable"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "gate_id",
+        "required",
+        "status",
+        "evidence"
+      ],
+      "title": "ReleaseGateResult",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "clinically_validated": {
+      "default": false,
+      "title": "Clinically Validated",
+      "type": "boolean"
+    },
+    "cloud_deployed": {
+      "default": false,
+      "title": "Cloud Deployed",
+      "type": "boolean"
+    },
+    "conditional_gate_count": {
+      "title": "Conditional Gate Count",
+      "type": "integer"
+    },
+    "coverage": {
+      "title": "Coverage",
+      "type": "number"
+    },
+    "failed_required_gates": {
+      "title": "Failed Required Gates",
+      "type": "integer"
+    },
+    "gates": {
+      "items": {
+        "$ref": "#/$defs/ReleaseGateResult"
+      },
+      "title": "Gates",
+      "type": "array"
+    },
+    "output_checksum_status": {
+      "default": "passed",
+      "enum": [
+        "passed",
+        "failed"
+      ],
+      "title": "Output Checksum Status",
+      "type": "string"
+    },
+    "passed_required_gates": {
+      "title": "Passed Required Gates",
+      "type": "integer"
+    },
+    "production_ready": {
+      "default": false,
+      "title": "Production Ready",
+      "type": "boolean"
+    },
+    "ready_for_portfolio_release": {
+      "title": "Ready For Portfolio Release",
+      "type": "boolean"
+    },
+    "release_readiness_run_id": {
+      "title": "Release Readiness Run Id",
+      "type": "string"
+    },
+    "release_readiness_status": {
+      "enum": [
+        "ready_for_portfolio_release",
+        "conditionally_ready",
+        "not_ready"
+      ],
+      "title": "Release Readiness Status",
+      "type": "string"
+    },
+    "release_readiness_version": {
+      "default": "1.0.0",
+      "title": "Release Readiness Version",
+      "type": "string"
+    },
+    "required_gate_count": {
+      "title": "Required Gate Count",
+      "type": "integer"
+    },
+    "test_count": {
+      "title": "Test Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "release_readiness_run_id",
+    "required_gate_count",
+    "passed_required_gates",
+    "failed_required_gates",
+    "conditional_gate_count",
+    "test_count",
+    "coverage",
+    "release_readiness_status",
+    "ready_for_portfolio_release",
+    "gates"
+  ],
+  "title": "ReleaseReadinessReport",
+  "type": "object"
+}

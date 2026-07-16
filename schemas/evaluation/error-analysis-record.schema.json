@@ -1,0 +1,186 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "context_checksum": {
+      "title": "Context Checksum",
+      "type": "string"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_type": {
+      "title": "Document Type",
+      "type": "string"
+    },
+    "error_id": {
+      "title": "Error Id",
+      "type": "string"
+    },
+    "error_type": {
+      "title": "Error Type",
+      "type": "string"
+    },
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "expected_end": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expected End"
+    },
+    "expected_start": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expected Start"
+    },
+    "expected_value": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expected Value"
+    },
+    "ground_truth_annotation_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Ground Truth Annotation Id"
+    },
+    "label": {
+      "title": "Label",
+      "type": "string"
+    },
+    "likely_reason": {
+      "title": "Likely Reason",
+      "type": "string"
+    },
+    "predicted_end": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Predicted End"
+    },
+    "predicted_start": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Predicted Start"
+    },
+    "predicted_value": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Predicted Value"
+    },
+    "prediction_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Prediction Id"
+    },
+    "rule_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Rule Id"
+    },
+    "sanitised_context": {
+      "title": "Sanitised Context",
+      "type": "string"
+    },
+    "section_label": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Section Label"
+    },
+    "sentence_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sentence Id"
+    }
+  },
+  "required": [
+    "error_id",
+    "document_id",
+    "document_type",
+    "label",
+    "error_type",
+    "sanitised_context",
+    "context_checksum",
+    "likely_reason",
+    "evaluation_run_id"
+  ],
+  "title": "ErrorAnalysisRecord",
+  "type": "object"
+}

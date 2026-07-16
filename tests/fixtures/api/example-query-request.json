@@ -1,0 +1,7 @@
+{
+  "query_text": "Synthetic portfolio query: relevant history synthetic-only encounter",
+  "query_id": "RAGQ-52586597c68bc36f48",
+  "metadata_filters": {},
+  "portfolio_demo_mode": true,
+  "include_trace": false
+}

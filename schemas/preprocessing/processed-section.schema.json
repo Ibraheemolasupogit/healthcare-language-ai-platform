@@ -1,0 +1,79 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "content_end": {
+      "minimum": 0,
+      "title": "Content End",
+      "type": "integer"
+    },
+    "content_start": {
+      "minimum": 0,
+      "title": "Content Start",
+      "type": "integer"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "heading_end": {
+      "minimum": 0,
+      "title": "Heading End",
+      "type": "integer"
+    },
+    "heading_start": {
+      "minimum": 0,
+      "title": "Heading Start",
+      "type": "integer"
+    },
+    "normalised_section_label": {
+      "title": "Normalised Section Label",
+      "type": "string"
+    },
+    "parser_rule": {
+      "title": "Parser Rule",
+      "type": "string"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "section_id": {
+      "title": "Section Id",
+      "type": "string"
+    },
+    "section_index": {
+      "minimum": 1,
+      "title": "Section Index",
+      "type": "integer"
+    },
+    "section_label": {
+      "title": "Section Label",
+      "type": "string"
+    },
+    "section_text": {
+      "title": "Section Text",
+      "type": "string"
+    },
+    "section_text_checksum": {
+      "title": "Section Text Checksum",
+      "type": "string"
+    }
+  },
+  "required": [
+    "section_id",
+    "document_id",
+    "section_index",
+    "section_label",
+    "normalised_section_label",
+    "heading_start",
+    "heading_end",
+    "content_start",
+    "content_end",
+    "section_text",
+    "section_text_checksum",
+    "parser_rule",
+    "preprocessing_run_id"
+  ],
+  "title": "ProcessedSection",
+  "type": "object"
+}

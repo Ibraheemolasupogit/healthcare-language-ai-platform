@@ -1,0 +1,224 @@
+{
+  "$defs": {
+    "EvaluationRunStatus": {
+      "enum": [
+        "completed",
+        "completed_with_warnings",
+        "failed"
+      ],
+      "title": "EvaluationRunStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "classification_accuracy": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Classification Accuracy",
+      "type": "number"
+    },
+    "classification_macro_f1": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Classification Macro F1",
+      "type": "number"
+    },
+    "clinical_use_prohibited": {
+      "title": "Clinical Use Prohibited",
+      "type": "boolean"
+    },
+    "error_analysis_version": {
+      "title": "Error Analysis Version",
+      "type": "string"
+    },
+    "error_count": {
+      "title": "Error Count",
+      "type": "integer"
+    },
+    "evaluated_document_count": {
+      "title": "Evaluated Document Count",
+      "type": "integer"
+    },
+    "evaluated_ground_truth_count": {
+      "title": "Evaluated Ground Truth Count",
+      "type": "integer"
+    },
+    "evaluated_prediction_count": {
+      "title": "Evaluated Prediction Count",
+      "type": "integer"
+    },
+    "evaluation_contract_version": {
+      "title": "Evaluation Contract Version",
+      "type": "string"
+    },
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "excluded_ground_truth_count": {
+      "title": "Excluded Ground Truth Count",
+      "type": "integer"
+    },
+    "false_negative_count": {
+      "title": "False Negative Count",
+      "type": "integer"
+    },
+    "false_positive_count": {
+      "title": "False Positive Count",
+      "type": "integer"
+    },
+    "ground_truth_checksum": {
+      "title": "Ground Truth Checksum",
+      "type": "string"
+    },
+    "ground_truth_source": {
+      "title": "Ground Truth Source",
+      "type": "string"
+    },
+    "macro_f1": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Macro F1",
+      "type": "number"
+    },
+    "macro_precision": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Macro Precision",
+      "type": "number"
+    },
+    "macro_recall": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Macro Recall",
+      "type": "number"
+    },
+    "manifest_schema_version": {
+      "title": "Manifest Schema Version",
+      "type": "string"
+    },
+    "matching_policy": {
+      "title": "Matching Policy",
+      "type": "string"
+    },
+    "metrics_version": {
+      "title": "Metrics Version",
+      "type": "string"
+    },
+    "micro_f1": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Micro F1",
+      "type": "number"
+    },
+    "micro_precision": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Micro Precision",
+      "type": "number"
+    },
+    "micro_recall": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Micro Recall",
+      "type": "number"
+    },
+    "mlflow_contract_version": {
+      "title": "Mlflow Contract Version",
+      "type": "string"
+    },
+    "output_file_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output File Checksums",
+      "type": "object"
+    },
+    "output_files": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Output Files",
+      "type": "array"
+    },
+    "reconciliation_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "reference_timestamp": {
+      "format": "date-time",
+      "title": "Reference Timestamp",
+      "type": "string"
+    },
+    "relaxed_overlap_threshold": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Relaxed Overlap Threshold",
+      "type": "number"
+    },
+    "run_status": {
+      "$ref": "#/$defs/EvaluationRunStatus"
+    },
+    "source_extraction_manifest_checksum": {
+      "title": "Source Extraction Manifest Checksum",
+      "type": "string"
+    },
+    "source_extraction_run_id": {
+      "title": "Source Extraction Run Id",
+      "type": "string"
+    },
+    "synthetic_data_only": {
+      "title": "Synthetic Data Only",
+      "type": "boolean"
+    },
+    "true_positive_count": {
+      "title": "True Positive Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "manifest_schema_version",
+    "evaluation_contract_version",
+    "evaluation_run_id",
+    "run_status",
+    "source_extraction_run_id",
+    "source_extraction_manifest_checksum",
+    "ground_truth_source",
+    "ground_truth_checksum",
+    "matching_policy",
+    "relaxed_overlap_threshold",
+    "evaluated_document_count",
+    "evaluated_ground_truth_count",
+    "evaluated_prediction_count",
+    "excluded_ground_truth_count",
+    "true_positive_count",
+    "false_positive_count",
+    "false_negative_count",
+    "micro_precision",
+    "micro_recall",
+    "micro_f1",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1",
+    "classification_accuracy",
+    "classification_macro_f1",
+    "error_count",
+    "metrics_version",
+    "error_analysis_version",
+    "mlflow_contract_version",
+    "reference_timestamp",
+    "output_files",
+    "output_file_checksums",
+    "synthetic_data_only",
+    "clinical_use_prohibited",
+    "reconciliation_status"
+  ],
+  "title": "EvaluationManifest",
+  "type": "object"
+}

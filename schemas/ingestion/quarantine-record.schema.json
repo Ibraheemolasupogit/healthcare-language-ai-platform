@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "error_category": {
+      "title": "Error Category",
+      "type": "string"
+    },
+    "error_code": {
+      "title": "Error Code",
+      "type": "string"
+    },
+    "payload_checksum": {
+      "title": "Payload Checksum",
+      "type": "string"
+    },
+    "quarantine_timestamp": {
+      "format": "date-time",
+      "title": "Quarantine Timestamp",
+      "type": "string"
+    },
+    "record_identifier": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Record Identifier"
+    },
+    "sanitised_error_message": {
+      "title": "Sanitised Error Message",
+      "type": "string"
+    },
+    "source_file": {
+      "title": "Source File",
+      "type": "string"
+    },
+    "source_line_number": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Line Number"
+    }
+  },
+  "required": [
+    "source_file",
+    "error_code",
+    "error_category",
+    "sanitised_error_message",
+    "payload_checksum",
+    "quarantine_timestamp"
+  ],
+  "title": "QuarantineRecord",
+  "type": "object"
+}

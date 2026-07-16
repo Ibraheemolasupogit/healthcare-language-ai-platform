@@ -1,0 +1,89 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "boundary_rule": {
+      "title": "Boundary Rule",
+      "type": "string"
+    },
+    "contains_negation_marker": {
+      "title": "Contains Negation Marker",
+      "type": "boolean"
+    },
+    "contains_numeric_value": {
+      "title": "Contains Numeric Value",
+      "type": "boolean"
+    },
+    "contains_synthetic_identifier": {
+      "title": "Contains Synthetic Identifier",
+      "type": "boolean"
+    },
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "document_sentence_index": {
+      "minimum": 1,
+      "title": "Document Sentence Index",
+      "type": "integer"
+    },
+    "end_offset": {
+      "minimum": 0,
+      "title": "End Offset",
+      "type": "integer"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "section_id": {
+      "title": "Section Id",
+      "type": "string"
+    },
+    "sentence_id": {
+      "title": "Sentence Id",
+      "type": "string"
+    },
+    "sentence_index": {
+      "minimum": 1,
+      "title": "Sentence Index",
+      "type": "integer"
+    },
+    "sentence_text": {
+      "title": "Sentence Text",
+      "type": "string"
+    },
+    "sentence_text_checksum": {
+      "title": "Sentence Text Checksum",
+      "type": "string"
+    },
+    "start_offset": {
+      "minimum": 0,
+      "title": "Start Offset",
+      "type": "integer"
+    },
+    "token_count": {
+      "minimum": 0,
+      "title": "Token Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "sentence_id",
+    "document_id",
+    "section_id",
+    "sentence_index",
+    "document_sentence_index",
+    "start_offset",
+    "end_offset",
+    "sentence_text",
+    "sentence_text_checksum",
+    "token_count",
+    "contains_negation_marker",
+    "contains_numeric_value",
+    "contains_synthetic_identifier",
+    "boundary_rule",
+    "preprocessing_run_id"
+  ],
+  "title": "ProcessedSentence",
+  "type": "object"
+}

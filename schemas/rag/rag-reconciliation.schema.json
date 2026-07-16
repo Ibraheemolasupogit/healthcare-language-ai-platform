@@ -1,0 +1,78 @@
+{
+  "$defs": {
+    "RagReconciliationMetric": {
+      "additionalProperties": false,
+      "properties": {
+        "actual": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Actual"
+        },
+        "expected": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Expected"
+        },
+        "metric_name": {
+          "title": "Metric Name",
+          "type": "string"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "metric_name",
+        "expected",
+        "actual",
+        "status"
+      ],
+      "title": "RagReconciliationMetric",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "metrics": {
+      "items": {
+        "$ref": "#/$defs/RagReconciliationMetric"
+      },
+      "title": "Metrics",
+      "type": "array"
+    },
+    "rag_run_id": {
+      "title": "Rag Run Id",
+      "type": "string"
+    },
+    "reconciliation_status": {
+      "title": "Reconciliation Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "rag_run_id",
+    "metrics",
+    "reconciliation_status"
+  ],
+  "title": "RagReconciliationReport",
+  "type": "object"
+}

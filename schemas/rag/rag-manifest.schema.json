@@ -1,0 +1,122 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "citation_count": {
+      "title": "Citation Count",
+      "type": "integer"
+    },
+    "citation_validation_failure_count": {
+      "title": "Citation Validation Failure Count",
+      "type": "integer"
+    },
+    "claim_count": {
+      "title": "Claim Count",
+      "type": "integer"
+    },
+    "conflicting_evidence_count": {
+      "title": "Conflicting Evidence Count",
+      "type": "integer"
+    },
+    "evidence_unit_count": {
+      "title": "Evidence Unit Count",
+      "type": "integer"
+    },
+    "generator_provider": {
+      "title": "Generator Provider",
+      "type": "string"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "grounded_answer_count": {
+      "title": "Grounded Answer Count",
+      "type": "integer"
+    },
+    "groundedness_failure_count": {
+      "title": "Groundedness Failure Count",
+      "type": "integer"
+    },
+    "output_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output Checksums",
+      "type": "object"
+    },
+    "partial_answer_count": {
+      "title": "Partial Answer Count",
+      "type": "integer"
+    },
+    "prompt_contract_version": {
+      "title": "Prompt Contract Version",
+      "type": "string"
+    },
+    "query_count": {
+      "title": "Query Count",
+      "type": "integer"
+    },
+    "rag_run_id": {
+      "title": "Rag Run Id",
+      "type": "string"
+    },
+    "reconciliation_status": {
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "refusal_count": {
+      "title": "Refusal Count",
+      "type": "integer"
+    },
+    "retrieval_abstention_count": {
+      "title": "Retrieval Abstention Count",
+      "type": "integer"
+    },
+    "retrieval_approval_id": {
+      "title": "Retrieval Approval Id",
+      "type": "string"
+    },
+    "retrieval_configuration_id": {
+      "title": "Retrieval Configuration Id",
+      "type": "string"
+    },
+    "safety_validation_failure_count": {
+      "title": "Safety Validation Failure Count",
+      "type": "integer"
+    },
+    "unanswerable_refusal_count": {
+      "title": "Unanswerable Refusal Count",
+      "type": "integer"
+    },
+    "unsupported_request_refusal_count": {
+      "title": "Unsupported Request Refusal Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "rag_run_id",
+    "retrieval_approval_id",
+    "retrieval_configuration_id",
+    "generator_provider",
+    "generator_version",
+    "prompt_contract_version",
+    "query_count",
+    "grounded_answer_count",
+    "partial_answer_count",
+    "refusal_count",
+    "retrieval_abstention_count",
+    "unanswerable_refusal_count",
+    "unsupported_request_refusal_count",
+    "conflicting_evidence_count",
+    "citation_validation_failure_count",
+    "groundedness_failure_count",
+    "safety_validation_failure_count",
+    "evidence_unit_count",
+    "claim_count",
+    "citation_count",
+    "reconciliation_status",
+    "output_checksums"
+  ],
+  "title": "RagManifest",
+  "type": "object"
+}

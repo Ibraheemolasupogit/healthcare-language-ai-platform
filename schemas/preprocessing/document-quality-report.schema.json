@@ -1,0 +1,98 @@
+{
+  "$defs": {
+    "DocumentQualityMetric": {
+      "additionalProperties": false,
+      "properties": {
+        "check_name": {
+          "title": "Check Name",
+          "type": "string"
+        },
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "observed_value": {
+          "title": "Observed Value",
+          "type": "string"
+        },
+        "preprocessing_run_id": {
+          "title": "Preprocessing Run Id",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "info",
+            "warning",
+            "error"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "passed",
+            "warning",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "threshold": {
+          "title": "Threshold",
+          "type": "string"
+        }
+      },
+      "required": [
+        "document_id",
+        "check_name",
+        "status",
+        "severity",
+        "observed_value",
+        "threshold",
+        "message",
+        "preprocessing_run_id"
+      ],
+      "title": "DocumentQualityMetric",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "metrics": {
+      "items": {
+        "$ref": "#/$defs/DocumentQualityMetric"
+      },
+      "title": "Metrics",
+      "type": "array"
+    },
+    "overall_status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed"
+      ],
+      "title": "Overall Status",
+      "type": "string"
+    },
+    "preprocessing_run_id": {
+      "title": "Preprocessing Run Id",
+      "type": "string"
+    },
+    "quality_schema_version": {
+      "title": "Quality Schema Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "quality_schema_version",
+    "preprocessing_run_id",
+    "overall_status",
+    "metrics"
+  ],
+  "title": "DocumentQualityReport",
+  "type": "object"
+}

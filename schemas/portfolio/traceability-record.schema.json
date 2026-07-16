@@ -1,0 +1,59 @@
+{
+  "properties": {
+    "assurance_reference": {
+      "title": "Assurance Reference",
+      "type": "string"
+    },
+    "capability": {
+      "title": "Capability",
+      "type": "string"
+    },
+    "documentation_reference": {
+      "title": "Documentation Reference",
+      "type": "string"
+    },
+    "fixture_reference": {
+      "title": "Fixture Reference",
+      "type": "string"
+    },
+    "interface_reference": {
+      "title": "Interface Reference",
+      "type": "string"
+    },
+    "requirement_id": {
+      "title": "Requirement Id",
+      "type": "string"
+    },
+    "source_module": {
+      "title": "Source Module",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "warning",
+        "failed",
+        "not_applicable"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "test_reference": {
+      "title": "Test Reference",
+      "type": "string"
+    }
+  },
+  "required": [
+    "requirement_id",
+    "capability",
+    "source_module",
+    "test_reference",
+    "fixture_reference",
+    "documentation_reference",
+    "interface_reference",
+    "assurance_reference",
+    "status"
+  ],
+  "title": "TraceabilityRecord",
+  "type": "object"
+}

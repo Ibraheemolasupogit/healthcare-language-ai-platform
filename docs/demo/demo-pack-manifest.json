@@ -1,0 +1,13 @@
+{
+  "demo_pack_version": "1.0.0",
+  "documents": [
+    "api-demo.md",
+    "dashboard-demo.md",
+    "demo-checklist.md",
+    "failure-demo.md",
+    "safety-demo.md",
+    "ten-minute-demo.md",
+    "twenty-minute-demo.md"
+  ],
+  "status": "passed"
+}

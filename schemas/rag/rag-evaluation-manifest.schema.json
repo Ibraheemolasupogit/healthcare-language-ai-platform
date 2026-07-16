@@ -1,0 +1,162 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "answer_status_accuracy": {
+      "title": "Answer Status Accuracy",
+      "type": "number"
+    },
+    "approval_status": {
+      "title": "Approval Status",
+      "type": "string"
+    },
+    "approved_for_local_synthetic_demo": {
+      "title": "Approved For Local Synthetic Demo",
+      "type": "boolean"
+    },
+    "citation_completeness": {
+      "title": "Citation Completeness",
+      "type": "number"
+    },
+    "citation_correctness": {
+      "title": "Citation Correctness",
+      "type": "number"
+    },
+    "citation_presence_rate": {
+      "title": "Citation Presence Rate",
+      "type": "number"
+    },
+    "citation_validity_rate": {
+      "title": "Citation Validity Rate",
+      "type": "number"
+    },
+    "claim_support_precision": {
+      "title": "Claim Support Precision",
+      "type": "number"
+    },
+    "claim_support_recall": {
+      "title": "Claim Support Recall",
+      "type": "number"
+    },
+    "conflict_detection_accuracy": {
+      "title": "Conflict Detection Accuracy",
+      "type": "number"
+    },
+    "emergency_request_refusal_rate": {
+      "title": "Emergency Request Refusal Rate",
+      "type": "number"
+    },
+    "error_count": {
+      "title": "Error Count",
+      "type": "integer"
+    },
+    "evaluated_query_count": {
+      "title": "Evaluated Query Count",
+      "type": "integer"
+    },
+    "evaluation_reconciliation_status": {
+      "title": "Evaluation Reconciliation Status",
+      "type": "string"
+    },
+    "failed_required_gates": {
+      "title": "Failed Required Gates",
+      "type": "integer"
+    },
+    "grounded_answer_rate": {
+      "title": "Grounded Answer Rate",
+      "type": "number"
+    },
+    "holdout_grounded_answer_rate": {
+      "title": "Holdout Grounded Answer Rate",
+      "type": "number"
+    },
+    "negation_consistency_rate": {
+      "title": "Negation Consistency Rate",
+      "type": "number"
+    },
+    "numeric_consistency_rate": {
+      "title": "Numeric Consistency Rate",
+      "type": "number"
+    },
+    "output_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output Checksums",
+      "type": "object"
+    },
+    "passed_required_gates": {
+      "title": "Passed Required Gates",
+      "type": "integer"
+    },
+    "prohibited_fact_violation_rate": {
+      "title": "Prohibited Fact Violation Rate",
+      "type": "number"
+    },
+    "rag_evaluation_id": {
+      "title": "Rag Evaluation Id",
+      "type": "string"
+    },
+    "real_patient_request_refusal_rate": {
+      "title": "Real Patient Request Refusal Rate",
+      "type": "number"
+    },
+    "required_fact_coverage": {
+      "title": "Required Fact Coverage",
+      "type": "number"
+    },
+    "required_gate_count": {
+      "title": "Required Gate Count",
+      "type": "integer"
+    },
+    "retrieval_abstention_propagation_accuracy": {
+      "title": "Retrieval Abstention Propagation Accuracy",
+      "type": "number"
+    },
+    "source_rag_run_id": {
+      "title": "Source Rag Run Id",
+      "type": "string"
+    },
+    "unsupported_claim_rate": {
+      "title": "Unsupported Claim Rate",
+      "type": "number"
+    },
+    "unsupported_clinical_request_refusal_rate": {
+      "title": "Unsupported Clinical Request Refusal Rate",
+      "type": "number"
+    }
+  },
+  "required": [
+    "rag_evaluation_id",
+    "source_rag_run_id",
+    "evaluated_query_count",
+    "answer_status_accuracy",
+    "retrieval_abstention_propagation_accuracy",
+    "unsupported_clinical_request_refusal_rate",
+    "real_patient_request_refusal_rate",
+    "emergency_request_refusal_rate",
+    "citation_presence_rate",
+    "citation_validity_rate",
+    "citation_correctness",
+    "citation_completeness",
+    "claim_support_precision",
+    "claim_support_recall",
+    "unsupported_claim_rate",
+    "numeric_consistency_rate",
+    "negation_consistency_rate",
+    "required_fact_coverage",
+    "prohibited_fact_violation_rate",
+    "conflict_detection_accuracy",
+    "grounded_answer_rate",
+    "holdout_grounded_answer_rate",
+    "error_count",
+    "required_gate_count",
+    "passed_required_gates",
+    "failed_required_gates",
+    "approval_status",
+    "approved_for_local_synthetic_demo",
+    "evaluation_reconciliation_status",
+    "output_checksums"
+  ],
+  "title": "RagEvaluationManifest",
+  "type": "object"
+}

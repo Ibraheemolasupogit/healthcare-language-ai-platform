@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "citation_failure_count": {
+      "title": "Citation Failure Count",
+      "type": "integer"
+    },
+    "error_count": {
+      "title": "Error Count",
+      "type": "integer"
+    },
+    "event_count": {
+      "title": "Event Count",
+      "type": "integer"
+    },
+    "grounded_answer_count": {
+      "title": "Grounded Answer Count",
+      "type": "integer"
+    },
+    "groundedness_failure_count": {
+      "title": "Groundedness Failure Count",
+      "type": "integer"
+    },
+    "p50_duration_ms": {
+      "title": "P50 Duration Ms",
+      "type": "number"
+    },
+    "p95_duration_ms": {
+      "title": "P95 Duration Ms",
+      "type": "number"
+    },
+    "refusal_count": {
+      "title": "Refusal Count",
+      "type": "integer"
+    },
+    "request_count": {
+      "title": "Request Count",
+      "type": "integer"
+    },
+    "retrieval_abstention_count": {
+      "title": "Retrieval Abstention Count",
+      "type": "integer"
+    },
+    "safety_failure_count": {
+      "title": "Safety Failure Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "event_count",
+    "request_count",
+    "grounded_answer_count",
+    "refusal_count",
+    "retrieval_abstention_count",
+    "citation_failure_count",
+    "groundedness_failure_count",
+    "safety_failure_count",
+    "error_count",
+    "p50_duration_ms",
+    "p95_duration_ms"
+  ],
+  "title": "MetricSnapshot",
+  "type": "object"
+}

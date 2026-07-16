@@ -1,0 +1,42 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "failed_required_gates": {
+      "title": "Failed Required Gates",
+      "type": "integer"
+    },
+    "gate_set": {
+      "enum": [
+        "retrieval",
+        "rag"
+      ],
+      "title": "Gate Set",
+      "type": "string"
+    },
+    "gates": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Gates",
+      "type": "array"
+    },
+    "passed_required_gates": {
+      "title": "Passed Required Gates",
+      "type": "integer"
+    },
+    "required_gate_count": {
+      "title": "Required Gate Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "gate_set",
+    "required_gate_count",
+    "passed_required_gates",
+    "failed_required_gates",
+    "gates"
+  ],
+  "title": "QualityGateResponse",
+  "type": "object"
+}

@@ -1,0 +1,108 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "artifacts_to_log": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Artifacts To Log",
+      "type": "array"
+    },
+    "connection_attempted": {
+      "title": "Connection Attempted",
+      "type": "boolean"
+    },
+    "dataset_lineage": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Dataset Lineage",
+      "type": "object"
+    },
+    "dry_run_status": {
+      "const": "validated",
+      "title": "Dry Run Status",
+      "type": "string"
+    },
+    "evaluation_run_id": {
+      "title": "Evaluation Run Id",
+      "type": "string"
+    },
+    "execution_permitted": {
+      "title": "Execution Permitted",
+      "type": "boolean"
+    },
+    "experiment_name_placeholder": {
+      "title": "Experiment Name Placeholder",
+      "type": "string"
+    },
+    "extraction_run_id": {
+      "title": "Extraction Run Id",
+      "type": "string"
+    },
+    "metrics_to_log": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Metrics To Log",
+      "type": "object"
+    },
+    "mlflow_contract_version": {
+      "title": "Mlflow Contract Version",
+      "type": "string"
+    },
+    "parameters": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Parameters",
+      "type": "object"
+    },
+    "plan_schema_version": {
+      "title": "Plan Schema Version",
+      "type": "string"
+    },
+    "rule_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Rule Versions",
+      "type": "object"
+    },
+    "run_name": {
+      "title": "Run Name",
+      "type": "string"
+    },
+    "tags": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Tags",
+      "type": "object"
+    },
+    "target_registry_stage_placeholder": {
+      "title": "Target Registry Stage Placeholder",
+      "type": "string"
+    }
+  },
+  "required": [
+    "plan_schema_version",
+    "mlflow_contract_version",
+    "experiment_name_placeholder",
+    "run_name",
+    "extraction_run_id",
+    "evaluation_run_id",
+    "parameters",
+    "metrics_to_log",
+    "tags",
+    "artifacts_to_log",
+    "dataset_lineage",
+    "rule_versions",
+    "target_registry_stage_placeholder",
+    "dry_run_status",
+    "connection_attempted",
+    "execution_permitted"
+  ],
+  "title": "MLflowExperimentPlan",
+  "type": "object"
+}

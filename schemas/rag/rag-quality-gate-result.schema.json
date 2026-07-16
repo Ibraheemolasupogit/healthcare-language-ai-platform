@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "comparator": {
+      "title": "Comparator",
+      "type": "string"
+    },
+    "gate_name": {
+      "title": "Gate Name",
+      "type": "string"
+    },
+    "metric_name": {
+      "title": "Metric Name",
+      "type": "string"
+    },
+    "observed_value": {
+      "title": "Observed Value",
+      "type": "number"
+    },
+    "passed": {
+      "title": "Passed",
+      "type": "boolean"
+    },
+    "required": {
+      "default": true,
+      "title": "Required",
+      "type": "boolean"
+    },
+    "threshold": {
+      "title": "Threshold",
+      "type": "number"
+    }
+  },
+  "required": [
+    "gate_name",
+    "metric_name",
+    "observed_value",
+    "threshold",
+    "comparator",
+    "passed"
+  ],
+  "title": "RagQualityGateResult",
+  "type": "object"
+}

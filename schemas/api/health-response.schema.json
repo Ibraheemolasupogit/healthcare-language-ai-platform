@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "application": {
+      "title": "Application",
+      "type": "string"
+    },
+    "status": {
+      "const": "ok",
+      "title": "Status",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "application",
+    "version"
+  ],
+  "title": "HealthResponse",
+  "type": "object"
+}

@@ -1,0 +1,110 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "abbreviation_gap_count": {
+      "title": "Abbreviation Gap Count",
+      "type": "integer"
+    },
+    "below_k_relevant_count": {
+      "title": "Below K Relevant Count",
+      "type": "integer"
+    },
+    "benchmark_id": {
+      "title": "Benchmark Id",
+      "type": "string"
+    },
+    "failure_analysis_version": {
+      "title": "Failure Analysis Version",
+      "type": "string"
+    },
+    "failure_run_id": {
+      "title": "Failure Run Id",
+      "type": "string"
+    },
+    "granularity_conflict_count": {
+      "title": "Granularity Conflict Count",
+      "type": "integer"
+    },
+    "highest_priority_failure_cohorts": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Highest Priority Failure Cohorts",
+      "type": "array"
+    },
+    "judgment_ambiguity_count": {
+      "title": "Judgment Ambiguity Count",
+      "type": "integer"
+    },
+    "lexical_gap_count": {
+      "title": "Lexical Gap Count",
+      "type": "integer"
+    },
+    "negation_conflict_count": {
+      "title": "Negation Conflict Count",
+      "type": "integer"
+    },
+    "numeric_conflict_count": {
+      "title": "Numeric Conflict Count",
+      "type": "integer"
+    },
+    "output_checksums": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Output Checksums",
+      "type": "object"
+    },
+    "phrase_gap_count": {
+      "title": "Phrase Gap Count",
+      "type": "integer"
+    },
+    "query_count": {
+      "title": "Query Count",
+      "type": "integer"
+    },
+    "reconciliation_status": {
+      "title": "Reconciliation Status",
+      "type": "string"
+    },
+    "source_experiment_id": {
+      "title": "Source Experiment Id",
+      "type": "string"
+    },
+    "successful_query_count": {
+      "title": "Successful Query Count",
+      "type": "integer"
+    },
+    "synonym_gap_count": {
+      "title": "Synonym Gap Count",
+      "type": "integer"
+    },
+    "zero_hit_count": {
+      "title": "Zero Hit Count",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "failure_run_id",
+    "source_experiment_id",
+    "benchmark_id",
+    "query_count",
+    "successful_query_count",
+    "zero_hit_count",
+    "below_k_relevant_count",
+    "lexical_gap_count",
+    "synonym_gap_count",
+    "abbreviation_gap_count",
+    "phrase_gap_count",
+    "negation_conflict_count",
+    "numeric_conflict_count",
+    "granularity_conflict_count",
+    "judgment_ambiguity_count",
+    "highest_priority_failure_cohorts",
+    "failure_analysis_version",
+    "reconciliation_status",
+    "output_checksums"
+  ],
+  "title": "FailureAnalysisManifest",
+  "type": "object"
+}
