@@ -1,6 +1,6 @@
 {
   "evidence_count": 8,
-  "evidence_index_id": "EVIDX-e3ae856683faf0e6bdfcac0b",
+  "evidence_index_id": "EVIDX-68819b45336310697b3eac42",
   "evidence_index_version": "1.0.0",
   "records": [
     {
@@ -82,7 +82,7 @@
     },
     {
       "category": "assurance",
-      "checksum": "0ad23656869f7676140a3e1fe44434813676931ae21d200d2dde26edf08dfe45",
+      "checksum": "ad469d0616d51b11391b1d19ed4a368f1eeec19215366f33dd9ce4ba84cfd3f2",
       "description": "Portfolio assurance evidence for M11",
       "evidence_id": "EV-ASSURE",
       "milestone": "M11",

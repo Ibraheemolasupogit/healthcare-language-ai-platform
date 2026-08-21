@@ -54,7 +54,7 @@ def test_run_registry_records_key_approval_ids() -> None:
     assert registry.synthetic_dataset_id == "synthetic_clinical_documents"
     assert registry.retrieval_approval_id.startswith("RETAPP-")
     assert registry.rag_approval_status == "approved_for_local_demo"
-    assert registry.portfolio_assurance_id == "ASSURE-617420383a5972b404b7d450"
+    assert registry.portfolio_assurance_id == "ASSURE-9b83e5cbd4ef84cfb0eb3e45"
 
 
 def test_release_readiness_manifest_and_package_pass(tmp_path: Path) -> None:

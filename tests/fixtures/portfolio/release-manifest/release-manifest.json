@@ -1,6 +1,6 @@
 {
   "architecture_pack_checksum": "2d9acebb11f2eb53eed98c238c5f0cef4cf9f5a592342766ec7919d9bac9ca81",
-  "assurance_run_id": "ASSURE-617420383a5972b404b7d450",
+  "assurance_run_id": "ASSURE-9b83e5cbd4ef84cfb0eb3e45",
   "clinical_use_prohibited": true,
   "clinically_validated": false,
   "cloud_deployed": false,
@@ -9,8 +9,8 @@
   "created_at": "2026-01-20T09:00:00+00:00",
   "demo_session_id": "DEMO-7d8d73b2b21ec496c6e47175",
   "documentation_checksum": "a8fee2b7c45c142a41dbe5d21dd1691984e0c16aae3764e5bdeec54296506b84",
-  "evidence_index_checksum": "a5e7f12c0d3a4639e7bac0b08a98c8d099a35977b600eef65bf84381d0c7a3ac",
-  "fixture_manifest_checksum": "ece1c9e555280f189c66b79e00333c4be03a12237137e648a46060fb12997f10",
+  "evidence_index_checksum": "e45ddd45f22eb30aa2e5de5a3c068e60851442fc2e2094bab721eafee76d3f9c",
+  "fixture_manifest_checksum": "6694a61ca38a67791e5be90112e420384a62aff38a155e612d34a5531fc36b30",
   "milestones_completed": [
     "M1",
     "M2",
@@ -24,17 +24,17 @@
     "M10",
     "M11"
   ],
-  "portfolio_model_card_checksum": "8556f6de24f5bf486ec01e19c800031c36e5c9eea8e4456d82c2205e44069265",
+  "portfolio_model_card_checksum": "55f3af9463336cc4eb83345eb221a86819bbce96ee891dd20b6fa50a47fdffb7",
   "production_ready": false,
   "rag_evaluation_id": "RAGEVAL-d8d3b3b6892133372f91d017",
   "rag_run_id": "RAG-515e2c68be10e720b613e874",
-  "release_id": "PORTREL-f4e8a8385f1ca6cf5301bcf6",
+  "release_id": "PORTREL-145b7e8e63bb55edc39407c2",
   "release_readiness_status": "ready_for_portfolio_release",
   "release_scope": "Local source-code portfolio publication and demonstration",
   "release_version": "1.0.0",
   "repository_name": "healthcare-language-ai-platform",
   "retrieval_approval_id": "RETAPP-5c6d5b0f63deeff03a1ea155",
-  "source_tree_checksum": "0dc3897759a12886a9b81f566685ec3847470424702725fe5e962d8111d8bc23",
+  "source_tree_checksum": "1002bf4b58e9d35e42249d7c2b62fcd05e2b086101e907b1b0fbc0cbea7fbb0f",
   "synthetic_data_only": true,
   "test_count": 161
 }
